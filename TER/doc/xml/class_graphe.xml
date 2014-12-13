@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_graphe" kind="class" prot="public">
+    <compoundname>Graphe</compoundname>
+    <includes refid="_graphe_8h" local="no">Graphe.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_graphe_1a443740be4ce0c4f1d67db5207dd20719" prot="private" static="no" mutable="no">
+        <type><ref refid="class_pathfinder" kindref="compound">Pathfinder</ref> *</type>
+        <definition>Pathfinder* Graphe::a_star</definition>
+        <argsstring></argsstring>
+        <name>a_star</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Objet <ref refid="class_pathfinder" kindref="compound">Pathfinder</ref> pour appliquer l&apos;algorithme A* </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Graphe.h" line="81" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Graphe.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_graphe_1a05c9fd67e3c08b4f3cc189657d2622e1" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_node" kindref="compound">Node</ref> * &gt;</type>
+        <definition>std::vector&lt;Node*&gt; Graphe::m_chemin</definition>
+        <argsstring></argsstring>
+        <name>m_chemin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>chemin calcule par A* </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Graphe.h" line="82" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Graphe.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_graphe_1af19471d0b5a09910255917aa91213703" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; <ref refid="class_node" kindref="compound">Node</ref> * &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt; Node*&gt; &gt; Graphe::m_graphe</definition>
+        <argsstring></argsstring>
+        <name>m_graphe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>matrices de <ref refid="class_node" kindref="compound">Node</ref> qui representes la carte Repast en memoire </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Graphe.h" line="83" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Graphe.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_graphe_1a2bdb0c2d16aada3bf387d12f23737ef8" prot="private" static="no" mutable="no">
+        <type>int **</type>
+        <definition>int** Graphe::m_map</definition>
+        <argsstring></argsstring>
+        <name>m_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>matrice d&apos;entier representant la carte repast en memoire </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Graphe.h" line="84" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Graphe.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_graphe_1a596a97e03c3d94b6393513f93c14d02d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Graphe::m_longueur</definition>
+        <argsstring></argsstring>
+        <name>m_longueur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>nombre de colonnes de la matrice </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Graphe.h" line="85" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Graphe.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_graphe_1a97eb063e41487fff7d67955c303c2761" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Graphe::m_hauteur</definition>
+        <argsstring></argsstring>
+        <name>m_hauteur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>nombre de lignes de la matrice </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Graphe.h" line="86" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Graphe.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_graphe_1a1587fd284279b6970f83e6c18340935a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref></type>
+        <definition>Coordonnes2D Graphe::m_depart</definition>
+        <argsstring></argsstring>
+        <name>m_depart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>objet <ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref> representant le point de depart </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Graphe.h" line="87" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Graphe.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_graphe_1a00a90c42b3b42333183a6cd1ac425bf9" prot="private" static="no" mutable="no">
+        <type><ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref></type>
+        <definition>Coordonnes2D Graphe::m_arrive</definition>
+        <argsstring></argsstring>
+        <name>m_arrive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>objet <ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref> representant le point d&apos;arrivee </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Graphe.h" line="88" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Graphe.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_graphe_1abd3e45f6d615a90d71106d29e6968c0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Graphe::Graphe</definition>
+        <argsstring>(int **map, int longueur_map, int hauteur_map, Coordonnes2D depart, std::vector&lt; Coordonnes2D &gt; &amp;sorties)</argsstring>
+        <name>Graphe</name>
+        <param>
+          <type>int **</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>longueur_map</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hauteur_map</declname>
+        </param>
+        <param>
+          <type><ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref></type>
+          <declname>depart</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref> &gt; &amp;</type>
+          <declname>sorties</declname>
+        </param>
+        <briefdescription>
+<para>Constructeur. </para>        </briefdescription>
+        <detaileddescription>
+<para>Constructeur de la classe <ref refid="class_graphe" kindref="compound">Graphe</ref></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: matrice d&apos;entiers representant le monde repast en memoire </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>longueur_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: nombre de colonnes de la matrice </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hauteur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: nombre de lignes de la matrice </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Objet <ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref> representant le point de depart du chemin a calculer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sorties</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Tableau de toutes les sorties(points d&apos;arrivees possibles) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Graphe.h" line="35" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/Graphe.cpp" bodystart="9" bodyend="88"/>
+        <references refid="class_node_1a281acda069a341e04b5e9dbd45c4658e" compoundref="_node_8h" startline="70" endline="70">Node::setWalkable</references>
+        <references refid="class_node_1accabc02cdc5144636cab8d5079619d13" compoundref="_node_8h" startline="98" endline="98">Node::setX</references>
+        <references refid="class_node_1a475dd9a2117954dbfa44f8cd196d6008" compoundref="_node_8h" startline="105" endline="105">Node::setY</references>
+        <references refid="class_coordonnes2_d_1ac06b44e9c6584d4de6746f6b14472cdb" compoundref="coordonnes2d_8h" startline="69" endline="69">Coordonnes2D::getX</references>
+        <references refid="class_coordonnes2_d_1a52192f87a21074e41b7d7b22f258a549" compoundref="coordonnes2d_8h" startline="78" endline="78">Coordonnes2D::getY</references>
+        <references refid="class_graphe_1a7c51dfd09bcf7d8505ec47a96b5d9c61" compoundref="_graphe_8cpp" startline="90" endline="121">calculSortie</references>
+      </memberdef>
+      <memberdef kind="function" id="class_graphe_1a673c897db564767e9ace7169a5357310" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Graphe::~Graphe</definition>
+        <argsstring>()</argsstring>
+        <name>~Graphe</name>
+        <briefdescription>
+<para>Destructeur. </para>        </briefdescription>
+        <detaileddescription>
+<para>Destructeur de la classe <ref refid="class_graphe" kindref="compound">Graphe</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Graphe.h" line="42" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/Graphe.cpp" bodystart="137" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="class_graphe_1ac0e1b15961de7b45d61794b651654a66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt; int &gt; Graphe::Nodes2CheminX</definition>
+        <argsstring>(std::vector&lt; Node * &gt; chemin)</argsstring>
+        <name>Nodes2CheminX</name>
+        <param>
+          <type>std::vector&lt; <ref refid="class_node" kindref="compound">Node</ref> * &gt;</type>
+          <declname>chemin</declname>
+        </param>
+        <briefdescription>
+<para>Conversion <ref refid="class_node" kindref="compound">Node</ref> -&gt; Entiers (X) </para>        </briefdescription>
+        <detaileddescription>
+<para>Convertie un tableau d&apos;objets <ref refid="class_node" kindref="compound">Node</ref> en tableau d&apos;entier contenant les coordonnes X</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>chemin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: tableau d&apos;objets <ref refid="class_node" kindref="compound">Node</ref> representant le chemin </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>tableau d&apos;entier contenant les coordonnes X du chemin </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Graphe.h" line="52" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/Graphe.cpp" bodystart="123" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_graphe_1a3dc187933cfa37d917db230bd8b87db1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt; int &gt; Graphe::Nodes2CheminY</definition>
+        <argsstring>(std::vector&lt; Node * &gt; chemin)</argsstring>
+        <name>Nodes2CheminY</name>
+        <param>
+          <type>std::vector&lt; <ref refid="class_node" kindref="compound">Node</ref> * &gt;</type>
+          <declname>chemin</declname>
+        </param>
+        <briefdescription>
+<para>Conversion <ref refid="class_node" kindref="compound">Node</ref> -&gt; Entiers (Y) </para>        </briefdescription>
+        <detaileddescription>
+<para>Convertie un tableau d&apos;objets <ref refid="class_node" kindref="compound">Node</ref> en tableau d&apos;entier contenant les coordonnes Y</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>chemin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: tableau d&apos;objets <ref refid="class_node" kindref="compound">Node</ref> representant le chemin </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>tableau d&apos;entier contenant les coordonnes Y du chemin </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Graphe.h" line="62" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/Graphe.cpp" bodystart="130" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="class_graphe_1a6fae3a8286508021f0e040bc075e0c1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_node" kindref="compound">Node</ref> * &gt;</type>
+        <definition>std::vector&lt;Node*&gt; Graphe::getChemin</definition>
+        <argsstring>()</argsstring>
+        <name>getChemin</name>
+        <briefdescription>
+<para>Getter de l&apos;attribut m_chemin de la classe <ref refid="class_graphe" kindref="compound">Graphe</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>l&apos;attribut m_chemin de la classe <ref refid="class_graphe" kindref="compound">Graphe</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Graphe.h" line="70" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Graphe.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_graphe_1a7c51dfd09bcf7d8505ec47a96b5d9c61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_node" kindref="compound">Node</ref> * &gt;</type>
+        <definition>std::vector&lt; Node * &gt; Graphe::calculSortie</definition>
+        <argsstring>(std::vector&lt; Coordonnes2D &gt; &amp;sorties, Node *depart)</argsstring>
+        <name>calculSortie</name>
+        <param>
+          <type>std::vector&lt; <ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref> &gt; &amp;</type>
+          <declname>sorties</declname>
+        </param>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+          <declname>depart</declname>
+        </param>
+        <briefdescription>
+<para>Calcule la sortie la plus proche du point de depart. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sorties</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: tableau contenant les coordonnees de toutes les sorties </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: <ref refid="class_node" kindref="compound">Node</ref> de depart</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>un chemin vers la sortie la plus proche de la position de depart </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Graphe.h" line="79" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/Graphe.cpp" bodystart="90" bodyend="121"/>
+        <references refid="class_pathfinder_1aee6e72cf2b4a9f86c6aa1139618e2167" compoundref="_path_finder_8cpp" startline="14" endline="95">Pathfinder::findPath</references>
+        <references refid="class_node_1a6c026e5d8c28591c6e2bd08c68619fd1" compoundref="_node_8h" startline="140" endline="140">Node::getX</references>
+        <references refid="class_node_1abab48a3f494994d4f456897f3372d3ae" compoundref="_node_8h" startline="147" endline="147">Node::getY</references>
+        <referencedby refid="class_graphe_1abd3e45f6d615a90d71106d29e6968c0f" compoundref="_graphe_8cpp" startline="9" endline="88">Graphe</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Classe representant le monde Repast en memoire. </para>    </briefdescription>
+    <detaileddescription>
+<para>La classe est composee de du chemin le plus court, d&apos;une matrice d&apos;objets <ref refid="class_node" kindref="compound">Node</ref> </para>    </detaileddescription>
+    <location file="/home/emip/git/TER/TESTA/code/include/Graphe.h" line="22" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Graphe.h" bodystart="22" bodyend="89"/>
+    <listofallmembers>
+      <member refid="class_graphe_1a443740be4ce0c4f1d67db5207dd20719" prot="private" virt="non-virtual"><scope>Graphe</scope><name>a_star</name></member>
+      <member refid="class_graphe_1a7c51dfd09bcf7d8505ec47a96b5d9c61" prot="public" virt="non-virtual"><scope>Graphe</scope><name>calculSortie</name></member>
+      <member refid="class_graphe_1a6fae3a8286508021f0e040bc075e0c1d" prot="public" virt="non-virtual"><scope>Graphe</scope><name>getChemin</name></member>
+      <member refid="class_graphe_1abd3e45f6d615a90d71106d29e6968c0f" prot="public" virt="non-virtual"><scope>Graphe</scope><name>Graphe</name></member>
+      <member refid="class_graphe_1a00a90c42b3b42333183a6cd1ac425bf9" prot="private" virt="non-virtual"><scope>Graphe</scope><name>m_arrive</name></member>
+      <member refid="class_graphe_1a05c9fd67e3c08b4f3cc189657d2622e1" prot="private" virt="non-virtual"><scope>Graphe</scope><name>m_chemin</name></member>
+      <member refid="class_graphe_1a1587fd284279b6970f83e6c18340935a" prot="private" virt="non-virtual"><scope>Graphe</scope><name>m_depart</name></member>
+      <member refid="class_graphe_1af19471d0b5a09910255917aa91213703" prot="private" virt="non-virtual"><scope>Graphe</scope><name>m_graphe</name></member>
+      <member refid="class_graphe_1a97eb063e41487fff7d67955c303c2761" prot="private" virt="non-virtual"><scope>Graphe</scope><name>m_hauteur</name></member>
+      <member refid="class_graphe_1a596a97e03c3d94b6393513f93c14d02d" prot="private" virt="non-virtual"><scope>Graphe</scope><name>m_longueur</name></member>
+      <member refid="class_graphe_1a2bdb0c2d16aada3bf387d12f23737ef8" prot="private" virt="non-virtual"><scope>Graphe</scope><name>m_map</name></member>
+      <member refid="class_graphe_1ac0e1b15961de7b45d61794b651654a66" prot="public" virt="non-virtual"><scope>Graphe</scope><name>Nodes2CheminX</name></member>
+      <member refid="class_graphe_1a3dc187933cfa37d917db230bd8b87db1" prot="public" virt="non-virtual"><scope>Graphe</scope><name>Nodes2CheminY</name></member>
+      <member refid="class_graphe_1a673c897db564767e9ace7169a5357310" prot="public" virt="virtual"><scope>Graphe</scope><name>~Graphe</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

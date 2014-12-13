@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Simulation d&#39;evacuation d&#39;immeuble avec systeme multi-agents:  Fichier source de code/include/Node.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.jpeg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Simulation d&#39;evacuation d&#39;immeuble avec systeme multi-agents
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">TER - 2014</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_050edd66366d13764f98250ef6db77f6.html">code</a></li><li class="navelem"><a class="el" href="dir_f8a5fb882cc5ea0f84873b4bfbe1e42c.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Node.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_node_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef NODE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define NODE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_node.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_node.html">Node</a>{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">int</span> m_g; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">int</span> m_h; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">int</span> m_f; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">int</span> m_X; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">int</span> m_Y; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">bool</span> m_walkable; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_node.html">Node</a> *m_parent; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_node.html#ad7a34779cad45d997bfd6d3d8043c75f">Node</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_node.html#aa0840c3cb5c7159be6d992adecd2097c">~Node</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_node.html#aa342abc3125e21fab6c9085aefb9f90f">estEgal</a>(<a class="code" href="class_node.html">Node</a> <span class="keyword">const</span>&amp; b) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_node.html#a39cc5b0b6814a6a2f4f0771203f334a1">setParent</a>(<a class="code" href="class_node.html">Node</a>* val);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="class_node.html">Node</a>* <a class="code" href="class_node.html#a220a8d64cb0df1cce083ed38c1260615">getParent</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_node.html#a281acda069a341e04b5e9dbd45c4658e">   70</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_node.html#a281acda069a341e04b5e9dbd45c4658e">setWalkable</a>(<span class="keywordtype">bool</span> val){m_walkable = val;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_node.html#a47181f2860b050a0036097d534051cfc">   77</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_node.html#a47181f2860b050a0036097d534051cfc">setG</a>(<span class="keywordtype">int</span> val){m_g = val;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_node.html#a070cae6ce68d13a77b42686e6ecdef05">   84</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_node.html#a070cae6ce68d13a77b42686e6ecdef05">setF</a>(<span class="keywordtype">int</span> val){m_f = val;}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="class_node.html#a5f9637d2e5bed720d9ee7a5af8a00c36">   91</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_node.html#a5f9637d2e5bed720d9ee7a5af8a00c36">setH</a>(<span class="keywordtype">int</span> val){m_h = val;}</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="class_node.html#accabc02cdc5144636cab8d5079619d13">   98</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_node.html#accabc02cdc5144636cab8d5079619d13">setX</a>(<span class="keywordtype">int</span> val){m_X = val;}</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="class_node.html#a475dd9a2117954dbfa44f8cd196d6008">  105</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_node.html#a475dd9a2117954dbfa44f8cd196d6008">setY</a>(<span class="keywordtype">int</span> val){m_Y = val;}</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="class_node.html#af04dc1e91f0961108c3ffab1fc9e792a">  112</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_node.html#af04dc1e91f0961108c3ffab1fc9e792a">getWalkable</a>(){<span class="keywordflow">return</span> m_walkable;}</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="class_node.html#a9133c5c2e1c994b914535bbbefa33d7c">  119</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_node.html#a9133c5c2e1c994b914535bbbefa33d7c">getG</a>(){<span class="keywordflow">return</span> m_g;}</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="class_node.html#a7b012d2404cc65fb58a9bb3a2dc6d724">  126</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_node.html#a7b012d2404cc65fb58a9bb3a2dc6d724">getF</a>(){<span class="keywordflow">return</span> m_f;}</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="class_node.html#a1108111505a673b217d5e13d6ac36d14">  133</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_node.html#a1108111505a673b217d5e13d6ac36d14">getH</a>(){<span class="keywordflow">return</span> m_h;}</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="class_node.html#a6c026e5d8c28591c6e2bd08c68619fd1">  140</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_node.html#a6c026e5d8c28591c6e2bd08c68619fd1">getX</a>(){<span class="keywordflow">return</span> m_X;}</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="class_node.html#abab48a3f494994d4f456897f3372d3ae">  147</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_node.html#abab48a3f494994d4f456897f3372d3ae">getY</a>(){<span class="keywordflow">return</span> m_Y;}</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;};</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_node_html_a475dd9a2117954dbfa44f8cd196d6008"><div class="ttname"><a href="class_node.html#a475dd9a2117954dbfa44f8cd196d6008">Node::setY</a></div><div class="ttdeci">void setY(int val)</div><div class="ttdoc">Setter de l&amp;#39;attribut m_Y de la classe Node. </div><div class="ttdef"><b>Definition:</b> Node.h:105</div></div>
+<div class="ttc" id="class_node_html_a070cae6ce68d13a77b42686e6ecdef05"><div class="ttname"><a href="class_node.html#a070cae6ce68d13a77b42686e6ecdef05">Node::setF</a></div><div class="ttdeci">void setF(int val)</div><div class="ttdoc">Setter de l&amp;#39;attribut m_F de la classe Node. </div><div class="ttdef"><b>Definition:</b> Node.h:84</div></div>
+<div class="ttc" id="class_node_html_aa0840c3cb5c7159be6d992adecd2097c"><div class="ttname"><a href="class_node.html#aa0840c3cb5c7159be6d992adecd2097c">Node::~Node</a></div><div class="ttdeci">virtual ~Node()</div><div class="ttdoc">Destructeur. </div><div class="ttdef"><b>Definition:</b> Node.cpp:9</div></div>
+<div class="ttc" id="class_node_html_a5f9637d2e5bed720d9ee7a5af8a00c36"><div class="ttname"><a href="class_node.html#a5f9637d2e5bed720d9ee7a5af8a00c36">Node::setH</a></div><div class="ttdeci">void setH(int val)</div><div class="ttdoc">Setter de l&amp;#39;attribut m_h de la classe Node. </div><div class="ttdef"><b>Definition:</b> Node.h:91</div></div>
+<div class="ttc" id="class_node_html_a1108111505a673b217d5e13d6ac36d14"><div class="ttname"><a href="class_node.html#a1108111505a673b217d5e13d6ac36d14">Node::getH</a></div><div class="ttdeci">int getH()</div><div class="ttdoc">Getter de l&amp;#39;attribut m_H de la classe Node. </div><div class="ttdef"><b>Definition:</b> Node.h:133</div></div>
+<div class="ttc" id="class_node_html"><div class="ttname"><a href="class_node.html">Node</a></div><div class="ttdoc">Classe representant un Node Un Node est une &amp;quot;case&amp;quot; de la matrice representant le monde Repast...</div><div class="ttdef"><b>Definition:</b> Node.h:16</div></div>
+<div class="ttc" id="class_node_html_a39cc5b0b6814a6a2f4f0771203f334a1"><div class="ttname"><a href="class_node.html#a39cc5b0b6814a6a2f4f0771203f334a1">Node::setParent</a></div><div class="ttdeci">void setParent(Node *val)</div><div class="ttdoc">Setter de l&amp;#39;attribut Parent de la classe Node. </div><div class="ttdef"><b>Definition:</b> Node.cpp:20</div></div>
+<div class="ttc" id="class_node_html_a9133c5c2e1c994b914535bbbefa33d7c"><div class="ttname"><a href="class_node.html#a9133c5c2e1c994b914535bbbefa33d7c">Node::getG</a></div><div class="ttdeci">int getG()</div><div class="ttdoc">Getter de l&amp;#39;attribut m_G de la classe Node. </div><div class="ttdef"><b>Definition:</b> Node.h:119</div></div>
+<div class="ttc" id="class_node_html_abab48a3f494994d4f456897f3372d3ae"><div class="ttname"><a href="class_node.html#abab48a3f494994d4f456897f3372d3ae">Node::getY</a></div><div class="ttdeci">int getY()</div><div class="ttdoc">Getter de l&amp;#39;attribut m_Y de la classe Node. </div><div class="ttdef"><b>Definition:</b> Node.h:147</div></div>
+<div class="ttc" id="class_node_html_a220a8d64cb0df1cce083ed38c1260615"><div class="ttname"><a href="class_node.html#a220a8d64cb0df1cce083ed38c1260615">Node::getParent</a></div><div class="ttdeci">Node * getParent()</div><div class="ttdoc">Getter de l&amp;#39;attribut m_parent de la classe Node. </div><div class="ttdef"><b>Definition:</b> Node.cpp:21</div></div>
+<div class="ttc" id="class_node_html_a47181f2860b050a0036097d534051cfc"><div class="ttname"><a href="class_node.html#a47181f2860b050a0036097d534051cfc">Node::setG</a></div><div class="ttdeci">void setG(int val)</div><div class="ttdoc">Setter de l&amp;#39;attribut m_G de la classe Node. </div><div class="ttdef"><b>Definition:</b> Node.h:77</div></div>
+<div class="ttc" id="class_node_html_a281acda069a341e04b5e9dbd45c4658e"><div class="ttname"><a href="class_node.html#a281acda069a341e04b5e9dbd45c4658e">Node::setWalkable</a></div><div class="ttdeci">void setWalkable(bool val)</div><div class="ttdoc">Setter de l&amp;#39;attribut m_walkable de la classe Node. </div><div class="ttdef"><b>Definition:</b> Node.h:70</div></div>
+<div class="ttc" id="class_node_html_a6c026e5d8c28591c6e2bd08c68619fd1"><div class="ttname"><a href="class_node.html#a6c026e5d8c28591c6e2bd08c68619fd1">Node::getX</a></div><div class="ttdeci">int getX()</div><div class="ttdoc">Getter de l&amp;#39;attribut m_X de la classe Node. </div><div class="ttdef"><b>Definition:</b> Node.h:140</div></div>
+<div class="ttc" id="class_node_html_a7b012d2404cc65fb58a9bb3a2dc6d724"><div class="ttname"><a href="class_node.html#a7b012d2404cc65fb58a9bb3a2dc6d724">Node::getF</a></div><div class="ttdeci">int getF()</div><div class="ttdoc">Getter de l&amp;#39;attribut m_F de la classe Node. </div><div class="ttdef"><b>Definition:</b> Node.h:126</div></div>
+<div class="ttc" id="class_node_html_accabc02cdc5144636cab8d5079619d13"><div class="ttname"><a href="class_node.html#accabc02cdc5144636cab8d5079619d13">Node::setX</a></div><div class="ttdeci">void setX(int val)</div><div class="ttdoc">Setter de l&amp;#39;attribut m_X de la classe Node. </div><div class="ttdef"><b>Definition:</b> Node.h:98</div></div>
+<div class="ttc" id="class_node_html_aa342abc3125e21fab6c9085aefb9f90f"><div class="ttname"><a href="class_node.html#aa342abc3125e21fab6c9085aefb9f90f">Node::estEgal</a></div><div class="ttdeci">bool estEgal(Node const &amp;b) const </div><div class="ttdoc">Compare deux objets de type Node. </div><div class="ttdef"><b>Definition:</b> Node.cpp:13</div></div>
+<div class="ttc" id="class_node_html_ad7a34779cad45d997bfd6d3d8043c75f"><div class="ttname"><a href="class_node.html#ad7a34779cad45d997bfd6d3d8043c75f">Node::Node</a></div><div class="ttdeci">Node()</div><div class="ttdoc">Constructeur. </div><div class="ttdef"><b>Definition:</b> Node.cpp:3</div></div>
+<div class="ttc" id="class_node_html_af04dc1e91f0961108c3ffab1fc9e792a"><div class="ttname"><a href="class_node.html#af04dc1e91f0961108c3ffab1fc9e792a">Node::getWalkable</a></div><div class="ttdeci">bool getWalkable()</div><div class="ttdoc">Getter de l&amp;#39;attribut m_walkable de la classe Node. </div><div class="ttdef"><b>Definition:</b> Node.h:112</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche 25 Mai 2014 22:27:41 pour Simulation d&#39;evacuation d&#39;immeuble avec systeme multi-agents par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

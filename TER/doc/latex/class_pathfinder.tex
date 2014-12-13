@@ -1,0 +1,109 @@
+\section{Référence de la classe Pathfinder}
+\label{class_pathfinder}\index{Pathfinder@{Pathfinder}}
+
+
+Classe representant une instance de l'algorithme A$\ast$.  
+
+
+
+
+{\ttfamily \#include $<$Path\-Finder.\-h$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Pathfinder} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+std\-::vector$<$ {\bf Node} $\ast$ $>$ {\bf find\-Path} (std\-::vector$<$ std\-::vector$<$ {\bf Node} $\ast$ $>$ $>$ \&graphe, {\bf Node} $\ast$depart, {\bf Node} $\ast$arrive)
+\begin{DoxyCompactList}\small\item\em Application de l'algorithme A$\ast$ sur un objet \doxyref{Graphe}{p.}{class_graphe} dans le but de calculer un chemin du node Depart au node Arrivee. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bf N\-O\-D\-E\-\_\-\-D\-I\-S\-T\-A\-N\-C\-E\-\_\-\-V\-A\-L\-U\-E} = 100
+\item 
+static const int {\bf N\-O\-D\-E\-\_\-\-D\-I\-S\-T\-A\-N\-C\-E\-\_\-\-D\-I\-A\-G\-\_\-\-V\-A\-L\-U\-E} = 140
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Classe representant une instance de l'algorithme A$\ast$. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Pathfinder@{Pathfinder}!Pathfinder@{Pathfinder}}
+\index{Pathfinder@{Pathfinder}!Pathfinder@{Pathfinder}}
+\subsubsection[{Pathfinder}]{\setlength{\rightskip}{0pt plus 5cm}Pathfinder\-::\-Pathfinder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_pathfinder_af562d840858cf2b369fcee51f5069456}
+
+
+Constructeur. 
+
+Constructeur de la classe \doxyref{Pathfinder}{p.}{class_pathfinder} 
+
+\subsection{Documentation des fonctions membres}
+\index{Pathfinder@{Pathfinder}!find\-Path@{find\-Path}}
+\index{find\-Path@{find\-Path}!Pathfinder@{Pathfinder}}
+\subsubsection[{find\-Path}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ {\bf Node} $\ast$ $>$ Pathfinder\-::find\-Path (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ std\-::vector$<$ {\bf Node} $\ast$ $>$ $>$ \&}]{graphe, }
+\item[{{\bf Node} $\ast$}]{depart, }
+\item[{{\bf Node} $\ast$}]{arrive}
+\end{DoxyParamCaption}
+)}\label{class_pathfinder_aee6e72cf2b4a9f86c6aa1139618e2167}
+
+
+Application de l'algorithme A$\ast$ sur un objet \doxyref{Graphe}{p.}{class_graphe} dans le but de calculer un chemin du node Depart au node Arrivee. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em graphe} & \-: Objet de type \doxyref{Graphe}{p.}{class_graphe} \\
+\hline
+{\em depart} & \-: \doxyref{Node}{p.}{class_node} de depart \\
+\hline
+{\em arrivee} & \-: \doxyref{Node}{p.}{class_node} d'arrivee \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+tableau de node representant le chemin du \doxyref{Node}{p.}{class_node} depart au \doxyref{Node}{p.}{class_node} arrivee 
+\end{DoxyReturn}
+
+
+Voici le graphe d'appel pour cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{class_pathfinder_aee6e72cf2b4a9f86c6aa1139618e2167_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pathfinder_aee6e72cf2b4a9f86c6aa1139618e2167_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Documentation des données membres}
+\index{Pathfinder@{Pathfinder}!N\-O\-D\-E\-\_\-\-D\-I\-S\-T\-A\-N\-C\-E\-\_\-\-D\-I\-A\-G\-\_\-\-V\-A\-L\-U\-E@{N\-O\-D\-E\-\_\-\-D\-I\-S\-T\-A\-N\-C\-E\-\_\-\-D\-I\-A\-G\-\_\-\-V\-A\-L\-U\-E}}
+\index{N\-O\-D\-E\-\_\-\-D\-I\-S\-T\-A\-N\-C\-E\-\_\-\-D\-I\-A\-G\-\_\-\-V\-A\-L\-U\-E@{N\-O\-D\-E\-\_\-\-D\-I\-S\-T\-A\-N\-C\-E\-\_\-\-D\-I\-A\-G\-\_\-\-V\-A\-L\-U\-E}!Pathfinder@{Pathfinder}}
+\subsubsection[{N\-O\-D\-E\-\_\-\-D\-I\-S\-T\-A\-N\-C\-E\-\_\-\-D\-I\-A\-G\-\_\-\-V\-A\-L\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}const int Pathfinder\-::\-N\-O\-D\-E\-\_\-\-D\-I\-S\-T\-A\-N\-C\-E\-\_\-\-D\-I\-A\-G\-\_\-\-V\-A\-L\-U\-E = 140\hspace{0.3cm}{\ttfamily [static]}}\label{class_pathfinder_a9fabc665d250a89c2f0af4059d77d8b2}
+cout d'un deplacement dans les cases voisines D\-I\-A\-G\-O\-N\-A\-L\-E\-S \index{Pathfinder@{Pathfinder}!N\-O\-D\-E\-\_\-\-D\-I\-S\-T\-A\-N\-C\-E\-\_\-\-V\-A\-L\-U\-E@{N\-O\-D\-E\-\_\-\-D\-I\-S\-T\-A\-N\-C\-E\-\_\-\-V\-A\-L\-U\-E}}
+\index{N\-O\-D\-E\-\_\-\-D\-I\-S\-T\-A\-N\-C\-E\-\_\-\-V\-A\-L\-U\-E@{N\-O\-D\-E\-\_\-\-D\-I\-S\-T\-A\-N\-C\-E\-\_\-\-V\-A\-L\-U\-E}!Pathfinder@{Pathfinder}}
+\subsubsection[{N\-O\-D\-E\-\_\-\-D\-I\-S\-T\-A\-N\-C\-E\-\_\-\-V\-A\-L\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}const int Pathfinder\-::\-N\-O\-D\-E\-\_\-\-D\-I\-S\-T\-A\-N\-C\-E\-\_\-\-V\-A\-L\-U\-E = 100\hspace{0.3cm}{\ttfamily [static]}}\label{class_pathfinder_a75096e49427cc06e95e82819d949b8e4}
+cout d'un deplacement dans les cases voisines H\-A\-U\-T B\-A\-S G\-A\-U\-C\-H\-E ou D\-R\-O\-I\-T\-E 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+code/include/{\bf Path\-Finder.\-h}\item 
+code/src/Path\-Finder.\-cpp\end{DoxyCompactItemize}

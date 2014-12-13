@@ -1,0 +1,302 @@
+\section{Référence de la classe Fenetre}
+\label{class_fenetre}\index{Fenetre@{Fenetre}}
+
+
+Classe representant une \doxyref{Fenetre}{p.}{class_fenetre} S\-D\-L.  
+
+
+
+
+{\ttfamily \#include $<$fenetre.\-h$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Fenetre} (std\-::string titre, boost\-::mpi\-::communicator $\ast${\bf world}, unsigned int cadran, unsigned int longueur=400, unsigned int hauteur=400)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+virtual {\bf $\sim$\-Fenetre} ()
+\item 
+void {\bfseries main\-\_\-loop} ()\label{class_fenetre_a2e1f40693f1610ec445296665e0504af}
+
+\item 
+void {\bf refresh} (void)
+\begin{DoxyCompactList}\small\item\em rafraichissement de la fenetre \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Longueur} ()
+\begin{DoxyCompactList}\small\item\em Getter de l'attribut m\-\_\-largeur de la classe \doxyref{Fenetre}{p.}{class_fenetre}. \end{DoxyCompactList}\item 
+unsigned int {\bf get\-Hauteur} ()
+\begin{DoxyCompactList}\small\item\em Getter de l'attribut m\-\_\-hauteur de la classe \doxyref{Fenetre}{p.}{class_fenetre}. \end{DoxyCompactList}\item 
+void {\bf dessiner\-Triangle} (int pos\-X, int pos\-Y, double angle, int type)
+\begin{DoxyCompactList}\small\item\em fonction qui dessine un triangle sur la fenetre \end{DoxyCompactList}\item 
+void {\bf dessiner\-Mur} (int pos\-X, int pos\-Y)
+\begin{DoxyCompactList}\small\item\em fonction qui dessine un carré 20x20 pixels (\doxyref{Mur}{p.}{class_mur}) sur la fenetre \end{DoxyCompactList}\item 
+S\-D\-L\-\_\-\-Window $\ast$ {\bf get\-Screen} ()
+\begin{DoxyCompactList}\small\item\em Getter de l'attribut m\-\_\-ecran de la classe \doxyref{Fenetre}{p.}{class_fenetre}. \end{DoxyCompactList}\item 
+S\-D\-L\-\_\-\-G\-L\-Context {\bf get\-G\-L\-Context} ()
+\begin{DoxyCompactList}\small\item\em Getter de l'attribut m\-\_\-context de la classe \doxyref{Fenetre}{p.}{class_fenetre}. \end{DoxyCompactList}\item 
+int {\bf get\-Cadran} ()
+\begin{DoxyCompactList}\small\item\em Getter de l'attribut m\-\_\-cadran de la classe \doxyref{Fenetre}{p.}{class_fenetre}. \end{DoxyCompactList}\item 
+void {\bf clear} (void)\label{class_fenetre_a1ca0cdad76751701230756f891e1c1be}
+
+\begin{DoxyCompactList}\small\item\em fonction qui redessine en blanc la fenetre (effacement) \end{DoxyCompactList}\item 
+void {\bf dormir} (int val)
+\begin{DoxyCompactList}\small\item\em fonction qui endors le processus qui s'occupe de la fenetre \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+boost\-::mpi\-::communicator $\ast$ {\bf world}
+\item 
+unsigned int {\bf m\-\_\-largeur}
+\item 
+unsigned int {\bf m\-\_\-hauteur}
+\item 
+unsigned int {\bf m\-\_\-cadran}
+\item 
+std\-::string {\bf m\-\_\-titre}
+\item 
+S\-D\-L\-\_\-\-Window $\ast$ {\bf m\-\_\-ecran}
+\item 
+S\-D\-L\-\_\-\-G\-L\-Context {\bf m\-\_\-context}
+\item 
+Uint32 {\bf m\-\_\-bg\-\_\-color}
+\item 
+S\-D\-L\-\_\-\-Event {\bf m\-\_\-e}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Classe representant une \doxyref{Fenetre}{p.}{class_fenetre} S\-D\-L. 
+
+La classe est composee des dimensions de la fentre, du titre, du cadran auquel elle appartient, un communicateur avec les autres processus. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Fenetre@{Fenetre}!Fenetre@{Fenetre}}
+\index{Fenetre@{Fenetre}!Fenetre@{Fenetre}}
+\subsubsection[{Fenetre}]{\setlength{\rightskip}{0pt plus 5cm}Fenetre\-::\-Fenetre (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{titre, }
+\item[{boost\-::mpi\-::communicator $\ast$}]{world, }
+\item[{unsigned int}]{cadran, }
+\item[{unsigned int}]{longueur = {\ttfamily 400}, }
+\item[{unsigned int}]{hauteur = {\ttfamily 400}}
+\end{DoxyParamCaption}
+)}\label{class_fenetre_a541961b7302c76d76a2db26ba6d75ecd}
+
+
+Constructeur. 
+
+Default constructor
+
+Constructeur de la classe \doxyref{Fenetre}{p.}{class_fenetre}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em world} & \-: canal de communication avec les autres processus \\
+\hline
+{\em cadran} & \-: numero de cadran du monde dont s'occupe le processus qui contient la fenetre \\
+\hline
+{\em longueur} & \-: longueur de la fenetre en pixels(400 par default) \\
+\hline
+{\em hauteur} & \-: hauteur de la fenetre en pixels(400 par default) \\
+\hline
+\end{DoxyParams}
+\index{Fenetre@{Fenetre}!$\sim$\-Fenetre@{$\sim$\-Fenetre}}
+\index{$\sim$\-Fenetre@{$\sim$\-Fenetre}!Fenetre@{Fenetre}}
+\subsubsection[{$\sim$\-Fenetre}]{\setlength{\rightskip}{0pt plus 5cm}Fenetre\-::$\sim$\-Fenetre (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_fenetre_a4738cb1dcb874908428b66b5ecd794c4}
+Default destructor 
+
+\subsection{Documentation des fonctions membres}
+\index{Fenetre@{Fenetre}!dessiner\-Mur@{dessiner\-Mur}}
+\index{dessiner\-Mur@{dessiner\-Mur}!Fenetre@{Fenetre}}
+\subsubsection[{dessiner\-Mur}]{\setlength{\rightskip}{0pt plus 5cm}void Fenetre\-::dessiner\-Mur (
+\begin{DoxyParamCaption}
+\item[{int}]{pos\-X, }
+\item[{int}]{pos\-Y}
+\end{DoxyParamCaption}
+)}\label{class_fenetre_a7f2786a8441da33363c05fbcd0cdb4af}
+
+
+fonction qui dessine un carré 20x20 pixels (\doxyref{Mur}{p.}{class_mur}) sur la fenetre 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em pos\-X} & \-: position X ou l'on veut dessiner le mur \\
+\hline
+{\em pos\-Y} & \-: position Y ou l'on veut dessiner le mur \\
+\hline
+\end{DoxyParams}
+\index{Fenetre@{Fenetre}!dessiner\-Triangle@{dessiner\-Triangle}}
+\index{dessiner\-Triangle@{dessiner\-Triangle}!Fenetre@{Fenetre}}
+\subsubsection[{dessiner\-Triangle}]{\setlength{\rightskip}{0pt plus 5cm}void Fenetre\-::dessiner\-Triangle (
+\begin{DoxyParamCaption}
+\item[{int}]{pos\-X, }
+\item[{int}]{pos\-Y, }
+\item[{double}]{angle, }
+\item[{int}]{type}
+\end{DoxyParamCaption}
+)}\label{class_fenetre_a13c7ea9a022308e15be7bd3e74c7b30f}
+
+
+fonction qui dessine un triangle sur la fenetre 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em pos\-X} & \-: position X du centre de gravite du triangle a dessiner \\
+\hline
+{\em pos\-Y} & \-: position Y du centre de gravite du triangle a dessiner \\
+\hline
+{\em pos\-X} & \-: valeur de l'angle en degre duquel on doit faire pivoter le triangle (sens trigo) \\
+\hline
+{\em type} & \-: couleur du triangle a dessiner selon le type (A\-D\-U\-L\-T\-E, J\-E\-U\-N\-E , P\-E\-R\-S\-O\-N\-N\-E A\-G\-E\-E ou M\-A\-L\-A\-D\-E) \\
+\hline
+\end{DoxyParams}
+
+
+Voici le graphe d'appel pour cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_fenetre_a13c7ea9a022308e15be7bd3e74c7b30f_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Fenetre@{Fenetre}!dormir@{dormir}}
+\index{dormir@{dormir}!Fenetre@{Fenetre}}
+\subsubsection[{dormir}]{\setlength{\rightskip}{0pt plus 5cm}void Fenetre\-::dormir (
+\begin{DoxyParamCaption}
+\item[{int}]{val}
+\end{DoxyParamCaption}
+)}\label{class_fenetre_a51514f010265cc7fda442f3d6e38e019}
+
+
+fonction qui endors le processus qui s'occupe de la fenetre 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em val} & \-: valeur en millisecondes durant laquelle le processus doit s'endormir \\
+\hline
+\end{DoxyParams}
+\index{Fenetre@{Fenetre}!get\-Cadran@{get\-Cadran}}
+\index{get\-Cadran@{get\-Cadran}!Fenetre@{Fenetre}}
+\subsubsection[{get\-Cadran}]{\setlength{\rightskip}{0pt plus 5cm}int Fenetre\-::get\-Cadran (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_fenetre_ac9b0a5adee0900502417cee80a0d3fc2}
+
+
+Getter de l'attribut m\-\_\-cadran de la classe \doxyref{Fenetre}{p.}{class_fenetre}. 
+
+\begin{DoxyReturn}{Renvoie}
+valeur de l'attribut m\-\_\-cadran de la classe \doxyref{Fenetre}{p.}{class_fenetre} 
+\end{DoxyReturn}
+\index{Fenetre@{Fenetre}!get\-G\-L\-Context@{get\-G\-L\-Context}}
+\index{get\-G\-L\-Context@{get\-G\-L\-Context}!Fenetre@{Fenetre}}
+\subsubsection[{get\-G\-L\-Context}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-G\-L\-Context Fenetre\-::get\-G\-L\-Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_fenetre_aea9e7ae52ee5fd2c27b3328fb86f9ccc}
+
+
+Getter de l'attribut m\-\_\-context de la classe \doxyref{Fenetre}{p.}{class_fenetre}. 
+
+\begin{DoxyReturn}{Renvoie}
+valeur de l'attribut m\-\_\-context de la classe \doxyref{Fenetre}{p.}{class_fenetre} 
+\end{DoxyReturn}
+\index{Fenetre@{Fenetre}!get\-Hauteur@{get\-Hauteur}}
+\index{get\-Hauteur@{get\-Hauteur}!Fenetre@{Fenetre}}
+\subsubsection[{get\-Hauteur}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Fenetre\-::get\-Hauteur (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_fenetre_ae3fe2005d680e693f08d776bd27ef92c}
+
+
+Getter de l'attribut m\-\_\-hauteur de la classe \doxyref{Fenetre}{p.}{class_fenetre}. 
+
+\begin{DoxyReturn}{Renvoie}
+valeur de l'attribut m\-\_\-hauteur de la classe \doxyref{Fenetre}{p.}{class_fenetre} 
+\end{DoxyReturn}
+\index{Fenetre@{Fenetre}!get\-Longueur@{get\-Longueur}}
+\index{get\-Longueur@{get\-Longueur}!Fenetre@{Fenetre}}
+\subsubsection[{get\-Longueur}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Fenetre\-::get\-Longueur (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_fenetre_a0b3faa02287224f074dcd181d8a7ab60}
+
+
+Getter de l'attribut m\-\_\-largeur de la classe \doxyref{Fenetre}{p.}{class_fenetre}. 
+
+Getters and setters
+
+\begin{DoxyReturn}{Renvoie}
+valeur de l'attribut m\-\_\-largeur de la classe \doxyref{Fenetre}{p.}{class_fenetre} 
+\end{DoxyReturn}
+\index{Fenetre@{Fenetre}!get\-Screen@{get\-Screen}}
+\index{get\-Screen@{get\-Screen}!Fenetre@{Fenetre}}
+\subsubsection[{get\-Screen}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Window $\ast$ Fenetre\-::get\-Screen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_fenetre_a25e91de01f1e88c883e2a5e4f77b72e3}
+
+
+Getter de l'attribut m\-\_\-ecran de la classe \doxyref{Fenetre}{p.}{class_fenetre}. 
+
+\begin{DoxyReturn}{Renvoie}
+valeur de l'attribut m\-\_\-ecran de la classe \doxyref{Fenetre}{p.}{class_fenetre} 
+\end{DoxyReturn}
+\index{Fenetre@{Fenetre}!refresh@{refresh}}
+\index{refresh@{refresh}!Fenetre@{Fenetre}}
+\subsubsection[{refresh}]{\setlength{\rightskip}{0pt plus 5cm}void Fenetre\-::refresh (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_fenetre_a13e5aea291576c47d2ef088ce708df80}
+
+
+rafraichissement de la fenetre 
+
+Methode qui efface et redessine la fentre (mise a jour de l'affichage) 
+
+\subsection{Documentation des données membres}
+\index{Fenetre@{Fenetre}!m\-\_\-bg\-\_\-color@{m\-\_\-bg\-\_\-color}}
+\index{m\-\_\-bg\-\_\-color@{m\-\_\-bg\-\_\-color}!Fenetre@{Fenetre}}
+\subsubsection[{m\-\_\-bg\-\_\-color}]{\setlength{\rightskip}{0pt plus 5cm}Uint32 Fenetre\-::m\-\_\-bg\-\_\-color\hspace{0.3cm}{\ttfamily [protected]}}\label{class_fenetre_a0577caa70cbbc72ea151ec1eba2b2a29}
+\doxyref{Couleur}{p.}{class_couleur} d'arriere plan de la fenetre \index{Fenetre@{Fenetre}!m\-\_\-cadran@{m\-\_\-cadran}}
+\index{m\-\_\-cadran@{m\-\_\-cadran}!Fenetre@{Fenetre}}
+\subsubsection[{m\-\_\-cadran}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Fenetre\-::m\-\_\-cadran\hspace{0.3cm}{\ttfamily [protected]}}\label{class_fenetre_a708d917f79791e58b236212be41f4a14}
+cadran duquel s'occupe la fenetre \index{Fenetre@{Fenetre}!m\-\_\-context@{m\-\_\-context}}
+\index{m\-\_\-context@{m\-\_\-context}!Fenetre@{Fenetre}}
+\subsubsection[{m\-\_\-context}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-G\-L\-Context Fenetre\-::m\-\_\-context\hspace{0.3cm}{\ttfamily [protected]}}\label{class_fenetre_a2282055fd9d9a2c5d6ff8d8d211c73f8}
+Contexte de la fenetre S\-D\-L (voir doc S\-D\-L) \index{Fenetre@{Fenetre}!m\-\_\-e@{m\-\_\-e}}
+\index{m\-\_\-e@{m\-\_\-e}!Fenetre@{Fenetre}}
+\subsubsection[{m\-\_\-e}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Event Fenetre\-::m\-\_\-e\hspace{0.3cm}{\ttfamily [protected]}}\label{class_fenetre_ae72eb6882b7aaf9f0696a70b2c0ed741}
+Evenements de la fenetre \index{Fenetre@{Fenetre}!m\-\_\-ecran@{m\-\_\-ecran}}
+\index{m\-\_\-ecran@{m\-\_\-ecran}!Fenetre@{Fenetre}}
+\subsubsection[{m\-\_\-ecran}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Window$\ast$ Fenetre\-::m\-\_\-ecran\hspace{0.3cm}{\ttfamily [protected]}}\label{class_fenetre_a7265b8325c0a09c8b7739c3b1dccee55}
+structure de donnee pour representer une fenetre en S\-D\-L \index{Fenetre@{Fenetre}!m\-\_\-hauteur@{m\-\_\-hauteur}}
+\index{m\-\_\-hauteur@{m\-\_\-hauteur}!Fenetre@{Fenetre}}
+\subsubsection[{m\-\_\-hauteur}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Fenetre\-::m\-\_\-hauteur\hspace{0.3cm}{\ttfamily [protected]}}\label{class_fenetre_a6d76ce7b192ecabb41668d1c6a76dccd}
+hauteur de la fenetre en pixels \index{Fenetre@{Fenetre}!m\-\_\-largeur@{m\-\_\-largeur}}
+\index{m\-\_\-largeur@{m\-\_\-largeur}!Fenetre@{Fenetre}}
+\subsubsection[{m\-\_\-largeur}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Fenetre\-::m\-\_\-largeur\hspace{0.3cm}{\ttfamily [protected]}}\label{class_fenetre_a23ee3848c7e626351b3f21f96da6bf62}
+longueur de la fenetre en pixels \index{Fenetre@{Fenetre}!m\-\_\-titre@{m\-\_\-titre}}
+\index{m\-\_\-titre@{m\-\_\-titre}!Fenetre@{Fenetre}}
+\subsubsection[{m\-\_\-titre}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Fenetre\-::m\-\_\-titre\hspace{0.3cm}{\ttfamily [protected]}}\label{class_fenetre_a7b775013b790c82cee030d6956d4e1d2}
+Titre de la fenetre \index{Fenetre@{Fenetre}!world@{world}}
+\index{world@{world}!Fenetre@{Fenetre}}
+\subsubsection[{world}]{\setlength{\rightskip}{0pt plus 5cm}boost\-::mpi\-::communicator$\ast$ Fenetre\-::world\hspace{0.3cm}{\ttfamily [protected]}}\label{class_fenetre_aaf5939d59b369131da7b5a1c9522f27c}
+canal de communication inter-\/processus 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+code/include/{\bf fenetre.\-h}\item 
+code/src/fenetre.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="fenetre_8h" kind="file">
+    <compoundname>fenetre.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">SDL2/SDL.h</includes>
+    <includedby refid="_humain_8h" local="yes">code/include/Humain.h</includedby>
+    <includedby refid="_mur_8h" local="yes">code/include/Mur.h</includedby>
+    <includedby refid="_t_e_r_observer_8h" local="yes">code/include/TERObserver.h</includedby>
+    <includedby refid="fenetre_8cpp" local="yes">code/src/fenetre.cpp</includedby>
+    <includedby refid="_humain_8cpp" local="yes">code/src/Humain.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">code/src/main.cpp</includedby>
+    <includedby refid="_mur_8cpp" local="yes">code/src/Mur.cpp</includedby>
+    <incdepgraph>
+      <node id="94">
+        <label>string</label>
+      </node>
+      <node id="95">
+        <label>SDL2/SDL.h</label>
+      </node>
+      <node id="93">
+        <label>code/include/fenetre.h</label>
+        <link refid="fenetre.h"/>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="97">
+        <label>code/include/Humain.h</label>
+        <link refid="_humain_8h"/>
+      </node>
+      <node id="99">
+        <label>code/include/TERObserver.h</label>
+        <link refid="_t_e_r_observer_8h"/>
+      </node>
+      <node id="98">
+        <label>code/include/Mur.h</label>
+        <link refid="_mur_8h"/>
+      </node>
+      <node id="96">
+        <label>code/include/fenetre.h</label>
+        <link refid="fenetre.h"/>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_fenetre" prot="public">Fenetre</innerclass>
+    <briefdescription>
+<para>Classe representant une fenetre SDL. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>HRUSTIC EMIR </para></simplesect>
+<simplesect kind="version"><para>0.1 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>FENETRE_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FENETRE_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SDL2/SDL.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_fenetre" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_fenetre" kindref="compound">Fenetre</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_fenetre_1a541961b7302c76d76a2db26ba6d75ecd" kindref="member">Fenetre</ref>(std::string<sp/>titre,boost::mpi::communicator<sp/>*<ref refid="class_fenetre_1aaf5939d59b369131da7b5a1c9522f27c" kindref="member">world</ref>,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cadran,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>longueur<sp/>=<sp/>400,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hauteur<sp/>=<sp/>400);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_fenetre_1a4738cb1dcb874908428b66b5ecd794c4" kindref="member">~Fenetre</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>main_loop();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_fenetre_1a13e5aea291576c47d2ef088ce708df80" kindref="member">refresh</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_fenetre_1a0b3faa02287224f074dcd181d8a7ab60" kindref="member">getLongueur</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_fenetre_1ae3fe2005d680e693f08d776bd27ef92c" kindref="member">getHauteur</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_fenetre_1a13c7ea9a022308e15be7bd3e74c7b30f" kindref="member">dessinerTriangle</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posX,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posY,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>angle,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_fenetre_1a7f2786a8441da33363c05fbcd0cdb4af" kindref="member">dessinerMur</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posX,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posY);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Window*<sp/><ref refid="class_fenetre_1a25e91de01f1e88c883e2a5e4f77b72e3" kindref="member">getScreen</ref>();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_GLContext<sp/><ref refid="class_fenetre_1aea9e7ae52ee5fd2c27b3328fb86f9ccc" kindref="member">getGLContext</ref>();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_fenetre_1ac9b0a5adee0900502417cee80a0d3fc2" kindref="member">getCadran</ref>();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_fenetre_1a1ca0cdad76751701230756f891e1c1be" kindref="member">clear</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_fenetre_1a51514f010265cc7fda442f3d6e38e019" kindref="member">dormir</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="121" refid="class_fenetre_1aaf5939d59b369131da7b5a1c9522f27c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::mpi::communicator<sp/>*<ref refid="class_fenetre_1aaf5939d59b369131da7b5a1c9522f27c" kindref="member">world</ref>;<sp/></highlight></codeline>
+<codeline lineno="122" refid="class_fenetre_1a23ee3848c7e626351b3f21f96da6bf62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_fenetre_1a23ee3848c7e626351b3f21f96da6bf62" kindref="member">m_largeur</ref>;<sp/></highlight></codeline>
+<codeline lineno="123" refid="class_fenetre_1a6d76ce7b192ecabb41668d1c6a76dccd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_fenetre_1a6d76ce7b192ecabb41668d1c6a76dccd" kindref="member">m_hauteur</ref>;<sp/></highlight></codeline>
+<codeline lineno="124" refid="class_fenetre_1a708d917f79791e58b236212be41f4a14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_fenetre_1a708d917f79791e58b236212be41f4a14" kindref="member">m_cadran</ref>;<sp/></highlight></codeline>
+<codeline lineno="125" refid="class_fenetre_1a7b775013b790c82cee030d6956d4e1d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_fenetre_1a7b775013b790c82cee030d6956d4e1d2" kindref="member">m_titre</ref>;<sp/></highlight></codeline>
+<codeline lineno="126" refid="class_fenetre_1a7265b8325c0a09c8b7739c3b1dccee55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Window<sp/>*<ref refid="class_fenetre_1a7265b8325c0a09c8b7739c3b1dccee55" kindref="member">m_ecran</ref>;<sp/></highlight></codeline>
+<codeline lineno="127" refid="class_fenetre_1a2282055fd9d9a2c5d6ff8d8d211c73f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_GLContext<sp/><ref refid="class_fenetre_1a2282055fd9d9a2c5d6ff8d8d211c73f8" kindref="member">m_context</ref>;<sp/></highlight></codeline>
+<codeline lineno="128" refid="class_fenetre_1a0577caa70cbbc72ea151ec1eba2b2a29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Uint32<sp/><ref refid="class_fenetre_1a0577caa70cbbc72ea151ec1eba2b2a29" kindref="member">m_bg_color</ref>;<sp/></highlight></codeline>
+<codeline lineno="129" refid="class_fenetre_1ae72eb6882b7aaf9f0696a70b2c0ed741" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Event<sp/><ref refid="class_fenetre_1ae72eb6882b7aaf9f0696a70b2c0ed741" kindref="member">m_e</ref>;<sp/></highlight></codeline>
+<codeline lineno="130"><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>FENETRE_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/emip/git/TER/TESTA/code/include/fenetre.h"/>
+  </compounddef>
+</doxygen>

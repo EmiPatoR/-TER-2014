@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_mur" kind="class" prot="public">
+    <compoundname>Mur</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Turtle</basecompoundref>
+    <includes refid="_mur_8h" local="no">Mur.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mur_1a82c0c9f5f75453e37c2972aae0f93eb4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mur::Mur</definition>
+        <argsstring>(repast::AgentId id, repast::relogo::Observer *obs)</argsstring>
+        <name>Mur</name>
+        <param>
+          <type>repast::AgentId</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>repast::relogo::Observer *</type>
+          <declname>obs</declname>
+        </param>
+        <briefdescription>
+<para>Constructeur. </para>        </briefdescription>
+        <detaileddescription>
+<para>Constructeur de la classe <ref refid="class_mur" kindref="compound">Mur</ref></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Id de l&apos;agent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointeur vers l&apos;Observer qui gere les agents </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Mur.h" line="33" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Mur.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mur_1a3e715ac0818a44458fa461287dd73796" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mur::Mur</definition>
+        <argsstring>(repast::AgentId id, repast::relogo::Observer *obs, const AgentPackage &amp;package)</argsstring>
+        <name>Mur</name>
+        <param>
+          <type>repast::AgentId</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>repast::relogo::Observer *</type>
+          <declname>obs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_agent_package" kindref="compound">AgentPackage</ref> &amp;</type>
+          <declname>package</declname>
+        </param>
+        <briefdescription>
+<para>Constructeur pour le transfert d&apos;agents (ici inutile car les murs ne se deplacent pas) </para>        </briefdescription>
+        <detaileddescription>
+<para>Constructeur de la classe <ref refid="class_mur" kindref="compound">Mur</ref></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Id de l&apos;agent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointeur vers l&apos;Observer qui gere les agents </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>package</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: archive serialisee qui contient toutes les donnees necessaire pour creer un agent. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Mur.h" line="43" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Mur.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mur_1aa5655c3522b0a40f520666f7ca895f3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Mur::~Mur</definition>
+        <argsstring>()</argsstring>
+        <name>~Mur</name>
+        <briefdescription>
+<para>Destructeur. </para>        </briefdescription>
+        <detaileddescription>
+<para>Destructeur de la classe <ref refid="class_humain" kindref="compound">Humain</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Mur.h" line="50" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Mur.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Classe representant un <ref refid="class_mur" kindref="compound">Mur</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="41">
+        <label>Turtle</label>
+      </node>
+      <node id="40">
+        <label>Mur</label>
+        <link refid="class_mur"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="43">
+        <label>Turtle</label>
+      </node>
+      <node id="42">
+        <label>Mur</label>
+        <link refid="class_mur"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/emip/git/TER/TESTA/code/include/Mur.h" line="20" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Mur.h" bodystart="20" bodyend="51"/>
+    <listofallmembers>
+      <member refid="class_mur_1a82c0c9f5f75453e37c2972aae0f93eb4" prot="public" virt="non-virtual"><scope>Mur</scope><name>Mur</name></member>
+      <member refid="class_mur_1a3e715ac0818a44458fa461287dd73796" prot="public" virt="non-virtual"><scope>Mur</scope><name>Mur</name></member>
+      <member refid="class_mur_1aa5655c3522b0a40f520666f7ca895f3d" prot="public" virt="virtual"><scope>Mur</scope><name>~Mur</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

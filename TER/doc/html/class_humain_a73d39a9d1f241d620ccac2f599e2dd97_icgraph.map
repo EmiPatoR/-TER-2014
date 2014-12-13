@@ -1,0 +1,4 @@
+<map id="Humain::getAngle" name="Humain::getAngle">
+<area shape="rect" id="node2" href="$class_t_e_r_observer.html#a9f04020109fb77d6e704546c7060fff3" title="Fonction heritee qui est appelee a l&#39;initialisation de l&#39;objet Observer. " alt="" coords="207,5,350,32"/>
+<area shape="rect" id="node3" href="$class_t_e_r_observer.html#a7b97c7e2c7251d65d946c9ced3c54bcf" title="Fonction qui dessine le decor dans la Fenetre SDL. " alt="" coords="181,56,376,83"/>
+</map>

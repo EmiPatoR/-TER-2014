@@ -1,0 +1,471 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_fenetre" kind="class" prot="public">
+    <compoundname>Fenetre</compoundname>
+    <includes refid="fenetre_8h" local="no">fenetre.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_fenetre_1aaf5939d59b369131da7b5a1c9522f27c" prot="protected" static="no" mutable="no">
+        <type>boost::mpi::communicator *</type>
+        <definition>boost::mpi::communicator* Fenetre::world</definition>
+        <argsstring></argsstring>
+        <name>world</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>canal de communication inter-processus </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/fenetre.h" line="121" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/fenetre.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fenetre_1a23ee3848c7e626351b3f21f96da6bf62" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Fenetre::m_largeur</definition>
+        <argsstring></argsstring>
+        <name>m_largeur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>longueur de la fenetre en pixels </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/fenetre.h" line="122" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/fenetre.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fenetre_1a6d76ce7b192ecabb41668d1c6a76dccd" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Fenetre::m_hauteur</definition>
+        <argsstring></argsstring>
+        <name>m_hauteur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>hauteur de la fenetre en pixels </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/fenetre.h" line="123" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/fenetre.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fenetre_1a708d917f79791e58b236212be41f4a14" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Fenetre::m_cadran</definition>
+        <argsstring></argsstring>
+        <name>m_cadran</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cadran duquel s&apos;occupe la fenetre </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/fenetre.h" line="124" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/fenetre.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fenetre_1a7b775013b790c82cee030d6956d4e1d2" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Fenetre::m_titre</definition>
+        <argsstring></argsstring>
+        <name>m_titre</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Titre de la fenetre </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/fenetre.h" line="125" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/fenetre.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fenetre_1a7265b8325c0a09c8b7739c3b1dccee55" prot="protected" static="no" mutable="no">
+        <type>SDL_Window *</type>
+        <definition>SDL_Window* Fenetre::m_ecran</definition>
+        <argsstring></argsstring>
+        <name>m_ecran</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>structure de donnee pour representer une fenetre en SDL </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/fenetre.h" line="126" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/fenetre.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fenetre_1a2282055fd9d9a2c5d6ff8d8d211c73f8" prot="protected" static="no" mutable="no">
+        <type>SDL_GLContext</type>
+        <definition>SDL_GLContext Fenetre::m_context</definition>
+        <argsstring></argsstring>
+        <name>m_context</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Contexte de la fenetre SDL (voir doc SDL) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/fenetre.h" line="127" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/fenetre.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fenetre_1a0577caa70cbbc72ea151ec1eba2b2a29" prot="protected" static="no" mutable="no">
+        <type>Uint32</type>
+        <definition>Uint32 Fenetre::m_bg_color</definition>
+        <argsstring></argsstring>
+        <name>m_bg_color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_couleur" kindref="compound">Couleur</ref> d&apos;arriere plan de la fenetre </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/fenetre.h" line="128" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/fenetre.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fenetre_1ae72eb6882b7aaf9f0696a70b2c0ed741" prot="protected" static="no" mutable="no">
+        <type>SDL_Event</type>
+        <definition>SDL_Event Fenetre::m_e</definition>
+        <argsstring></argsstring>
+        <name>m_e</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Evenements de la fenetre </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/fenetre.h" line="129" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/fenetre.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_fenetre_1a541961b7302c76d76a2db26ba6d75ecd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Fenetre::Fenetre</definition>
+        <argsstring>(std::string titre, boost::mpi::communicator *world, unsigned int cadran, unsigned int longueur=400, unsigned int hauteur=400)</argsstring>
+        <name>Fenetre</name>
+        <param>
+          <type>std::string</type>
+          <declname>titre</declname>
+        </param>
+        <param>
+          <type>boost::mpi::communicator *</type>
+          <declname>world</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>cadran</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>longueur</declname>
+          <defval>400</defval>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>hauteur</declname>
+          <defval>400</defval>
+        </param>
+        <briefdescription>
+<para>Constructeur. </para>        </briefdescription>
+        <detaileddescription>
+<para>Default constructor</para><para>Constructeur de la classe <ref refid="class_fenetre" kindref="compound">Fenetre</ref></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>world</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: canal de communication avec les autres processus </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cadran</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: numero de cadran du monde dont s&apos;occupe le processus qui contient la fenetre </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>longueur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: longueur de la fenetre en pixels(400 par default) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hauteur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: hauteur de la fenetre en pixels(400 par default) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/fenetre.h" line="34" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/fenetre.cpp" bodystart="20" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fenetre_1a4738cb1dcb874908428b66b5ecd794c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Fenetre::~Fenetre</definition>
+        <argsstring>()</argsstring>
+        <name>~Fenetre</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/fenetre.h" line="37" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/fenetre.cpp" bodystart="87" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fenetre_1a2e1f40693f1610ec445296665e0504af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fenetre::main_loop</definition>
+        <argsstring>()</argsstring>
+        <name>main_loop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/fenetre.h" line="39" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/fenetre.cpp" bodystart="95" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fenetre_1a13e5aea291576c47d2ef088ce708df80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fenetre::refresh</definition>
+        <argsstring>(void)</argsstring>
+        <name>refresh</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>rafraichissement de la fenetre </para>        </briefdescription>
+        <detaileddescription>
+<para>Methode qui efface et redessine la fentre (mise a jour de l&apos;affichage) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/fenetre.h" line="47" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/fenetre.cpp" bodystart="166" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fenetre_1a0b3faa02287224f074dcd181d8a7ab60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Fenetre::getLongueur</definition>
+        <argsstring>()</argsstring>
+        <name>getLongueur</name>
+        <briefdescription>
+<para>Getter de l&apos;attribut m_largeur de la classe <ref refid="class_fenetre" kindref="compound">Fenetre</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>Getters and setters</para><para><simplesect kind="return"><para>valeur de l&apos;attribut m_largeur de la classe <ref refid="class_fenetre" kindref="compound">Fenetre</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/fenetre.h" line="58" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/fenetre.cpp" bodystart="197" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fenetre_1ae3fe2005d680e693f08d776bd27ef92c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Fenetre::getHauteur</definition>
+        <argsstring>()</argsstring>
+        <name>getHauteur</name>
+        <briefdescription>
+<para>Getter de l&apos;attribut m_hauteur de la classe <ref refid="class_fenetre" kindref="compound">Fenetre</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>valeur de l&apos;attribut m_hauteur de la classe <ref refid="class_fenetre" kindref="compound">Fenetre</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/fenetre.h" line="66" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/fenetre.cpp" bodystart="198" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fenetre_1a13c7ea9a022308e15be7bd3e74c7b30f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fenetre::dessinerTriangle</definition>
+        <argsstring>(int posX, int posY, double angle, int type)</argsstring>
+        <name>dessinerTriangle</name>
+        <param>
+          <type>int</type>
+          <declname>posX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>posY</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>fonction qui dessine un triangle sur la fenetre </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>posX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: position X du centre de gravite du triangle a dessiner </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>posY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: position Y du centre de gravite du triangle a dessiner </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>posX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: valeur de l&apos;angle en degre duquel on doit faire pivoter le triangle (sens trigo) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: couleur du triangle a dessiner selon le type (ADULTE, JEUNE , PERSONNE AGEE ou MALADE) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/fenetre.h" line="75" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/fenetre.cpp" bodystart="122" bodyend="164"/>
+        <references refid="class_couleur_1a5180881bc65a09404e3574041039c71b" compoundref="couleur_8cpp" startline="24" endline="24">Couleur::getR</references>
+        <references refid="class_couleur_1a93a7af80f901c100e59eca533f4be51c" compoundref="couleur_8cpp" startline="25" endline="25">Couleur::getG</references>
+        <references refid="class_couleur_1ab023b75cf9580d1f3071f8426030add7" compoundref="couleur_8cpp" startline="26" endline="26">Couleur::getB</references>
+      </memberdef>
+      <memberdef kind="function" id="class_fenetre_1a7f2786a8441da33363c05fbcd0cdb4af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fenetre::dessinerMur</definition>
+        <argsstring>(int posX, int posY)</argsstring>
+        <name>dessinerMur</name>
+        <param>
+          <type>int</type>
+          <declname>posX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>posY</declname>
+        </param>
+        <briefdescription>
+<para>fonction qui dessine un carré 20x20 pixels (<ref refid="class_mur" kindref="compound">Mur</ref>) sur la fenetre </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>posX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: position X ou l&apos;on veut dessiner le mur </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>posY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: position Y ou l&apos;on veut dessiner le mur </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/fenetre.h" line="82" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/fenetre.cpp" bodystart="176" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fenetre_1a25e91de01f1e88c883e2a5e4f77b72e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SDL_Window *</type>
+        <definition>SDL_Window * Fenetre::getScreen</definition>
+        <argsstring>()</argsstring>
+        <name>getScreen</name>
+        <briefdescription>
+<para>Getter de l&apos;attribut m_ecran de la classe <ref refid="class_fenetre" kindref="compound">Fenetre</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>valeur de l&apos;attribut m_ecran de la classe <ref refid="class_fenetre" kindref="compound">Fenetre</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/fenetre.h" line="90" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/fenetre.cpp" bodystart="199" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fenetre_1aea9e7ae52ee5fd2c27b3328fb86f9ccc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SDL_GLContext</type>
+        <definition>SDL_GLContext Fenetre::getGLContext</definition>
+        <argsstring>()</argsstring>
+        <name>getGLContext</name>
+        <briefdescription>
+<para>Getter de l&apos;attribut m_context de la classe <ref refid="class_fenetre" kindref="compound">Fenetre</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>valeur de l&apos;attribut m_context de la classe <ref refid="class_fenetre" kindref="compound">Fenetre</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/fenetre.h" line="98" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/fenetre.cpp" bodystart="200" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fenetre_1ac9b0a5adee0900502417cee80a0d3fc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Fenetre::getCadran</definition>
+        <argsstring>()</argsstring>
+        <name>getCadran</name>
+        <briefdescription>
+<para>Getter de l&apos;attribut m_cadran de la classe <ref refid="class_fenetre" kindref="compound">Fenetre</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>valeur de l&apos;attribut m_cadran de la classe <ref refid="class_fenetre" kindref="compound">Fenetre</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/fenetre.h" line="105" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/fenetre.cpp" bodystart="201" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fenetre_1a1ca0cdad76751701230756f891e1c1be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fenetre::clear</definition>
+        <argsstring>(void)</argsstring>
+        <name>clear</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>fonction qui redessine en blanc la fenetre (effacement) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/fenetre.h" line="112" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/fenetre.cpp" bodystart="171" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fenetre_1a51514f010265cc7fda442f3d6e38e019" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fenetre::dormir</definition>
+        <argsstring>(int val)</argsstring>
+        <name>dormir</name>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>fonction qui endors le processus qui s&apos;occupe de la fenetre </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: valeur en millisecondes durant laquelle le processus doit s&apos;endormir </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/fenetre.h" line="119" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/fenetre.cpp" bodystart="115" bodyend="120"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Classe representant une <ref refid="class_fenetre" kindref="compound">Fenetre</ref> SDL. </para>    </briefdescription>
+    <detaileddescription>
+<para>La classe est composee des dimensions de la fentre, du titre, du cadran auquel elle appartient, un communicateur avec les autres processus. </para>    </detaileddescription>
+    <location file="/home/emip/git/TER/TESTA/code/include/fenetre.h" line="21" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/fenetre.h" bodystart="20" bodyend="132"/>
+    <listofallmembers>
+      <member refid="class_fenetre_1a1ca0cdad76751701230756f891e1c1be" prot="public" virt="non-virtual"><scope>Fenetre</scope><name>clear</name></member>
+      <member refid="class_fenetre_1a7f2786a8441da33363c05fbcd0cdb4af" prot="public" virt="non-virtual"><scope>Fenetre</scope><name>dessinerMur</name></member>
+      <member refid="class_fenetre_1a13c7ea9a022308e15be7bd3e74c7b30f" prot="public" virt="non-virtual"><scope>Fenetre</scope><name>dessinerTriangle</name></member>
+      <member refid="class_fenetre_1a51514f010265cc7fda442f3d6e38e019" prot="public" virt="non-virtual"><scope>Fenetre</scope><name>dormir</name></member>
+      <member refid="class_fenetre_1a541961b7302c76d76a2db26ba6d75ecd" prot="public" virt="non-virtual"><scope>Fenetre</scope><name>Fenetre</name></member>
+      <member refid="class_fenetre_1ac9b0a5adee0900502417cee80a0d3fc2" prot="public" virt="non-virtual"><scope>Fenetre</scope><name>getCadran</name></member>
+      <member refid="class_fenetre_1aea9e7ae52ee5fd2c27b3328fb86f9ccc" prot="public" virt="non-virtual"><scope>Fenetre</scope><name>getGLContext</name></member>
+      <member refid="class_fenetre_1ae3fe2005d680e693f08d776bd27ef92c" prot="public" virt="non-virtual"><scope>Fenetre</scope><name>getHauteur</name></member>
+      <member refid="class_fenetre_1a0b3faa02287224f074dcd181d8a7ab60" prot="public" virt="non-virtual"><scope>Fenetre</scope><name>getLongueur</name></member>
+      <member refid="class_fenetre_1a25e91de01f1e88c883e2a5e4f77b72e3" prot="public" virt="non-virtual"><scope>Fenetre</scope><name>getScreen</name></member>
+      <member refid="class_fenetre_1a0577caa70cbbc72ea151ec1eba2b2a29" prot="protected" virt="non-virtual"><scope>Fenetre</scope><name>m_bg_color</name></member>
+      <member refid="class_fenetre_1a708d917f79791e58b236212be41f4a14" prot="protected" virt="non-virtual"><scope>Fenetre</scope><name>m_cadran</name></member>
+      <member refid="class_fenetre_1a2282055fd9d9a2c5d6ff8d8d211c73f8" prot="protected" virt="non-virtual"><scope>Fenetre</scope><name>m_context</name></member>
+      <member refid="class_fenetre_1ae72eb6882b7aaf9f0696a70b2c0ed741" prot="protected" virt="non-virtual"><scope>Fenetre</scope><name>m_e</name></member>
+      <member refid="class_fenetre_1a7265b8325c0a09c8b7739c3b1dccee55" prot="protected" virt="non-virtual"><scope>Fenetre</scope><name>m_ecran</name></member>
+      <member refid="class_fenetre_1a6d76ce7b192ecabb41668d1c6a76dccd" prot="protected" virt="non-virtual"><scope>Fenetre</scope><name>m_hauteur</name></member>
+      <member refid="class_fenetre_1a23ee3848c7e626351b3f21f96da6bf62" prot="protected" virt="non-virtual"><scope>Fenetre</scope><name>m_largeur</name></member>
+      <member refid="class_fenetre_1a7b775013b790c82cee030d6956d4e1d2" prot="protected" virt="non-virtual"><scope>Fenetre</scope><name>m_titre</name></member>
+      <member refid="class_fenetre_1a2e1f40693f1610ec445296665e0504af" prot="public" virt="non-virtual"><scope>Fenetre</scope><name>main_loop</name></member>
+      <member refid="class_fenetre_1a13e5aea291576c47d2ef088ce708df80" prot="public" virt="non-virtual"><scope>Fenetre</scope><name>refresh</name></member>
+      <member refid="class_fenetre_1aaf5939d59b369131da7b5a1c9522f27c" prot="protected" virt="non-virtual"><scope>Fenetre</scope><name>world</name></member>
+      <member refid="class_fenetre_1a4738cb1dcb874908428b66b5ecd794c4" prot="public" virt="virtual"><scope>Fenetre</scope><name>~Fenetre</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

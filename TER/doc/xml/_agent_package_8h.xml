@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="_agent_package_8h" kind="file">
+    <compoundname>AgentPackage.h</compoundname>
+    <includes local="yes">repast_hpc/AgentId.h</includes>
+    <includes local="yes">boost/serialization/vector.hpp</includes>
+    <includedby refid="_humain_8h" local="yes">code/include/Humain.h</includedby>
+    <includedby refid="_mur_8h" local="yes">code/include/Mur.h</includedby>
+    <includedby refid="_t_e_r_observer_8h" local="yes">code/include/TERObserver.h</includedby>
+    <incdepgraph>
+      <node id="81">
+        <label>boost/serialization/vector.hpp</label>
+      </node>
+      <node id="80">
+        <label>repast_hpc/AgentId.h</label>
+      </node>
+      <node id="79">
+        <label>code/include/AgentPackage.h</label>
+        <link refid="AgentPackage.h"/>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="83">
+        <label>code/include/Humain.h</label>
+        <link refid="_humain_8h"/>
+      </node>
+      <node id="82">
+        <label>code/include/AgentPackage.h</label>
+        <link refid="AgentPackage.h"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>code/include/TERObserver.h</label>
+        <link refid="_t_e_r_observer_8h"/>
+      </node>
+      <node id="84">
+        <label>code/include/Mur.h</label>
+        <link refid="_mur_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_agent_package" prot="public">AgentPackage</innerclass>
+    <briefdescription>
+<para>Classe representant une archive serialisee. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>HRUSTIC EMIR </para></simplesect>
+<simplesect kind="version"><para>0.1 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>AGENTPACKAGE_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AGENTPACKAGE_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#include<sp/>&quot;repast_hpc/AgentId.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;boost/serialization/vector.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="struct_agent_package" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_agent_package" kindref="compound">AgentPackage</ref><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Archive&gt;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>serialize(Archive&amp;<sp/>ar,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version)<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ar<sp/>&amp;<sp/><ref refid="struct_agent_package_1acb97295bf92e52e7791297ccfe00a9f0" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ar<sp/>&amp;<sp/><ref refid="struct_agent_package_1a424b83e665a649a53251684d53b7f6ec" kindref="member">proc</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ar<sp/>&amp;<sp/><ref refid="struct_agent_package_1a47cb43c3eb16f7ab9fed25c310ea1f7a" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ar<sp/>&amp;<sp/><ref refid="struct_agent_package_1acce31a89aa42cc20ea8e346dabf789d9" kindref="member">currentProc</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ar<sp/>&amp;<sp/><ref refid="struct_agent_package_1a7023c0492848b76c886feed44c97dbbe" kindref="member">cheminX</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ar<sp/>&amp;<sp/><ref refid="struct_agent_package_1aa4d44851a12b4a5cbb965999c9f325cd" kindref="member">cheminY</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ar<sp/>&amp;<sp/><ref refid="struct_agent_package_1abf854b3cfca5add73170fdc862b8b477" kindref="member">etape</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ar<sp/>&amp;<sp/><ref refid="struct_agent_package_1ac2a45d712ab4e8befb526865a12d67f3" kindref="member">typePersonne</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="struct_agent_package_1acb97295bf92e52e7791297ccfe00a9f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_agent_package_1acb97295bf92e52e7791297ccfe00a9f0" kindref="member">id</ref>;<sp/></highlight></codeline>
+<codeline lineno="35" refid="struct_agent_package_1a424b83e665a649a53251684d53b7f6ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_agent_package_1a424b83e665a649a53251684d53b7f6ec" kindref="member">proc</ref>;<sp/></highlight></codeline>
+<codeline lineno="36" refid="struct_agent_package_1a47cb43c3eb16f7ab9fed25c310ea1f7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_agent_package_1a47cb43c3eb16f7ab9fed25c310ea1f7a" kindref="member">type</ref>;<sp/></highlight></codeline>
+<codeline lineno="37" refid="struct_agent_package_1acce31a89aa42cc20ea8e346dabf789d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_agent_package_1acce31a89aa42cc20ea8e346dabf789d9" kindref="member">currentProc</ref>;<sp/></highlight></codeline>
+<codeline lineno="38" refid="struct_agent_package_1a7023c0492848b76c886feed44c97dbbe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="struct_agent_package_1a7023c0492848b76c886feed44c97dbbe" kindref="member">cheminX</ref>;<sp/></highlight></codeline>
+<codeline lineno="39" refid="struct_agent_package_1aa4d44851a12b4a5cbb965999c9f325cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="struct_agent_package_1aa4d44851a12b4a5cbb965999c9f325cd" kindref="member">cheminY</ref>;<sp/></highlight></codeline>
+<codeline lineno="40" refid="struct_agent_package_1abf854b3cfca5add73170fdc862b8b477" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_agent_package_1abf854b3cfca5add73170fdc862b8b477" kindref="member">etape</ref>;<sp/></highlight></codeline>
+<codeline lineno="41" refid="struct_agent_package_1ac2a45d712ab4e8befb526865a12d67f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_agent_package_1ac2a45d712ab4e8befb526865a12d67f3" kindref="member">typePersonne</ref>;<sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>repast::AgentId<sp/>getId()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>repast::AgentId(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="struct_agent_package_1a424b83e665a649a53251684d53b7f6ec" kindref="member">proc</ref>,<sp/><ref refid="struct_agent_package_1a47cb43c3eb16f7ab9fed25c310ea1f7a" kindref="member">type</ref>,<sp/><ref refid="struct_agent_package_1acce31a89aa42cc20ea8e346dabf789d9" kindref="member">currentProc</ref>);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AGENTCONTENT_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/emip/git/TER/TESTA/code/include/AgentPackage.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,20 @@
+#random.seed = 1284067381
+stop.at = 250
+
+#simulation options
+simulation.diff_age = 1
+
+# world definition props
+level.filename = ./data/data0.dat
+min.x = -20
+min.y = -20
+max.x = 19
+max.y = 19 
+grid.buffer = 2
+
+#non.toroidal = 1 #laisser cette ligne commentée sinon bug de repast -> segfault
+
+# these must multiply to total number of processes
+proc.per.x = 2
+proc.per.y = 2
+

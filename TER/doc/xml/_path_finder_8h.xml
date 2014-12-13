@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="_path_finder_8h" kind="file">
+    <compoundname>PathFinder.h</compoundname>
+    <includes refid="_node_8h" local="yes">Node.h</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="_graphe_8h" local="yes">code/include/Graphe.h</includedby>
+    <includedby refid="_graphe_8cpp" local="yes">code/src/Graphe.cpp</includedby>
+    <includedby refid="_path_finder_8cpp" local="yes">code/src/PathFinder.cpp</includedby>
+    <incdepgraph>
+      <node id="134">
+        <label>code/include/PathFinder.h</label>
+        <link refid="PathFinder.h"/>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+      </node>
+      <node id="136">
+        <label>vector</label>
+      </node>
+      <node id="135">
+        <label>Node.h</label>
+        <link refid="_node_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="137">
+        <label>code/include/PathFinder.h</label>
+        <link refid="PathFinder.h"/>
+        <childnode refid="138" relation="include">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>code/include/Graphe.h</label>
+        <link refid="_graphe_8h"/>
+        <childnode refid="139" relation="include">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>code/include/TERObserver.h</label>
+        <link refid="_t_e_r_observer_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_pathfinder" prot="public">Pathfinder</innerclass>
+    <briefdescription>
+<para>Classe representant une instance de l&apos;algorithme A*. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>HRUSTIC EMIR </para></simplesect>
+<simplesect kind="version"><para>0.1 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>PATH_FINDER_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PATH_FINDER_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_node_8h" kindref="compound">Node.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_pathfinder" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_pathfinder" kindref="compound">Pathfinder</ref>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Node*&gt;<sp/>m_openList;<sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Node*&gt;<sp/>m_closeList;<sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_node" kindref="compound">Node</ref>*<sp/>getCurrentNode();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>removeFromOpenList(<ref refid="class_node" kindref="compound">Node</ref>*<sp/>val);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>removeFromCloseList(<ref refid="class_node" kindref="compound">Node</ref>*<sp/>val);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addToCloseList(<ref refid="class_node" kindref="compound">Node</ref>*<sp/>val);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addToOpenList(<ref refid="class_node" kindref="compound">Node</ref>*<sp/>val);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isOnOpenList(<ref refid="class_node" kindref="compound">Node</ref>*<sp/>val);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isOnCloseList(<ref refid="class_node" kindref="compound">Node</ref>*<sp/>val);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Node*&gt;<sp/>getNeighbors(<ref refid="class_node" kindref="compound">Node</ref>*<sp/>val,<sp/>std::vector<sp/>&lt;<sp/>std::vector&lt;<sp/>Node*&gt;<sp/>&gt;<sp/>&amp;graphe);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="76" refid="class_pathfinder_1a75096e49427cc06e95e82819d949b8e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_pathfinder_1a75096e49427cc06e95e82819d949b8e4" kindref="member">NODE_DISTANCE_VALUE</ref><sp/>=<sp/>100;<sp/></highlight></codeline>
+<codeline lineno="77" refid="class_pathfinder_1a9fabc665d250a89c2f0af4059d77d8b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_pathfinder_1a9fabc665d250a89c2f0af4059d77d8b2" kindref="member">NODE_DISTANCE_DIAG_VALUE</ref><sp/>=<sp/>140;<sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pathfinder_1af562d840858cf2b369fcee51f5069456" kindref="member">Pathfinder</ref>();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Node*&gt;<sp/><ref refid="class_pathfinder_1aee6e72cf2b4a9f86c6aa1139618e2167" kindref="member">findPath</ref>(<sp/>std::vector&lt;<sp/>std::vector&lt;<sp/>Node*&gt;<sp/>&gt;<sp/>&amp;graphe,<sp/><ref refid="class_node" kindref="compound">Node</ref>*<sp/>depart,<sp/><ref refid="class_node" kindref="compound">Node</ref>*<sp/>arrive<sp/>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/emip/git/TER/TESTA/code/include/PathFinder.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="_graphe_8h" kind="file">
+    <compoundname>Graphe.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes refid="_node_8h" local="yes">Node.h</includes>
+    <includes refid="coordonnes2d_8h" local="yes">coordonnes2d.h</includes>
+    <includes refid="_path_finder_8h" local="yes">PathFinder.h</includes>
+    <includedby refid="_t_e_r_observer_8h" local="yes">code/include/TERObserver.h</includedby>
+    <includedby refid="_graphe_8cpp" local="yes">code/src/Graphe.cpp</includedby>
+    <incdepgraph>
+      <node id="104">
+        <label>PathFinder.h</label>
+        <link refid="_path_finder_8h"/>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>code/include/Graphe.h</label>
+        <link refid="Graphe.h"/>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>vector</label>
+      </node>
+      <node id="103">
+        <label>coordonnes2d.h</label>
+        <link refid="coordonnes2d_8h"/>
+      </node>
+      <node id="102">
+        <label>Node.h</label>
+        <link refid="_node_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="105">
+        <label>code/include/Graphe.h</label>
+        <link refid="Graphe.h"/>
+        <childnode refid="106" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>code/include/TERObserver.h</label>
+        <link refid="_t_e_r_observer_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_graphe" prot="public">Graphe</innerclass>
+    <briefdescription>
+<para>Classe representant le monde Repast en memoire afin d&apos;appliquer l&apos;algorithme A*. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>HRUSTIC EMIR </para></simplesect>
+<simplesect kind="version"><para>0.1 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>GRAPHE_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GRAPHE_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_node_8h" kindref="compound">Node.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="coordonnes2d_8h" kindref="compound">coordonnes2d.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_path_finder_8h" kindref="compound">PathFinder.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_graphe" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_graphe" kindref="compound">Graphe</ref>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_graphe_1abd3e45f6d615a90d71106d29e6968c0f" kindref="member">Graphe</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">**<sp/>map,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>longueur_map,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hauteur_map,<ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref><sp/>depart,<sp/>std::vector&lt;Coordonnes2D&gt;<sp/>&amp;sorties);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_graphe_1a673c897db564767e9ace7169a5357310" kindref="member">~Graphe</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="class_graphe_1ac0e1b15961de7b45d61794b651654a66" kindref="member">Nodes2CheminX</ref>(std::vector&lt;Node*&gt;<sp/>chemin);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="class_graphe_1a3dc187933cfa37d917db230bd8b87db1" kindref="member">Nodes2CheminY</ref>(std::vector&lt;Node*&gt;<sp/>chemin);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="class_graphe_1a6fae3a8286508021f0e040bc075e0c1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Node*&gt;<sp/><ref refid="class_graphe_1a6fae3a8286508021f0e040bc075e0c1d" kindref="member">getChemin</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_chemin;}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Node*&gt;<sp/><ref refid="class_graphe_1a7c51dfd09bcf7d8505ec47a96b5d9c61" kindref="member">calculSortie</ref>(std::vector&lt;Coordonnes2D&gt;<sp/>&amp;sorties,<sp/><ref refid="class_node" kindref="compound">Node</ref>*<sp/>depart);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pathfinder" kindref="compound">Pathfinder</ref>*<sp/>a_star;<sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Node*&gt;<sp/>m_chemin;<sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;<sp/>std::vector&lt;<sp/>Node*&gt;<sp/>&gt;<sp/>m_graphe;<sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>**m_map;<sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_longueur;<sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_hauteur;<sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref><sp/>m_depart;<sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref><sp/>m_arrive;<sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/emip/git/TER/TESTA/code/include/Graphe.h"/>
+  </compounddef>
+</doxygen>

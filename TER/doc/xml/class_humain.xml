@@ -1,0 +1,826 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_humain" kind="class" prot="public">
+    <compoundname>Humain</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Turtle</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_humain_1a5e848e12e5e2af92d8416d57140e13b5" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Humain::m_angle</definition>
+        <argsstring></argsstring>
+        <name>m_angle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Angle d&apos;orientation de l&apos;agent </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="35" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_humain_1aaa7a528029e7099626c5a0a29485d3c2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Humain::posXFichier</definition>
+        <argsstring></argsstring>
+        <name>posXFichier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Position X de l&apos;agent dans le fichier (colonne) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="36" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_humain_1a5680931fdd9b57037878438e2ab29b93" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Humain::posYFichier</definition>
+        <argsstring></argsstring>
+        <name>posYFichier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Position Y de l&apos;agent dans le fichier (ligne) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="37" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_humain_1a102d242e38a82addecbebcb83d48ea6c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Humain::posXGL</definition>
+        <argsstring></argsstring>
+        <name>posXGL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Position X de l&apos;agent dans la fenetre (pixels) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="38" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_humain_1abaf7b70ad563a3482c7cb14830c9a595" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Humain::posYGL</definition>
+        <argsstring></argsstring>
+        <name>posYGL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Position Y de l&apos;agent dans la fenetre (pixels) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="39" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_humain_1a411a0500af5b3db968861a528d7acea6" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Humain::cheminX</definition>
+        <argsstring></argsstring>
+        <name>cheminX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tableau des positions X a suivre par l&apos;agent </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="40" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_humain_1ab154468142d481431671046d5619fbb8" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Humain::cheminY</definition>
+        <argsstring></argsstring>
+        <name>cheminY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tableau des positions Y a suivre par l&apos;agent </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="41" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_humain_1ae38fa260999d1a0dda6da1288b07b324" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Humain::etape</definition>
+        <argsstring></argsstring>
+        <name>etape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>indice pour se situer dans le tableau du chemin a suivre </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="42" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_humain_1a54459f00588898e9f236813af9a0659b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Humain::typePersonne</definition>
+        <argsstring></argsstring>
+        <name>typePersonne</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type de personne (JEUNE,ADULTE,PERSONNE AGEE ou MALADE) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="43" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_humain_1ab82c70700e8ecbaf3e0f876e5281b810" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Humain::sorti</definition>
+        <argsstring></argsstring>
+        <name>sorti</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Booleen qui indique si un humain est sorti du batiment </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="44" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_humain_1a2ef84f203affc118025f145745323ddd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Humain::Humain</definition>
+        <argsstring>(repast::AgentId id, repast::relogo::Observer *obs)</argsstring>
+        <name>Humain</name>
+        <param>
+          <type>repast::AgentId</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>repast::relogo::Observer *</type>
+          <declname>obs</declname>
+        </param>
+        <briefdescription>
+<para>Constructeur. </para>        </briefdescription>
+        <detaileddescription>
+<para>Constructeur de la classe <ref refid="class_humain" kindref="compound">Humain</ref></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Id de l&apos;agent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointeur vers l&apos;Observer qui gere les agents </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="55" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="55" bodyend="75"/>
+        <references refid="class_humain_1a0a9134ce08efbc5eb5714114de97fb63" compoundref="_humain_8cpp" startline="26" endline="30">randomType</references>
+      </memberdef>
+      <memberdef kind="function" id="class_humain_1a057f2b76521c2654a66dea6e9e2e33c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Humain::Humain</definition>
+        <argsstring>(repast::AgentId id, repast::relogo::Observer *obs, const AgentPackage &amp;package)</argsstring>
+        <name>Humain</name>
+        <param>
+          <type>repast::AgentId</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>repast::relogo::Observer *</type>
+          <declname>obs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_agent_package" kindref="compound">AgentPackage</ref> &amp;</type>
+          <declname>package</declname>
+        </param>
+        <briefdescription>
+<para>Constructeur pour le transfert d&apos;agents. </para>        </briefdescription>
+        <detaileddescription>
+<para>Constructeur de la classe <ref refid="class_humain" kindref="compound">Humain</ref></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Id de l&apos;agent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointeur vers l&apos;Observer qui gere les agents </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>package</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: archive serialisee qui contient toutes les donnees necessaire pour creer un agent. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="86" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="86" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_humain_1a08a0a8a77ce1877a76518e5d0acf03ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Humain::~Humain</definition>
+        <argsstring>()</argsstring>
+        <name>~Humain</name>
+        <briefdescription>
+<para>Destructeur. </para>        </briefdescription>
+        <detaileddescription>
+<para>Destructeur de la classe <ref refid="class_humain" kindref="compound">Humain</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="94" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="94" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_humain_1a6ef45c2a6398eee58bc985b0d3d04812" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Humain::getPos</definition>
+        <argsstring>()</argsstring>
+        <name>getPos</name>
+        <briefdescription>
+<para>affiche la position d&apos;un humain(coordonnees repast) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="100" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/Humain.cpp" bodystart="20" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_humain_1acfb526c278bfd003114e3f4270ab6342" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Humain::step</definition>
+        <argsstring>()</argsstring>
+        <name>step</name>
+        <briefdescription>
+<para>fonction principale decrivant le comportement de l&apos;agent (execute a chaque tick) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="106" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/Humain.cpp" bodystart="38" bodyend="125"/>
+        <referencedby refid="class_t_e_r_observer_1a87524bb92d6be89b025e4312440f6948" compoundref="_t_e_r_observer_8cpp" startline="23" endline="69">TERObserver::go</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_humain_1a415aa529a0f744d0b81bc80b93864665" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Humain::randomAngle</definition>
+        <argsstring>(repast::Properties &amp;props)</argsstring>
+        <name>randomAngle</name>
+        <param>
+          <type>repast::Properties &amp;</type>
+          <declname>props</declname>
+        </param>
+        <briefdescription>
+<para>genere un angle aleatoire compris entre 0 et 359 (en degre) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>props</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointeur sur les proprietes de la simulation(pour le random seed) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="113" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/Humain.cpp" bodystart="32" bodyend="36"/>
+        <referencedby refid="class_t_e_r_observer_1a9f04020109fb77d6e704546c7060fff3" compoundref="_t_e_r_observer_8cpp" startline="76" endline="204">TERObserver::setup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_humain_1a0a9134ce08efbc5eb5714114de97fb63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Humain::randomType</definition>
+        <argsstring>(repast::Properties &amp;props)</argsstring>
+        <name>randomType</name>
+        <param>
+          <type>repast::Properties &amp;</type>
+          <declname>props</declname>
+        </param>
+        <briefdescription>
+<para>genere un type de personne aleatoire </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>props</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointeur sur les proprietes de la simulation(pour le random seed)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>le typedepersonne genere. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="121" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/Humain.cpp" bodystart="26" bodyend="30"/>
+        <referencedby refid="class_humain_1a2ef84f203affc118025f145745323ddd" compoundref="_humain_8h" startline="55" endline="75">Humain</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_humain_1aaef01ae3b778f16b1041f67c9c4a9424" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Humain::afficherPos</definition>
+        <argsstring>(Fenetre *fen)</argsstring>
+        <name>afficherPos</name>
+        <param>
+          <type><ref refid="class_fenetre" kindref="compound">Fenetre</ref> *</type>
+          <declname>fen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="123" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_humain_1a73d39a9d1f241d620ccac2f599e2dd97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Humain::getAngle</definition>
+        <argsstring>()</argsstring>
+        <name>getAngle</name>
+        <briefdescription>
+<para>recupere l&apos;angle actuel d&apos;un agent </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>l&apos;angle de l&apos;agent </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="130" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/Humain.cpp" bodystart="127" bodyend="127"/>
+        <referencedby refid="class_t_e_r_observer_1a9f04020109fb77d6e704546c7060fff3" compoundref="_t_e_r_observer_8cpp" startline="76" endline="204">TERObserver::setup</referencedby>
+        <referencedby refid="class_t_e_r_observer_1a7b97c7e2c7251d65d946c9ced3c54bcf" compoundref="_t_e_r_observer_8cpp" startline="335" endline="431">TERObserver::dessinerDecor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_humain_1a8987214bebd0063247cbfc1b4b5f1816" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Humain::rad2deg</definition>
+        <argsstring>(double theta)</argsstring>
+        <name>rad2deg</name>
+        <param>
+          <type>double</type>
+          <declname>theta</declname>
+        </param>
+        <briefdescription>
+<para>conversion d&apos;un angle de radians en degre </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>theta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: angle en radians</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>angle en degre. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="138" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/Humain.cpp" bodystart="129" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_humain_1ad7777f2198c8f306bfc8040afe7f0802" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Humain::tournerVers</definition>
+        <argsstring>(double x, double y)</argsstring>
+        <name>tournerVers</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Calcule l&apos;angle a prendre pour aller au point de coordonnees x/y. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: coordonne x de l&apos;emplacement ou on veut aller </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: coordonne y de l&apos;emplacement ou on veut aller </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>angle vers le point de destination. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="146" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/Humain.cpp" bodystart="133" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="class_humain_1a72f53748fcf1c862c46771208856a960" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Humain::getXFichier</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getXFichier</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Getter. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>l&apos;attribut posXFichier de la classe <ref refid="class_humain" kindref="compound">Humain</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="152" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="152" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="class_humain_1a950ffa2b5fbfe59cdc5556598bb3fc36" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Humain::getYFichier</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getYFichier</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Getter. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>l&apos;attribut posYFichier de la classe <ref refid="class_humain" kindref="compound">Humain</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="160" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="160" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="class_humain_1ad6179d5833fbc32eeb5cb440afdd58b0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Humain::getXGL</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getXGL</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Getter. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>l&apos;attribut posXGL de la classe <ref refid="class_humain" kindref="compound">Humain</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="168" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="168" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="class_humain_1a476b49698c658f53675d8e2666990699" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Humain::getYGL</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getYGL</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Getter. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>l&apos;attribut posYGL de la classe <ref refid="class_humain" kindref="compound">Humain</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="176" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="176" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="class_humain_1a8cc241895df70b2f6023552908903fab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Humain::setXFichier</definition>
+        <argsstring>(int val)</argsstring>
+        <name>setXFichier</name>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Setter. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: nouvelle valeur pour l&apos;attribut posXFichier de la classe <ref refid="class_humain" kindref="compound">Humain</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="184" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="184" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="class_humain_1a574c1d191014b8ce815b593b68422e54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Humain::setYFichier</definition>
+        <argsstring>(int val)</argsstring>
+        <name>setYFichier</name>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Setter. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: nouvelle valeur pour l&apos;attribut posYFichier de la classe <ref refid="class_humain" kindref="compound">Humain</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="192" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="192" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="class_humain_1aaa7d8c47d9f38e70454693ece8c78c81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Humain::setXGL</definition>
+        <argsstring>(int val)</argsstring>
+        <name>setXGL</name>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Setter. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: nouvelle valeur pour l&apos;attribut posXGL de la classe <ref refid="class_humain" kindref="compound">Humain</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="200" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="200" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="class_humain_1ab1ca792b176d3fb394f6aa411ba1e5f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Humain::setYGL</definition>
+        <argsstring>(int val)</argsstring>
+        <name>setYGL</name>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Setter. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: nouvelle valeur pour l&apos;attribut posYGL de la classe <ref refid="class_humain" kindref="compound">Humain</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="208" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="208" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="class_humain_1a2e50827e8e6c47f6671aae2bea409840" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Humain::setAngle</definition>
+        <argsstring>(double val)</argsstring>
+        <name>setAngle</name>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Setter. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: nouvelle valeur pour l&apos;attribut m_angle de la classe <ref refid="class_humain" kindref="compound">Humain</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="216" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="216" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="class_humain_1ab8469bf829ed8100899bc57a62025cb9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Humain::getTypePersonne</definition>
+        <argsstring>()</argsstring>
+        <name>getTypePersonne</name>
+        <briefdescription>
+<para>Getter. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>l&apos;attribut typePersonne de la classe <ref refid="class_humain" kindref="compound">Humain</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="224" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="224" bodyend="224"/>
+        <referencedby refid="class_t_e_r_observer_1a7b97c7e2c7251d65d946c9ced3c54bcf" compoundref="_t_e_r_observer_8cpp" startline="335" endline="431">TERObserver::dessinerDecor</referencedby>
+        <referencedby refid="class_t_e_r_observer_1ab036cbce36d1f1bd432785277becb041" compoundref="_t_e_r_observer_8cpp" startline="442" endline="457">TERObserver::provideContent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_humain_1ade75c85dd706116d6bd20ef99da931ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Humain::setTypePersonne</definition>
+        <argsstring>(int val)</argsstring>
+        <name>setTypePersonne</name>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="225" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="225" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="class_humain_1a434d49c9e83f20f525106416f6c62a48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Humain::getEtape</definition>
+        <argsstring>()</argsstring>
+        <name>getEtape</name>
+        <briefdescription>
+<para>Getter. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>l&apos;attribut etape de la classe <ref refid="class_humain" kindref="compound">Humain</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="231" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="231" bodyend="231"/>
+        <referencedby refid="class_t_e_r_observer_1ab036cbce36d1f1bd432785277becb041" compoundref="_t_e_r_observer_8cpp" startline="442" endline="457">TERObserver::provideContent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_humain_1a1351d4c106fc2e175cf19da0ca3fce52" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Humain::getSorti</definition>
+        <argsstring>()</argsstring>
+        <name>getSorti</name>
+        <briefdescription>
+<para>Getter. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>l&apos;attribut sorti de la classe <ref refid="class_humain" kindref="compound">Humain</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="237" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="237" bodyend="237"/>
+        <referencedby refid="class_t_e_r_observer_1a7b97c7e2c7251d65d946c9ced3c54bcf" compoundref="_t_e_r_observer_8cpp" startline="335" endline="431">TERObserver::dessinerDecor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_humain_1a68abc0ded73a07d369a74e5a4d3bd7e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Humain::getCheminX</definition>
+        <argsstring>()</argsstring>
+        <name>getCheminX</name>
+        <briefdescription>
+<para>Getter. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>l&apos;attribut cheminX de la classe <ref refid="class_humain" kindref="compound">Humain</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="243" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="243" bodyend="243"/>
+        <referencedby refid="class_t_e_r_observer_1ab036cbce36d1f1bd432785277becb041" compoundref="_t_e_r_observer_8cpp" startline="442" endline="457">TERObserver::provideContent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_humain_1ad815b1e9aacefe7a41ded28772a41b9a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Humain::getCheminY</definition>
+        <argsstring>()</argsstring>
+        <name>getCheminY</name>
+        <briefdescription>
+<para>Getter. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>l&apos;attribut cheminY de la classe <ref refid="class_humain" kindref="compound">Humain</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="249" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="249" bodyend="249"/>
+        <referencedby refid="class_t_e_r_observer_1ab036cbce36d1f1bd432785277becb041" compoundref="_t_e_r_observer_8cpp" startline="442" endline="457">TERObserver::provideContent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_humain_1a0dfad40c440229a41fb980af89385fc8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Humain::setCheminXY</definition>
+        <argsstring>(std::vector&lt; int &gt; cheminX, std::vector&lt; int &gt; cheminY, int etape, bool sorti)</argsstring>
+        <name>setCheminXY</name>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>cheminX</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>cheminY</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>etape</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sorti</declname>
+        </param>
+        <briefdescription>
+<para>Setter. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cheminX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: nouvelle valeur pour l&apos;attribut cheminX de la classe <ref refid="class_humain" kindref="compound">Humain</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cheminY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: nouvelle valeur pour l&apos;attribut cheminY de la classe <ref refid="class_humain" kindref="compound">Humain</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>etape</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: nouvelle valeur pour l&apos;attribut etape de la classe <ref refid="class_humain" kindref="compound">Humain</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sorti</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: nouvelle valeur pour l&apos;attribut sorti de la classe <ref refid="class_humain" kindref="compound">Humain</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="258" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="258" bodyend="262"/>
+        <referencedby refid="class_t_e_r_observer_1a9f04020109fb77d6e704546c7060fff3" compoundref="_t_e_r_observer_8cpp" startline="76" endline="204">TERObserver::setup</referencedby>
+        <referencedby refid="class_t_e_r_observer_1ab1fe1d3f67f16d7bded15408348bc4b5" compoundref="_t_e_r_observer_8cpp" startline="484" endline="492">TERObserver::updateAgent</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>classe representant un agent humain </para>    </briefdescription>
+    <detaileddescription>
+<para>La classe herite de la classe Turtle de repast, elle gere tout ce qui concerne le deplacement et l&apos;orientation des humains, la communication entre humains, etc... </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="37">
+        <label>repast::relogo::Turtle</label>
+      </node>
+      <node id="36">
+        <label>Humain</label>
+        <link refid="class_humain"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="39">
+        <label>repast::relogo::Turtle</label>
+      </node>
+      <node id="38">
+        <label>Humain</label>
+        <link refid="class_humain"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="27" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="27" bodyend="264"/>
+    <listofallmembers>
+      <member refid="class_humain_1aaef01ae3b778f16b1041f67c9c4a9424" prot="public" virt="non-virtual"><scope>Humain</scope><name>afficherPos</name></member>
+      <member refid="class_humain_1a411a0500af5b3db968861a528d7acea6" prot="private" virt="non-virtual"><scope>Humain</scope><name>cheminX</name></member>
+      <member refid="class_humain_1ab154468142d481431671046d5619fbb8" prot="private" virt="non-virtual"><scope>Humain</scope><name>cheminY</name></member>
+      <member refid="class_humain_1ae38fa260999d1a0dda6da1288b07b324" prot="private" virt="non-virtual"><scope>Humain</scope><name>etape</name></member>
+      <member refid="class_humain_1a73d39a9d1f241d620ccac2f599e2dd97" prot="public" virt="non-virtual"><scope>Humain</scope><name>getAngle</name></member>
+      <member refid="class_humain_1a68abc0ded73a07d369a74e5a4d3bd7e6" prot="public" virt="non-virtual"><scope>Humain</scope><name>getCheminX</name></member>
+      <member refid="class_humain_1ad815b1e9aacefe7a41ded28772a41b9a" prot="public" virt="non-virtual"><scope>Humain</scope><name>getCheminY</name></member>
+      <member refid="class_humain_1a434d49c9e83f20f525106416f6c62a48" prot="public" virt="non-virtual"><scope>Humain</scope><name>getEtape</name></member>
+      <member refid="class_humain_1a6ef45c2a6398eee58bc985b0d3d04812" prot="public" virt="non-virtual"><scope>Humain</scope><name>getPos</name></member>
+      <member refid="class_humain_1a1351d4c106fc2e175cf19da0ca3fce52" prot="public" virt="non-virtual"><scope>Humain</scope><name>getSorti</name></member>
+      <member refid="class_humain_1ab8469bf829ed8100899bc57a62025cb9" prot="public" virt="non-virtual"><scope>Humain</scope><name>getTypePersonne</name></member>
+      <member refid="class_humain_1a72f53748fcf1c862c46771208856a960" prot="public" virt="non-virtual"><scope>Humain</scope><name>getXFichier</name></member>
+      <member refid="class_humain_1ad6179d5833fbc32eeb5cb440afdd58b0" prot="public" virt="non-virtual"><scope>Humain</scope><name>getXGL</name></member>
+      <member refid="class_humain_1a950ffa2b5fbfe59cdc5556598bb3fc36" prot="public" virt="non-virtual"><scope>Humain</scope><name>getYFichier</name></member>
+      <member refid="class_humain_1a476b49698c658f53675d8e2666990699" prot="public" virt="non-virtual"><scope>Humain</scope><name>getYGL</name></member>
+      <member refid="class_humain_1a2ef84f203affc118025f145745323ddd" prot="public" virt="non-virtual"><scope>Humain</scope><name>Humain</name></member>
+      <member refid="class_humain_1a057f2b76521c2654a66dea6e9e2e33c5" prot="public" virt="non-virtual"><scope>Humain</scope><name>Humain</name></member>
+      <member refid="class_humain_1a5e848e12e5e2af92d8416d57140e13b5" prot="private" virt="non-virtual"><scope>Humain</scope><name>m_angle</name></member>
+      <member refid="class_humain_1aaa7a528029e7099626c5a0a29485d3c2" prot="private" virt="non-virtual"><scope>Humain</scope><name>posXFichier</name></member>
+      <member refid="class_humain_1a102d242e38a82addecbebcb83d48ea6c" prot="private" virt="non-virtual"><scope>Humain</scope><name>posXGL</name></member>
+      <member refid="class_humain_1a5680931fdd9b57037878438e2ab29b93" prot="private" virt="non-virtual"><scope>Humain</scope><name>posYFichier</name></member>
+      <member refid="class_humain_1abaf7b70ad563a3482c7cb14830c9a595" prot="private" virt="non-virtual"><scope>Humain</scope><name>posYGL</name></member>
+      <member refid="class_humain_1a8987214bebd0063247cbfc1b4b5f1816" prot="public" virt="non-virtual"><scope>Humain</scope><name>rad2deg</name></member>
+      <member refid="class_humain_1a415aa529a0f744d0b81bc80b93864665" prot="public" virt="non-virtual"><scope>Humain</scope><name>randomAngle</name></member>
+      <member refid="class_humain_1a0a9134ce08efbc5eb5714114de97fb63" prot="public" virt="non-virtual"><scope>Humain</scope><name>randomType</name></member>
+      <member refid="class_humain_1a2e50827e8e6c47f6671aae2bea409840" prot="public" virt="non-virtual"><scope>Humain</scope><name>setAngle</name></member>
+      <member refid="class_humain_1a0dfad40c440229a41fb980af89385fc8" prot="public" virt="non-virtual"><scope>Humain</scope><name>setCheminXY</name></member>
+      <member refid="class_humain_1ade75c85dd706116d6bd20ef99da931ef" prot="public" virt="non-virtual"><scope>Humain</scope><name>setTypePersonne</name></member>
+      <member refid="class_humain_1a8cc241895df70b2f6023552908903fab" prot="public" virt="non-virtual"><scope>Humain</scope><name>setXFichier</name></member>
+      <member refid="class_humain_1aaa7d8c47d9f38e70454693ece8c78c81" prot="public" virt="non-virtual"><scope>Humain</scope><name>setXGL</name></member>
+      <member refid="class_humain_1a574c1d191014b8ce815b593b68422e54" prot="public" virt="non-virtual"><scope>Humain</scope><name>setYFichier</name></member>
+      <member refid="class_humain_1ab1ca792b176d3fb394f6aa411ba1e5f5" prot="public" virt="non-virtual"><scope>Humain</scope><name>setYGL</name></member>
+      <member refid="class_humain_1ab82c70700e8ecbaf3e0f876e5281b810" prot="private" virt="non-virtual"><scope>Humain</scope><name>sorti</name></member>
+      <member refid="class_humain_1acfb526c278bfd003114e3f4270ab6342" prot="public" virt="non-virtual"><scope>Humain</scope><name>step</name></member>
+      <member refid="class_humain_1ad7777f2198c8f306bfc8040afe7f0802" prot="public" virt="non-virtual"><scope>Humain</scope><name>tournerVers</name></member>
+      <member refid="class_humain_1a54459f00588898e9f236813af9a0659b" prot="private" virt="non-virtual"><scope>Humain</scope><name>typePersonne</name></member>
+      <member refid="class_humain_1a08a0a8a77ce1877a76518e5d0acf03ca" prot="public" virt="virtual"><scope>Humain</scope><name>~Humain</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

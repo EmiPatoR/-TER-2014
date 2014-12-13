@@ -1,0 +1,458 @@
+\section{Référence de la classe Node}
+\label{class_node}\index{Node@{Node}}
+
+
+Classe representant un \doxyref{Node}{p.}{class_node} Un \doxyref{Node}{p.}{class_node} est une \char`\"{}case\char`\"{} de la matrice representant le monde Repast, chaque node contient les heuristiques,g,h et f, une position X et Y , un \doxyref{Node}{p.}{class_node} Parent, et un boolean indiquant si le node est un mur ou pas.  
+
+
+
+
+{\ttfamily \#include $<$Node.\-h$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Node} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+virtual {\bf $\sim$\-Node} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+bool {\bf est\-Egal} ({\bf Node} const \&b) const 
+\begin{DoxyCompactList}\small\item\em Compare deux objets de type \doxyref{Node}{p.}{class_node}. \end{DoxyCompactList}\item 
+void {\bf set\-Parent} ({\bf Node} $\ast$val)
+\begin{DoxyCompactList}\small\item\em Setter de l'attribut Parent de la classe \doxyref{Node}{p.}{class_node}. \end{DoxyCompactList}\item 
+{\bf Node} $\ast$ {\bf get\-Parent} ()
+\begin{DoxyCompactList}\small\item\em Getter de l'attribut m\-\_\-parent de la classe \doxyref{Node}{p.}{class_node}. \end{DoxyCompactList}\item 
+void {\bf set\-Walkable} (bool val)
+\begin{DoxyCompactList}\small\item\em Setter de l'attribut m\-\_\-walkable de la classe \doxyref{Node}{p.}{class_node}. \end{DoxyCompactList}\item 
+void {\bf set\-G} (int val)
+\begin{DoxyCompactList}\small\item\em Setter de l'attribut m\-\_\-\-G de la classe \doxyref{Node}{p.}{class_node}. \end{DoxyCompactList}\item 
+void {\bf set\-F} (int val)
+\begin{DoxyCompactList}\small\item\em Setter de l'attribut m\-\_\-\-F de la classe \doxyref{Node}{p.}{class_node}. \end{DoxyCompactList}\item 
+void {\bf set\-H} (int val)
+\begin{DoxyCompactList}\small\item\em Setter de l'attribut m\-\_\-h de la classe \doxyref{Node}{p.}{class_node}. \end{DoxyCompactList}\item 
+void {\bf set\-X} (int val)
+\begin{DoxyCompactList}\small\item\em Setter de l'attribut m\-\_\-\-X de la classe \doxyref{Node}{p.}{class_node}. \end{DoxyCompactList}\item 
+void {\bf set\-Y} (int val)
+\begin{DoxyCompactList}\small\item\em Setter de l'attribut m\-\_\-\-Y de la classe \doxyref{Node}{p.}{class_node}. \end{DoxyCompactList}\item 
+bool {\bf get\-Walkable} ()
+\begin{DoxyCompactList}\small\item\em Getter de l'attribut m\-\_\-walkable de la classe \doxyref{Node}{p.}{class_node}. \end{DoxyCompactList}\item 
+int {\bf get\-G} ()
+\begin{DoxyCompactList}\small\item\em Getter de l'attribut m\-\_\-\-G de la classe \doxyref{Node}{p.}{class_node}. \end{DoxyCompactList}\item 
+int {\bf get\-F} ()
+\begin{DoxyCompactList}\small\item\em Getter de l'attribut m\-\_\-\-F de la classe \doxyref{Node}{p.}{class_node}. \end{DoxyCompactList}\item 
+int {\bf get\-H} ()
+\begin{DoxyCompactList}\small\item\em Getter de l'attribut m\-\_\-\-H de la classe \doxyref{Node}{p.}{class_node}. \end{DoxyCompactList}\item 
+int {\bf get\-X} ()
+\begin{DoxyCompactList}\small\item\em Getter de l'attribut m\-\_\-\-X de la classe \doxyref{Node}{p.}{class_node}. \end{DoxyCompactList}\item 
+int {\bf get\-Y} ()
+\begin{DoxyCompactList}\small\item\em Getter de l'attribut m\-\_\-\-Y de la classe \doxyref{Node}{p.}{class_node}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Classe representant un \doxyref{Node}{p.}{class_node} Un \doxyref{Node}{p.}{class_node} est une \char`\"{}case\char`\"{} de la matrice representant le monde Repast, chaque node contient les heuristiques,g,h et f, une position X et Y , un \doxyref{Node}{p.}{class_node} Parent, et un boolean indiquant si le node est un mur ou pas. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Node@{Node}!Node@{Node}}
+\index{Node@{Node}!Node@{Node}}
+\subsubsection[{Node}]{\setlength{\rightskip}{0pt plus 5cm}Node\-::\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_node_ad7a34779cad45d997bfd6d3d8043c75f}
+
+
+Constructeur. 
+
+Constructeur de la classe \doxyref{Node}{p.}{class_node} \index{Node@{Node}!$\sim$\-Node@{$\sim$\-Node}}
+\index{$\sim$\-Node@{$\sim$\-Node}!Node@{Node}}
+\subsubsection[{$\sim$\-Node}]{\setlength{\rightskip}{0pt plus 5cm}Node\-::$\sim$\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_node_aa0840c3cb5c7159be6d992adecd2097c}
+
+
+Destructeur. 
+
+Destructeur de la classe \doxyref{Node}{p.}{class_node} 
+
+\subsection{Documentation des fonctions membres}
+\index{Node@{Node}!est\-Egal@{est\-Egal}}
+\index{est\-Egal@{est\-Egal}!Node@{Node}}
+\subsubsection[{est\-Egal}]{\setlength{\rightskip}{0pt plus 5cm}bool Node\-::est\-Egal (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} const \&}]{b}
+\end{DoxyParamCaption}
+) const}\label{class_node_aa342abc3125e21fab6c9085aefb9f90f}
+
+
+Compare deux objets de type \doxyref{Node}{p.}{class_node}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em b} & \-: node a comparer au \doxyref{Node}{p.}{class_node} actuel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+un boolean idiquant si les deux nodes sont egaux. 
+\end{DoxyReturn}
+\index{Node@{Node}!get\-F@{get\-F}}
+\index{get\-F@{get\-F}!Node@{Node}}
+\subsubsection[{get\-F}]{\setlength{\rightskip}{0pt plus 5cm}int Node\-::get\-F (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_node_a7b012d2404cc65fb58a9bb3a2dc6d724}
+
+
+Getter de l'attribut m\-\_\-\-F de la classe \doxyref{Node}{p.}{class_node}. 
+
+\begin{DoxyReturn}{Renvoie}
+valeur de l'attribut m\-\_\-\-F de la classe \doxyref{Node}{p.}{class_node} 
+\end{DoxyReturn}
+\index{Node@{Node}!get\-G@{get\-G}}
+\index{get\-G@{get\-G}!Node@{Node}}
+\subsubsection[{get\-G}]{\setlength{\rightskip}{0pt plus 5cm}int Node\-::get\-G (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_node_a9133c5c2e1c994b914535bbbefa33d7c}
+
+
+Getter de l'attribut m\-\_\-\-G de la classe \doxyref{Node}{p.}{class_node}. 
+
+\begin{DoxyReturn}{Renvoie}
+valeur de l'attribut m\-\_\-\-G de la classe \doxyref{Node}{p.}{class_node} 
+\end{DoxyReturn}
+
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_node_a9133c5c2e1c994b914535bbbefa33d7c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Node@{Node}!get\-H@{get\-H}}
+\index{get\-H@{get\-H}!Node@{Node}}
+\subsubsection[{get\-H}]{\setlength{\rightskip}{0pt plus 5cm}int Node\-::get\-H (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_node_a1108111505a673b217d5e13d6ac36d14}
+
+
+Getter de l'attribut m\-\_\-\-H de la classe \doxyref{Node}{p.}{class_node}. 
+
+\begin{DoxyReturn}{Renvoie}
+valeur de l'attribut m\-\_\-\-H de la classe \doxyref{Node}{p.}{class_node} 
+\end{DoxyReturn}
+\index{Node@{Node}!get\-Parent@{get\-Parent}}
+\index{get\-Parent@{get\-Parent}!Node@{Node}}
+\subsubsection[{get\-Parent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node} $\ast$ Node\-::get\-Parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_node_a220a8d64cb0df1cce083ed38c1260615}
+
+
+Getter de l'attribut m\-\_\-parent de la classe \doxyref{Node}{p.}{class_node}. 
+
+\begin{DoxyReturn}{Renvoie}
+valeur de l'attribut m\-\_\-parent de la classe \doxyref{Node}{p.}{class_node} 
+\end{DoxyReturn}
+
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_node_a220a8d64cb0df1cce083ed38c1260615_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Node@{Node}!get\-Walkable@{get\-Walkable}}
+\index{get\-Walkable@{get\-Walkable}!Node@{Node}}
+\subsubsection[{get\-Walkable}]{\setlength{\rightskip}{0pt plus 5cm}bool Node\-::get\-Walkable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_node_af04dc1e91f0961108c3ffab1fc9e792a}
+
+
+Getter de l'attribut m\-\_\-walkable de la classe \doxyref{Node}{p.}{class_node}. 
+
+\begin{DoxyReturn}{Renvoie}
+valeur de l'attribut m\-\_\-walkable de la classe \doxyref{Node}{p.}{class_node} 
+\end{DoxyReturn}
+
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_node_af04dc1e91f0961108c3ffab1fc9e792a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Node@{Node}!get\-X@{get\-X}}
+\index{get\-X@{get\-X}!Node@{Node}}
+\subsubsection[{get\-X}]{\setlength{\rightskip}{0pt plus 5cm}int Node\-::get\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_node_a6c026e5d8c28591c6e2bd08c68619fd1}
+
+
+Getter de l'attribut m\-\_\-\-X de la classe \doxyref{Node}{p.}{class_node}. 
+
+\begin{DoxyReturn}{Renvoie}
+valeur de l'attribut m\-\_\-\-X de la classe \doxyref{Node}{p.}{class_node} 
+\end{DoxyReturn}
+
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_node_a6c026e5d8c28591c6e2bd08c68619fd1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Node@{Node}!get\-Y@{get\-Y}}
+\index{get\-Y@{get\-Y}!Node@{Node}}
+\subsubsection[{get\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int Node\-::get\-Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_node_abab48a3f494994d4f456897f3372d3ae}
+
+
+Getter de l'attribut m\-\_\-\-Y de la classe \doxyref{Node}{p.}{class_node}. 
+
+\begin{DoxyReturn}{Renvoie}
+valeur de l'attribut m\-\_\-\-Y de la classe \doxyref{Node}{p.}{class_node} 
+\end{DoxyReturn}
+
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_node_abab48a3f494994d4f456897f3372d3ae_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Node@{Node}!set\-F@{set\-F}}
+\index{set\-F@{set\-F}!Node@{Node}}
+\subsubsection[{set\-F}]{\setlength{\rightskip}{0pt plus 5cm}void Node\-::set\-F (
+\begin{DoxyParamCaption}
+\item[{int}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_node_a070cae6ce68d13a77b42686e6ecdef05}
+
+
+Setter de l'attribut m\-\_\-\-F de la classe \doxyref{Node}{p.}{class_node}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em val} & \-: valeur de l'attribut a modifier \\
+\hline
+\end{DoxyParams}
+
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_node_a070cae6ce68d13a77b42686e6ecdef05_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Node@{Node}!set\-G@{set\-G}}
+\index{set\-G@{set\-G}!Node@{Node}}
+\subsubsection[{set\-G}]{\setlength{\rightskip}{0pt plus 5cm}void Node\-::set\-G (
+\begin{DoxyParamCaption}
+\item[{int}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_node_a47181f2860b050a0036097d534051cfc}
+
+
+Setter de l'attribut m\-\_\-\-G de la classe \doxyref{Node}{p.}{class_node}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em val} & \-: valeur de l'attribut a modifier \\
+\hline
+\end{DoxyParams}
+
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_node_a47181f2860b050a0036097d534051cfc_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Node@{Node}!set\-H@{set\-H}}
+\index{set\-H@{set\-H}!Node@{Node}}
+\subsubsection[{set\-H}]{\setlength{\rightskip}{0pt plus 5cm}void Node\-::set\-H (
+\begin{DoxyParamCaption}
+\item[{int}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_node_a5f9637d2e5bed720d9ee7a5af8a00c36}
+
+
+Setter de l'attribut m\-\_\-h de la classe \doxyref{Node}{p.}{class_node}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em val} & \-: valeur de l'attribut a modifier \\
+\hline
+\end{DoxyParams}
+
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_node_a5f9637d2e5bed720d9ee7a5af8a00c36_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Node@{Node}!set\-Parent@{set\-Parent}}
+\index{set\-Parent@{set\-Parent}!Node@{Node}}
+\subsubsection[{set\-Parent}]{\setlength{\rightskip}{0pt plus 5cm}void Node\-::set\-Parent (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{val}
+\end{DoxyParamCaption}
+)}\label{class_node_a39cc5b0b6814a6a2f4f0771203f334a1}
+
+
+Setter de l'attribut Parent de la classe \doxyref{Node}{p.}{class_node}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em val} & \-: valeur de l'attribut a modifier \\
+\hline
+\end{DoxyParams}
+
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_node_a39cc5b0b6814a6a2f4f0771203f334a1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Node@{Node}!set\-Walkable@{set\-Walkable}}
+\index{set\-Walkable@{set\-Walkable}!Node@{Node}}
+\subsubsection[{set\-Walkable}]{\setlength{\rightskip}{0pt plus 5cm}void Node\-::set\-Walkable (
+\begin{DoxyParamCaption}
+\item[{bool}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_node_a281acda069a341e04b5e9dbd45c4658e}
+
+
+Setter de l'attribut m\-\_\-walkable de la classe \doxyref{Node}{p.}{class_node}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em val} & \-: valeur de l'attribut a modifier \\
+\hline
+\end{DoxyParams}
+
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{class_node_a281acda069a341e04b5e9dbd45c4658e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Node@{Node}!set\-X@{set\-X}}
+\index{set\-X@{set\-X}!Node@{Node}}
+\subsubsection[{set\-X}]{\setlength{\rightskip}{0pt plus 5cm}void Node\-::set\-X (
+\begin{DoxyParamCaption}
+\item[{int}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_node_accabc02cdc5144636cab8d5079619d13}
+
+
+Setter de l'attribut m\-\_\-\-X de la classe \doxyref{Node}{p.}{class_node}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em val} & \-: valeur de l'attribut a modifier \\
+\hline
+\end{DoxyParams}
+
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{class_node_accabc02cdc5144636cab8d5079619d13_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Node@{Node}!set\-Y@{set\-Y}}
+\index{set\-Y@{set\-Y}!Node@{Node}}
+\subsubsection[{set\-Y}]{\setlength{\rightskip}{0pt plus 5cm}void Node\-::set\-Y (
+\begin{DoxyParamCaption}
+\item[{int}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_node_a475dd9a2117954dbfa44f8cd196d6008}
+
+
+Setter de l'attribut m\-\_\-\-Y de la classe \doxyref{Node}{p.}{class_node}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em val} & \-: valeur de l'attribut a modifier \\
+\hline
+\end{DoxyParams}
+
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{class_node_a475dd9a2117954dbfa44f8cd196d6008_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+code/include/{\bf Node.\-h}\item 
+code/src/Node.\-cpp\end{DoxyCompactItemize}

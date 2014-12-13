@@ -1,0 +1,361 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_pathfinder" kind="class" prot="public">
+    <compoundname>Pathfinder</compoundname>
+    <includes refid="_path_finder_8h" local="no">PathFinder.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pathfinder_1a2ecc998181ac719a2ff20e2dfb5904f8" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_node" kindref="compound">Node</ref> * &gt;</type>
+        <definition>std::vector&lt;Node*&gt; Pathfinder::m_openList</definition>
+        <argsstring></argsstring>
+        <name>m_openList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Liste ouverte Y </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/PathFinder.h" line="20" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/PathFinder.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pathfinder_1a926778da1b589797f652e1a3d6e8ba2f" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_node" kindref="compound">Node</ref> * &gt;</type>
+        <definition>std::vector&lt;Node*&gt; Pathfinder::m_closeList</definition>
+        <argsstring></argsstring>
+        <name>m_closeList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Liste fermee Y </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/PathFinder.h" line="21" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/PathFinder.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_pathfinder_1a75096e49427cc06e95e82819d949b8e4" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Pathfinder::NODE_DISTANCE_VALUE</definition>
+        <argsstring></argsstring>
+        <name>NODE_DISTANCE_VALUE</name>
+        <initializer>= 100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cout d&apos;un deplacement dans les cases voisines HAUT BAS GAUCHE ou DROITE </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/PathFinder.h" line="76" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/PathFinder.h" bodystart="76" bodyend="-1"/>
+        <referencedby refid="class_pathfinder_1aee6e72cf2b4a9f86c6aa1139618e2167" compoundref="_path_finder_8cpp" startline="14" endline="95">findPath</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_pathfinder_1a9fabc665d250a89c2f0af4059d77d8b2" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Pathfinder::NODE_DISTANCE_DIAG_VALUE</definition>
+        <argsstring></argsstring>
+        <name>NODE_DISTANCE_DIAG_VALUE</name>
+        <initializer>= 140</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cout d&apos;un deplacement dans les cases voisines DIAGONALES </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/PathFinder.h" line="77" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/PathFinder.h" bodystart="77" bodyend="-1"/>
+        <referencedby refid="class_pathfinder_1aee6e72cf2b4a9f86c6aa1139618e2167" compoundref="_path_finder_8cpp" startline="14" endline="95">findPath</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_pathfinder_1a76905ec66b3a67db9a438e2503c246d3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+        <definition>Node * Pathfinder::getCurrentNode</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrentNode</name>
+        <briefdescription>
+<para>Recupere le <ref refid="class_node" kindref="compound">Node</ref> qui a son attribut m_F le plus petit. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>le <ref refid="class_node" kindref="compound">Node</ref> dont le l&apos;attribut m_F est minimum </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/PathFinder.h" line="29" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/PathFinder.cpp" bodystart="97" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pathfinder_1a1cf7c0b005639a1638f1267aad53aec7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pathfinder::removeFromOpenList</definition>
+        <argsstring>(Node *val)</argsstring>
+        <name>removeFromOpenList</name>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Supprime un <ref refid="class_node" kindref="compound">Node</ref> de la liste ouverte. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: <ref refid="class_node" kindref="compound">Node</ref> à supprimer dans la liste ouverte </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/PathFinder.h" line="35" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/PathFinder.cpp" bodystart="129" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pathfinder_1aadea0c7ed442515f101402dc9cdce180" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pathfinder::removeFromCloseList</definition>
+        <argsstring>(Node *val)</argsstring>
+        <name>removeFromCloseList</name>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Supprime un <ref refid="class_node" kindref="compound">Node</ref> de la liste fermee. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: <ref refid="class_node" kindref="compound">Node</ref> à supprimer dans la liste fermee </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/PathFinder.h" line="41" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/PathFinder.cpp" bodystart="120" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pathfinder_1a954af9aed5c7085761c6576a231a0473" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pathfinder::addToCloseList</definition>
+        <argsstring>(Node *val)</argsstring>
+        <name>addToCloseList</name>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Ajoute un <ref refid="class_node" kindref="compound">Node</ref> de la liste ouverte et l&apos;enleve de la liste fermee s&apos;il y figure. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: <ref refid="class_node" kindref="compound">Node</ref> à ajouter dans la liste ouverte </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/PathFinder.h" line="47" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/PathFinder.cpp" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pathfinder_1a0f0453dfec0a102f1548c65827e44bd6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pathfinder::addToOpenList</definition>
+        <argsstring>(Node *val)</argsstring>
+        <name>addToOpenList</name>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Ajoute un <ref refid="class_node" kindref="compound">Node</ref> de la liste fermee et l&apos;enleve de la liste ouverte s&apos;il y figure. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: <ref refid="class_node" kindref="compound">Node</ref> à ajouter dans la liste fermee </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/PathFinder.h" line="53" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/PathFinder.cpp" bodystart="144" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pathfinder_1af9fbf4ef37b9d49b3754d39a7069fc0f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Pathfinder::isOnOpenList</definition>
+        <argsstring>(Node *val)</argsstring>
+        <name>isOnOpenList</name>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Verifie si un <ref refid="class_node" kindref="compound">Node</ref> appartient a la liste fermee. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: <ref refid="class_node" kindref="compound">Node</ref> à verifier la presence dans la liste ouverte </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Booleen indiquant la presence du <ref refid="class_node" kindref="compound">Node</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/PathFinder.h" line="60" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/PathFinder.cpp" bodystart="149" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pathfinder_1a71f726116f15781a429205dc71a59d1f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Pathfinder::isOnCloseList</definition>
+        <argsstring>(Node *val)</argsstring>
+        <name>isOnCloseList</name>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Verifie si un <ref refid="class_node" kindref="compound">Node</ref> appartient a la liste ouverte. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: <ref refid="class_node" kindref="compound">Node</ref> à verifier la presence dans la liste ouverte </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Booleen indiquant la presence du <ref refid="class_node" kindref="compound">Node</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/PathFinder.h" line="67" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/PathFinder.cpp" bodystart="158" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pathfinder_1a36ed5815ceb6786fe20cf68be215b30c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_node" kindref="compound">Node</ref> * &gt;</type>
+        <definition>std::vector&lt; Node * &gt; Pathfinder::getNeighbors</definition>
+        <argsstring>(Node *val, std::vector&lt; std::vector&lt; Node * &gt; &gt; &amp;graphe)</argsstring>
+        <name>getNeighbors</name>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="class_node" kindref="compound">Node</ref> * &gt; &gt; &amp;</type>
+          <declname>graphe</declname>
+        </param>
+        <briefdescription>
+<para>Recupere tous les <ref refid="class_node" kindref="compound">Node</ref> voisins de val dans un tableau de pointeurs sur <ref refid="class_node" kindref="compound">Node</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: <ref refid="class_node" kindref="compound">Node</ref> dont on veut recuperer les voisins </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>tableau de <ref refid="class_node" kindref="compound">Node</ref> contenant les <ref refid="class_node" kindref="compound">Node</ref> voisins de val </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/PathFinder.h" line="74" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/PathFinder.cpp" bodystart="167" bodyend="207"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pathfinder_1af562d840858cf2b369fcee51f5069456" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Pathfinder::Pathfinder</definition>
+        <argsstring>()</argsstring>
+        <name>Pathfinder</name>
+        <briefdescription>
+<para>Constructeur. </para>        </briefdescription>
+        <detaileddescription>
+<para>Constructeur de la classe <ref refid="class_pathfinder" kindref="compound">Pathfinder</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/PathFinder.h" line="84" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/PathFinder.cpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pathfinder_1aee6e72cf2b4a9f86c6aa1139618e2167" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_node" kindref="compound">Node</ref> * &gt;</type>
+        <definition>std::vector&lt; Node * &gt; Pathfinder::findPath</definition>
+        <argsstring>(std::vector&lt; std::vector&lt; Node * &gt; &gt; &amp;graphe, Node *depart, Node *arrive)</argsstring>
+        <name>findPath</name>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="class_node" kindref="compound">Node</ref> * &gt; &gt; &amp;</type>
+          <declname>graphe</declname>
+        </param>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+          <declname>depart</declname>
+        </param>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+          <declname>arrive</declname>
+        </param>
+        <briefdescription>
+<para>Application de l&apos;algorithme A* sur un objet <ref refid="class_graphe" kindref="compound">Graphe</ref> dans le but de calculer un chemin du node Depart au node Arrivee. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphe</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Objet de type <ref refid="class_graphe" kindref="compound">Graphe</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: <ref refid="class_node" kindref="compound">Node</ref> de depart </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arrivee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: <ref refid="class_node" kindref="compound">Node</ref> d&apos;arrivee </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>tableau de node representant le chemin du <ref refid="class_node" kindref="compound">Node</ref> depart au <ref refid="class_node" kindref="compound">Node</ref> arrivee </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/PathFinder.h" line="94" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/PathFinder.cpp" bodystart="14" bodyend="95"/>
+        <references refid="class_node_1af04dc1e91f0961108c3ffab1fc9e792a" compoundref="_node_8h" startline="112" endline="112">Node::getWalkable</references>
+        <references refid="class_node_1a6c026e5d8c28591c6e2bd08c68619fd1" compoundref="_node_8h" startline="140" endline="140">Node::getX</references>
+        <references refid="class_node_1abab48a3f494994d4f456897f3372d3ae" compoundref="_node_8h" startline="147" endline="147">Node::getY</references>
+        <references refid="class_node_1a220a8d64cb0df1cce083ed38c1260615" compoundref="_node_8cpp" startline="21" endline="21">Node::getParent</references>
+        <references refid="class_node_1a9133c5c2e1c994b914535bbbefa33d7c" compoundref="_node_8h" startline="119" endline="119">Node::getG</references>
+        <references refid="class_pathfinder_1a75096e49427cc06e95e82819d949b8e4" compoundref="_path_finder_8h" startline="76">NODE_DISTANCE_VALUE</references>
+        <references refid="class_pathfinder_1a9fabc665d250a89c2f0af4059d77d8b2" compoundref="_path_finder_8h" startline="77">NODE_DISTANCE_DIAG_VALUE</references>
+        <references refid="class_node_1a39cc5b0b6814a6a2f4f0771203f334a1" compoundref="_node_8cpp" startline="20" endline="20">Node::setParent</references>
+        <references refid="class_node_1a47181f2860b050a0036097d534051cfc" compoundref="_node_8h" startline="77" endline="77">Node::setG</references>
+        <references refid="class_node_1a5f9637d2e5bed720d9ee7a5af8a00c36" compoundref="_node_8h" startline="91" endline="91">Node::setH</references>
+        <references refid="class_node_1a070cae6ce68d13a77b42686e6ecdef05" compoundref="_node_8h" startline="84" endline="84">Node::setF</references>
+        <referencedby refid="class_graphe_1a7c51dfd09bcf7d8505ec47a96b5d9c61" compoundref="_graphe_8cpp" startline="90" endline="121">Graphe::calculSortie</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Classe representant une instance de l&apos;algorithme A*. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/emip/git/TER/TESTA/code/include/PathFinder.h" line="18" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/PathFinder.h" bodystart="18" bodyend="96"/>
+    <listofallmembers>
+      <member refid="class_pathfinder_1a954af9aed5c7085761c6576a231a0473" prot="private" virt="non-virtual"><scope>Pathfinder</scope><name>addToCloseList</name></member>
+      <member refid="class_pathfinder_1a0f0453dfec0a102f1548c65827e44bd6" prot="private" virt="non-virtual"><scope>Pathfinder</scope><name>addToOpenList</name></member>
+      <member refid="class_pathfinder_1aee6e72cf2b4a9f86c6aa1139618e2167" prot="public" virt="non-virtual"><scope>Pathfinder</scope><name>findPath</name></member>
+      <member refid="class_pathfinder_1a76905ec66b3a67db9a438e2503c246d3" prot="private" virt="non-virtual"><scope>Pathfinder</scope><name>getCurrentNode</name></member>
+      <member refid="class_pathfinder_1a36ed5815ceb6786fe20cf68be215b30c" prot="private" virt="non-virtual"><scope>Pathfinder</scope><name>getNeighbors</name></member>
+      <member refid="class_pathfinder_1a71f726116f15781a429205dc71a59d1f" prot="private" virt="non-virtual"><scope>Pathfinder</scope><name>isOnCloseList</name></member>
+      <member refid="class_pathfinder_1af9fbf4ef37b9d49b3754d39a7069fc0f" prot="private" virt="non-virtual"><scope>Pathfinder</scope><name>isOnOpenList</name></member>
+      <member refid="class_pathfinder_1a926778da1b589797f652e1a3d6e8ba2f" prot="private" virt="non-virtual"><scope>Pathfinder</scope><name>m_closeList</name></member>
+      <member refid="class_pathfinder_1a2ecc998181ac719a2ff20e2dfb5904f8" prot="private" virt="non-virtual"><scope>Pathfinder</scope><name>m_openList</name></member>
+      <member refid="class_pathfinder_1a9fabc665d250a89c2f0af4059d77d8b2" prot="public" virt="non-virtual"><scope>Pathfinder</scope><name>NODE_DISTANCE_DIAG_VALUE</name></member>
+      <member refid="class_pathfinder_1a75096e49427cc06e95e82819d949b8e4" prot="public" virt="non-virtual"><scope>Pathfinder</scope><name>NODE_DISTANCE_VALUE</name></member>
+      <member refid="class_pathfinder_1af562d840858cf2b369fcee51f5069456" prot="public" virt="non-virtual"><scope>Pathfinder</scope><name>Pathfinder</name></member>
+      <member refid="class_pathfinder_1aadea0c7ed442515f101402dc9cdce180" prot="private" virt="non-virtual"><scope>Pathfinder</scope><name>removeFromCloseList</name></member>
+      <member refid="class_pathfinder_1a1cf7c0b005639a1638f1267aad53aec7" prot="private" virt="non-virtual"><scope>Pathfinder</scope><name>removeFromOpenList</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

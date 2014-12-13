@@ -1,0 +1,290 @@
+\section{Référence de la classe Coordonnes2\-D}
+\label{class_coordonnes2_d}\index{Coordonnes2\-D@{Coordonnes2\-D}}
+
+
+Classe representant une position(coordonnees) d'un point.  
+
+
+
+
+{\ttfamily \#include $<$coordonnes2d.\-h$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Coordonnes2\-D} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+{\bf Coordonnes2\-D} (int X, int Y)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+{\bf Coordonnes2\-D} (const {\bf Coordonnes2\-D} \&c)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+virtual {\bf $\sim$\-Coordonnes2\-D} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+int {\bf get\-X} () const 
+\begin{DoxyCompactList}\small\item\em Getter. \end{DoxyCompactList}\item 
+int {\bf get\-Y} () const 
+\begin{DoxyCompactList}\small\item\em Getter. \end{DoxyCompactList}\item 
+int {\bf get\-Cadran} () const 
+\begin{DoxyCompactList}\small\item\em Getter. \end{DoxyCompactList}\item 
+void {\bf set\-X} (int X)
+\begin{DoxyCompactList}\small\item\em Setter. \end{DoxyCompactList}\item 
+void {\bf set\-Y} (int Y)
+\begin{DoxyCompactList}\small\item\em Setter. \end{DoxyCompactList}\item 
+void {\bf set\-Cadran} (int val)
+\begin{DoxyCompactList}\small\item\em Setter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf m\-\_\-\-X}
+\item 
+int {\bf m\-\_\-\-Y}
+\item 
+int {\bf m\-\_\-cadran}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Classe representant une position(coordonnees) d'un point. 
+
+La classe est composee des coordonnees x et y d'un point ainsi que le cadran dans lequel il se trouve. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Coordonnes2\-D@{Coordonnes2\-D}!Coordonnes2\-D@{Coordonnes2\-D}}
+\index{Coordonnes2\-D@{Coordonnes2\-D}!Coordonnes2D@{Coordonnes2\-D}}
+\subsubsection[{Coordonnes2\-D}]{\setlength{\rightskip}{0pt plus 5cm}Coordonnes2\-D\-::\-Coordonnes2\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_coordonnes2_d_aa5b01dbc1c5305dbf1dd51f20eeec05e}
+
+
+Constructeur. 
+
+Default constructor
+
+Constructeur de la classe \doxyref{Coordonnes2\-D}{p.}{class_coordonnes2_d} \index{Coordonnes2\-D@{Coordonnes2\-D}!Coordonnes2\-D@{Coordonnes2\-D}}
+\index{Coordonnes2\-D@{Coordonnes2\-D}!Coordonnes2D@{Coordonnes2\-D}}
+\subsubsection[{Coordonnes2\-D}]{\setlength{\rightskip}{0pt plus 5cm}Coordonnes2\-D\-::\-Coordonnes2\-D (
+\begin{DoxyParamCaption}
+\item[{int}]{X, }
+\item[{int}]{Y}
+\end{DoxyParamCaption}
+)}\label{class_coordonnes2_d_a3a4031367715512fb9d3aad9bc9a5564}
+
+
+Constructeur. 
+
+Constructeur de la classe \doxyref{Coordonnes2\-D}{p.}{class_coordonnes2_d}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em X} & \-: coordonnee X a stocker \\
+\hline
+{\em Y} & \-: coordonnee Y a stocker \\
+\hline
+\end{DoxyParams}
+\index{Coordonnes2\-D@{Coordonnes2\-D}!Coordonnes2\-D@{Coordonnes2\-D}}
+\index{Coordonnes2\-D@{Coordonnes2\-D}!Coordonnes2D@{Coordonnes2\-D}}
+\subsubsection[{Coordonnes2\-D}]{\setlength{\rightskip}{0pt plus 5cm}Coordonnes2\-D\-::\-Coordonnes2\-D (
+\begin{DoxyParamCaption}
+\item[{const {\bf Coordonnes2\-D} \&}]{c}
+\end{DoxyParamCaption}
+)}\label{class_coordonnes2_d_a32915a0b2cfc5dce3ed491fb3fa0abae}
+
+
+Constructeur. 
+
+Constructeur de copie de la classe \doxyref{Coordonnes2\-D}{p.}{class_coordonnes2_d}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em c} & \-: reference sur l'element a copier \\
+\hline
+\end{DoxyParams}
+
+
+Voici le graphe d'appel pour cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_coordonnes2_d_a32915a0b2cfc5dce3ed491fb3fa0abae_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Coordonnes2\-D@{Coordonnes2\-D}!$\sim$\-Coordonnes2\-D@{$\sim$\-Coordonnes2\-D}}
+\index{$\sim$\-Coordonnes2\-D@{$\sim$\-Coordonnes2\-D}!Coordonnes2D@{Coordonnes2\-D}}
+\subsubsection[{$\sim$\-Coordonnes2\-D}]{\setlength{\rightskip}{0pt plus 5cm}Coordonnes2\-D\-::$\sim$\-Coordonnes2\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_coordonnes2_d_a65b01695cc5bd68968db3ded7a1fcf74}
+
+
+Destructeur. 
+
+Default destructor
+
+Destructeur de la classe \doxyref{Coordonnes2\-D}{p.}{class_coordonnes2_d} 
+
+\subsection{Documentation des fonctions membres}
+\index{Coordonnes2\-D@{Coordonnes2\-D}!get\-Cadran@{get\-Cadran}}
+\index{get\-Cadran@{get\-Cadran}!Coordonnes2D@{Coordonnes2\-D}}
+\subsubsection[{get\-Cadran}]{\setlength{\rightskip}{0pt plus 5cm}int Coordonnes2\-D\-::get\-Cadran (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_coordonnes2_d_a923a832cec319899e4435240e1d1a2ce}
+
+
+Getter. 
+
+Getter de l'attribut m\-\_\-cadran de la classe \doxyref{Coordonnes2\-D}{p.}{class_coordonnes2_d}
+
+\begin{DoxyReturn}{Renvoie}
+l'attribut m\-\_\-cadran de la classe \doxyref{Coordonnes2\-D}{p.}{class_coordonnes2_d} 
+\end{DoxyReturn}
+
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_coordonnes2_d_a923a832cec319899e4435240e1d1a2ce_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Coordonnes2\-D@{Coordonnes2\-D}!get\-X@{get\-X}}
+\index{get\-X@{get\-X}!Coordonnes2D@{Coordonnes2\-D}}
+\subsubsection[{get\-X}]{\setlength{\rightskip}{0pt plus 5cm}int Coordonnes2\-D\-::get\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_coordonnes2_d_ac06b44e9c6584d4de6746f6b14472cdb}
+
+
+Getter. 
+
+Getter de l'attribut m\-\_\-\-X de la classe \doxyref{Coordonnes2\-D}{p.}{class_coordonnes2_d}
+
+\begin{DoxyReturn}{Renvoie}
+l'attribut m\-\_\-\-X de la classe \doxyref{Coordonnes2\-D}{p.}{class_coordonnes2_d} 
+\end{DoxyReturn}
+
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_coordonnes2_d_ac06b44e9c6584d4de6746f6b14472cdb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Coordonnes2\-D@{Coordonnes2\-D}!get\-Y@{get\-Y}}
+\index{get\-Y@{get\-Y}!Coordonnes2D@{Coordonnes2\-D}}
+\subsubsection[{get\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int Coordonnes2\-D\-::get\-Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_coordonnes2_d_a52192f87a21074e41b7d7b22f258a549}
+
+
+Getter. 
+
+Getter de l'attribut m\-\_\-\-Y de la classe \doxyref{Coordonnes2\-D}{p.}{class_coordonnes2_d}
+
+\begin{DoxyReturn}{Renvoie}
+l'attribut m\-\_\-\-Y de la classe \doxyref{Coordonnes2\-D}{p.}{class_coordonnes2_d} 
+\end{DoxyReturn}
+
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_coordonnes2_d_a52192f87a21074e41b7d7b22f258a549_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Coordonnes2\-D@{Coordonnes2\-D}!set\-Cadran@{set\-Cadran}}
+\index{set\-Cadran@{set\-Cadran}!Coordonnes2D@{Coordonnes2\-D}}
+\subsubsection[{set\-Cadran}]{\setlength{\rightskip}{0pt plus 5cm}void Coordonnes2\-D\-::set\-Cadran (
+\begin{DoxyParamCaption}
+\item[{int}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_coordonnes2_d_a83505a182e95dee074796050f5fc960b}
+
+
+Setter. 
+
+Setter de l'attribut m\-\_\-cadran de la classe \doxyref{Coordonnes2\-D}{p.}{class_coordonnes2_d} \index{Coordonnes2\-D@{Coordonnes2\-D}!set\-X@{set\-X}}
+\index{set\-X@{set\-X}!Coordonnes2D@{Coordonnes2\-D}}
+\subsubsection[{set\-X}]{\setlength{\rightskip}{0pt plus 5cm}void Coordonnes2\-D\-::set\-X (
+\begin{DoxyParamCaption}
+\item[{int}]{X}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_coordonnes2_d_acd18a61d429f17132bd6af7c66c5f56d}
+
+
+Setter. 
+
+Setter de l'attribut m\-\_\-\-X de la classe \doxyref{Coordonnes2\-D}{p.}{class_coordonnes2_d} 
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_coordonnes2_d_acd18a61d429f17132bd6af7c66c5f56d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Coordonnes2\-D@{Coordonnes2\-D}!set\-Y@{set\-Y}}
+\index{set\-Y@{set\-Y}!Coordonnes2D@{Coordonnes2\-D}}
+\subsubsection[{set\-Y}]{\setlength{\rightskip}{0pt plus 5cm}void Coordonnes2\-D\-::set\-Y (
+\begin{DoxyParamCaption}
+\item[{int}]{Y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_coordonnes2_d_a1b611c902888fced2b0712ed6e84a3fb}
+
+
+Setter. 
+
+Setter de l'attribut m\-\_\-\-Y de la classe \doxyref{Coordonnes2\-D}{p.}{class_coordonnes2_d} 
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_coordonnes2_d_a1b611c902888fced2b0712ed6e84a3fb_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Documentation des données membres}
+\index{Coordonnes2\-D@{Coordonnes2\-D}!m\-\_\-cadran@{m\-\_\-cadran}}
+\index{m\-\_\-cadran@{m\-\_\-cadran}!Coordonnes2D@{Coordonnes2\-D}}
+\subsubsection[{m\-\_\-cadran}]{\setlength{\rightskip}{0pt plus 5cm}int Coordonnes2\-D\-::m\-\_\-cadran\hspace{0.3cm}{\ttfamily [protected]}}\label{class_coordonnes2_d_ad09082ceb0a4e3ea127ff78192a58a68}
+cadran de la fenetre \index{Coordonnes2\-D@{Coordonnes2\-D}!m\-\_\-\-X@{m\-\_\-\-X}}
+\index{m\-\_\-\-X@{m\-\_\-\-X}!Coordonnes2D@{Coordonnes2\-D}}
+\subsubsection[{m\-\_\-\-X}]{\setlength{\rightskip}{0pt plus 5cm}int Coordonnes2\-D\-::m\-\_\-\-X\hspace{0.3cm}{\ttfamily [protected]}}\label{class_coordonnes2_d_a27d023c95955192562e88d8dcb3550ea}
+position X \index{Coordonnes2\-D@{Coordonnes2\-D}!m\-\_\-\-Y@{m\-\_\-\-Y}}
+\index{m\-\_\-\-Y@{m\-\_\-\-Y}!Coordonnes2D@{Coordonnes2\-D}}
+\subsubsection[{m\-\_\-\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int Coordonnes2\-D\-::m\-\_\-\-Y\hspace{0.3cm}{\ttfamily [protected]}}\label{class_coordonnes2_d_aaae6b7822c9680973ad6e55255ffa45a}
+position Y 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+code/include/{\bf coordonnes2d.\-h}\item 
+code/src/coordonnes2d.\-cpp\end{DoxyCompactItemize}

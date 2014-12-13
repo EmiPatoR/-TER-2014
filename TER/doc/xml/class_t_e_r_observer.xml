@@ -1,0 +1,874 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_t_e_r_observer" kind="class" prot="public">
+    <compoundname>TERObserver</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Observer</basecompoundref>
+    <includes refid="_t_e_r_observer_8h" local="no">TERObserver.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_t_e_r_observer_1a96e7a61901aa056e00127855c7c3ab68" prot="private" static="no" mutable="no">
+        <type>repast::Properties *</type>
+        <definition>repast::Properties* TERObserver::proprietes</definition>
+        <argsstring></argsstring>
+        <name>proprietes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>proprietes de la simulations </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="32" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/TERObserver.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_e_r_observer_1a39a273654cd0e6f5f0daadf33c4a9bac" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TERObserver::humainType</definition>
+        <argsstring></argsstring>
+        <name>humainType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="33" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/TERObserver.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_e_r_observer_1a27e2a6511104090c967d8e7c26c1c772" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TERObserver::wallType</definition>
+        <argsstring></argsstring>
+        <name>wallType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type des agents </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="33" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/TERObserver.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_e_r_observer_1ae525510a5c8f2083aab55c1a80f5b21f" prot="private" static="no" mutable="no">
+        <type><ref refid="class_fenetre" kindref="compound">Fenetre</ref> *</type>
+        <definition>Fenetre* TERObserver::_fen</definition>
+        <argsstring></argsstring>
+        <name>_fen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_fenetre" kindref="compound">Fenetre</ref> SDL </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="34" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/TERObserver.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_e_r_observer_1a2321013da4d34eb3e6164ee4678bc6cd" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TERObserver::map[NB_PROCESS][NB_CASES_HAUTEUR][NB_CASES_LARGEUR]</definition>
+        <argsstring>[NB_PROCESS][NB_CASES_HAUTEUR][NB_CASES_LARGEUR]</argsstring>
+        <name>map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>liste de matrices par cadran </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="35" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/TERObserver.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_e_r_observer_1a269e26b0bfc08295b0b95baf682f9a54" prot="private" static="no" mutable="no">
+        <type>int **</type>
+        <definition>int** TERObserver::map_a_star</definition>
+        <argsstring></argsstring>
+        <name>map_a_star</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>matrice representant la carte pour appliquer A* </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="36" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/TERObserver.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_e_r_observer_1a178c5bb5b1e322ea106bfab577165c85" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref> &gt;</type>
+        <definition>std::vector&lt;Coordonnes2D&gt; TERObserver::m_sorties</definition>
+        <argsstring></argsstring>
+        <name>m_sorties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Liste des sorties </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="37" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/TERObserver.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_e_r_observer_1a1222b16ae6933b9e8619c54e0705e10d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TERObserver::humancount</definition>
+        <argsstring></argsstring>
+        <name>humancount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="38" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/TERObserver.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_e_r_observer_1af699f0ac33a3f300da0af679003c6395" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TERObserver::wallcount</definition>
+        <argsstring></argsstring>
+        <name>wallcount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>nombre d&apos;agents </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="38" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/TERObserver.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_e_r_observer_1a3cfc94932d76cb8a8e3f13b657e38883" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TERObserver::m_survivants</definition>
+        <argsstring></argsstring>
+        <name>m_survivants</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>nombre de survivants a la simulation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="39" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/TERObserver.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_e_r_observer_1a374456264a96e6f557200507917a4b9a" prot="private" static="no" mutable="no">
+        <type>repast::Timer</type>
+        <definition>repast::Timer TERObserver::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Timer pour recuperer le temps de simulation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="40" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/TERObserver.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_e_r_observer_1a709f639aad487e98aeb8c22912f26a7d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_graphe" kindref="compound">Graphe</ref> *</type>
+        <definition>Graphe* TERObserver::graphe</definition>
+        <argsstring></argsstring>
+        <name>graphe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_graphe" kindref="compound">Graphe</ref> pour l&apos;application d&apos;A* </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="41" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/TERObserver.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_e_r_observer_1a54b6f26171b2f7fb0c143839018a1a5c" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double TERObserver::dernierTick</definition>
+        <argsstring></argsstring>
+        <name>dernierTick</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dernier tick d&apos;evacuation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="42" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/TERObserver.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_e_r_observer_1a31e5595222f74e074e47ec19d484352a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TERObserver::ageDiff</definition>
+        <argsstring></argsstring>
+        <name>ageDiff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>avec ou sans prise en compte de la difference d&apos;age dans la simulation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="43" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/TERObserver.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_e_r_observer_1ab6d63c2ba03b502137f34051537030ff" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TERObserver::nbSorties</definition>
+        <argsstring></argsstring>
+        <name>nbSorties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>nombre de sorties </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="44" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/TERObserver.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_t_e_r_observer_1aa9e1451ecf894d0b47978a251c33a5bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TERObserver::TERObserver</definition>
+        <argsstring>()</argsstring>
+        <name>TERObserver</name>
+        <briefdescription>
+<para>Constructeur. </para>        </briefdescription>
+        <detaileddescription>
+<para>Constructeur de la classe <ref refid="class_t_e_r_observer" kindref="compound">TERObserver</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="53" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/TERObserver.h" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_e_r_observer_1a7aab378089e1835d915d675c1b1aee24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual TERObserver::~TERObserver</definition>
+        <argsstring>()</argsstring>
+        <name>~TERObserver</name>
+        <briefdescription>
+<para>Destructeur. </para>        </briefdescription>
+        <detaileddescription>
+<para>Destructeur de la classe <ref refid="class_pathfinder" kindref="compound">Pathfinder</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="61" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/TERObserver.h" bodystart="61" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_e_r_observer_1a87524bb92d6be89b025e4312440f6948" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TERObserver::go</definition>
+        <argsstring>()</argsstring>
+        <name>go</name>
+        <briefdescription>
+<para>Fonction heritee qui est appelee a chaque tick de la simulation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="142" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/TERObserver.cpp" bodystart="23" bodyend="69"/>
+        <references refid="class_humain_1acfb526c278bfd003114e3f4270ab6342" compoundref="_humain_8cpp" startline="38" endline="125">Humain::step</references>
+      </memberdef>
+      <memberdef kind="function" id="class_t_e_r_observer_1a9f04020109fb77d6e704546c7060fff3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TERObserver::setup</definition>
+        <argsstring>(repast::Properties &amp;props)</argsstring>
+        <name>setup</name>
+        <param>
+          <type>repast::Properties &amp;</type>
+          <declname>props</declname>
+        </param>
+        <briefdescription>
+<para>Fonction heritee qui est appelee a l&apos;initialisation de l&apos;objet Observer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="148" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/TERObserver.cpp" bodystart="76" bodyend="204"/>
+        <references refid="class_coordonnes2_d_1acd18a61d429f17132bd6af7c66c5f56d" compoundref="coordonnes2d_8h" startline="95" endline="95">Coordonnes2D::setX</references>
+        <references refid="class_coordonnes2_d_1a1b611c902888fced2b0712ed6e84a3fb" compoundref="coordonnes2d_8h" startline="103" endline="103">Coordonnes2D::setY</references>
+        <references refid="class_humain_1a415aa529a0f744d0b81bc80b93864665" compoundref="_humain_8cpp" startline="32" endline="36">Humain::randomAngle</references>
+        <references refid="class_humain_1a73d39a9d1f241d620ccac2f599e2dd97" compoundref="_humain_8cpp" startline="127" endline="127">Humain::getAngle</references>
+        <references refid="class_coordonnes2_d_1ac06b44e9c6584d4de6746f6b14472cdb" compoundref="coordonnes2d_8h" startline="69" endline="69">Coordonnes2D::getX</references>
+        <references refid="class_coordonnes2_d_1a52192f87a21074e41b7d7b22f258a549" compoundref="coordonnes2d_8h" startline="78" endline="78">Coordonnes2D::getY</references>
+        <references refid="class_humain_1a0dfad40c440229a41fb980af89385fc8" compoundref="_humain_8h" startline="258" endline="262">Humain::setCheminXY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_t_e_r_observer_1ae8d98b39e6c1f41f2eb78326893106f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TERObserver::loadMap_a_star</definition>
+        <argsstring>(repast::Properties &amp;props, std::vector&lt; Coordonnes2D &gt; &amp;sorties)</argsstring>
+        <name>loadMap_a_star</name>
+        <param>
+          <type>repast::Properties &amp;</type>
+          <declname>props</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref> &gt; &amp;</type>
+          <declname>sorties</declname>
+        </param>
+        <briefdescription>
+<para>Charge a partir du fichier d&apos;initialisation, la matrice map a utiliser pour A*. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="154" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/TERObserver.cpp" bodystart="292" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_e_r_observer_1a2ebef6d41d08586bd3b54157ea372f99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>repast::relogo::RelogoAgent *</type>
+        <definition>RelogoAgent * TERObserver::createAgent</definition>
+        <argsstring>(const AgentPackage &amp;content)</argsstring>
+        <name>createAgent</name>
+        <param>
+          <type>const <ref refid="struct_agent_package" kindref="compound">AgentPackage</ref> &amp;</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+<para>Fonction qui cree un agent a partir d&apos;une archive serialisee. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: archive serialisee de type <ref refid="struct_agent_package" kindref="compound">AgentPackage</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointeur sur le nouvel Agent cree en memoire </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="164" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/TERObserver.cpp" bodystart="433" bodyend="440"/>
+        <references refid="struct_agent_package_1a47cb43c3eb16f7ab9fed25c310ea1f7a" compoundref="_agent_package_8h" startline="36">AgentPackage::type</references>
+      </memberdef>
+      <memberdef kind="function" id="class_t_e_r_observer_1ab036cbce36d1f1bd432785277becb041" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TERObserver::provideContent</definition>
+        <argsstring>(const repast::AgentRequest &amp;request, std::vector&lt; AgentPackage &gt; &amp;out)</argsstring>
+        <name>provideContent</name>
+        <param>
+          <type>const repast::AgentRequest &amp;</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="struct_agent_package" kindref="compound">AgentPackage</ref> &gt; &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>Fonction qui assigne les valeurs d&apos;un tableau d&apos;archives serialisees a un agent ou un ensemble d&apos;agents. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: tableau d&apos;archives serialisees de type <ref refid="struct_agent_package" kindref="compound">AgentPackage</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Une requete Repast sur un ou plusieurs agents </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointeur sur le nouvel Agent cree en memoire </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="173" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/TERObserver.cpp" bodystart="442" bodyend="457"/>
+        <references refid="struct_agent_package_1acb97295bf92e52e7791297ccfe00a9f0" compoundref="_agent_package_8h" startline="34">AgentPackage::id</references>
+        <references refid="struct_agent_package_1a7023c0492848b76c886feed44c97dbbe" compoundref="_agent_package_8h" startline="38">AgentPackage::cheminX</references>
+        <references refid="class_humain_1a68abc0ded73a07d369a74e5a4d3bd7e6" compoundref="_humain_8h" startline="243" endline="243">Humain::getCheminX</references>
+        <references refid="struct_agent_package_1aa4d44851a12b4a5cbb965999c9f325cd" compoundref="_agent_package_8h" startline="39">AgentPackage::cheminY</references>
+        <references refid="class_humain_1ad815b1e9aacefe7a41ded28772a41b9a" compoundref="_humain_8h" startline="249" endline="249">Humain::getCheminY</references>
+        <references refid="struct_agent_package_1abf854b3cfca5add73170fdc862b8b477" compoundref="_agent_package_8h" startline="40">AgentPackage::etape</references>
+        <references refid="class_humain_1a434d49c9e83f20f525106416f6c62a48" compoundref="_humain_8h" startline="231" endline="231">Humain::getEtape</references>
+        <references refid="struct_agent_package_1ac2a45d712ab4e8befb526865a12d67f3" compoundref="_agent_package_8h" startline="41">AgentPackage::typePersonne</references>
+        <references refid="class_humain_1ab8469bf829ed8100899bc57a62025cb9" compoundref="_humain_8h" startline="224" endline="224">Humain::getTypePersonne</references>
+      </memberdef>
+      <memberdef kind="function" id="class_t_e_r_observer_1a7ef10641e78a9fe2ba24e4fa6fc7e83a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TERObserver::enregisterResultats</definition>
+        <argsstring>()</argsstring>
+        <name>enregisterResultats</name>
+        <briefdescription>
+<para>Fonction qui enregistre les resultats de la simulation dans un fichier tableur. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="179" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/TERObserver.cpp" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_e_r_observer_1ac7815af47779d77ec0ed105af435b186" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TERObserver::loadMap</definition>
+        <argsstring>(repast::Properties &amp;props, int process_cadran)</argsstring>
+        <name>loadMap</name>
+        <param>
+          <type>repast::Properties &amp;</type>
+          <declname>props</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>process_cadran</declname>
+        </param>
+        <briefdescription>
+<para>Fonction charge la map a partir du fichier d&apos;initialisation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>props</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: proprietes de la simulation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>process_cadran</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: cadran sur lequel travaille le processus actuel </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="187" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/TERObserver.cpp" bodystart="206" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_e_r_observer_1a33b585c06b752057e20af26a2220a23f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TERObserver::createAgents</definition>
+        <argsstring>(std::vector&lt; AgentPackage &gt; &amp;content, std::vector&lt; repast::relogo::RelogoAgent * &gt; &amp;out)</argsstring>
+        <name>createAgents</name>
+        <param>
+          <type>std::vector&lt; <ref refid="struct_agent_package" kindref="compound">AgentPackage</ref> &gt; &amp;</type>
+          <declname>content</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; repast::relogo::RelogoAgent * &gt; &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>Fonction qui cree des agents, appelee lors d&apos;une synchronisation du buffer de la grille Repast. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: archive serialisee de type <ref refid="struct_agent_package" kindref="compound">AgentPackage</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: reference vers un tableau d&apos;agents a mettre a jour </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="196" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/TERObserver.cpp" bodystart="472" bodyend="482"/>
+        <references refid="struct_agent_package_1a47cb43c3eb16f7ab9fed25c310ea1f7a" compoundref="_agent_package_8h" startline="36">AgentPackage::type</references>
+      </memberdef>
+      <memberdef kind="function" id="class_t_e_r_observer_1a559eb83afbbffd8b6b1d92690e6734ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TERObserver::provideContent</definition>
+        <argsstring>(repast::relogo::RelogoAgent *agent, std::vector&lt; AgentPackage &gt; &amp;out)</argsstring>
+        <name>provideContent</name>
+        <param>
+          <type>repast::relogo::RelogoAgent *</type>
+          <declname>agent</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="struct_agent_package" kindref="compound">AgentPackage</ref> &gt; &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>Fonction qui fournit aux agents leur contenu, appelee lors d&apos;une synchronisation du buffer de la grille Repast. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>agent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Agent à mettre a jour. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Tableau d&apos;archives serialisees de type <ref refid="struct_agent_package" kindref="compound">AgentPackage</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="204" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_e_r_observer_1ab1fe1d3f67f16d7bded15408348bc4b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TERObserver::updateAgent</definition>
+        <argsstring>(AgentPackage package)</argsstring>
+        <name>updateAgent</name>
+        <param>
+          <type><ref refid="struct_agent_package" kindref="compound">AgentPackage</ref></type>
+          <declname>package</declname>
+        </param>
+        <briefdescription>
+<para>Fonction qui met à jour des agents deja existants. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>package</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: archive serialisee de type <ref refid="struct_agent_package" kindref="compound">AgentPackage</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="211" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/TERObserver.cpp" bodystart="484" bodyend="492"/>
+        <references refid="struct_agent_package_1acb97295bf92e52e7791297ccfe00a9f0" compoundref="_agent_package_8h" startline="34">AgentPackage::id</references>
+        <references refid="struct_agent_package_1a424b83e665a649a53251684d53b7f6ec" compoundref="_agent_package_8h" startline="35">AgentPackage::proc</references>
+        <references refid="struct_agent_package_1a47cb43c3eb16f7ab9fed25c310ea1f7a" compoundref="_agent_package_8h" startline="36">AgentPackage::type</references>
+        <references refid="class_humain_1a0dfad40c440229a41fb980af89385fc8" compoundref="_humain_8h" startline="258" endline="262">Humain::setCheminXY</references>
+        <references refid="struct_agent_package_1a7023c0492848b76c886feed44c97dbbe" compoundref="_agent_package_8h" startline="38">AgentPackage::cheminX</references>
+        <references refid="struct_agent_package_1aa4d44851a12b4a5cbb965999c9f325cd" compoundref="_agent_package_8h" startline="39">AgentPackage::cheminY</references>
+        <references refid="struct_agent_package_1abf854b3cfca5add73170fdc862b8b477" compoundref="_agent_package_8h" startline="40">AgentPackage::etape</references>
+        <references refid="struct_agent_package_1ac2a45d712ab4e8befb526865a12d67f3" compoundref="_agent_package_8h" startline="41">AgentPackage::typePersonne</references>
+      </memberdef>
+      <memberdef kind="function" id="class_t_e_r_observer_1a7b97c7e2c7251d65d946c9ced3c54bcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TERObserver::dessinerDecor</definition>
+        <argsstring>(int cadran)</argsstring>
+        <name>dessinerDecor</name>
+        <param>
+          <type>int</type>
+          <declname>cadran</declname>
+        </param>
+        <briefdescription>
+<para>Fonction qui dessine le decor dans la <ref refid="class_fenetre" kindref="compound">Fenetre</ref> SDL. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cadran</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: cadran a dessiner dans ce processus </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="218" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/TERObserver.cpp" bodystart="335" bodyend="431"/>
+        <references refid="class_humain_1a1351d4c106fc2e175cf19da0ca3fce52" compoundref="_humain_8h" startline="237" endline="237">Humain::getSorti</references>
+        <references refid="class_humain_1a73d39a9d1f241d620ccac2f599e2dd97" compoundref="_humain_8cpp" startline="127" endline="127">Humain::getAngle</references>
+        <references refid="class_humain_1ab8469bf829ed8100899bc57a62025cb9" compoundref="_humain_8h" startline="224" endline="224">Humain::getTypePersonne</references>
+      </memberdef>
+      <memberdef kind="function" id="class_t_e_r_observer_1a6d43b1ce4f72ffe2dafaf6bf831cdec9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref></type>
+        <definition>Coordonnes2D TERObserver::Rcor2GLCor</definition>
+        <argsstring>(int X, int Y, int cadran)</argsstring>
+        <name>Rcor2GLCor</name>
+        <param>
+          <type>int</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cadran</declname>
+        </param>
+        <briefdescription>
+<para>Fonction qui convertie des cordonnees du monde Repast vers des coordonnes en pixel dans la <ref refid="class_fenetre" kindref="compound">Fenetre</ref> SDL associee a ce processus. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>X</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: coordonne X dans le monde Repast a convertir </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: coordonne Y dans le monde Repast a convertir </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cadran</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: cadran dans lequel on se trouve </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un Objet de type <ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref> contenant les coordonnees converties </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="227" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/TERObserver.cpp" bodystart="510" bodyend="546"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_e_r_observer_1a11cef38b11ca544137fe36e11aba8d5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref></type>
+        <definition>Coordonnes2D TERObserver::Fcor2RCor</definition>
+        <argsstring>(int posX, int posY)</argsstring>
+        <name>Fcor2RCor</name>
+        <param>
+          <type>int</type>
+          <declname>posX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>posY</declname>
+        </param>
+        <briefdescription>
+<para>Fonction qui convertie des cordonnees du Fichier vers des coordonnes du monde Repast. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>X</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: coordonne X dans le Fichier </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: coordonne Y dans le Fichier </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un Objet de type <ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref> contenant les coordonnees converties </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="235" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/TERObserver.cpp" bodystart="494" bodyend="500"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_e_r_observer_1a5287272e19f0556244cd96a008780d6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref></type>
+        <definition>Coordonnes2D TERObserver::Mcor2GLCor</definition>
+        <argsstring>(int posX, int posY)</argsstring>
+        <name>Mcor2GLCor</name>
+        <param>
+          <type>int</type>
+          <declname>posX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>posY</declname>
+        </param>
+        <briefdescription>
+<para>Fonction qui convertie des cordonnees de la liste de matrices map vers des coordonnes en pixel de la <ref refid="class_fenetre" kindref="compound">Fenetre</ref> SDL. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>X</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: coordonne X dans la map </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: coordonne Y dans la map </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un Objet de type <ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref> contenant les coordonnees converties </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="243" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/TERObserver.cpp" bodystart="502" bodyend="508"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_e_r_observer_1af7e1247020de2e3d4d42a13ff8c6b6c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TERObserver::synchronizeMap</definition>
+        <argsstring>()</argsstring>
+        <name>synchronizeMap</name>
+        <briefdescription>
+<para>Fonction qui synchronise la map et la met a jour en fonction de la map Repast. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="248" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/TERObserver.cpp" bodystart="559" bodyend="603"/>
+        <references refid="class_coordonnes2_d_1acd18a61d429f17132bd6af7c66c5f56d" compoundref="coordonnes2d_8h" startline="95" endline="95">Coordonnes2D::setX</references>
+        <references refid="class_coordonnes2_d_1a1b611c902888fced2b0712ed6e84a3fb" compoundref="coordonnes2d_8h" startline="103" endline="103">Coordonnes2D::setY</references>
+        <references refid="class_coordonnes2_d_1ac06b44e9c6584d4de6746f6b14472cdb" compoundref="coordonnes2d_8h" startline="69" endline="69">Coordonnes2D::getX</references>
+        <references refid="class_coordonnes2_d_1a52192f87a21074e41b7d7b22f258a549" compoundref="coordonnes2d_8h" startline="78" endline="78">Coordonnes2D::getY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_t_e_r_observer_1a3b78e3ab9fe3a01b465ccd31f1e88f45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TERObserver::razMap</definition>
+        <argsstring>()</argsstring>
+        <name>razMap</name>
+        <briefdescription>
+<para>Fonction qui remet a 0 la map (liste de matrices en memoire) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="253" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/TERObserver.cpp" bodystart="548" bodyend="557"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_e_r_observer_1a51c832c301812eb0cda095e81051d9b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref></type>
+        <definition>Coordonnes2D TERObserver::map2Repast</definition>
+        <argsstring>(Coordonnes2D c, int cadran)</argsstring>
+        <name>map2Repast</name>
+        <param>
+          <type><ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cadran</declname>
+        </param>
+        <briefdescription>
+<para>Fonction qui convertit les coordonnes de la map vers des coordonnees Repast. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Objet de type <ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref> qui contient les coordonnes de la map à convertir </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cadran</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: cadran du processus actuel </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un Objet de type <ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref> contenant les coordonnees converties </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="262" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/TERObserver.cpp" bodystart="605" bodyend="635"/>
+        <references refid="class_coordonnes2_d_1acd18a61d429f17132bd6af7c66c5f56d" compoundref="coordonnes2d_8h" startline="95" endline="95">Coordonnes2D::setX</references>
+        <references refid="class_coordonnes2_d_1ac06b44e9c6584d4de6746f6b14472cdb" compoundref="coordonnes2d_8h" startline="69" endline="69">Coordonnes2D::getX</references>
+        <references refid="class_coordonnes2_d_1a1b611c902888fced2b0712ed6e84a3fb" compoundref="coordonnes2d_8h" startline="103" endline="103">Coordonnes2D::setY</references>
+        <references refid="class_coordonnes2_d_1a52192f87a21074e41b7d7b22f258a549" compoundref="coordonnes2d_8h" startline="78" endline="78">Coordonnes2D::getY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_t_e_r_observer_1acb9c7049485c5f1067bf7fd9a1300d28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TERObserver::printMap</definition>
+        <argsstring>()</argsstring>
+        <name>printMap</name>
+        <briefdescription>
+<para>Fonction qui affiche dans la console le contenu de la map (utilise pour debugger) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="267" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/TERObserver.cpp" bodystart="637" bodyend="648"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_e_r_observer_1a5f19ccb810641760f3623a22cd19fd3c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int TERObserver::getSurvivants</definition>
+        <argsstring>()</argsstring>
+        <name>getSurvivants</name>
+        <briefdescription>
+<para>Getter de l&apos;attribut m_survivants de la Classe <ref refid="class_t_e_r_observer" kindref="compound">TERObserver</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>l&apos;attribut m_survivants de la classe <ref refid="class_t_e_r_observer" kindref="compound">TERObserver</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="273" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/TERObserver.h" bodystart="273" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_e_r_observer_1a243d9013eb73de81537e6416561864a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TERObserver::setSurvivant</definition>
+        <argsstring>(int val)</argsstring>
+        <name>setSurvivant</name>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Setter de l&apos;attribut m_survivants de la Classe <ref refid="class_t_e_r_observer" kindref="compound">TERObserver</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: l&apos;attribut a affecter a m_survivants de la classe <ref refid="class_t_e_r_observer" kindref="compound">TERObserver</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="278" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/TERObserver.h" bodystart="278" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_e_r_observer_1a8c1de774ac3e1fa31c2233545cae4737" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>repast::Properties *</type>
+        <definition>repast::Properties* TERObserver::getProps</definition>
+        <argsstring>()</argsstring>
+        <name>getProps</name>
+        <briefdescription>
+<para>Getter de l&apos;attribut proprietes de la Classe <ref refid="class_t_e_r_observer" kindref="compound">TERObserver</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>l&apos;attribut proprietes de la classe <ref refid="class_t_e_r_observer" kindref="compound">TERObserver</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="284" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/TERObserver.h" bodystart="284" bodyend="284"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Classe representant un observateur, qui s&apos;occupe de la gestion des agents dans ce processus. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="49">
+        <label>repast::relogo::Observer</label>
+      </node>
+      <node id="48">
+        <label>TERObserver</label>
+        <link refid="class_t_e_r_observer"/>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="51">
+        <label>repast::relogo::Observer</label>
+      </node>
+      <node id="50">
+        <label>TERObserver</label>
+        <link refid="class_t_e_r_observer"/>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="29" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/TERObserver.h" bodystart="29" bodyend="285"/>
+    <listofallmembers>
+      <member refid="class_t_e_r_observer_1ae525510a5c8f2083aab55c1a80f5b21f" prot="private" virt="non-virtual"><scope>TERObserver</scope><name>_fen</name></member>
+      <member refid="class_t_e_r_observer_1a31e5595222f74e074e47ec19d484352a" prot="private" virt="non-virtual"><scope>TERObserver</scope><name>ageDiff</name></member>
+      <member refid="class_t_e_r_observer_1a2ebef6d41d08586bd3b54157ea372f99" prot="public" virt="non-virtual"><scope>TERObserver</scope><name>createAgent</name></member>
+      <member refid="class_t_e_r_observer_1a33b585c06b752057e20af26a2220a23f" prot="public" virt="non-virtual"><scope>TERObserver</scope><name>createAgents</name></member>
+      <member refid="class_t_e_r_observer_1a54b6f26171b2f7fb0c143839018a1a5c" prot="private" virt="non-virtual"><scope>TERObserver</scope><name>dernierTick</name></member>
+      <member refid="class_t_e_r_observer_1a7b97c7e2c7251d65d946c9ced3c54bcf" prot="public" virt="non-virtual"><scope>TERObserver</scope><name>dessinerDecor</name></member>
+      <member refid="class_t_e_r_observer_1a7ef10641e78a9fe2ba24e4fa6fc7e83a" prot="public" virt="non-virtual"><scope>TERObserver</scope><name>enregisterResultats</name></member>
+      <member refid="class_t_e_r_observer_1a11cef38b11ca544137fe36e11aba8d5c" prot="public" virt="non-virtual"><scope>TERObserver</scope><name>Fcor2RCor</name></member>
+      <member refid="class_t_e_r_observer_1a8c1de774ac3e1fa31c2233545cae4737" prot="public" virt="non-virtual"><scope>TERObserver</scope><name>getProps</name></member>
+      <member refid="class_t_e_r_observer_1a5f19ccb810641760f3623a22cd19fd3c" prot="public" virt="non-virtual"><scope>TERObserver</scope><name>getSurvivants</name></member>
+      <member refid="class_t_e_r_observer_1a87524bb92d6be89b025e4312440f6948" prot="public" virt="non-virtual"><scope>TERObserver</scope><name>go</name></member>
+      <member refid="class_t_e_r_observer_1a709f639aad487e98aeb8c22912f26a7d" prot="private" virt="non-virtual"><scope>TERObserver</scope><name>graphe</name></member>
+      <member refid="class_t_e_r_observer_1a39a273654cd0e6f5f0daadf33c4a9bac" prot="private" virt="non-virtual"><scope>TERObserver</scope><name>humainType</name></member>
+      <member refid="class_t_e_r_observer_1a1222b16ae6933b9e8619c54e0705e10d" prot="private" virt="non-virtual"><scope>TERObserver</scope><name>humancount</name></member>
+      <member refid="class_t_e_r_observer_1ac7815af47779d77ec0ed105af435b186" prot="public" virt="non-virtual"><scope>TERObserver</scope><name>loadMap</name></member>
+      <member refid="class_t_e_r_observer_1ae8d98b39e6c1f41f2eb78326893106f0" prot="public" virt="non-virtual"><scope>TERObserver</scope><name>loadMap_a_star</name></member>
+      <member refid="class_t_e_r_observer_1a178c5bb5b1e322ea106bfab577165c85" prot="private" virt="non-virtual"><scope>TERObserver</scope><name>m_sorties</name></member>
+      <member refid="class_t_e_r_observer_1a3cfc94932d76cb8a8e3f13b657e38883" prot="private" virt="non-virtual"><scope>TERObserver</scope><name>m_survivants</name></member>
+      <member refid="class_t_e_r_observer_1a2321013da4d34eb3e6164ee4678bc6cd" prot="private" virt="non-virtual"><scope>TERObserver</scope><name>map</name></member>
+      <member refid="class_t_e_r_observer_1a51c832c301812eb0cda095e81051d9b0" prot="public" virt="non-virtual"><scope>TERObserver</scope><name>map2Repast</name></member>
+      <member refid="class_t_e_r_observer_1a269e26b0bfc08295b0b95baf682f9a54" prot="private" virt="non-virtual"><scope>TERObserver</scope><name>map_a_star</name></member>
+      <member refid="class_t_e_r_observer_1a5287272e19f0556244cd96a008780d6c" prot="public" virt="non-virtual"><scope>TERObserver</scope><name>Mcor2GLCor</name></member>
+      <member refid="class_t_e_r_observer_1ab6d63c2ba03b502137f34051537030ff" prot="private" virt="non-virtual"><scope>TERObserver</scope><name>nbSorties</name></member>
+      <member refid="class_t_e_r_observer_1acb9c7049485c5f1067bf7fd9a1300d28" prot="public" virt="non-virtual"><scope>TERObserver</scope><name>printMap</name></member>
+      <member refid="class_t_e_r_observer_1a96e7a61901aa056e00127855c7c3ab68" prot="private" virt="non-virtual"><scope>TERObserver</scope><name>proprietes</name></member>
+      <member refid="class_t_e_r_observer_1ab036cbce36d1f1bd432785277becb041" prot="public" virt="non-virtual"><scope>TERObserver</scope><name>provideContent</name></member>
+      <member refid="class_t_e_r_observer_1a559eb83afbbffd8b6b1d92690e6734ba" prot="public" virt="non-virtual"><scope>TERObserver</scope><name>provideContent</name></member>
+      <member refid="class_t_e_r_observer_1a3b78e3ab9fe3a01b465ccd31f1e88f45" prot="public" virt="non-virtual"><scope>TERObserver</scope><name>razMap</name></member>
+      <member refid="class_t_e_r_observer_1a6d43b1ce4f72ffe2dafaf6bf831cdec9" prot="public" virt="non-virtual"><scope>TERObserver</scope><name>Rcor2GLCor</name></member>
+      <member refid="class_t_e_r_observer_1a243d9013eb73de81537e6416561864a4" prot="public" virt="non-virtual"><scope>TERObserver</scope><name>setSurvivant</name></member>
+      <member refid="class_t_e_r_observer_1a9f04020109fb77d6e704546c7060fff3" prot="public" virt="virtual"><scope>TERObserver</scope><name>setup</name></member>
+      <member refid="class_t_e_r_observer_1af7e1247020de2e3d4d42a13ff8c6b6c2" prot="public" virt="non-virtual"><scope>TERObserver</scope><name>synchronizeMap</name></member>
+      <member refid="class_t_e_r_observer_1aa9e1451ecf894d0b47978a251c33a5bb" prot="public" virt="non-virtual"><scope>TERObserver</scope><name>TERObserver</name></member>
+      <member refid="class_t_e_r_observer_1a374456264a96e6f557200507917a4b9a" prot="private" virt="non-virtual"><scope>TERObserver</scope><name>timer</name></member>
+      <member refid="class_t_e_r_observer_1ab1fe1d3f67f16d7bded15408348bc4b5" prot="public" virt="non-virtual"><scope>TERObserver</scope><name>updateAgent</name></member>
+      <member refid="class_t_e_r_observer_1af699f0ac33a3f300da0af679003c6395" prot="private" virt="non-virtual"><scope>TERObserver</scope><name>wallcount</name></member>
+      <member refid="class_t_e_r_observer_1a27e2a6511104090c967d8e7c26c1c772" prot="private" virt="non-virtual"><scope>TERObserver</scope><name>wallType</name></member>
+      <member refid="class_t_e_r_observer_1a7aab378089e1835d915d675c1b1aee24" prot="public" virt="virtual"><scope>TERObserver</scope><name>~TERObserver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

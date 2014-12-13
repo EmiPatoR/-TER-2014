@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="_humain_8h" kind="file">
+    <compoundname>Humain.h</compoundname>
+    <includes local="yes">relogo/Turtle.h</includes>
+    <includes local="yes">repast_hpc/RepastProcess.h</includes>
+    <includes refid="_agent_package_8h" local="yes">AgentPackage.h</includes>
+    <includes refid="fenetre_8h" local="yes">fenetre.h</includes>
+    <includes local="yes">repast_hpc/Properties.h</includes>
+    <includedby refid="_humain_8cpp" local="yes">code/src/Humain.cpp</includedby>
+    <includedby refid="_t_e_r_observer_8cpp" local="yes">code/src/TERObserver.cpp</includedby>
+    <incdepgraph>
+      <node id="107">
+        <label>code/include/Humain.h</label>
+        <link refid="Humain.h"/>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="112">
+        <label>boost/serialization/vector.hpp</label>
+      </node>
+      <node id="111">
+        <label>repast_hpc/AgentId.h</label>
+      </node>
+      <node id="114">
+        <label>string</label>
+      </node>
+      <node id="108">
+        <label>relogo/Turtle.h</label>
+      </node>
+      <node id="109">
+        <label>repast_hpc/RepastProcess.h</label>
+      </node>
+      <node id="115">
+        <label>SDL2/SDL.h</label>
+      </node>
+      <node id="110">
+        <label>AgentPackage.h</label>
+        <link refid="_agent_package_8h"/>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>repast_hpc/Properties.h</label>
+      </node>
+      <node id="113">
+        <label>fenetre.h</label>
+        <link refid="fenetre_8h"/>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_humain" prot="public">Humain</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_humain_8h_1a544c9c868e9230902e884081c3eea8b6" prot="public" static="no">
+        <name>TAUX_PERSONNES_AGEES</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="11" column="9" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_humain_8h_1a3b4ba41fddcbfd6bc6da3b5d1c470c42" prot="public" static="no">
+        <name>TAUX_PERSONNES_JEUNES</name>
+        <initializer>70</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="12" column="9" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_humain_8h_1a3ea4c0823abadc32c7467338f7e10248" prot="public" static="no">
+        <name>TAUX_PERSONNES_ADULTES</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="13" column="9" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_humain_8h_1a265aa56b275b328d6800864e06e66886" prot="public" static="no">
+        <name>TAUX_PERSONNES_MALADES</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="14" column="9" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_humain_8h_1add48096cd6292d7b25721b4af3d6e8a3" prot="public" static="no">
+        <name>PERSONNE_ADULTE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="16" column="9" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_humain_8h_1a27252b6299c4d107eb363a491e4af6d9" prot="public" static="no">
+        <name>PERSONNE_JEUNE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="17" column="9" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_humain_8h_1a32f0282425458046b621418082a6cb9c" prot="public" static="no">
+        <name>PERSONNE_AGEE</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="18" column="9" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_humain_8h_1ac639f3633287df1dadde75c60b28eb1e" prot="public" static="no">
+        <name>PERSONNE_MALADE</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Humain.h" line="19" column="9" bodyfile="/home/emip/git/TER/TESTA/code/include/Humain.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Classe representant un agent <ref refid="class_humain" kindref="compound">Humain</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>HRUSTIC EMIR </para></simplesect>
+<simplesect kind="version"><para>0.1 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>HUMAIN_H_</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HUMAIN_H_</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#define<sp/>TAUX_PERSONNES_AGEES<sp/>5</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TAUX_PERSONNES_JEUNES<sp/>70</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TAUX_PERSONNES_ADULTES<sp/>20</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TAUX_PERSONNES_MALADES<sp/>5</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PERSONNE_ADULTE<sp/>0</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PERSONNE_JEUNE<sp/>1</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PERSONNE_AGEE<sp/>2</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PERSONNE_MALADE<sp/>3</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;relogo/Turtle.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;repast_hpc/RepastProcess.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_agent_package_8h" kindref="compound">AgentPackage.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="fenetre_8h" kindref="compound">fenetre.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;repast_hpc/Properties.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="class_humain" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_humain" kindref="compound">Humain</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>repast::relogo::Turtle<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_angle;<sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posXFichier;<sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posYFichier;<sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posXGL;<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posYGL;<sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>cheminX;<sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>cheminY;<sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>etape;<sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>typePersonne;<sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>sorti;<sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="55" refid="class_humain_1a2ef84f203affc118025f145745323ddd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_humain_1a2ef84f203affc118025f145745323ddd" kindref="member">Humain</ref>(repast::AgentId<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>repast::relogo::Observer*<sp/>obs):<sp/>repast::relogo::Turtle(id,<sp/>obs)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rndType;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>etape=0;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sorti=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>(std::atoi((((<ref refid="class_t_e_r_observer" kindref="compound">TERObserver</ref>*)obs)-&gt;getProps()-&gt;getProperty(</highlight><highlight class="stringliteral">&quot;simulation.diff_age&quot;</highlight><highlight class="normal">)).c_str()))<sp/>==<sp/>1){</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//((TERObserver*)obs)-&gt;setDiffAge(1);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rndType<sp/>=<sp/><ref refid="class_humain_1a0a9134ce08efbc5eb5714114de97fb63" kindref="member">randomType</ref>(<sp/>*(((<ref refid="class_t_e_r_observer" kindref="compound">TERObserver</ref>*)obs)-&gt;getProps())<sp/>);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(rndType<sp/>&lt;=<sp/>TAUX_PERSONNES_ADULTES)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;typePersonne<sp/>=<sp/>PERSONNE_ADULTE;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(rndType<sp/>&lt;=<sp/>(TAUX_PERSONNES_JEUNES<sp/>+<sp/>TAUX_PERSONNES_ADULTES)<sp/>&amp;&amp;<sp/>rndType<sp/>&gt;<sp/>TAUX_PERSONNES_ADULTES)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;typePersonne<sp/>=<sp/>PERSONNE_JEUNE;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(rndType<sp/>&lt;=<sp/>(TAUX_PERSONNES_JEUNES<sp/>+<sp/>TAUX_PERSONNES_ADULTES<sp/>+<sp/>TAUX_PERSONNES_AGEES)<sp/>&amp;&amp;<sp/>rndType<sp/>&gt;<sp/>(TAUX_PERSONNES_JEUNES<sp/>+<sp/>TAUX_PERSONNES_ADULTES))</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;typePersonne<sp/>=<sp/>PERSONNE_AGEE;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;typePersonne<sp/>=<sp/>PERSONNE_MALADE;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;typePersonne<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="class_humain_1a057f2b76521c2654a66dea6e9e2e33c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_humain_1a057f2b76521c2654a66dea6e9e2e33c5" kindref="member">Humain</ref>(repast::AgentId<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>repast::relogo::Observer*<sp/>obs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_agent_package" kindref="compound">AgentPackage</ref>&amp;<sp/>package):<sp/>repast::relogo::Turtle(id,<sp/>obs),cheminX(package.cheminX),</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cheminY(package.cheminY),etape(package.etape),typePersonne(package.typePersonne){sorti=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="94" refid="class_humain_1a08a0a8a77ce1877a76518e5d0acf03ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_humain_1a08a0a8a77ce1877a76518e5d0acf03ca" kindref="member">~Humain</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_humain_1a6ef45c2a6398eee58bc985b0d3d04812" kindref="member">getPos</ref>();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_humain_1acfb526c278bfd003114e3f4270ab6342" kindref="member">step</ref>();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_humain_1a415aa529a0f744d0b81bc80b93864665" kindref="member">randomAngle</ref>(repast::Properties&amp;<sp/>props);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_humain_1a0a9134ce08efbc5eb5714114de97fb63" kindref="member">randomType</ref>(repast::Properties&amp;<sp/>props);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>afficherPos(<ref refid="class_fenetre" kindref="compound">Fenetre</ref>*<sp/>fen);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_humain_1a73d39a9d1f241d620ccac2f599e2dd97" kindref="member">getAngle</ref>();</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_humain_1a8987214bebd0063247cbfc1b4b5f1816" kindref="member">rad2deg</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>theta);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_humain_1ad7777f2198c8f306bfc8040afe7f0802" kindref="member">tournerVers</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="class_humain_1a72f53748fcf1c862c46771208856a960" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_humain_1a72f53748fcf1c862c46771208856a960" kindref="member">getXFichier</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;posXFichier;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="class_humain_1a950ffa2b5fbfe59cdc5556598bb3fc36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_humain_1a950ffa2b5fbfe59cdc5556598bb3fc36" kindref="member">getYFichier</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;posYFichier;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="class_humain_1ad6179d5833fbc32eeb5cb440afdd58b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_humain_1ad6179d5833fbc32eeb5cb440afdd58b0" kindref="member">getXGL</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;posXGL;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="class_humain_1a476b49698c658f53675d8e2666990699" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_humain_1a476b49698c658f53675d8e2666990699" kindref="member">getYGL</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;posYGL;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="class_humain_1a8cc241895df70b2f6023552908903fab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_humain_1a8cc241895df70b2f6023552908903fab" kindref="member">setXFichier</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val){</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;posXFichier<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="class_humain_1a574c1d191014b8ce815b593b68422e54" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_humain_1a574c1d191014b8ce815b593b68422e54" kindref="member">setYFichier</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val){</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;posYFichier<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200" refid="class_humain_1aaa7d8c47d9f38e70454693ece8c78c81" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_humain_1aaa7d8c47d9f38e70454693ece8c78c81" kindref="member">setXGL</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val){</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;posXGL<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208" refid="class_humain_1ab1ca792b176d3fb394f6aa411ba1e5f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_humain_1ab1ca792b176d3fb394f6aa411ba1e5f5" kindref="member">setYGL</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val){</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;posYGL<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216" refid="class_humain_1a2e50827e8e6c47f6671aae2bea409840" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_humain_1a2e50827e8e6c47f6671aae2bea409840" kindref="member">setAngle</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val){</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;m_angle<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224" refid="class_humain_1ab8469bf829ed8100899bc57a62025cb9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_humain_1ab8469bf829ed8100899bc57a62025cb9" kindref="member">getTypePersonne</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;typePersonne;}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setTypePersonne(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val){this-&gt;typePersonne<sp/>=<sp/>val;}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231" refid="class_humain_1a434d49c9e83f20f525106416f6c62a48" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_humain_1a434d49c9e83f20f525106416f6c62a48" kindref="member">getEtape</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;etape;}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="class_humain_1a1351d4c106fc2e175cf19da0ca3fce52" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_humain_1a1351d4c106fc2e175cf19da0ca3fce52" kindref="member">getSorti</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;sorti;}</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243" refid="class_humain_1a68abc0ded73a07d369a74e5a4d3bd7e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="class_humain_1a68abc0ded73a07d369a74e5a4d3bd7e6" kindref="member">getCheminX</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;cheminX;}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249" refid="class_humain_1ad815b1e9aacefe7a41ded28772a41b9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="class_humain_1ad815b1e9aacefe7a41ded28772a41b9a" kindref="member">getCheminY</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;cheminY;}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258" refid="class_humain_1a0dfad40c440229a41fb980af89385fc8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_humain_1a0dfad40c440229a41fb980af89385fc8" kindref="member">setCheminXY</ref>(std::vector&lt;int&gt;<sp/>cheminX,<sp/>std::vector&lt;int&gt;<sp/>cheminY,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>etape,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>sorti){</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;cheminX<sp/>=<sp/>cheminX;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;cheminY<sp/>=<sp/>cheminY;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;etape<sp/>=<sp/>etape;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HUMAIN_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/emip/git/TER/TESTA/code/include/Humain.h"/>
+  </compounddef>
+</doxygen>

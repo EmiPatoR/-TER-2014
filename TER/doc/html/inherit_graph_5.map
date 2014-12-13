@@ -1,0 +1,4 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node2" href="$class_humain.html" title="classe representant un agent humain " alt="" coords="109,5,176,32"/>
+<area shape="rect" id="node3" href="$class_mur.html" title="Classe representant un Mur. " alt="" coords="121,56,165,83"/>
+</map>

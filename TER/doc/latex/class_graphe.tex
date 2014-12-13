@@ -1,0 +1,198 @@
+\section{Référence de la classe Graphe}
+\label{class_graphe}\index{Graphe@{Graphe}}
+
+
+Classe representant le monde Repast en memoire.  
+
+
+
+
+{\ttfamily \#include $<$Graphe.\-h$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Graphe} (int $\ast$$\ast$map, int longueur\-\_\-map, int hauteur\-\_\-map, {\bf Coordonnes2\-D} depart, std\-::vector$<$ {\bf Coordonnes2\-D} $>$ \&sorties)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+virtual {\bf $\sim$\-Graphe} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+std\-::vector$<$ int $>$ {\bf Nodes2\-Chemin\-X} (std\-::vector$<$ {\bf Node} $\ast$ $>$ chemin)
+\begin{DoxyCompactList}\small\item\em Conversion \doxyref{Node}{p.}{class_node} -\/$>$ Entiers (X) \end{DoxyCompactList}\item 
+std\-::vector$<$ int $>$ {\bf Nodes2\-Chemin\-Y} (std\-::vector$<$ {\bf Node} $\ast$ $>$ chemin)
+\begin{DoxyCompactList}\small\item\em Conversion \doxyref{Node}{p.}{class_node} -\/$>$ Entiers (Y) \end{DoxyCompactList}\item 
+std\-::vector$<$ {\bf Node} $\ast$ $>$ {\bf get\-Chemin} ()
+\begin{DoxyCompactList}\small\item\em Getter de l'attribut m\-\_\-chemin de la classe \doxyref{Graphe}{p.}{class_graphe}. \end{DoxyCompactList}\item 
+std\-::vector$<$ {\bf Node} $\ast$ $>$ {\bf calcul\-Sortie} (std\-::vector$<$ {\bf Coordonnes2\-D} $>$ \&sorties, {\bf Node} $\ast$depart)
+\begin{DoxyCompactList}\small\item\em Calcule la sortie la plus proche du point de depart. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Classe representant le monde Repast en memoire. 
+
+La classe est composee de du chemin le plus court, d'une matrice d'objets \doxyref{Node}{p.}{class_node} 
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Graphe@{Graphe}!Graphe@{Graphe}}
+\index{Graphe@{Graphe}!Graphe@{Graphe}}
+\subsubsection[{Graphe}]{\setlength{\rightskip}{0pt plus 5cm}Graphe\-::\-Graphe (
+\begin{DoxyParamCaption}
+\item[{int $\ast$$\ast$}]{map, }
+\item[{int}]{longueur\-\_\-map, }
+\item[{int}]{hauteur\-\_\-map, }
+\item[{{\bf Coordonnes2\-D}}]{depart, }
+\item[{std\-::vector$<$ {\bf Coordonnes2\-D} $>$ \&}]{sorties}
+\end{DoxyParamCaption}
+)}\label{class_graphe_abd3e45f6d615a90d71106d29e6968c0f}
+
+
+Constructeur. 
+
+Constructeur de la classe \doxyref{Graphe}{p.}{class_graphe}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em map} & \-: matrice d'entiers representant le monde repast en memoire \\
+\hline
+{\em longueur\-\_\-map} & \-: nombre de colonnes de la matrice \\
+\hline
+{\em hauteur} & \-: nombre de lignes de la matrice \\
+\hline
+{\em depart} & \-: Objet \doxyref{Coordonnes2\-D}{p.}{class_coordonnes2_d} representant le point de depart du chemin a calculer \\
+\hline
+{\em sorties} & \-: Tableau de toutes les sorties(points d'arrivees possibles) \\
+\hline
+\end{DoxyParams}
+
+
+Voici le graphe d'appel pour cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graphe_abd3e45f6d615a90d71106d29e6968c0f_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Graphe@{Graphe}!$\sim$\-Graphe@{$\sim$\-Graphe}}
+\index{$\sim$\-Graphe@{$\sim$\-Graphe}!Graphe@{Graphe}}
+\subsubsection[{$\sim$\-Graphe}]{\setlength{\rightskip}{0pt plus 5cm}Graphe\-::$\sim$\-Graphe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_graphe_a673c897db564767e9ace7169a5357310}
+
+
+Destructeur. 
+
+Destructeur de la classe \doxyref{Graphe}{p.}{class_graphe} 
+
+\subsection{Documentation des fonctions membres}
+\index{Graphe@{Graphe}!calcul\-Sortie@{calcul\-Sortie}}
+\index{calcul\-Sortie@{calcul\-Sortie}!Graphe@{Graphe}}
+\subsubsection[{calcul\-Sortie}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ {\bf Node} $\ast$ $>$ Graphe\-::calcul\-Sortie (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf Coordonnes2\-D} $>$ \&}]{sorties, }
+\item[{{\bf Node} $\ast$}]{depart}
+\end{DoxyParamCaption}
+)}\label{class_graphe_a7c51dfd09bcf7d8505ec47a96b5d9c61}
+
+
+Calcule la sortie la plus proche du point de depart. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em sorties} & \-: tableau contenant les coordonnees de toutes les sorties \\
+\hline
+{\em depart} & \-: \doxyref{Node}{p.}{class_node} de depart\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+un chemin vers la sortie la plus proche de la position de depart 
+\end{DoxyReturn}
+
+
+Voici le graphe d'appel pour cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graphe_a7c51dfd09bcf7d8505ec47a96b5d9c61_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{class_graphe_a7c51dfd09bcf7d8505ec47a96b5d9c61_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Graphe@{Graphe}!get\-Chemin@{get\-Chemin}}
+\index{get\-Chemin@{get\-Chemin}!Graphe@{Graphe}}
+\subsubsection[{get\-Chemin}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Node}$\ast$$>$ Graphe\-::get\-Chemin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_graphe_a6fae3a8286508021f0e040bc075e0c1d}
+
+
+Getter de l'attribut m\-\_\-chemin de la classe \doxyref{Graphe}{p.}{class_graphe}. 
+
+\begin{DoxyReturn}{Renvoie}
+l'attribut m\-\_\-chemin de la classe \doxyref{Graphe}{p.}{class_graphe} 
+\end{DoxyReturn}
+\index{Graphe@{Graphe}!Nodes2\-Chemin\-X@{Nodes2\-Chemin\-X}}
+\index{Nodes2\-Chemin\-X@{Nodes2\-Chemin\-X}!Graphe@{Graphe}}
+\subsubsection[{Nodes2\-Chemin\-X}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ int $>$ Graphe\-::\-Nodes2\-Chemin\-X (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf Node} $\ast$ $>$}]{chemin}
+\end{DoxyParamCaption}
+)}\label{class_graphe_ac0e1b15961de7b45d61794b651654a66}
+
+
+Conversion \doxyref{Node}{p.}{class_node} -\/$>$ Entiers (X) 
+
+Convertie un tableau d'objets \doxyref{Node}{p.}{class_node} en tableau d'entier contenant les coordonnes X
+
+
+\begin{DoxyParams}{Paramètres}
+{\em chemin} & \-: tableau d'objets \doxyref{Node}{p.}{class_node} representant le chemin \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+tableau d'entier contenant les coordonnes X du chemin 
+\end{DoxyReturn}
+\index{Graphe@{Graphe}!Nodes2\-Chemin\-Y@{Nodes2\-Chemin\-Y}}
+\index{Nodes2\-Chemin\-Y@{Nodes2\-Chemin\-Y}!Graphe@{Graphe}}
+\subsubsection[{Nodes2\-Chemin\-Y}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ int $>$ Graphe\-::\-Nodes2\-Chemin\-Y (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf Node} $\ast$ $>$}]{chemin}
+\end{DoxyParamCaption}
+)}\label{class_graphe_a3dc187933cfa37d917db230bd8b87db1}
+
+
+Conversion \doxyref{Node}{p.}{class_node} -\/$>$ Entiers (Y) 
+
+Convertie un tableau d'objets \doxyref{Node}{p.}{class_node} en tableau d'entier contenant les coordonnes Y
+
+
+\begin{DoxyParams}{Paramètres}
+{\em chemin} & \-: tableau d'objets \doxyref{Node}{p.}{class_node} representant le chemin \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+tableau d'entier contenant les coordonnes Y du chemin 
+\end{DoxyReturn}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+code/include/{\bf Graphe.\-h}\item 
+code/src/Graphe.\-cpp\end{DoxyCompactItemize}

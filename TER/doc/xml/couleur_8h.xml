@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="couleur_8h" kind="file">
+    <compoundname>couleur.h</compoundname>
+    <includes local="no">SDL2/SDL.h</includes>
+    <includedby refid="couleur_8cpp" local="no">code/src/couleur.cpp</includedby>
+    <includedby refid="fenetre_8cpp" local="yes">code/src/fenetre.cpp</includedby>
+    <incdepgraph>
+      <node id="90">
+        <label>code/include/couleur.h</label>
+        <link refid="couleur.h"/>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>SDL2/SDL.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_couleur" prot="public">Couleur</innerclass>
+    <briefdescription>
+<para>Classe representant une <ref refid="class_couleur" kindref="compound">Couleur</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>HRUSTIC EMIR </para></simplesect>
+<simplesect kind="version"><para>0.1 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COULEUR_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>COULEUR_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#include<sp/>&lt;SDL2/SDL.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_couleur" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_couleur" kindref="compound">Couleur</ref><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_couleur_1a76e1f4a1d806979e4b9cda22544e43de" kindref="member">Couleur</ref>(Uint8<sp/>R,<sp/>Uint8<sp/>G,<sp/>Uint8<sp/>B);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_couleur_1ad3be30be83649bc5db48ef46b592aec2" kindref="member">~Couleur</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>Uint32<sp/><ref refid="class_couleur_1ac0aac7fb19221ae95f260a319417f0bc" kindref="member">getColor</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Color<sp/><ref refid="class_couleur_1a1aaf4c0ae55292079975733a9a356549" kindref="member">getSDLColor</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>Uint8<sp/><ref refid="class_couleur_1a5180881bc65a09404e3574041039c71b" kindref="member">getR</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>Uint8<sp/><ref refid="class_couleur_1a93a7af80f901c100e59eca533f4be51c" kindref="member">getG</ref>();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>Uint8<sp/><ref refid="class_couleur_1ab023b75cf9580d1f3071f8426030add7" kindref="member">getB</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_couleur_1a3cb04e618c052235b4f346c4b12a9090" kindref="member">setColor</ref>(Uint32<sp/>val);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_couleur_1ad47eb978662052be6e123a937a9ef962" kindref="member">setSDLColor</ref>(SDL_Color<sp/>val);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_couleur_1a4528e835d33d36f9a572aede35af2dc8" kindref="member">setR</ref>(Uint8<sp/>val);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_couleur_1a9daf9b524e96bd6ab7a47f7f04918bf6" kindref="member">setG</ref>(Uint8<sp/>val);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_couleur_1abfb5df8e05b8bed718c778b5c3805b82" kindref="member">setB</ref>(Uint8<sp/>val);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_couleur_1a052ee51440843dbd62c6ee58bcfd657e" kindref="member">setRGB</ref>(Uint8<sp/>valR,<sp/>Uint8<sp/>valG,<sp/>Uint8<sp/>valB);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="134" refid="class_couleur_1a15547a9f64d343ad8f1482acd09a4c2f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Uint8<sp/><ref refid="class_couleur_1a15547a9f64d343ad8f1482acd09a4c2f" kindref="member">m_R</ref>;<sp/></highlight></codeline>
+<codeline lineno="135" refid="class_couleur_1a8f94550905b39dd43c5996eefb452c9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Uint8<sp/><ref refid="class_couleur_1a8f94550905b39dd43c5996eefb452c9c" kindref="member">m_G</ref>;<sp/></highlight></codeline>
+<codeline lineno="136" refid="class_couleur_1aecca85052daa7d274054e6b596ef45f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Uint8<sp/><ref refid="class_couleur_1aecca85052daa7d274054e6b596ef45f9" kindref="member">m_B</ref>;<sp/></highlight></codeline>
+<codeline lineno="137" refid="class_couleur_1a79655eaff895eb4660f5e5f2de29219d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Color<sp/><ref refid="class_couleur_1a79655eaff895eb4660f5e5f2de29219d" kindref="member">m_color</ref>;<sp/></highlight></codeline>
+<codeline lineno="138" refid="class_couleur_1a058a61c5628ab35f9460f1c7448a459a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Uint32<sp/><ref refid="class_couleur_1a058a61c5628ab35f9460f1c7448a459a" kindref="member">m_color_uint32</ref>;<sp/></highlight></codeline>
+<codeline lineno="139"><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>COULEUR_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/emip/git/TER/TESTA/code/include/couleur.h"/>
+  </compounddef>
+</doxygen>

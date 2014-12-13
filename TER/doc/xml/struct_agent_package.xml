@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="struct_agent_package" kind="struct" prot="public">
+    <compoundname>AgentPackage</compoundname>
+    <includes refid="_agent_package_8h" local="no">AgentPackage.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_agent_package_1acb97295bf92e52e7791297ccfe00a9f0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AgentPackage::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>id de l&apos;agent </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/AgentPackage.h" line="34" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/AgentPackage.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_t_e_r_observer_1ab036cbce36d1f1bd432785277becb041" compoundref="_t_e_r_observer_8cpp" startline="442" endline="457">TERObserver::provideContent</referencedby>
+        <referencedby refid="class_t_e_r_observer_1ab1fe1d3f67f16d7bded15408348bc4b5" compoundref="_t_e_r_observer_8cpp" startline="484" endline="492">TERObserver::updateAgent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_agent_package_1a424b83e665a649a53251684d53b7f6ec" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AgentPackage::proc</definition>
+        <argsstring></argsstring>
+        <name>proc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>id processus createur de l&apos;agent </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/AgentPackage.h" line="35" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/AgentPackage.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_t_e_r_observer_1ab1fe1d3f67f16d7bded15408348bc4b5" compoundref="_t_e_r_observer_8cpp" startline="484" endline="492">TERObserver::updateAgent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_agent_package_1a47cb43c3eb16f7ab9fed25c310ea1f7a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AgentPackage::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>type d&apos;agent </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/AgentPackage.h" line="36" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/AgentPackage.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="class_t_e_r_observer_1a2ebef6d41d08586bd3b54157ea372f99" compoundref="_t_e_r_observer_8cpp" startline="433" endline="440">TERObserver::createAgent</referencedby>
+        <referencedby refid="class_t_e_r_observer_1a33b585c06b752057e20af26a2220a23f" compoundref="_t_e_r_observer_8cpp" startline="472" endline="482">TERObserver::createAgents</referencedby>
+        <referencedby refid="class_t_e_r_observer_1ab1fe1d3f67f16d7bded15408348bc4b5" compoundref="_t_e_r_observer_8cpp" startline="484" endline="492">TERObserver::updateAgent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_agent_package_1acce31a89aa42cc20ea8e346dabf789d9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AgentPackage::currentProc</definition>
+        <argsstring></argsstring>
+        <name>currentProc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>id du processus courant </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/AgentPackage.h" line="37" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/AgentPackage.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_agent_package_1a7023c0492848b76c886feed44c97dbbe" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; AgentPackage::cheminX</definition>
+        <argsstring></argsstring>
+        <name>cheminX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>attribut cheminX de la classe <ref refid="class_humain" kindref="compound">Humain</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/AgentPackage.h" line="38" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/AgentPackage.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_t_e_r_observer_1ab036cbce36d1f1bd432785277becb041" compoundref="_t_e_r_observer_8cpp" startline="442" endline="457">TERObserver::provideContent</referencedby>
+        <referencedby refid="class_t_e_r_observer_1ab1fe1d3f67f16d7bded15408348bc4b5" compoundref="_t_e_r_observer_8cpp" startline="484" endline="492">TERObserver::updateAgent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_agent_package_1aa4d44851a12b4a5cbb965999c9f325cd" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; AgentPackage::cheminY</definition>
+        <argsstring></argsstring>
+        <name>cheminY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>attribut cheminY de la classe <ref refid="class_humain" kindref="compound">Humain</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/AgentPackage.h" line="39" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/AgentPackage.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="class_t_e_r_observer_1ab036cbce36d1f1bd432785277becb041" compoundref="_t_e_r_observer_8cpp" startline="442" endline="457">TERObserver::provideContent</referencedby>
+        <referencedby refid="class_t_e_r_observer_1ab1fe1d3f67f16d7bded15408348bc4b5" compoundref="_t_e_r_observer_8cpp" startline="484" endline="492">TERObserver::updateAgent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_agent_package_1abf854b3cfca5add73170fdc862b8b477" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AgentPackage::etape</definition>
+        <argsstring></argsstring>
+        <name>etape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>attribut etape de la classe <ref refid="class_humain" kindref="compound">Humain</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/AgentPackage.h" line="40" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/AgentPackage.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="class_t_e_r_observer_1ab036cbce36d1f1bd432785277becb041" compoundref="_t_e_r_observer_8cpp" startline="442" endline="457">TERObserver::provideContent</referencedby>
+        <referencedby refid="class_t_e_r_observer_1ab1fe1d3f67f16d7bded15408348bc4b5" compoundref="_t_e_r_observer_8cpp" startline="484" endline="492">TERObserver::updateAgent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_agent_package_1ac2a45d712ab4e8befb526865a12d67f3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AgentPackage::typePersonne</definition>
+        <argsstring></argsstring>
+        <name>typePersonne</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>attribut typePersonne de la classe <ref refid="class_humain" kindref="compound">Humain</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/AgentPackage.h" line="41" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/AgentPackage.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="class_t_e_r_observer_1ab036cbce36d1f1bd432785277becb041" compoundref="_t_e_r_observer_8cpp" startline="442" endline="457">TERObserver::provideContent</referencedby>
+        <referencedby refid="class_t_e_r_observer_1ab1fe1d3f67f16d7bded15408348bc4b5" compoundref="_t_e_r_observer_8cpp" startline="484" endline="492">TERObserver::updateAgent</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_agent_package_1a0ffe06e4b5a46a985ce640cd061f4324" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void AgentPackage::serialize</definition>
+        <argsstring>(Archive &amp;ar, const unsigned int version)</argsstring>
+        <name>serialize</name>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>version</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/AgentPackage.h" line="22" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/AgentPackage.h" bodystart="22" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_agent_package_1a2a7beccac99040e280a4e79f84345179" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>repast::AgentId</type>
+        <definition>repast::AgentId AgentPackage::getId</definition>
+        <argsstring>() const </argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/AgentPackage.h" line="43" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/AgentPackage.h" bodystart="43" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Objet servant d&apos;archive pour le transfert d&apos;attribut des agents d&apos;un processus à un autre. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/emip/git/TER/TESTA/code/include/AgentPackage.h" line="19" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/AgentPackage.h" bodystart="19" bodyend="46"/>
+    <listofallmembers>
+      <member refid="struct_agent_package_1a7023c0492848b76c886feed44c97dbbe" prot="public" virt="non-virtual"><scope>AgentPackage</scope><name>cheminX</name></member>
+      <member refid="struct_agent_package_1aa4d44851a12b4a5cbb965999c9f325cd" prot="public" virt="non-virtual"><scope>AgentPackage</scope><name>cheminY</name></member>
+      <member refid="struct_agent_package_1acce31a89aa42cc20ea8e346dabf789d9" prot="public" virt="non-virtual"><scope>AgentPackage</scope><name>currentProc</name></member>
+      <member refid="struct_agent_package_1abf854b3cfca5add73170fdc862b8b477" prot="public" virt="non-virtual"><scope>AgentPackage</scope><name>etape</name></member>
+      <member refid="struct_agent_package_1a2a7beccac99040e280a4e79f84345179" prot="public" virt="non-virtual"><scope>AgentPackage</scope><name>getId</name></member>
+      <member refid="struct_agent_package_1acb97295bf92e52e7791297ccfe00a9f0" prot="public" virt="non-virtual"><scope>AgentPackage</scope><name>id</name></member>
+      <member refid="struct_agent_package_1a424b83e665a649a53251684d53b7f6ec" prot="public" virt="non-virtual"><scope>AgentPackage</scope><name>proc</name></member>
+      <member refid="struct_agent_package_1a0ffe06e4b5a46a985ce640cd061f4324" prot="public" virt="non-virtual"><scope>AgentPackage</scope><name>serialize</name></member>
+      <member refid="struct_agent_package_1a47cb43c3eb16f7ab9fed25c310ea1f7a" prot="public" virt="non-virtual"><scope>AgentPackage</scope><name>type</name></member>
+      <member refid="struct_agent_package_1ac2a45d712ab4e8befb526865a12d67f3" prot="public" virt="non-virtual"><scope>AgentPackage</scope><name>typePersonne</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Simulation d&#39;evacuation d&#39;immeuble avec systeme multi-agents:  Fichier source de code/include/Graphe.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.jpeg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Simulation d&#39;evacuation d&#39;immeuble avec systeme multi-agents
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">TER - 2014</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_050edd66366d13764f98250ef6db77f6.html">code</a></li><li class="navelem"><a class="el" href="dir_f8a5fb882cc5ea0f84873b4bfbe1e42c.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Graphe.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_graphe_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GRAPHE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GRAPHE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_node_8h.html">Node.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="coordonnes2d_8h.html">coordonnes2d.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_path_finder_8h.html">PathFinder.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_graphe.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_graphe.html">Graphe</a>{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span> :</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="class_graphe.html#abd3e45f6d615a90d71106d29e6968c0f">Graphe</a>(<span class="keywordtype">int</span>** map,<span class="keywordtype">int</span> longueur_map,<span class="keywordtype">int</span> hauteur_map,<a class="code" href="class_coordonnes2_d.html">Coordonnes2D</a> depart, std::vector&lt;Coordonnes2D&gt; &amp;sorties);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_graphe.html#a673c897db564767e9ace7169a5357310">~Graphe</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    std::vector&lt;int&gt; <a class="code" href="class_graphe.html#ac0e1b15961de7b45d61794b651654a66">Nodes2CheminX</a>(std::vector&lt;Node*&gt; chemin);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    std::vector&lt;int&gt; <a class="code" href="class_graphe.html#a3dc187933cfa37d917db230bd8b87db1">Nodes2CheminY</a>(std::vector&lt;Node*&gt; chemin);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_graphe.html#a6fae3a8286508021f0e040bc075e0c1d">   70</a></span>&#160;    std::vector&lt;Node*&gt; <a class="code" href="class_graphe.html#a6fae3a8286508021f0e040bc075e0c1d">getChemin</a>(){<span class="keywordflow">return</span> m_chemin;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    std::vector&lt;Node*&gt; <a class="code" href="class_graphe.html#a7c51dfd09bcf7d8505ec47a96b5d9c61">calculSortie</a>(std::vector&lt;Coordonnes2D&gt; &amp;sorties, <a class="code" href="class_node.html">Node</a>* depart);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="class_pathfinder.html">Pathfinder</a>* a_star; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    std::vector&lt;Node*&gt; m_chemin; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    std::vector&lt; std::vector&lt; Node*&gt; &gt; m_graphe; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">int</span> **m_map; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">int</span> m_longueur; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">int</span> m_hauteur; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="class_coordonnes2_d.html">Coordonnes2D</a> m_depart; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="class_coordonnes2_d.html">Coordonnes2D</a> m_arrive; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_node_html"><div class="ttname"><a href="class_node.html">Node</a></div><div class="ttdoc">Classe representant un Node Un Node est une &amp;quot;case&amp;quot; de la matrice representant le monde Repast...</div><div class="ttdef"><b>Definition:</b> Node.h:16</div></div>
+<div class="ttc" id="class_graphe_html_a6fae3a8286508021f0e040bc075e0c1d"><div class="ttname"><a href="class_graphe.html#a6fae3a8286508021f0e040bc075e0c1d">Graphe::getChemin</a></div><div class="ttdeci">std::vector&lt; Node * &gt; getChemin()</div><div class="ttdoc">Getter de l&amp;#39;attribut m_chemin de la classe Graphe. </div><div class="ttdef"><b>Definition:</b> Graphe.h:70</div></div>
+<div class="ttc" id="_path_finder_8h_html"><div class="ttname"><a href="_path_finder_8h.html">PathFinder.h</a></div><div class="ttdoc">Classe representant une instance de l&amp;#39;algorithme A*. </div></div>
+<div class="ttc" id="class_graphe_html_a7c51dfd09bcf7d8505ec47a96b5d9c61"><div class="ttname"><a href="class_graphe.html#a7c51dfd09bcf7d8505ec47a96b5d9c61">Graphe::calculSortie</a></div><div class="ttdeci">std::vector&lt; Node * &gt; calculSortie(std::vector&lt; Coordonnes2D &gt; &amp;sorties, Node *depart)</div><div class="ttdoc">Calcule la sortie la plus proche du point de depart. </div><div class="ttdef"><b>Definition:</b> Graphe.cpp:90</div></div>
+<div class="ttc" id="class_graphe_html_a673c897db564767e9ace7169a5357310"><div class="ttname"><a href="class_graphe.html#a673c897db564767e9ace7169a5357310">Graphe::~Graphe</a></div><div class="ttdeci">virtual ~Graphe()</div><div class="ttdoc">Destructeur. </div><div class="ttdef"><b>Definition:</b> Graphe.cpp:137</div></div>
+<div class="ttc" id="_node_8h_html"><div class="ttname"><a href="_node_8h.html">Node.h</a></div><div class="ttdoc">Classe representant un Node. </div></div>
+<div class="ttc" id="class_graphe_html"><div class="ttname"><a href="class_graphe.html">Graphe</a></div><div class="ttdoc">Classe representant le monde Repast en memoire. </div><div class="ttdef"><b>Definition:</b> Graphe.h:22</div></div>
+<div class="ttc" id="class_graphe_html_a3dc187933cfa37d917db230bd8b87db1"><div class="ttname"><a href="class_graphe.html#a3dc187933cfa37d917db230bd8b87db1">Graphe::Nodes2CheminY</a></div><div class="ttdeci">std::vector&lt; int &gt; Nodes2CheminY(std::vector&lt; Node * &gt; chemin)</div><div class="ttdoc">Conversion Node -&amp;gt; Entiers (Y) </div><div class="ttdef"><b>Definition:</b> Graphe.cpp:130</div></div>
+<div class="ttc" id="class_graphe_html_abd3e45f6d615a90d71106d29e6968c0f"><div class="ttname"><a href="class_graphe.html#abd3e45f6d615a90d71106d29e6968c0f">Graphe::Graphe</a></div><div class="ttdeci">Graphe(int **map, int longueur_map, int hauteur_map, Coordonnes2D depart, std::vector&lt; Coordonnes2D &gt; &amp;sorties)</div><div class="ttdoc">Constructeur. </div><div class="ttdef"><b>Definition:</b> Graphe.cpp:9</div></div>
+<div class="ttc" id="class_pathfinder_html"><div class="ttname"><a href="class_pathfinder.html">Pathfinder</a></div><div class="ttdoc">Classe representant une instance de l&amp;#39;algorithme A*. </div><div class="ttdef"><b>Definition:</b> PathFinder.h:18</div></div>
+<div class="ttc" id="class_graphe_html_ac0e1b15961de7b45d61794b651654a66"><div class="ttname"><a href="class_graphe.html#ac0e1b15961de7b45d61794b651654a66">Graphe::Nodes2CheminX</a></div><div class="ttdeci">std::vector&lt; int &gt; Nodes2CheminX(std::vector&lt; Node * &gt; chemin)</div><div class="ttdoc">Conversion Node -&amp;gt; Entiers (X) </div><div class="ttdef"><b>Definition:</b> Graphe.cpp:123</div></div>
+<div class="ttc" id="class_coordonnes2_d_html"><div class="ttname"><a href="class_coordonnes2_d.html">Coordonnes2D</a></div><div class="ttdoc">Classe representant une position(coordonnees) d&amp;#39;un point. </div><div class="ttdef"><b>Definition:</b> coordonnes2d.h:16</div></div>
+<div class="ttc" id="coordonnes2d_8h_html"><div class="ttname"><a href="coordonnes2d_8h.html">coordonnes2d.h</a></div><div class="ttdoc">Classe representant une position(coordonnees) d&amp;#39;un point. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche 25 Mai 2014 22:27:41 pour Simulation d&#39;evacuation d&#39;immeuble avec systeme multi-agents par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

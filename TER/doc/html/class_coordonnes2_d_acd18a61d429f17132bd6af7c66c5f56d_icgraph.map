@@ -1,0 +1,5 @@
+<map id="Coordonnes2D::setX" name="Coordonnes2D::setX">
+<area shape="rect" id="node2" href="$class_t_e_r_observer.html#a9f04020109fb77d6e704546c7060fff3" title="Fonction heritee qui est appelee a l&#39;initialisation de l&#39;objet Observer. " alt="" coords="229,5,371,32"/>
+<area shape="rect" id="node3" href="$class_t_e_r_observer.html#af7e1247020de2e3d4d42a13ff8c6b6c2" title="Fonction qui synchronise la map et la met a jour en fonction de la map Repast. " alt="" coords="197,56,403,83"/>
+<area shape="rect" id="node4" href="$class_t_e_r_observer.html#a51c832c301812eb0cda095e81051d9b0" title="Fonction qui convertit les coordonnes de la map vers des coordonnees Repast. " alt="" coords="208,107,392,133"/>
+</map>

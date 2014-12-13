@@ -1,0 +1,74 @@
+\section{Référence de la structure Agent\-Package}
+\label{struct_agent_package}\index{Agent\-Package@{Agent\-Package}}
+
+
+Objet servant d'archive pour le transfert d'attribut des agents d'un processus à un autre.  
+
+
+
+
+{\ttfamily \#include $<$Agent\-Package.\-h$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&ar, const unsigned int version)\label{struct_agent_package_a0ffe06e4b5a46a985ce640cd061f4324}
+
+\item 
+repast\-::\-Agent\-Id {\bfseries get\-Id} () const \label{struct_agent_package_a2a7beccac99040e280a4e79f84345179}
+
+\end{DoxyCompactItemize}
+\subsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf id}
+\item 
+int {\bf proc}
+\item 
+int {\bf type}
+\item 
+int {\bf current\-Proc}
+\item 
+std\-::vector$<$ int $>$ {\bf chemin\-X}
+\item 
+std\-::vector$<$ int $>$ {\bf chemin\-Y}
+\item 
+int {\bf etape}
+\item 
+int {\bf type\-Personne}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Objet servant d'archive pour le transfert d'attribut des agents d'un processus à un autre. 
+
+\subsection{Documentation des données membres}
+\index{Agent\-Package@{Agent\-Package}!chemin\-X@{chemin\-X}}
+\index{chemin\-X@{chemin\-X}!AgentPackage@{Agent\-Package}}
+\subsubsection[{chemin\-X}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$ Agent\-Package\-::chemin\-X}\label{struct_agent_package_a7023c0492848b76c886feed44c97dbbe}
+attribut chemin\-X de la classe \doxyref{Humain}{p.}{class_humain} \index{Agent\-Package@{Agent\-Package}!chemin\-Y@{chemin\-Y}}
+\index{chemin\-Y@{chemin\-Y}!AgentPackage@{Agent\-Package}}
+\subsubsection[{chemin\-Y}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$ Agent\-Package\-::chemin\-Y}\label{struct_agent_package_aa4d44851a12b4a5cbb965999c9f325cd}
+attribut chemin\-Y de la classe \doxyref{Humain}{p.}{class_humain} \index{Agent\-Package@{Agent\-Package}!current\-Proc@{current\-Proc}}
+\index{current\-Proc@{current\-Proc}!AgentPackage@{Agent\-Package}}
+\subsubsection[{current\-Proc}]{\setlength{\rightskip}{0pt plus 5cm}int Agent\-Package\-::current\-Proc}\label{struct_agent_package_acce31a89aa42cc20ea8e346dabf789d9}
+id du processus courant \index{Agent\-Package@{Agent\-Package}!etape@{etape}}
+\index{etape@{etape}!AgentPackage@{Agent\-Package}}
+\subsubsection[{etape}]{\setlength{\rightskip}{0pt plus 5cm}int Agent\-Package\-::etape}\label{struct_agent_package_abf854b3cfca5add73170fdc862b8b477}
+attribut etape de la classe \doxyref{Humain}{p.}{class_humain} \index{Agent\-Package@{Agent\-Package}!id@{id}}
+\index{id@{id}!AgentPackage@{Agent\-Package}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}int Agent\-Package\-::id}\label{struct_agent_package_acb97295bf92e52e7791297ccfe00a9f0}
+id de l'agent \index{Agent\-Package@{Agent\-Package}!proc@{proc}}
+\index{proc@{proc}!AgentPackage@{Agent\-Package}}
+\subsubsection[{proc}]{\setlength{\rightskip}{0pt plus 5cm}int Agent\-Package\-::proc}\label{struct_agent_package_a424b83e665a649a53251684d53b7f6ec}
+id processus createur de l'agent \index{Agent\-Package@{Agent\-Package}!type@{type}}
+\index{type@{type}!AgentPackage@{Agent\-Package}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}int Agent\-Package\-::type}\label{struct_agent_package_a47cb43c3eb16f7ab9fed25c310ea1f7a}
+type d'agent \index{Agent\-Package@{Agent\-Package}!type\-Personne@{type\-Personne}}
+\index{type\-Personne@{type\-Personne}!AgentPackage@{Agent\-Package}}
+\subsubsection[{type\-Personne}]{\setlength{\rightskip}{0pt plus 5cm}int Agent\-Package\-::type\-Personne}\label{struct_agent_package_ac2a45d712ab4e8befb526865a12d67f3}
+attribut type\-Personne de la classe \doxyref{Humain}{p.}{class_humain} 
+
+La documentation de cette structure a été générée à partir du fichier suivant \-:\begin{DoxyCompactItemize}
+\item 
+code/include/{\bf Agent\-Package.\-h}\end{DoxyCompactItemize}

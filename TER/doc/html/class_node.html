@@ -1,0 +1,737 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Simulation d&#39;evacuation d&#39;immeuble avec systeme multi-agents: Référence de la classe Node</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.jpeg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Simulation d&#39;evacuation d&#39;immeuble avec systeme multi-agents
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">TER - 2014</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
+      <li><a href="inherits.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="class_node-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe Node</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Classe representant un <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a> Un <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a> est une "case" de la matrice representant le monde Repast, chaque node contient les heuristiques,g,h et f, une position X et Y , un <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a> Parent, et un boolean indiquant si le node est un mur ou pas.  
+ <a href="class_node.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_node_8h_source.html">Node.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:ad7a34779cad45d997bfd6d3d8043c75f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#ad7a34779cad45d997bfd6d3d8043c75f">Node</a> ()</td></tr>
+<tr class="memdesc:ad7a34779cad45d997bfd6d3d8043c75f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur.  <a href="#ad7a34779cad45d997bfd6d3d8043c75f">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ad7a34779cad45d997bfd6d3d8043c75f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0840c3cb5c7159be6d992adecd2097c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#aa0840c3cb5c7159be6d992adecd2097c">~Node</a> ()</td></tr>
+<tr class="memdesc:aa0840c3cb5c7159be6d992adecd2097c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur.  <a href="#aa0840c3cb5c7159be6d992adecd2097c">Plus de détails...</a><br/></td></tr>
+<tr class="separator:aa0840c3cb5c7159be6d992adecd2097c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa342abc3125e21fab6c9085aefb9f90f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#aa342abc3125e21fab6c9085aefb9f90f">estEgal</a> (<a class="el" href="class_node.html">Node</a> const &amp;b) const </td></tr>
+<tr class="memdesc:aa342abc3125e21fab6c9085aefb9f90f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare deux objets de type <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>.  <a href="#aa342abc3125e21fab6c9085aefb9f90f">Plus de détails...</a><br/></td></tr>
+<tr class="separator:aa342abc3125e21fab6c9085aefb9f90f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39cc5b0b6814a6a2f4f0771203f334a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a39cc5b0b6814a6a2f4f0771203f334a1">setParent</a> (<a class="el" href="class_node.html">Node</a> *val)</td></tr>
+<tr class="memdesc:a39cc5b0b6814a6a2f4f0771203f334a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter de l'attribut Parent de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>.  <a href="#a39cc5b0b6814a6a2f4f0771203f334a1">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a39cc5b0b6814a6a2f4f0771203f334a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a220a8d64cb0df1cce083ed38c1260615"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a220a8d64cb0df1cce083ed38c1260615">getParent</a> ()</td></tr>
+<tr class="memdesc:a220a8d64cb0df1cce083ed38c1260615"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter de l'attribut m_parent de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>.  <a href="#a220a8d64cb0df1cce083ed38c1260615">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a220a8d64cb0df1cce083ed38c1260615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a281acda069a341e04b5e9dbd45c4658e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a281acda069a341e04b5e9dbd45c4658e">setWalkable</a> (bool val)</td></tr>
+<tr class="memdesc:a281acda069a341e04b5e9dbd45c4658e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter de l'attribut m_walkable de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>.  <a href="#a281acda069a341e04b5e9dbd45c4658e">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a281acda069a341e04b5e9dbd45c4658e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47181f2860b050a0036097d534051cfc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a47181f2860b050a0036097d534051cfc">setG</a> (int val)</td></tr>
+<tr class="memdesc:a47181f2860b050a0036097d534051cfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter de l'attribut m_G de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>.  <a href="#a47181f2860b050a0036097d534051cfc">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a47181f2860b050a0036097d534051cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a070cae6ce68d13a77b42686e6ecdef05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a070cae6ce68d13a77b42686e6ecdef05">setF</a> (int val)</td></tr>
+<tr class="memdesc:a070cae6ce68d13a77b42686e6ecdef05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter de l'attribut m_F de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>.  <a href="#a070cae6ce68d13a77b42686e6ecdef05">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a070cae6ce68d13a77b42686e6ecdef05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f9637d2e5bed720d9ee7a5af8a00c36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a5f9637d2e5bed720d9ee7a5af8a00c36">setH</a> (int val)</td></tr>
+<tr class="memdesc:a5f9637d2e5bed720d9ee7a5af8a00c36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter de l'attribut m_h de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>.  <a href="#a5f9637d2e5bed720d9ee7a5af8a00c36">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a5f9637d2e5bed720d9ee7a5af8a00c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accabc02cdc5144636cab8d5079619d13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#accabc02cdc5144636cab8d5079619d13">setX</a> (int val)</td></tr>
+<tr class="memdesc:accabc02cdc5144636cab8d5079619d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter de l'attribut m_X de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>.  <a href="#accabc02cdc5144636cab8d5079619d13">Plus de détails...</a><br/></td></tr>
+<tr class="separator:accabc02cdc5144636cab8d5079619d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a475dd9a2117954dbfa44f8cd196d6008"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a475dd9a2117954dbfa44f8cd196d6008">setY</a> (int val)</td></tr>
+<tr class="memdesc:a475dd9a2117954dbfa44f8cd196d6008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter de l'attribut m_Y de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>.  <a href="#a475dd9a2117954dbfa44f8cd196d6008">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a475dd9a2117954dbfa44f8cd196d6008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af04dc1e91f0961108c3ffab1fc9e792a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#af04dc1e91f0961108c3ffab1fc9e792a">getWalkable</a> ()</td></tr>
+<tr class="memdesc:af04dc1e91f0961108c3ffab1fc9e792a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter de l'attribut m_walkable de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>.  <a href="#af04dc1e91f0961108c3ffab1fc9e792a">Plus de détails...</a><br/></td></tr>
+<tr class="separator:af04dc1e91f0961108c3ffab1fc9e792a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9133c5c2e1c994b914535bbbefa33d7c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a9133c5c2e1c994b914535bbbefa33d7c">getG</a> ()</td></tr>
+<tr class="memdesc:a9133c5c2e1c994b914535bbbefa33d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter de l'attribut m_G de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>.  <a href="#a9133c5c2e1c994b914535bbbefa33d7c">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a9133c5c2e1c994b914535bbbefa33d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b012d2404cc65fb58a9bb3a2dc6d724"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a7b012d2404cc65fb58a9bb3a2dc6d724">getF</a> ()</td></tr>
+<tr class="memdesc:a7b012d2404cc65fb58a9bb3a2dc6d724"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter de l'attribut m_F de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>.  <a href="#a7b012d2404cc65fb58a9bb3a2dc6d724">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a7b012d2404cc65fb58a9bb3a2dc6d724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1108111505a673b217d5e13d6ac36d14"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a1108111505a673b217d5e13d6ac36d14">getH</a> ()</td></tr>
+<tr class="memdesc:a1108111505a673b217d5e13d6ac36d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter de l'attribut m_H de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>.  <a href="#a1108111505a673b217d5e13d6ac36d14">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a1108111505a673b217d5e13d6ac36d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c026e5d8c28591c6e2bd08c68619fd1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a6c026e5d8c28591c6e2bd08c68619fd1">getX</a> ()</td></tr>
+<tr class="memdesc:a6c026e5d8c28591c6e2bd08c68619fd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter de l'attribut m_X de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>.  <a href="#a6c026e5d8c28591c6e2bd08c68619fd1">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a6c026e5d8c28591c6e2bd08c68619fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abab48a3f494994d4f456897f3372d3ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#abab48a3f494994d4f456897f3372d3ae">getY</a> ()</td></tr>
+<tr class="memdesc:abab48a3f494994d4f456897f3372d3ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter de l'attribut m_Y de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>.  <a href="#abab48a3f494994d4f456897f3372d3ae">Plus de détails...</a><br/></td></tr>
+<tr class="separator:abab48a3f494994d4f456897f3372d3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Classe representant un <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a> Un <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a> est une "case" de la matrice representant le monde Repast, chaque node contient les heuristiques,g,h et f, une position X et Y , un <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a> Parent, et un boolean indiquant si le node est un mur ou pas. </p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="ad7a34779cad45d997bfd6d3d8043c75f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Node::Node </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructeur. </p>
+<p>Constructeur de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="aa0840c3cb5c7159be6d992adecd2097c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Node::~Node </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructeur. </p>
+<p>Destructeur de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a> </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="aa342abc3125e21fab6c9085aefb9f90f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Node::estEgal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_node.html">Node</a> const &amp;&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compare deux objets de type <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>: node a comparer au <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a> actuel </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>un boolean idiquant si les deux nodes sont egaux. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7b012d2404cc65fb58a9bb3a2dc6d724"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Node::getF </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Getter de l'attribut m_F de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>valeur de l'attribut m_F de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9133c5c2e1c994b914535bbbefa33d7c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Node::getG </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Getter de l'attribut m_G de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>valeur de l'attribut m_G de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a> </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="class_node_a9133c5c2e1c994b914535bbbefa33d7c_icgraph.png" border="0" usemap="#class_node_a9133c5c2e1c994b914535bbbefa33d7c_icgraph" alt=""/></div>
+<map name="class_node_a9133c5c2e1c994b914535bbbefa33d7c_icgraph" id="class_node_a9133c5c2e1c994b914535bbbefa33d7c_icgraph">
+<area shape="rect" id="node2" href="class_pathfinder.html#aee6e72cf2b4a9f86c6aa1139618e2167" title="Application de l&#39;algorithme A* sur un objet Graphe dans le but de calculer un chemin du node Depart a..." alt="" coords="145,5,282,32"/><area shape="rect" id="node3" href="class_graphe.html#a7c51dfd09bcf7d8505ec47a96b5d9c61" title="Calcule la sortie la plus proche du point de depart. " alt="" coords="331,5,471,32"/><area shape="rect" id="node4" href="class_graphe.html#abd3e45f6d615a90d71106d29e6968c0f" title="Constructeur. " alt="" coords="520,5,635,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1108111505a673b217d5e13d6ac36d14"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Node::getH </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Getter de l'attribut m_H de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>valeur de l'attribut m_H de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a220a8d64cb0df1cce083ed38c1260615"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_node.html">Node</a> * Node::getParent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter de l'attribut m_parent de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>valeur de l'attribut m_parent de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a> </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="class_node_a220a8d64cb0df1cce083ed38c1260615_icgraph.png" border="0" usemap="#class_node_a220a8d64cb0df1cce083ed38c1260615_icgraph" alt=""/></div>
+<map name="class_node_a220a8d64cb0df1cce083ed38c1260615_icgraph" id="class_node_a220a8d64cb0df1cce083ed38c1260615_icgraph">
+<area shape="rect" id="node2" href="class_pathfinder.html#aee6e72cf2b4a9f86c6aa1139618e2167" title="Application de l&#39;algorithme A* sur un objet Graphe dans le but de calculer un chemin du node Depart a..." alt="" coords="171,5,309,32"/><area shape="rect" id="node3" href="class_graphe.html#a7c51dfd09bcf7d8505ec47a96b5d9c61" title="Calcule la sortie la plus proche du point de depart. " alt="" coords="358,5,498,32"/><area shape="rect" id="node4" href="class_graphe.html#abd3e45f6d615a90d71106d29e6968c0f" title="Constructeur. " alt="" coords="547,5,661,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af04dc1e91f0961108c3ffab1fc9e792a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Node::getWalkable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Getter de l'attribut m_walkable de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>valeur de l'attribut m_walkable de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a> </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="class_node_af04dc1e91f0961108c3ffab1fc9e792a_icgraph.png" border="0" usemap="#class_node_af04dc1e91f0961108c3ffab1fc9e792a_icgraph" alt=""/></div>
+<map name="class_node_af04dc1e91f0961108c3ffab1fc9e792a_icgraph" id="class_node_af04dc1e91f0961108c3ffab1fc9e792a_icgraph">
+<area shape="rect" id="node2" href="class_pathfinder.html#aee6e72cf2b4a9f86c6aa1139618e2167" title="Application de l&#39;algorithme A* sur un objet Graphe dans le but de calculer un chemin du node Depart a..." alt="" coords="187,5,325,32"/><area shape="rect" id="node3" href="class_graphe.html#a7c51dfd09bcf7d8505ec47a96b5d9c61" title="Calcule la sortie la plus proche du point de depart. " alt="" coords="374,5,514,32"/><area shape="rect" id="node4" href="class_graphe.html#abd3e45f6d615a90d71106d29e6968c0f" title="Constructeur. " alt="" coords="563,5,677,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6c026e5d8c28591c6e2bd08c68619fd1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Node::getX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Getter de l'attribut m_X de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>valeur de l'attribut m_X de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a> </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="class_node_a6c026e5d8c28591c6e2bd08c68619fd1_icgraph.png" border="0" usemap="#class_node_a6c026e5d8c28591c6e2bd08c68619fd1_icgraph" alt=""/></div>
+<map name="class_node_a6c026e5d8c28591c6e2bd08c68619fd1_icgraph" id="class_node_a6c026e5d8c28591c6e2bd08c68619fd1_icgraph">
+<area shape="rect" id="node2" href="class_graphe.html#a7c51dfd09bcf7d8505ec47a96b5d9c61" title="Calcule la sortie la plus proche du point de depart. " alt="" coords="329,5,469,32"/><area shape="rect" id="node4" href="class_pathfinder.html#aee6e72cf2b4a9f86c6aa1139618e2167" title="Application de l&#39;algorithme A* sur un objet Graphe dans le but de calculer un chemin du node Depart a..." alt="" coords="142,31,279,57"/><area shape="rect" id="node3" href="class_graphe.html#abd3e45f6d615a90d71106d29e6968c0f" title="Constructeur. " alt="" coords="517,5,632,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abab48a3f494994d4f456897f3372d3ae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Node::getY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Getter de l'attribut m_Y de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>valeur de l'attribut m_Y de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a> </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="class_node_abab48a3f494994d4f456897f3372d3ae_icgraph.png" border="0" usemap="#class_node_abab48a3f494994d4f456897f3372d3ae_icgraph" alt=""/></div>
+<map name="class_node_abab48a3f494994d4f456897f3372d3ae_icgraph" id="class_node_abab48a3f494994d4f456897f3372d3ae_icgraph">
+<area shape="rect" id="node2" href="class_graphe.html#a7c51dfd09bcf7d8505ec47a96b5d9c61" title="Calcule la sortie la plus proche du point de depart. " alt="" coords="329,5,469,32"/><area shape="rect" id="node4" href="class_pathfinder.html#aee6e72cf2b4a9f86c6aa1139618e2167" title="Application de l&#39;algorithme A* sur un objet Graphe dans le but de calculer un chemin du node Depart a..." alt="" coords="142,31,279,57"/><area shape="rect" id="node3" href="class_graphe.html#abd3e45f6d615a90d71106d29e6968c0f" title="Constructeur. " alt="" coords="517,5,632,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a070cae6ce68d13a77b42686e6ecdef05"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Node::setF </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Setter de l'attribut m_F de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">val</td><td>: valeur de l'attribut a modifier </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="class_node_a070cae6ce68d13a77b42686e6ecdef05_icgraph.png" border="0" usemap="#class_node_a070cae6ce68d13a77b42686e6ecdef05_icgraph" alt=""/></div>
+<map name="class_node_a070cae6ce68d13a77b42686e6ecdef05_icgraph" id="class_node_a070cae6ce68d13a77b42686e6ecdef05_icgraph">
+<area shape="rect" id="node2" href="class_pathfinder.html#aee6e72cf2b4a9f86c6aa1139618e2167" title="Application de l&#39;algorithme A* sur un objet Graphe dans le but de calculer un chemin du node Depart a..." alt="" coords="142,5,279,32"/><area shape="rect" id="node3" href="class_graphe.html#a7c51dfd09bcf7d8505ec47a96b5d9c61" title="Calcule la sortie la plus proche du point de depart. " alt="" coords="329,5,469,32"/><area shape="rect" id="node4" href="class_graphe.html#abd3e45f6d615a90d71106d29e6968c0f" title="Constructeur. " alt="" coords="517,5,632,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a47181f2860b050a0036097d534051cfc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Node::setG </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Setter de l'attribut m_G de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">val</td><td>: valeur de l'attribut a modifier </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="class_node_a47181f2860b050a0036097d534051cfc_icgraph.png" border="0" usemap="#class_node_a47181f2860b050a0036097d534051cfc_icgraph" alt=""/></div>
+<map name="class_node_a47181f2860b050a0036097d534051cfc_icgraph" id="class_node_a47181f2860b050a0036097d534051cfc_icgraph">
+<area shape="rect" id="node2" href="class_pathfinder.html#aee6e72cf2b4a9f86c6aa1139618e2167" title="Application de l&#39;algorithme A* sur un objet Graphe dans le but de calculer un chemin du node Depart a..." alt="" coords="145,5,282,32"/><area shape="rect" id="node3" href="class_graphe.html#a7c51dfd09bcf7d8505ec47a96b5d9c61" title="Calcule la sortie la plus proche du point de depart. " alt="" coords="331,5,471,32"/><area shape="rect" id="node4" href="class_graphe.html#abd3e45f6d615a90d71106d29e6968c0f" title="Constructeur. " alt="" coords="520,5,635,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5f9637d2e5bed720d9ee7a5af8a00c36"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Node::setH </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Setter de l'attribut m_h de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">val</td><td>: valeur de l'attribut a modifier </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="class_node_a5f9637d2e5bed720d9ee7a5af8a00c36_icgraph.png" border="0" usemap="#class_node_a5f9637d2e5bed720d9ee7a5af8a00c36_icgraph" alt=""/></div>
+<map name="class_node_a5f9637d2e5bed720d9ee7a5af8a00c36_icgraph" id="class_node_a5f9637d2e5bed720d9ee7a5af8a00c36_icgraph">
+<area shape="rect" id="node2" href="class_pathfinder.html#aee6e72cf2b4a9f86c6aa1139618e2167" title="Application de l&#39;algorithme A* sur un objet Graphe dans le but de calculer un chemin du node Depart a..." alt="" coords="145,5,282,32"/><area shape="rect" id="node3" href="class_graphe.html#a7c51dfd09bcf7d8505ec47a96b5d9c61" title="Calcule la sortie la plus proche du point de depart. " alt="" coords="331,5,471,32"/><area shape="rect" id="node4" href="class_graphe.html#abd3e45f6d615a90d71106d29e6968c0f" title="Constructeur. " alt="" coords="520,5,635,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a39cc5b0b6814a6a2f4f0771203f334a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Node::setParent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_node.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setter de l'attribut Parent de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">val</td><td>: valeur de l'attribut a modifier </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="class_node_a39cc5b0b6814a6a2f4f0771203f334a1_icgraph.png" border="0" usemap="#class_node_a39cc5b0b6814a6a2f4f0771203f334a1_icgraph" alt=""/></div>
+<map name="class_node_a39cc5b0b6814a6a2f4f0771203f334a1_icgraph" id="class_node_a39cc5b0b6814a6a2f4f0771203f334a1_icgraph">
+<area shape="rect" id="node2" href="class_pathfinder.html#aee6e72cf2b4a9f86c6aa1139618e2167" title="Application de l&#39;algorithme A* sur un objet Graphe dans le but de calculer un chemin du node Depart a..." alt="" coords="171,5,309,32"/><area shape="rect" id="node3" href="class_graphe.html#a7c51dfd09bcf7d8505ec47a96b5d9c61" title="Calcule la sortie la plus proche du point de depart. " alt="" coords="358,5,498,32"/><area shape="rect" id="node4" href="class_graphe.html#abd3e45f6d615a90d71106d29e6968c0f" title="Constructeur. " alt="" coords="547,5,661,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a281acda069a341e04b5e9dbd45c4658e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Node::setWalkable </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Setter de l'attribut m_walkable de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">val</td><td>: valeur de l'attribut a modifier </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="class_node_a281acda069a341e04b5e9dbd45c4658e_icgraph.png" border="0" usemap="#class_node_a281acda069a341e04b5e9dbd45c4658e_icgraph" alt=""/></div>
+<map name="class_node_a281acda069a341e04b5e9dbd45c4658e_icgraph" id="class_node_a281acda069a341e04b5e9dbd45c4658e_icgraph">
+<area shape="rect" id="node2" href="class_graphe.html#abd3e45f6d615a90d71106d29e6968c0f" title="Constructeur. " alt="" coords="187,5,301,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="accabc02cdc5144636cab8d5079619d13"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Node::setX </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Setter de l'attribut m_X de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">val</td><td>: valeur de l'attribut a modifier </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="class_node_accabc02cdc5144636cab8d5079619d13_icgraph.png" border="0" usemap="#class_node_accabc02cdc5144636cab8d5079619d13_icgraph" alt=""/></div>
+<map name="class_node_accabc02cdc5144636cab8d5079619d13_icgraph" id="class_node_accabc02cdc5144636cab8d5079619d13_icgraph">
+<area shape="rect" id="node2" href="class_graphe.html#abd3e45f6d615a90d71106d29e6968c0f" title="Constructeur. " alt="" coords="141,5,256,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a475dd9a2117954dbfa44f8cd196d6008"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Node::setY </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Setter de l'attribut m_Y de la classe <a class="el" href="class_node.html" title="Classe representant un Node Un Node est une &quot;case&quot; de la matrice representant le monde Repast...">Node</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">val</td><td>: valeur de l'attribut a modifier </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="class_node_a475dd9a2117954dbfa44f8cd196d6008_icgraph.png" border="0" usemap="#class_node_a475dd9a2117954dbfa44f8cd196d6008_icgraph" alt=""/></div>
+<map name="class_node_a475dd9a2117954dbfa44f8cd196d6008_icgraph" id="class_node_a475dd9a2117954dbfa44f8cd196d6008_icgraph">
+<area shape="rect" id="node2" href="class_graphe.html#abd3e45f6d615a90d71106d29e6968c0f" title="Constructeur. " alt="" coords="141,5,256,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li>code/include/<a class="el" href="_node_8h_source.html">Node.h</a></li>
+<li>code/src/Node.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche 25 Mai 2014 22:27:42 pour Simulation d&#39;evacuation d&#39;immeuble avec systeme multi-agents par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

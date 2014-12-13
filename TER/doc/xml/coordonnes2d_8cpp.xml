@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="coordonnes2d_8cpp" kind="file">
+    <compoundname>coordonnes2d.cpp</compoundname>
+    <includes refid="coordonnes2d_8h" local="no">coordonnes2d.h</includes>
+    <incdepgraph>
+      <node id="158">
+        <label>code/src/coordonnes2d.cpp</label>
+        <link refid="coordonnes2d.cpp"/>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>coordonnes2d.h</label>
+        <link refid="coordonnes2d_8h"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="coordonnes2d_8h" kindref="compound">coordonnes2d.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_coordonnes2_d_1aa5b01dbc1c5305dbf1dd51f20eeec05e" refkind="member"><highlight class="normal"><ref refid="class_coordonnes2_d_1aa5b01dbc1c5305dbf1dd51f20eeec05e" kindref="member">Coordonnes2D::Coordonnes2D</ref>()</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_coordonnes2_d_1a27d023c95955192562e88d8dcb3550ea" kindref="member">m_X</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_coordonnes2_d_1aaae6b7822c9680973ad6e55255ffa45a" kindref="member">m_Y</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//ctor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_coordonnes2_d_1a3a4031367715512fb9d3aad9bc9a5564" refkind="member"><highlight class="normal"><ref refid="class_coordonnes2_d_1aa5b01dbc1c5305dbf1dd51f20eeec05e" kindref="member">Coordonnes2D::Coordonnes2D</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>X,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Y)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_coordonnes2_d_1a27d023c95955192562e88d8dcb3550ea" kindref="member">m_X</ref><sp/>=<sp/>X;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_coordonnes2_d_1aaae6b7822c9680973ad6e55255ffa45a" kindref="member">m_Y</ref><sp/>=<sp/>Y;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//ctor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="class_coordonnes2_d_1a32915a0b2cfc5dce3ed491fb3fa0abae" refkind="member"><highlight class="normal"><ref refid="class_coordonnes2_d_1aa5b01dbc1c5305dbf1dd51f20eeec05e" kindref="member">Coordonnes2D::Coordonnes2D</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref>&amp;<sp/>source){</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_coordonnes2_d_1a27d023c95955192562e88d8dcb3550ea" kindref="member">m_X</ref><sp/>=<sp/>source.<ref refid="class_coordonnes2_d_1ac06b44e9c6584d4de6746f6b14472cdb" kindref="member">getX</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_coordonnes2_d_1aaae6b7822c9680973ad6e55255ffa45a" kindref="member">m_Y</ref><sp/>=<sp/>source.<ref refid="class_coordonnes2_d_1a52192f87a21074e41b7d7b22f258a549" kindref="member">getY</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_coordonnes2_d_1ad09082ceb0a4e3ea127ff78192a58a68" kindref="member">m_cadran</ref><sp/>=<sp/>source.<ref refid="class_coordonnes2_d_1a923a832cec319899e4435240e1d1a2ce" kindref="member">getCadran</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_coordonnes2_d_1a65b01695cc5bd68968db3ded7a1fcf74" refkind="member"><highlight class="normal"><ref refid="class_coordonnes2_d_1a65b01695cc5bd68968db3ded7a1fcf74" kindref="member">Coordonnes2D::~Coordonnes2D</ref>()</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//dtor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/emip/git/TER/TESTA/code/src/coordonnes2d.cpp"/>
+  </compounddef>
+</doxygen>

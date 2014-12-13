@@ -1,0 +1,437 @@
+\section{Référence de la classe T\-E\-R\-Observer}
+\label{class_t_e_r_observer}\index{T\-E\-R\-Observer@{T\-E\-R\-Observer}}
+
+
+Classe representant un observateur, qui s'occupe de la gestion des agents dans ce processus.  
+
+
+
+
+{\ttfamily \#include $<$T\-E\-R\-Observer.\-h$>$}
+
+
+
+Graphe d'héritage de T\-E\-R\-Observer\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{class_t_e_r_observer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de T\-E\-R\-Observer\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{class_t_e_r_observer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+{\bf T\-E\-R\-Observer} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+virtual {\bf $\sim$\-T\-E\-R\-Observer} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+void {\bf go} ()\label{class_t_e_r_observer_a87524bb92d6be89b025e4312440f6948}
+
+\begin{DoxyCompactList}\small\item\em Fonction heritee qui est appelee a chaque tick de la simulation. \end{DoxyCompactList}\item 
+virtual void {\bf setup} (repast\-::\-Properties \&props)\label{class_t_e_r_observer_a9f04020109fb77d6e704546c7060fff3}
+
+\begin{DoxyCompactList}\small\item\em Fonction heritee qui est appelee a l'initialisation de l'objet Observer. \end{DoxyCompactList}\item 
+void {\bf load\-Map\-\_\-a\-\_\-star} (repast\-::\-Properties \&props, std\-::vector$<$ {\bf Coordonnes2\-D} $>$ \&sorties)\label{class_t_e_r_observer_ae8d98b39e6c1f41f2eb78326893106f0}
+
+\begin{DoxyCompactList}\small\item\em Charge a partir du fichier d'initialisation, la matrice map a utiliser pour A$\ast$. \end{DoxyCompactList}\item 
+repast\-::relogo\-::\-Relogo\-Agent $\ast$ {\bf create\-Agent} (const {\bf Agent\-Package} \&content)
+\begin{DoxyCompactList}\small\item\em Fonction qui cree un agent a partir d'une archive serialisee. \end{DoxyCompactList}\item 
+void {\bf provide\-Content} (const repast\-::\-Agent\-Request \&request, std\-::vector$<$ {\bf Agent\-Package} $>$ \&out)
+\begin{DoxyCompactList}\small\item\em Fonction qui assigne les valeurs d'un tableau d'archives serialisees a un agent ou un ensemble d'agents. \end{DoxyCompactList}\item 
+void {\bf enregister\-Resultats} ()\label{class_t_e_r_observer_a7ef10641e78a9fe2ba24e4fa6fc7e83a}
+
+\begin{DoxyCompactList}\small\item\em Fonction qui enregistre les resultats de la simulation dans un fichier tableur. \end{DoxyCompactList}\item 
+void {\bf load\-Map} (repast\-::\-Properties \&props, int process\-\_\-cadran)
+\begin{DoxyCompactList}\small\item\em Fonction charge la map a partir du fichier d'initialisation. \end{DoxyCompactList}\item 
+void {\bf create\-Agents} (std\-::vector$<$ {\bf Agent\-Package} $>$ \&content, std\-::vector$<$ repast\-::relogo\-::\-Relogo\-Agent $\ast$ $>$ \&out)
+\begin{DoxyCompactList}\small\item\em Fonction qui cree des agents, appelee lors d'une synchronisation du buffer de la grille Repast. \end{DoxyCompactList}\item 
+void {\bf provide\-Content} (repast\-::relogo\-::\-Relogo\-Agent $\ast$agent, std\-::vector$<$ {\bf Agent\-Package} $>$ \&out)
+\begin{DoxyCompactList}\small\item\em Fonction qui fournit aux agents leur contenu, appelee lors d'une synchronisation du buffer de la grille Repast. \end{DoxyCompactList}\item 
+void {\bf update\-Agent} ({\bf Agent\-Package} package)
+\begin{DoxyCompactList}\small\item\em Fonction qui met à jour des agents deja existants. \end{DoxyCompactList}\item 
+void {\bf dessiner\-Decor} (int cadran)
+\begin{DoxyCompactList}\small\item\em Fonction qui dessine le decor dans la \doxyref{Fenetre}{p.}{class_fenetre} S\-D\-L. \end{DoxyCompactList}\item 
+{\bf Coordonnes2\-D} {\bf Rcor2\-G\-L\-Cor} (int X, int Y, int cadran)
+\begin{DoxyCompactList}\small\item\em Fonction qui convertie des cordonnees du monde Repast vers des coordonnes en pixel dans la \doxyref{Fenetre}{p.}{class_fenetre} S\-D\-L associee a ce processus. \end{DoxyCompactList}\item 
+{\bf Coordonnes2\-D} {\bf Fcor2\-R\-Cor} (int pos\-X, int pos\-Y)
+\begin{DoxyCompactList}\small\item\em Fonction qui convertie des cordonnees du Fichier vers des coordonnes du monde Repast. \end{DoxyCompactList}\item 
+{\bf Coordonnes2\-D} {\bf Mcor2\-G\-L\-Cor} (int pos\-X, int pos\-Y)
+\begin{DoxyCompactList}\small\item\em Fonction qui convertie des cordonnees de la liste de matrices map vers des coordonnes en pixel de la \doxyref{Fenetre}{p.}{class_fenetre} S\-D\-L. \end{DoxyCompactList}\item 
+void {\bf synchronize\-Map} ()\label{class_t_e_r_observer_af7e1247020de2e3d4d42a13ff8c6b6c2}
+
+\begin{DoxyCompactList}\small\item\em Fonction qui synchronise la map et la met a jour en fonction de la map Repast. \end{DoxyCompactList}\item 
+void {\bf raz\-Map} ()\label{class_t_e_r_observer_a3b78e3ab9fe3a01b465ccd31f1e88f45}
+
+\begin{DoxyCompactList}\small\item\em Fonction qui remet a 0 la map (liste de matrices en memoire) \end{DoxyCompactList}\item 
+{\bf Coordonnes2\-D} {\bf map2\-Repast} ({\bf Coordonnes2\-D} c, int cadran)
+\begin{DoxyCompactList}\small\item\em Fonction qui convertit les coordonnes de la map vers des coordonnees Repast. \end{DoxyCompactList}\item 
+void {\bf print\-Map} ()\label{class_t_e_r_observer_acb9c7049485c5f1067bf7fd9a1300d28}
+
+\begin{DoxyCompactList}\small\item\em Fonction qui affiche dans la console le contenu de la map (utilise pour debugger) \end{DoxyCompactList}\item 
+int {\bf get\-Survivants} ()
+\begin{DoxyCompactList}\small\item\em Getter de l'attribut m\-\_\-survivants de la Classe \doxyref{T\-E\-R\-Observer}{p.}{class_t_e_r_observer}. \end{DoxyCompactList}\item 
+void {\bf set\-Survivant} (int val)
+\begin{DoxyCompactList}\small\item\em Setter de l'attribut m\-\_\-survivants de la Classe \doxyref{T\-E\-R\-Observer}{p.}{class_t_e_r_observer}. \end{DoxyCompactList}\item 
+repast\-::\-Properties $\ast$ {\bf get\-Props} ()
+\begin{DoxyCompactList}\small\item\em Getter de l'attribut proprietes de la Classe \doxyref{T\-E\-R\-Observer}{p.}{class_t_e_r_observer}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Classe representant un observateur, qui s'occupe de la gestion des agents dans ce processus. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{T\-E\-R\-Observer@{T\-E\-R\-Observer}!T\-E\-R\-Observer@{T\-E\-R\-Observer}}
+\index{T\-E\-R\-Observer@{T\-E\-R\-Observer}!TERObserver@{T\-E\-R\-Observer}}
+\subsubsection[{T\-E\-R\-Observer}]{\setlength{\rightskip}{0pt plus 5cm}T\-E\-R\-Observer\-::\-T\-E\-R\-Observer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_t_e_r_observer_aa9e1451ecf894d0b47978a251c33a5bb}
+
+
+Constructeur. 
+
+Constructeur de la classe \doxyref{T\-E\-R\-Observer}{p.}{class_t_e_r_observer} \index{T\-E\-R\-Observer@{T\-E\-R\-Observer}!$\sim$\-T\-E\-R\-Observer@{$\sim$\-T\-E\-R\-Observer}}
+\index{$\sim$\-T\-E\-R\-Observer@{$\sim$\-T\-E\-R\-Observer}!TERObserver@{T\-E\-R\-Observer}}
+\subsubsection[{$\sim$\-T\-E\-R\-Observer}]{\setlength{\rightskip}{0pt plus 5cm}virtual T\-E\-R\-Observer\-::$\sim$\-T\-E\-R\-Observer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_t_e_r_observer_a7aab378089e1835d915d675c1b1aee24}
+
+
+Destructeur. 
+
+Destructeur de la classe \doxyref{Pathfinder}{p.}{class_pathfinder} 
+
+\subsection{Documentation des fonctions membres}
+\index{T\-E\-R\-Observer@{T\-E\-R\-Observer}!create\-Agent@{create\-Agent}}
+\index{create\-Agent@{create\-Agent}!TERObserver@{T\-E\-R\-Observer}}
+\subsubsection[{create\-Agent}]{\setlength{\rightskip}{0pt plus 5cm}Relogo\-Agent $\ast$ T\-E\-R\-Observer\-::create\-Agent (
+\begin{DoxyParamCaption}
+\item[{const {\bf Agent\-Package} \&}]{content}
+\end{DoxyParamCaption}
+)}\label{class_t_e_r_observer_a2ebef6d41d08586bd3b54157ea372f99}
+
+
+Fonction qui cree un agent a partir d'une archive serialisee. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em content} & \-: archive serialisee de type \doxyref{Agent\-Package}{p.}{struct_agent_package} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+pointeur sur le nouvel Agent cree en memoire 
+\end{DoxyReturn}
+\index{T\-E\-R\-Observer@{T\-E\-R\-Observer}!create\-Agents@{create\-Agents}}
+\index{create\-Agents@{create\-Agents}!TERObserver@{T\-E\-R\-Observer}}
+\subsubsection[{create\-Agents}]{\setlength{\rightskip}{0pt plus 5cm}void T\-E\-R\-Observer\-::create\-Agents (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf Agent\-Package} $>$ \&}]{content, }
+\item[{std\-::vector$<$ repast\-::relogo\-::\-Relogo\-Agent $\ast$ $>$ \&}]{out}
+\end{DoxyParamCaption}
+)}\label{class_t_e_r_observer_a33b585c06b752057e20af26a2220a23f}
+
+
+Fonction qui cree des agents, appelee lors d'une synchronisation du buffer de la grille Repast. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em content} & \-: archive serialisee de type \doxyref{Agent\-Package}{p.}{struct_agent_package} \\
+\hline
+{\em out} & \-: reference vers un tableau d'agents a mettre a jour \\
+\hline
+\end{DoxyParams}
+\index{T\-E\-R\-Observer@{T\-E\-R\-Observer}!dessiner\-Decor@{dessiner\-Decor}}
+\index{dessiner\-Decor@{dessiner\-Decor}!TERObserver@{T\-E\-R\-Observer}}
+\subsubsection[{dessiner\-Decor}]{\setlength{\rightskip}{0pt plus 5cm}void T\-E\-R\-Observer\-::dessiner\-Decor (
+\begin{DoxyParamCaption}
+\item[{int}]{cadran}
+\end{DoxyParamCaption}
+)}\label{class_t_e_r_observer_a7b97c7e2c7251d65d946c9ced3c54bcf}
+
+
+Fonction qui dessine le decor dans la \doxyref{Fenetre}{p.}{class_fenetre} S\-D\-L. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em cadran} & \-: cadran a dessiner dans ce processus \\
+\hline
+\end{DoxyParams}
+
+
+Voici le graphe d'appel pour cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_t_e_r_observer_a7b97c7e2c7251d65d946c9ced3c54bcf_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\-E\-R\-Observer@{T\-E\-R\-Observer}!Fcor2\-R\-Cor@{Fcor2\-R\-Cor}}
+\index{Fcor2\-R\-Cor@{Fcor2\-R\-Cor}!TERObserver@{T\-E\-R\-Observer}}
+\subsubsection[{Fcor2\-R\-Cor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Coordonnes2\-D} T\-E\-R\-Observer\-::\-Fcor2\-R\-Cor (
+\begin{DoxyParamCaption}
+\item[{int}]{pos\-X, }
+\item[{int}]{pos\-Y}
+\end{DoxyParamCaption}
+)}\label{class_t_e_r_observer_a11cef38b11ca544137fe36e11aba8d5c}
+
+
+Fonction qui convertie des cordonnees du Fichier vers des coordonnes du monde Repast. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em X} & \-: coordonne X dans le Fichier \\
+\hline
+{\em Y} & \-: coordonne Y dans le Fichier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un Objet de type \doxyref{Coordonnes2\-D}{p.}{class_coordonnes2_d} contenant les coordonnees converties 
+\end{DoxyReturn}
+\index{T\-E\-R\-Observer@{T\-E\-R\-Observer}!get\-Props@{get\-Props}}
+\index{get\-Props@{get\-Props}!TERObserver@{T\-E\-R\-Observer}}
+\subsubsection[{get\-Props}]{\setlength{\rightskip}{0pt plus 5cm}repast\-::\-Properties$\ast$ T\-E\-R\-Observer\-::get\-Props (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_t_e_r_observer_a8c1de774ac3e1fa31c2233545cae4737}
+
+
+Getter de l'attribut proprietes de la Classe \doxyref{T\-E\-R\-Observer}{p.}{class_t_e_r_observer}. 
+
+\begin{DoxyReturn}{Renvoie}
+l'attribut proprietes de la classe \doxyref{T\-E\-R\-Observer}{p.}{class_t_e_r_observer} 
+\end{DoxyReturn}
+\index{T\-E\-R\-Observer@{T\-E\-R\-Observer}!get\-Survivants@{get\-Survivants}}
+\index{get\-Survivants@{get\-Survivants}!TERObserver@{T\-E\-R\-Observer}}
+\subsubsection[{get\-Survivants}]{\setlength{\rightskip}{0pt plus 5cm}int T\-E\-R\-Observer\-::get\-Survivants (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_t_e_r_observer_a5f19ccb810641760f3623a22cd19fd3c}
+
+
+Getter de l'attribut m\-\_\-survivants de la Classe \doxyref{T\-E\-R\-Observer}{p.}{class_t_e_r_observer}. 
+
+\begin{DoxyReturn}{Renvoie}
+l'attribut m\-\_\-survivants de la classe \doxyref{T\-E\-R\-Observer}{p.}{class_t_e_r_observer} 
+\end{DoxyReturn}
+\index{T\-E\-R\-Observer@{T\-E\-R\-Observer}!load\-Map@{load\-Map}}
+\index{load\-Map@{load\-Map}!TERObserver@{T\-E\-R\-Observer}}
+\subsubsection[{load\-Map}]{\setlength{\rightskip}{0pt plus 5cm}void T\-E\-R\-Observer\-::load\-Map (
+\begin{DoxyParamCaption}
+\item[{repast\-::\-Properties \&}]{props, }
+\item[{int}]{process\-\_\-cadran}
+\end{DoxyParamCaption}
+)}\label{class_t_e_r_observer_ac7815af47779d77ec0ed105af435b186}
+
+
+Fonction charge la map a partir du fichier d'initialisation. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em props} & \-: proprietes de la simulation \\
+\hline
+{\em process\-\_\-cadran} & \-: cadran sur lequel travaille le processus actuel \\
+\hline
+\end{DoxyParams}
+\index{T\-E\-R\-Observer@{T\-E\-R\-Observer}!map2\-Repast@{map2\-Repast}}
+\index{map2\-Repast@{map2\-Repast}!TERObserver@{T\-E\-R\-Observer}}
+\subsubsection[{map2\-Repast}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Coordonnes2\-D} T\-E\-R\-Observer\-::map2\-Repast (
+\begin{DoxyParamCaption}
+\item[{{\bf Coordonnes2\-D}}]{c, }
+\item[{int}]{cadran}
+\end{DoxyParamCaption}
+)}\label{class_t_e_r_observer_a51c832c301812eb0cda095e81051d9b0}
+
+
+Fonction qui convertit les coordonnes de la map vers des coordonnees Repast. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em c} & \-: Objet de type \doxyref{Coordonnes2\-D}{p.}{class_coordonnes2_d} qui contient les coordonnes de la map à convertir \\
+\hline
+{\em cadran} & \-: cadran du processus actuel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un Objet de type \doxyref{Coordonnes2\-D}{p.}{class_coordonnes2_d} contenant les coordonnees converties 
+\end{DoxyReturn}
+
+
+Voici le graphe d'appel pour cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_t_e_r_observer_a51c832c301812eb0cda095e81051d9b0_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\-E\-R\-Observer@{T\-E\-R\-Observer}!Mcor2\-G\-L\-Cor@{Mcor2\-G\-L\-Cor}}
+\index{Mcor2\-G\-L\-Cor@{Mcor2\-G\-L\-Cor}!TERObserver@{T\-E\-R\-Observer}}
+\subsubsection[{Mcor2\-G\-L\-Cor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Coordonnes2\-D} T\-E\-R\-Observer\-::\-Mcor2\-G\-L\-Cor (
+\begin{DoxyParamCaption}
+\item[{int}]{pos\-X, }
+\item[{int}]{pos\-Y}
+\end{DoxyParamCaption}
+)}\label{class_t_e_r_observer_a5287272e19f0556244cd96a008780d6c}
+
+
+Fonction qui convertie des cordonnees de la liste de matrices map vers des coordonnes en pixel de la \doxyref{Fenetre}{p.}{class_fenetre} S\-D\-L. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em X} & \-: coordonne X dans la map \\
+\hline
+{\em Y} & \-: coordonne Y dans la map \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un Objet de type \doxyref{Coordonnes2\-D}{p.}{class_coordonnes2_d} contenant les coordonnees converties 
+\end{DoxyReturn}
+\index{T\-E\-R\-Observer@{T\-E\-R\-Observer}!provide\-Content@{provide\-Content}}
+\index{provide\-Content@{provide\-Content}!TERObserver@{T\-E\-R\-Observer}}
+\subsubsection[{provide\-Content}]{\setlength{\rightskip}{0pt plus 5cm}void T\-E\-R\-Observer\-::provide\-Content (
+\begin{DoxyParamCaption}
+\item[{const repast\-::\-Agent\-Request \&}]{request, }
+\item[{std\-::vector$<$ {\bf Agent\-Package} $>$ \&}]{out}
+\end{DoxyParamCaption}
+)}\label{class_t_e_r_observer_ab036cbce36d1f1bd432785277becb041}
+
+
+Fonction qui assigne les valeurs d'un tableau d'archives serialisees a un agent ou un ensemble d'agents. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em out} & \-: tableau d'archives serialisees de type \doxyref{Agent\-Package}{p.}{struct_agent_package} \\
+\hline
+{\em request} & \-: Une requete Repast sur un ou plusieurs agents \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+pointeur sur le nouvel Agent cree en memoire 
+\end{DoxyReturn}
+
+
+Voici le graphe d'appel pour cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_t_e_r_observer_ab036cbce36d1f1bd432785277becb041_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{T\-E\-R\-Observer@{T\-E\-R\-Observer}!provide\-Content@{provide\-Content}}
+\index{provide\-Content@{provide\-Content}!TERObserver@{T\-E\-R\-Observer}}
+\subsubsection[{provide\-Content}]{\setlength{\rightskip}{0pt plus 5cm}void T\-E\-R\-Observer\-::provide\-Content (
+\begin{DoxyParamCaption}
+\item[{repast\-::relogo\-::\-Relogo\-Agent $\ast$}]{agent, }
+\item[{std\-::vector$<$ {\bf Agent\-Package} $>$ \&}]{out}
+\end{DoxyParamCaption}
+)}\label{class_t_e_r_observer_a559eb83afbbffd8b6b1d92690e6734ba}
+
+
+Fonction qui fournit aux agents leur contenu, appelee lors d'une synchronisation du buffer de la grille Repast. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em agent} & \-: Agent à mettre a jour. \\
+\hline
+{\em out} & \-: Tableau d'archives serialisees de type \doxyref{Agent\-Package}{p.}{struct_agent_package} \\
+\hline
+\end{DoxyParams}
+\index{T\-E\-R\-Observer@{T\-E\-R\-Observer}!Rcor2\-G\-L\-Cor@{Rcor2\-G\-L\-Cor}}
+\index{Rcor2\-G\-L\-Cor@{Rcor2\-G\-L\-Cor}!TERObserver@{T\-E\-R\-Observer}}
+\subsubsection[{Rcor2\-G\-L\-Cor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Coordonnes2\-D} T\-E\-R\-Observer\-::\-Rcor2\-G\-L\-Cor (
+\begin{DoxyParamCaption}
+\item[{int}]{X, }
+\item[{int}]{Y, }
+\item[{int}]{cadran}
+\end{DoxyParamCaption}
+)}\label{class_t_e_r_observer_a6d43b1ce4f72ffe2dafaf6bf831cdec9}
+
+
+Fonction qui convertie des cordonnees du monde Repast vers des coordonnes en pixel dans la \doxyref{Fenetre}{p.}{class_fenetre} S\-D\-L associee a ce processus. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em X} & \-: coordonne X dans le monde Repast a convertir \\
+\hline
+{\em Y} & \-: coordonne Y dans le monde Repast a convertir \\
+\hline
+{\em cadran} & \-: cadran dans lequel on se trouve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un Objet de type \doxyref{Coordonnes2\-D}{p.}{class_coordonnes2_d} contenant les coordonnees converties 
+\end{DoxyReturn}
+\index{T\-E\-R\-Observer@{T\-E\-R\-Observer}!set\-Survivant@{set\-Survivant}}
+\index{set\-Survivant@{set\-Survivant}!TERObserver@{T\-E\-R\-Observer}}
+\subsubsection[{set\-Survivant}]{\setlength{\rightskip}{0pt plus 5cm}void T\-E\-R\-Observer\-::set\-Survivant (
+\begin{DoxyParamCaption}
+\item[{int}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_t_e_r_observer_a243d9013eb73de81537e6416561864a4}
+
+
+Setter de l'attribut m\-\_\-survivants de la Classe \doxyref{T\-E\-R\-Observer}{p.}{class_t_e_r_observer}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em val} & \-: l'attribut a affecter a m\-\_\-survivants de la classe \doxyref{T\-E\-R\-Observer}{p.}{class_t_e_r_observer} \\
+\hline
+\end{DoxyParams}
+\index{T\-E\-R\-Observer@{T\-E\-R\-Observer}!update\-Agent@{update\-Agent}}
+\index{update\-Agent@{update\-Agent}!TERObserver@{T\-E\-R\-Observer}}
+\subsubsection[{update\-Agent}]{\setlength{\rightskip}{0pt plus 5cm}void T\-E\-R\-Observer\-::update\-Agent (
+\begin{DoxyParamCaption}
+\item[{{\bf Agent\-Package}}]{package}
+\end{DoxyParamCaption}
+)}\label{class_t_e_r_observer_ab1fe1d3f67f16d7bded15408348bc4b5}
+
+
+Fonction qui met à jour des agents deja existants. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em package} & \-: archive serialisee de type \doxyref{Agent\-Package}{p.}{struct_agent_package} \\
+\hline
+\end{DoxyParams}
+
+
+Voici le graphe d'appel pour cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_t_e_r_observer_ab1fe1d3f67f16d7bded15408348bc4b5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+code/include/{\bf T\-E\-R\-Observer.\-h}\item 
+code/src/T\-E\-R\-Observer.\-cpp\end{DoxyCompactItemize}

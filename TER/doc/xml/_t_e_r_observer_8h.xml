@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="_t_e_r_observer_8h" kind="file">
+    <compoundname>TERObserver.h</compoundname>
+    <includes local="no">boost/mpi.hpp</includes>
+    <includes local="yes">relogo/Observer.h</includes>
+    <includes local="yes">repast_hpc/AgentRequest.h</includes>
+    <includes local="yes">repast_hpc/Properties.h</includes>
+    <includes refid="coordonnes2d_8h" local="yes">coordonnes2d.h</includes>
+    <includes refid="_graphe_8h" local="yes">Graphe.h</includes>
+    <includes local="no">list</includes>
+    <includes refid="_agent_package_8h" local="yes">AgentPackage.h</includes>
+    <includes refid="fenetre_8h" local="yes">fenetre.h</includes>
+    <includedby refid="fenetre_8cpp" local="yes">code/src/fenetre.cpp</includedby>
+    <includedby refid="_humain_8cpp" local="yes">code/src/Humain.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">code/src/main.cpp</includedby>
+    <includedby refid="_t_e_r_observer_8cpp" local="yes">code/src/TERObserver.cpp</includedby>
+    <incdepgraph>
+      <node id="150">
+        <label>list</label>
+      </node>
+      <node id="149">
+        <label>PathFinder.h</label>
+        <link refid="_path_finder_8h"/>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+      </node>
+      <node id="153">
+        <label>boost/serialization/vector.hpp</label>
+      </node>
+      <node id="152">
+        <label>repast_hpc/AgentId.h</label>
+      </node>
+      <node id="155">
+        <label>string</label>
+      </node>
+      <node id="143">
+        <label>repast_hpc/AgentRequest.h</label>
+      </node>
+      <node id="146">
+        <label>Graphe.h</label>
+        <link refid="_graphe_8h"/>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+      </node>
+      <node id="156">
+        <label>SDL2/SDL.h</label>
+      </node>
+      <node id="142">
+        <label>relogo/Observer.h</label>
+      </node>
+      <node id="147">
+        <label>vector</label>
+      </node>
+      <node id="151">
+        <label>AgentPackage.h</label>
+        <link refid="_agent_package_8h"/>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>boost/mpi.hpp</label>
+      </node>
+      <node id="145">
+        <label>coordonnes2d.h</label>
+        <link refid="coordonnes2d_8h"/>
+      </node>
+      <node id="144">
+        <label>repast_hpc/Properties.h</label>
+      </node>
+      <node id="140">
+        <label>code/include/TERObserver.h</label>
+        <link refid="TERObserver.h"/>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+      </node>
+      <node id="154">
+        <label>fenetre.h</label>
+        <link refid="fenetre_8h"/>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+      </node>
+      <node id="148">
+        <label>Node.h</label>
+        <link refid="_node_8h"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_t_e_r_observer" prot="public">TERObserver</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_t_e_r_observer_8h_1a42fd4445197ac64796acc0b1deb1a4cd" prot="public" static="no">
+        <name>NB_PROCESS</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="22" column="9" bodyfile="/home/emip/git/TER/TESTA/code/include/TERObserver.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_t_e_r_observer_8h_1a706cc2910571d1667d5d92ce4b92c215" prot="public" static="no">
+        <name>NB_CASES_HAUTEUR</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="23" column="9" bodyfile="/home/emip/git/TER/TESTA/code/include/TERObserver.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_t_e_r_observer_8h_1a05e7c3ac07a9656bf708e6556321e8c1" prot="public" static="no">
+        <name>NB_CASES_LARGEUR</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h" line="24" column="9" bodyfile="/home/emip/git/TER/TESTA/code/include/TERObserver.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Classe representant un <ref refid="class_t_e_r_observer" kindref="compound">TERObserver</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>HRUSTIC EMIR </para></simplesect>
+<simplesect kind="version"><para>0.1 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>TEROBSERVER_H_</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TEROBSERVER_H_</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#include<sp/>&lt;boost/mpi.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;relogo/Observer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;repast_hpc/AgentRequest.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;repast_hpc/Properties.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="coordonnes2d_8h" kindref="compound">coordonnes2d.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_graphe_8h" kindref="compound">Graphe.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;list&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_agent_package_8h" kindref="compound">AgentPackage.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="fenetre_8h" kindref="compound">fenetre.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NB_PROCESS<sp/>4</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>NB_CASES_HAUTEUR<sp/>20</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>NB_CASES_LARGEUR<sp/>20</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="29" refid="class_t_e_r_observer" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_t_e_r_observer" kindref="compound">TERObserver</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>repast::relogo::Observer<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>repast::Properties*<sp/>proprietes;<sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>humainType,<sp/>wallType;<sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_fenetre" kindref="compound">Fenetre</ref><sp/>*_fen;<sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>map[NB_PROCESS][NB_CASES_HAUTEUR][NB_CASES_LARGEUR];<sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">**<sp/>map_a_star;<sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Coordonnes2D&gt;<sp/>m_sorties;<sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>humancount,wallcount;<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_survivants;<sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>repast::Timer<sp/>timer;<sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_graphe" kindref="compound">Graphe</ref>*<sp/>graphe;<sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dernierTick;<sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ageDiff;<sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbSorties;<sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="53" refid="class_t_e_r_observer_1aa9e1451ecf894d0b47978a251c33a5bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_t_e_r_observer_1aa9e1451ecf894d0b47978a251c33a5bb" kindref="member">TERObserver</ref>()<sp/>{<sp/>_fen<sp/>=<sp/>NULL;dernierTick<sp/>=<sp/>-1;nbSorties<sp/>=<sp/>0;}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="class_t_e_r_observer_1a7aab378089e1835d915d675c1b1aee24" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_t_e_r_observer_1a7aab378089e1835d915d675c1b1aee24" kindref="member">~TERObserver</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(_fen<sp/>!=<sp/>NULL)<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>_fen;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//liberation<sp/>memoire</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;j&lt;NB_CASES_LARGEUR*2;j++)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>map_a_star[j];</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>map_a_star;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>all_last_ticks;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nombre_humains<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nombre_survivants<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tickEvacutaion<sp/>=<sp/>-1,<sp/>max<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>evacuation_reussi<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(this-&gt;dernierTick<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>evacuation_reussi<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::mpi::communicator<sp/>world;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(world.rank()<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>all_survivants;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>all_humains;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>all_sorties;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::mpi::gather(world,this-&gt;m_survivants,all_survivants,0);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::mpi::gather(world,this-&gt;humancount,all_humains,0);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>proc=0;proc&lt;world.size();++proc){</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nombre_humains<sp/>=<sp/>nombre_humains<sp/>+<sp/>all_humains[proc];</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nombre_survivants<sp/>=<sp/>nombre_survivants<sp/>+<sp/>all_survivants[proc];</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::mpi::gather(world,<sp/>this-&gt;m_survivants,<sp/>0);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::mpi::gather(world,<sp/>this-&gt;humancount,<sp/>0);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(repast::RepastProcess::instance()-&gt;rank()<sp/>==<sp/>0){</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(evacuation_reussi){</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proprietes-&gt;putProperty(</highlight><highlight class="stringliteral">&quot;evacuation&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;reussie&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proprietes-&gt;putProperty(</highlight><highlight class="stringliteral">&quot;dernier.tick.evacuation&quot;</highlight><highlight class="normal">,this-&gt;dernierTick);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proprietes-&gt;putProperty(</highlight><highlight class="stringliteral">&quot;evacuation&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;echouee&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proprietes-&gt;putProperty(</highlight><highlight class="stringliteral">&quot;dernier.tick.evacuation&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;evacuation<sp/>echouee&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proprietes-&gt;putProperty(</highlight><highlight class="stringliteral">&quot;run.time&quot;</highlight><highlight class="normal">,<sp/>timer.stop());</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proprietes-&gt;putProperty(</highlight><highlight class="stringliteral">&quot;nombre.humains&quot;</highlight><highlight class="normal">,nombre_humains);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proprietes-&gt;putProperty(</highlight><highlight class="stringliteral">&quot;nombre.survivants&quot;</highlight><highlight class="normal">,nombre_survivants);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proprietes-&gt;putProperty(</highlight><highlight class="stringliteral">&quot;nombre.morts&quot;</highlight><highlight class="normal">,<sp/>(nombre_humains<sp/>-<sp/>nombre_survivants));</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proprietes-&gt;putProperty(</highlight><highlight class="stringliteral">&quot;nombre.sorties&quot;</highlight><highlight class="normal">,this-&gt;nbSorties);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//proprietes-&gt;putProperty(&quot;simulation.age_diff&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>keysToWrite;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keysToWrite.push_back(</highlight><highlight class="stringliteral">&quot;date_time.run&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keysToWrite.push_back(</highlight><highlight class="stringliteral">&quot;process.count&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keysToWrite.push_back(</highlight><highlight class="stringliteral">&quot;random.seed&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keysToWrite.push_back(</highlight><highlight class="stringliteral">&quot;min.x&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keysToWrite.push_back(</highlight><highlight class="stringliteral">&quot;min.y&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keysToWrite.push_back(</highlight><highlight class="stringliteral">&quot;max.x&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keysToWrite.push_back(</highlight><highlight class="stringliteral">&quot;max.y&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keysToWrite.push_back(</highlight><highlight class="stringliteral">&quot;proc.per.x&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keysToWrite.push_back(</highlight><highlight class="stringliteral">&quot;proc.per.y&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keysToWrite.push_back(</highlight><highlight class="stringliteral">&quot;grid.buffer&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keysToWrite.push_back(</highlight><highlight class="stringliteral">&quot;init.time&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keysToWrite.push_back(</highlight><highlight class="stringliteral">&quot;stop.at&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keysToWrite.push_back(</highlight><highlight class="stringliteral">&quot;run.time&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keysToWrite.push_back(</highlight><highlight class="stringliteral">&quot;nombre.humains&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keysToWrite.push_back(</highlight><highlight class="stringliteral">&quot;nombre.survivants&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keysToWrite.push_back(</highlight><highlight class="stringliteral">&quot;nombre.morts&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keysToWrite.push_back(</highlight><highlight class="stringliteral">&quot;evacuation&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keysToWrite.push_back(</highlight><highlight class="stringliteral">&quot;dernier.tick.evacuation&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keysToWrite.push_back(</highlight><highlight class="stringliteral">&quot;simulation.diff_age&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keysToWrite.push_back(</highlight><highlight class="stringliteral">&quot;nombre.sorties&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proprietes-&gt;log(</highlight><highlight class="stringliteral">&quot;TER&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proprietes-&gt;writeToSVFile(</highlight><highlight class="stringliteral">&quot;./results/TER.csv&quot;</highlight><highlight class="normal">,<sp/>keysToWrite);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_e_r_observer_1a87524bb92d6be89b025e4312440f6948" kindref="member">go</ref>();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_e_r_observer_1a9f04020109fb77d6e704546c7060fff3" kindref="member">setup</ref>(repast::Properties&amp;<sp/>props);<sp/></highlight><highlight class="comment">//<sp/>NOTE:<sp/>&apos;virtual&apos;<sp/>needed<sp/>by<sp/>some<sp/>compilers7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_e_r_observer_1ae8d98b39e6c1f41f2eb78326893106f0" kindref="member">loadMap_a_star</ref>(repast::Properties&amp;<sp/>props,<sp/>std::vector&lt;Coordonnes2D&gt;<sp/>&amp;sorties);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>and<sp/>provide<sp/>for<sp/>agents<sp/>moving<sp/>between<sp/>processes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>repast::relogo::RelogoAgent*<sp/><ref refid="class_t_e_r_observer_1a2ebef6d41d08586bd3b54157ea372f99" kindref="member">createAgent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_agent_package" kindref="compound">AgentPackage</ref>&amp;<sp/>content);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_e_r_observer_1ab036cbce36d1f1bd432785277becb041" kindref="member">provideContent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>repast::AgentRequest&amp;<sp/>request,<sp/>std::vector&lt;AgentPackage&gt;&amp;<sp/>out);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_e_r_observer_1a7ef10641e78a9fe2ba24e4fa6fc7e83a" kindref="member">enregisterResultats</ref>();</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_e_r_observer_1ac7815af47779d77ec0ed105af435b186" kindref="member">loadMap</ref>(repast::Properties&amp;<sp/>props,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>process_cadran);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>and<sp/>provide<sp/>for<sp/>buffer<sp/>sync</highlight></codeline>
+<codeline lineno="196"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_e_r_observer_1a33b585c06b752057e20af26a2220a23f" kindref="member">createAgents</ref>(std::vector&lt;AgentPackage&gt;&amp;<sp/>content,<sp/>std::vector&lt;repast::relogo::RelogoAgent*&gt;&amp;<sp/>out);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_e_r_observer_1ab036cbce36d1f1bd432785277becb041" kindref="member">provideContent</ref>(repast::relogo::RelogoAgent*<sp/>agent,<sp/>std::vector&lt;AgentPackage&gt;&amp;<sp/>out);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_e_r_observer_1ab1fe1d3f67f16d7bded15408348bc4b5" kindref="member">updateAgent</ref>(<ref refid="struct_agent_package" kindref="compound">AgentPackage</ref><sp/>package);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_e_r_observer_1a7b97c7e2c7251d65d946c9ced3c54bcf" kindref="member">dessinerDecor</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cadran);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref><sp/><ref refid="class_t_e_r_observer_1a6d43b1ce4f72ffe2dafaf6bf831cdec9" kindref="member">Rcor2GLCor</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>X,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cadran);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref><sp/><ref refid="class_t_e_r_observer_1a11cef38b11ca544137fe36e11aba8d5c" kindref="member">Fcor2RCor</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posX,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posY);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref><sp/><ref refid="class_t_e_r_observer_1a5287272e19f0556244cd96a008780d6c" kindref="member">Mcor2GLCor</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posX,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posY);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_e_r_observer_1af7e1247020de2e3d4d42a13ff8c6b6c2" kindref="member">synchronizeMap</ref>();</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_e_r_observer_1a3b78e3ab9fe3a01b465ccd31f1e88f45" kindref="member">razMap</ref>();</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref><sp/><ref refid="class_t_e_r_observer_1a51c832c301812eb0cda095e81051d9b0" kindref="member">map2Repast</ref>(<ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref><sp/>c,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cadran);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_e_r_observer_1acb9c7049485c5f1067bf7fd9a1300d28" kindref="member">printMap</ref>();</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273" refid="class_t_e_r_observer_1a5f19ccb810641760f3623a22cd19fd3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_t_e_r_observer_1a5f19ccb810641760f3623a22cd19fd3c" kindref="member">getSurvivants</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;m_survivants;}</highlight></codeline>
+<codeline lineno="278" refid="class_t_e_r_observer_1a243d9013eb73de81537e6416561864a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_e_r_observer_1a243d9013eb73de81537e6416561864a4" kindref="member">setSurvivant</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val){this-&gt;m_survivants<sp/>=<sp/>val;}</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//void<sp/>setDiffAge(int<sp/>val){this-&gt;ageDiff<sp/>=<sp/>val;}</highlight></codeline>
+<codeline lineno="284" refid="class_t_e_r_observer_1a8c1de774ac3e1fa31c2233545cae4737" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>repast::Properties*<sp/><ref refid="class_t_e_r_observer_1a8c1de774ac3e1fa31c2233545cae4737" kindref="member">getProps</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;proprietes;}</highlight></codeline>
+<codeline lineno="285"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TEROBSERVER_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/emip/git/TER/TESTA/code/include/TERObserver.h"/>
+  </compounddef>
+</doxygen>

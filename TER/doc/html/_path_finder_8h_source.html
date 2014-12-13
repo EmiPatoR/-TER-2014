@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Simulation d&#39;evacuation d&#39;immeuble avec systeme multi-agents:  Fichier source de code/include/PathFinder.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.jpeg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Simulation d&#39;evacuation d&#39;immeuble avec systeme multi-agents
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">TER - 2014</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_050edd66366d13764f98250ef6db77f6.html">code</a></li><li class="navelem"><a class="el" href="dir_f8a5fb882cc5ea0f84873b4bfbe1e42c.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">PathFinder.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_path_finder_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PATH_FINDER_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PATH_FINDER_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_node_8h.html">Node.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_pathfinder.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_pathfinder.html">Pathfinder</a>{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span> :</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    std::vector&lt;Node*&gt; m_openList; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    std::vector&lt;Node*&gt; m_closeList; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_node.html">Node</a>* getCurrentNode();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> removeFromOpenList(<a class="code" href="class_node.html">Node</a>* val);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> removeFromCloseList(<a class="code" href="class_node.html">Node</a>* val);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> addToCloseList(<a class="code" href="class_node.html">Node</a>* val);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> addToOpenList(<a class="code" href="class_node.html">Node</a>* val);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">bool</span> isOnOpenList(<a class="code" href="class_node.html">Node</a>* val);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">bool</span> isOnCloseList(<a class="code" href="class_node.html">Node</a>* val);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    std::vector&lt;Node*&gt; getNeighbors(<a class="code" href="class_node.html">Node</a>* val, std::vector &lt; std::vector&lt; Node*&gt; &gt; &amp;graphe);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_pathfinder.html#a75096e49427cc06e95e82819d949b8e4">   76</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_pathfinder.html#a75096e49427cc06e95e82819d949b8e4">NODE_DISTANCE_VALUE</a> = 100; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_pathfinder.html#a9fabc665d250a89c2f0af4059d77d8b2">   77</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_pathfinder.html#a9fabc665d250a89c2f0af4059d77d8b2">NODE_DISTANCE_DIAG_VALUE</a> = 140; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="class_pathfinder.html#af562d840858cf2b369fcee51f5069456">Pathfinder</a>();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    std::vector&lt;Node*&gt; <a class="code" href="class_pathfinder.html#aee6e72cf2b4a9f86c6aa1139618e2167">findPath</a>( std::vector&lt; std::vector&lt; Node*&gt; &gt; &amp;graphe, <a class="code" href="class_node.html">Node</a>* depart, <a class="code" href="class_node.html">Node</a>* arrive );</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_pathfinder_html_aee6e72cf2b4a9f86c6aa1139618e2167"><div class="ttname"><a href="class_pathfinder.html#aee6e72cf2b4a9f86c6aa1139618e2167">Pathfinder::findPath</a></div><div class="ttdeci">std::vector&lt; Node * &gt; findPath(std::vector&lt; std::vector&lt; Node * &gt; &gt; &amp;graphe, Node *depart, Node *arrive)</div><div class="ttdoc">Application de l&amp;#39;algorithme A* sur un objet Graphe dans le but de calculer un chemin du node Depart a...</div><div class="ttdef"><b>Definition:</b> PathFinder.cpp:14</div></div>
+<div class="ttc" id="class_node_html"><div class="ttname"><a href="class_node.html">Node</a></div><div class="ttdoc">Classe representant un Node Un Node est une &amp;quot;case&amp;quot; de la matrice representant le monde Repast...</div><div class="ttdef"><b>Definition:</b> Node.h:16</div></div>
+<div class="ttc" id="class_pathfinder_html_a9fabc665d250a89c2f0af4059d77d8b2"><div class="ttname"><a href="class_pathfinder.html#a9fabc665d250a89c2f0af4059d77d8b2">Pathfinder::NODE_DISTANCE_DIAG_VALUE</a></div><div class="ttdeci">static const int NODE_DISTANCE_DIAG_VALUE</div><div class="ttdef"><b>Definition:</b> PathFinder.h:77</div></div>
+<div class="ttc" id="class_pathfinder_html_af562d840858cf2b369fcee51f5069456"><div class="ttname"><a href="class_pathfinder.html#af562d840858cf2b369fcee51f5069456">Pathfinder::Pathfinder</a></div><div class="ttdeci">Pathfinder()</div><div class="ttdoc">Constructeur. </div><div class="ttdef"><b>Definition:</b> PathFinder.cpp:10</div></div>
+<div class="ttc" id="_node_8h_html"><div class="ttname"><a href="_node_8h.html">Node.h</a></div><div class="ttdoc">Classe representant un Node. </div></div>
+<div class="ttc" id="class_pathfinder_html"><div class="ttname"><a href="class_pathfinder.html">Pathfinder</a></div><div class="ttdoc">Classe representant une instance de l&amp;#39;algorithme A*. </div><div class="ttdef"><b>Definition:</b> PathFinder.h:18</div></div>
+<div class="ttc" id="class_pathfinder_html_a75096e49427cc06e95e82819d949b8e4"><div class="ttname"><a href="class_pathfinder.html#a75096e49427cc06e95e82819d949b8e4">Pathfinder::NODE_DISTANCE_VALUE</a></div><div class="ttdeci">static const int NODE_DISTANCE_VALUE</div><div class="ttdef"><b>Definition:</b> PathFinder.h:76</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche 25 Mai 2014 22:27:41 pour Simulation d&#39;evacuation d&#39;immeuble avec systeme multi-agents par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

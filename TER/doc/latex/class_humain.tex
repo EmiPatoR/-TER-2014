@@ -1,0 +1,602 @@
+\section{Référence de la classe Humain}
+\label{class_humain}\index{Humain@{Humain}}
+
+
+classe representant un agent humain  
+
+
+
+
+Graphe d'héritage de Humain\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{class_humain__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Humain\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{class_humain__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Humain} (repast\-::\-Agent\-Id id, repast\-::relogo\-::\-Observer $\ast$obs)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+{\bf Humain} (repast\-::\-Agent\-Id id, repast\-::relogo\-::\-Observer $\ast$obs, const {\bf Agent\-Package} \&package)
+\begin{DoxyCompactList}\small\item\em Constructeur pour le transfert d'agents. \end{DoxyCompactList}\item 
+virtual {\bf $\sim$\-Humain} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+void {\bf get\-Pos} ()\label{class_humain_a6ef45c2a6398eee58bc985b0d3d04812}
+
+\begin{DoxyCompactList}\small\item\em affiche la position d'un humain(coordonnees repast) \end{DoxyCompactList}\item 
+void {\bf step} ()\label{class_humain_acfb526c278bfd003114e3f4270ab6342}
+
+\begin{DoxyCompactList}\small\item\em fonction principale decrivant le comportement de l'agent (execute a chaque tick) \end{DoxyCompactList}\item 
+void {\bf random\-Angle} (repast\-::\-Properties \&props)
+\begin{DoxyCompactList}\small\item\em genere un angle aleatoire compris entre 0 et 359 (en degre) \end{DoxyCompactList}\item 
+int {\bf random\-Type} (repast\-::\-Properties \&props)
+\begin{DoxyCompactList}\small\item\em genere un type de personne aleatoire \end{DoxyCompactList}\item 
+void {\bfseries afficher\-Pos} ({\bf Fenetre} $\ast$fen)\label{class_humain_aaef01ae3b778f16b1041f67c9c4a9424}
+
+\item 
+double {\bf get\-Angle} ()
+\begin{DoxyCompactList}\small\item\em recupere l'angle actuel d'un agent \end{DoxyCompactList}\item 
+double {\bf rad2deg} (double theta)
+\begin{DoxyCompactList}\small\item\em conversion d'un angle de radians en degre \end{DoxyCompactList}\item 
+double {\bf tourner\-Vers} (double x, double y)
+\begin{DoxyCompactList}\small\item\em Calcule l'angle a prendre pour aller au point de coordonnees x/y. \end{DoxyCompactList}\item 
+int {\bf get\-X\-Fichier} (void) const 
+\begin{DoxyCompactList}\small\item\em Getter. \end{DoxyCompactList}\item 
+int {\bf get\-Y\-Fichier} (void) const 
+\begin{DoxyCompactList}\small\item\em Getter. \end{DoxyCompactList}\item 
+int {\bf get\-X\-G\-L} (void) const 
+\begin{DoxyCompactList}\small\item\em Getter. \end{DoxyCompactList}\item 
+int {\bf get\-Y\-G\-L} (void) const 
+\begin{DoxyCompactList}\small\item\em Getter. \end{DoxyCompactList}\item 
+void {\bf set\-X\-Fichier} (int val)
+\begin{DoxyCompactList}\small\item\em Setter. \end{DoxyCompactList}\item 
+void {\bf set\-Y\-Fichier} (int val)
+\begin{DoxyCompactList}\small\item\em Setter. \end{DoxyCompactList}\item 
+void {\bf set\-X\-G\-L} (int val)
+\begin{DoxyCompactList}\small\item\em Setter. \end{DoxyCompactList}\item 
+void {\bf set\-Y\-G\-L} (int val)
+\begin{DoxyCompactList}\small\item\em Setter. \end{DoxyCompactList}\item 
+void {\bf set\-Angle} (double val)
+\begin{DoxyCompactList}\small\item\em Setter. \end{DoxyCompactList}\item 
+int {\bf get\-Type\-Personne} ()
+\begin{DoxyCompactList}\small\item\em Getter. \end{DoxyCompactList}\item 
+void {\bfseries set\-Type\-Personne} (int val)\label{class_humain_ade75c85dd706116d6bd20ef99da931ef}
+
+\item 
+int {\bf get\-Etape} ()
+\begin{DoxyCompactList}\small\item\em Getter. \end{DoxyCompactList}\item 
+bool {\bf get\-Sorti} ()
+\begin{DoxyCompactList}\small\item\em Getter. \end{DoxyCompactList}\item 
+std\-::vector$<$ int $>$ {\bf get\-Chemin\-X} ()
+\begin{DoxyCompactList}\small\item\em Getter. \end{DoxyCompactList}\item 
+std\-::vector$<$ int $>$ {\bf get\-Chemin\-Y} ()
+\begin{DoxyCompactList}\small\item\em Getter. \end{DoxyCompactList}\item 
+void {\bf set\-Chemin\-X\-Y} (std\-::vector$<$ int $>$ chemin\-X, std\-::vector$<$ int $>$ chemin\-Y, int etape, bool sorti)
+\begin{DoxyCompactList}\small\item\em Setter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+classe representant un agent humain 
+
+La classe herite de la classe Turtle de repast, elle gere tout ce qui concerne le deplacement et l'orientation des humains, la communication entre humains, etc... 
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Humain@{Humain}!Humain@{Humain}}
+\index{Humain@{Humain}!Humain@{Humain}}
+\subsubsection[{Humain}]{\setlength{\rightskip}{0pt plus 5cm}Humain\-::\-Humain (
+\begin{DoxyParamCaption}
+\item[{repast\-::\-Agent\-Id}]{id, }
+\item[{repast\-::relogo\-::\-Observer $\ast$}]{obs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_humain_a2ef84f203affc118025f145745323ddd}
+
+
+Constructeur. 
+
+Constructeur de la classe \doxyref{Humain}{p.}{class_humain}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em id} & \-: Id de l'agent \\
+\hline
+{\em obs} & \-: pointeur vers l'Observer qui gere les agents \\
+\hline
+\end{DoxyParams}
+
+
+Voici le graphe d'appel pour cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{class_humain_a2ef84f203affc118025f145745323ddd_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Humain@{Humain}!Humain@{Humain}}
+\index{Humain@{Humain}!Humain@{Humain}}
+\subsubsection[{Humain}]{\setlength{\rightskip}{0pt plus 5cm}Humain\-::\-Humain (
+\begin{DoxyParamCaption}
+\item[{repast\-::\-Agent\-Id}]{id, }
+\item[{repast\-::relogo\-::\-Observer $\ast$}]{obs, }
+\item[{const {\bf Agent\-Package} \&}]{package}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_humain_a057f2b76521c2654a66dea6e9e2e33c5}
+
+
+Constructeur pour le transfert d'agents. 
+
+Constructeur de la classe \doxyref{Humain}{p.}{class_humain}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em id} & \-: Id de l'agent \\
+\hline
+{\em obs} & \-: pointeur vers l'Observer qui gere les agents \\
+\hline
+{\em package} & \-: archive serialisee qui contient toutes les donnees necessaire pour creer un agent. \\
+\hline
+\end{DoxyParams}
+\index{Humain@{Humain}!$\sim$\-Humain@{$\sim$\-Humain}}
+\index{$\sim$\-Humain@{$\sim$\-Humain}!Humain@{Humain}}
+\subsubsection[{$\sim$\-Humain}]{\setlength{\rightskip}{0pt plus 5cm}virtual Humain\-::$\sim$\-Humain (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_humain_a08a0a8a77ce1877a76518e5d0acf03ca}
+
+
+Destructeur. 
+
+Destructeur de la classe \doxyref{Humain}{p.}{class_humain} 
+
+\subsection{Documentation des fonctions membres}
+\index{Humain@{Humain}!get\-Angle@{get\-Angle}}
+\index{get\-Angle@{get\-Angle}!Humain@{Humain}}
+\subsubsection[{get\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}double Humain\-::get\-Angle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_humain_a73d39a9d1f241d620ccac2f599e2dd97}
+
+
+recupere l'angle actuel d'un agent 
+
+\begin{DoxyReturn}{Renvoie}
+l'angle de l'agent 
+\end{DoxyReturn}
+
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_humain_a73d39a9d1f241d620ccac2f599e2dd97_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Humain@{Humain}!get\-Chemin\-X@{get\-Chemin\-X}}
+\index{get\-Chemin\-X@{get\-Chemin\-X}!Humain@{Humain}}
+\subsubsection[{get\-Chemin\-X}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$ Humain\-::get\-Chemin\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_humain_a68abc0ded73a07d369a74e5a4d3bd7e6}
+
+
+Getter. 
+
+\begin{DoxyReturn}{Renvoie}
+l'attribut chemin\-X de la classe \doxyref{Humain}{p.}{class_humain} 
+\end{DoxyReturn}
+
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_humain_a68abc0ded73a07d369a74e5a4d3bd7e6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Humain@{Humain}!get\-Chemin\-Y@{get\-Chemin\-Y}}
+\index{get\-Chemin\-Y@{get\-Chemin\-Y}!Humain@{Humain}}
+\subsubsection[{get\-Chemin\-Y}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$ Humain\-::get\-Chemin\-Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_humain_ad815b1e9aacefe7a41ded28772a41b9a}
+
+
+Getter. 
+
+\begin{DoxyReturn}{Renvoie}
+l'attribut chemin\-Y de la classe \doxyref{Humain}{p.}{class_humain} 
+\end{DoxyReturn}
+
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_humain_ad815b1e9aacefe7a41ded28772a41b9a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Humain@{Humain}!get\-Etape@{get\-Etape}}
+\index{get\-Etape@{get\-Etape}!Humain@{Humain}}
+\subsubsection[{get\-Etape}]{\setlength{\rightskip}{0pt plus 5cm}int Humain\-::get\-Etape (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_humain_a434d49c9e83f20f525106416f6c62a48}
+
+
+Getter. 
+
+\begin{DoxyReturn}{Renvoie}
+l'attribut etape de la classe \doxyref{Humain}{p.}{class_humain} 
+\end{DoxyReturn}
+
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_humain_a434d49c9e83f20f525106416f6c62a48_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Humain@{Humain}!get\-Sorti@{get\-Sorti}}
+\index{get\-Sorti@{get\-Sorti}!Humain@{Humain}}
+\subsubsection[{get\-Sorti}]{\setlength{\rightskip}{0pt plus 5cm}bool Humain\-::get\-Sorti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_humain_a1351d4c106fc2e175cf19da0ca3fce52}
+
+
+Getter. 
+
+\begin{DoxyReturn}{Renvoie}
+l'attribut sorti de la classe \doxyref{Humain}{p.}{class_humain} 
+\end{DoxyReturn}
+
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_humain_a1351d4c106fc2e175cf19da0ca3fce52_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Humain@{Humain}!get\-Type\-Personne@{get\-Type\-Personne}}
+\index{get\-Type\-Personne@{get\-Type\-Personne}!Humain@{Humain}}
+\subsubsection[{get\-Type\-Personne}]{\setlength{\rightskip}{0pt plus 5cm}int Humain\-::get\-Type\-Personne (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_humain_ab8469bf829ed8100899bc57a62025cb9}
+
+
+Getter. 
+
+\begin{DoxyReturn}{Renvoie}
+l'attribut type\-Personne de la classe \doxyref{Humain}{p.}{class_humain} 
+\end{DoxyReturn}
+
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_humain_ab8469bf829ed8100899bc57a62025cb9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Humain@{Humain}!get\-X\-Fichier@{get\-X\-Fichier}}
+\index{get\-X\-Fichier@{get\-X\-Fichier}!Humain@{Humain}}
+\subsubsection[{get\-X\-Fichier}]{\setlength{\rightskip}{0pt plus 5cm}int Humain\-::get\-X\-Fichier (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_humain_a72f53748fcf1c862c46771208856a960}
+
+
+Getter. 
+
+\begin{DoxyReturn}{Renvoie}
+l'attribut pos\-X\-Fichier de la classe \doxyref{Humain}{p.}{class_humain} 
+\end{DoxyReturn}
+\index{Humain@{Humain}!get\-X\-G\-L@{get\-X\-G\-L}}
+\index{get\-X\-G\-L@{get\-X\-G\-L}!Humain@{Humain}}
+\subsubsection[{get\-X\-G\-L}]{\setlength{\rightskip}{0pt plus 5cm}int Humain\-::get\-X\-G\-L (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_humain_ad6179d5833fbc32eeb5cb440afdd58b0}
+
+
+Getter. 
+
+\begin{DoxyReturn}{Renvoie}
+l'attribut pos\-X\-G\-L de la classe \doxyref{Humain}{p.}{class_humain} 
+\end{DoxyReturn}
+\index{Humain@{Humain}!get\-Y\-Fichier@{get\-Y\-Fichier}}
+\index{get\-Y\-Fichier@{get\-Y\-Fichier}!Humain@{Humain}}
+\subsubsection[{get\-Y\-Fichier}]{\setlength{\rightskip}{0pt plus 5cm}int Humain\-::get\-Y\-Fichier (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_humain_a950ffa2b5fbfe59cdc5556598bb3fc36}
+
+
+Getter. 
+
+\begin{DoxyReturn}{Renvoie}
+l'attribut pos\-Y\-Fichier de la classe \doxyref{Humain}{p.}{class_humain} 
+\end{DoxyReturn}
+\index{Humain@{Humain}!get\-Y\-G\-L@{get\-Y\-G\-L}}
+\index{get\-Y\-G\-L@{get\-Y\-G\-L}!Humain@{Humain}}
+\subsubsection[{get\-Y\-G\-L}]{\setlength{\rightskip}{0pt plus 5cm}int Humain\-::get\-Y\-G\-L (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_humain_a476b49698c658f53675d8e2666990699}
+
+
+Getter. 
+
+\begin{DoxyReturn}{Renvoie}
+l'attribut pos\-Y\-G\-L de la classe \doxyref{Humain}{p.}{class_humain} 
+\end{DoxyReturn}
+\index{Humain@{Humain}!rad2deg@{rad2deg}}
+\index{rad2deg@{rad2deg}!Humain@{Humain}}
+\subsubsection[{rad2deg}]{\setlength{\rightskip}{0pt plus 5cm}double Humain\-::rad2deg (
+\begin{DoxyParamCaption}
+\item[{double}]{theta}
+\end{DoxyParamCaption}
+)}\label{class_humain_a8987214bebd0063247cbfc1b4b5f1816}
+
+
+conversion d'un angle de radians en degre 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em theta} & \-: angle en radians\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+angle en degre. 
+\end{DoxyReturn}
+\index{Humain@{Humain}!random\-Angle@{random\-Angle}}
+\index{random\-Angle@{random\-Angle}!Humain@{Humain}}
+\subsubsection[{random\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}void Humain\-::random\-Angle (
+\begin{DoxyParamCaption}
+\item[{repast\-::\-Properties \&}]{props}
+\end{DoxyParamCaption}
+)}\label{class_humain_a415aa529a0f744d0b81bc80b93864665}
+
+
+genere un angle aleatoire compris entre 0 et 359 (en degre) 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em props} & \-: pointeur sur les proprietes de la simulation(pour le random seed) \\
+\hline
+\end{DoxyParams}
+
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_humain_a415aa529a0f744d0b81bc80b93864665_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Humain@{Humain}!random\-Type@{random\-Type}}
+\index{random\-Type@{random\-Type}!Humain@{Humain}}
+\subsubsection[{random\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int Humain\-::random\-Type (
+\begin{DoxyParamCaption}
+\item[{repast\-::\-Properties \&}]{props}
+\end{DoxyParamCaption}
+)}\label{class_humain_a0a9134ce08efbc5eb5714114de97fb63}
+
+
+genere un type de personne aleatoire 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em props} & \-: pointeur sur les proprietes de la simulation(pour le random seed)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+le typedepersonne genere. 
+\end{DoxyReturn}
+
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{class_humain_a0a9134ce08efbc5eb5714114de97fb63_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Humain@{Humain}!set\-Angle@{set\-Angle}}
+\index{set\-Angle@{set\-Angle}!Humain@{Humain}}
+\subsubsection[{set\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}void Humain\-::set\-Angle (
+\begin{DoxyParamCaption}
+\item[{double}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_humain_a2e50827e8e6c47f6671aae2bea409840}
+
+
+Setter. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em val} & \-: nouvelle valeur pour l'attribut m\-\_\-angle de la classe \doxyref{Humain}{p.}{class_humain} \\
+\hline
+\end{DoxyParams}
+\index{Humain@{Humain}!set\-Chemin\-X\-Y@{set\-Chemin\-X\-Y}}
+\index{set\-Chemin\-X\-Y@{set\-Chemin\-X\-Y}!Humain@{Humain}}
+\subsubsection[{set\-Chemin\-X\-Y}]{\setlength{\rightskip}{0pt plus 5cm}void Humain\-::set\-Chemin\-X\-Y (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ int $>$}]{chemin\-X, }
+\item[{std\-::vector$<$ int $>$}]{chemin\-Y, }
+\item[{int}]{etape, }
+\item[{bool}]{sorti}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_humain_a0dfad40c440229a41fb980af89385fc8}
+
+
+Setter. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em chemin\-X} & \-: nouvelle valeur pour l'attribut chemin\-X de la classe \doxyref{Humain}{p.}{class_humain} \\
+\hline
+{\em chemin\-Y} & \-: nouvelle valeur pour l'attribut chemin\-Y de la classe \doxyref{Humain}{p.}{class_humain} \\
+\hline
+{\em etape} & \-: nouvelle valeur pour l'attribut etape de la classe \doxyref{Humain}{p.}{class_humain} \\
+\hline
+{\em sorti} & \-: nouvelle valeur pour l'attribut sorti de la classe \doxyref{Humain}{p.}{class_humain} \\
+\hline
+\end{DoxyParams}
+
+
+Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_humain_a0dfad40c440229a41fb980af89385fc8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Humain@{Humain}!set\-X\-Fichier@{set\-X\-Fichier}}
+\index{set\-X\-Fichier@{set\-X\-Fichier}!Humain@{Humain}}
+\subsubsection[{set\-X\-Fichier}]{\setlength{\rightskip}{0pt plus 5cm}void Humain\-::set\-X\-Fichier (
+\begin{DoxyParamCaption}
+\item[{int}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_humain_a8cc241895df70b2f6023552908903fab}
+
+
+Setter. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em val} & \-: nouvelle valeur pour l'attribut pos\-X\-Fichier de la classe \doxyref{Humain}{p.}{class_humain} \\
+\hline
+\end{DoxyParams}
+\index{Humain@{Humain}!set\-X\-G\-L@{set\-X\-G\-L}}
+\index{set\-X\-G\-L@{set\-X\-G\-L}!Humain@{Humain}}
+\subsubsection[{set\-X\-G\-L}]{\setlength{\rightskip}{0pt plus 5cm}void Humain\-::set\-X\-G\-L (
+\begin{DoxyParamCaption}
+\item[{int}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_humain_aaa7d8c47d9f38e70454693ece8c78c81}
+
+
+Setter. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em val} & \-: nouvelle valeur pour l'attribut pos\-X\-G\-L de la classe \doxyref{Humain}{p.}{class_humain} \\
+\hline
+\end{DoxyParams}
+\index{Humain@{Humain}!set\-Y\-Fichier@{set\-Y\-Fichier}}
+\index{set\-Y\-Fichier@{set\-Y\-Fichier}!Humain@{Humain}}
+\subsubsection[{set\-Y\-Fichier}]{\setlength{\rightskip}{0pt plus 5cm}void Humain\-::set\-Y\-Fichier (
+\begin{DoxyParamCaption}
+\item[{int}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_humain_a574c1d191014b8ce815b593b68422e54}
+
+
+Setter. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em val} & \-: nouvelle valeur pour l'attribut pos\-Y\-Fichier de la classe \doxyref{Humain}{p.}{class_humain} \\
+\hline
+\end{DoxyParams}
+\index{Humain@{Humain}!set\-Y\-G\-L@{set\-Y\-G\-L}}
+\index{set\-Y\-G\-L@{set\-Y\-G\-L}!Humain@{Humain}}
+\subsubsection[{set\-Y\-G\-L}]{\setlength{\rightskip}{0pt plus 5cm}void Humain\-::set\-Y\-G\-L (
+\begin{DoxyParamCaption}
+\item[{int}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_humain_ab1ca792b176d3fb394f6aa411ba1e5f5}
+
+
+Setter. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em val} & \-: nouvelle valeur pour l'attribut pos\-Y\-G\-L de la classe \doxyref{Humain}{p.}{class_humain} \\
+\hline
+\end{DoxyParams}
+\index{Humain@{Humain}!tourner\-Vers@{tourner\-Vers}}
+\index{tourner\-Vers@{tourner\-Vers}!Humain@{Humain}}
+\subsubsection[{tourner\-Vers}]{\setlength{\rightskip}{0pt plus 5cm}double Humain\-::tourner\-Vers (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y}
+\end{DoxyParamCaption}
+)}\label{class_humain_ad7777f2198c8f306bfc8040afe7f0802}
+
+
+Calcule l'angle a prendre pour aller au point de coordonnees x/y. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em x} & \-: coordonne x de l'emplacement ou on veut aller \\
+\hline
+{\em y} & \-: coordonne y de l'emplacement ou on veut aller \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+angle vers le point de destination. 
+\end{DoxyReturn}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+code/include/{\bf Humain.\-h}\item 
+code/src/Humain.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_coordonnes2_d" kind="class" prot="public">
+    <compoundname>Coordonnes2D</compoundname>
+    <includes refid="coordonnes2d_8h" local="no">coordonnes2d.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_coordonnes2_d_1a27d023c95955192562e88d8dcb3550ea" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Coordonnes2D::m_X</definition>
+        <argsstring></argsstring>
+        <name>m_X</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>position X </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/coordonnes2d.h" line="19" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/coordonnes2d.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_coordonnes2_d_1ac06b44e9c6584d4de6746f6b14472cdb" compoundref="coordonnes2d_8h" startline="69" endline="69">getX</referencedby>
+        <referencedby refid="class_coordonnes2_d_1acd18a61d429f17132bd6af7c66c5f56d" compoundref="coordonnes2d_8h" startline="95" endline="95">setX</referencedby>
+        <referencedby refid="class_coordonnes2_d_1aa5b01dbc1c5305dbf1dd51f20eeec05e" compoundref="coordonnes2d_8cpp" startline="3" endline="8">Coordonnes2D</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_coordonnes2_d_1aaae6b7822c9680973ad6e55255ffa45a" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Coordonnes2D::m_Y</definition>
+        <argsstring></argsstring>
+        <name>m_Y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>position Y </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/coordonnes2d.h" line="20" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/coordonnes2d.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_coordonnes2_d_1a52192f87a21074e41b7d7b22f258a549" compoundref="coordonnes2d_8h" startline="78" endline="78">getY</referencedby>
+        <referencedby refid="class_coordonnes2_d_1a1b611c902888fced2b0712ed6e84a3fb" compoundref="coordonnes2d_8h" startline="103" endline="103">setY</referencedby>
+        <referencedby refid="class_coordonnes2_d_1aa5b01dbc1c5305dbf1dd51f20eeec05e" compoundref="coordonnes2d_8cpp" startline="3" endline="8">Coordonnes2D</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_coordonnes2_d_1ad09082ceb0a4e3ea127ff78192a58a68" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Coordonnes2D::m_cadran</definition>
+        <argsstring></argsstring>
+        <name>m_cadran</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cadran de la fenetre </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/coordonnes2d.h" line="21" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/coordonnes2d.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_coordonnes2_d_1a923a832cec319899e4435240e1d1a2ce" compoundref="coordonnes2d_8h" startline="87" endline="87">getCadran</referencedby>
+        <referencedby refid="class_coordonnes2_d_1a83505a182e95dee074796050f5fc960b" compoundref="coordonnes2d_8h" startline="111" endline="111">setCadran</referencedby>
+        <referencedby refid="class_coordonnes2_d_1a32915a0b2cfc5dce3ed491fb3fa0abae" compoundref="coordonnes2d_8cpp" startline="17" endline="21">Coordonnes2D</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_coordonnes2_d_1aa5b01dbc1c5305dbf1dd51f20eeec05e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Coordonnes2D::Coordonnes2D</definition>
+        <argsstring>()</argsstring>
+        <name>Coordonnes2D</name>
+        <briefdescription>
+<para>Constructeur. </para>        </briefdescription>
+        <detaileddescription>
+<para>Default constructor</para><para>Constructeur de la classe <ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/coordonnes2d.h" line="32" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/coordonnes2d.cpp" bodystart="3" bodyend="8"/>
+        <references refid="class_coordonnes2_d_1a27d023c95955192562e88d8dcb3550ea" compoundref="coordonnes2d_8h" startline="19">m_X</references>
+        <references refid="class_coordonnes2_d_1aaae6b7822c9680973ad6e55255ffa45a" compoundref="coordonnes2d_8h" startline="20">m_Y</references>
+      </memberdef>
+      <memberdef kind="function" id="class_coordonnes2_d_1a3a4031367715512fb9d3aad9bc9a5564" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Coordonnes2D::Coordonnes2D</definition>
+        <argsstring>(int X, int Y)</argsstring>
+        <name>Coordonnes2D</name>
+        <param>
+          <type>int</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Y</declname>
+        </param>
+        <briefdescription>
+<para>Constructeur. </para>        </briefdescription>
+        <detaileddescription>
+<para>Constructeur de la classe <ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>X</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: coordonnee X a stocker </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: coordonnee Y a stocker </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/coordonnes2d.h" line="42" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/coordonnes2d.cpp" bodystart="10" bodyend="15"/>
+        <references refid="class_coordonnes2_d_1a27d023c95955192562e88d8dcb3550ea" compoundref="coordonnes2d_8h" startline="19">m_X</references>
+        <references refid="class_coordonnes2_d_1aaae6b7822c9680973ad6e55255ffa45a" compoundref="coordonnes2d_8h" startline="20">m_Y</references>
+      </memberdef>
+      <memberdef kind="function" id="class_coordonnes2_d_1a32915a0b2cfc5dce3ed491fb3fa0abae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Coordonnes2D::Coordonnes2D</definition>
+        <argsstring>(const Coordonnes2D &amp;c)</argsstring>
+        <name>Coordonnes2D</name>
+        <param>
+          <type>const <ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Constructeur. </para>        </briefdescription>
+        <detaileddescription>
+<para>Constructeur de copie de la classe <ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: reference sur l&apos;element a copier </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/coordonnes2d.h" line="51" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/coordonnes2d.cpp" bodystart="17" bodyend="21"/>
+        <references refid="class_coordonnes2_d_1a27d023c95955192562e88d8dcb3550ea" compoundref="coordonnes2d_8h" startline="19">m_X</references>
+        <references refid="class_coordonnes2_d_1ac06b44e9c6584d4de6746f6b14472cdb" compoundref="coordonnes2d_8h" startline="69" endline="69">getX</references>
+        <references refid="class_coordonnes2_d_1aaae6b7822c9680973ad6e55255ffa45a" compoundref="coordonnes2d_8h" startline="20">m_Y</references>
+        <references refid="class_coordonnes2_d_1a52192f87a21074e41b7d7b22f258a549" compoundref="coordonnes2d_8h" startline="78" endline="78">getY</references>
+        <references refid="class_coordonnes2_d_1ad09082ceb0a4e3ea127ff78192a58a68" compoundref="coordonnes2d_8h" startline="21">m_cadran</references>
+        <references refid="class_coordonnes2_d_1a923a832cec319899e4435240e1d1a2ce" compoundref="coordonnes2d_8h" startline="87" endline="87">getCadran</references>
+      </memberdef>
+      <memberdef kind="function" id="class_coordonnes2_d_1a65b01695cc5bd68968db3ded7a1fcf74" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Coordonnes2D::~Coordonnes2D</definition>
+        <argsstring>()</argsstring>
+        <name>~Coordonnes2D</name>
+        <briefdescription>
+<para>Destructeur. </para>        </briefdescription>
+        <detaileddescription>
+<para>Default destructor</para><para>Destructeur de la classe <ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/coordonnes2d.h" line="60" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/coordonnes2d.cpp" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coordonnes2_d_1ac06b44e9c6584d4de6746f6b14472cdb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Coordonnes2D::getX</definition>
+        <argsstring>() const </argsstring>
+        <name>getX</name>
+        <briefdescription>
+<para>Getter. </para>        </briefdescription>
+        <detaileddescription>
+<para>Getter de l&apos;attribut m_X de la classe <ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref></para><para><simplesect kind="return"><para>l&apos;attribut m_X de la classe <ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/coordonnes2d.h" line="69" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/coordonnes2d.h" bodystart="69" bodyend="69"/>
+        <references refid="class_coordonnes2_d_1a27d023c95955192562e88d8dcb3550ea" compoundref="coordonnes2d_8h" startline="19">m_X</references>
+        <referencedby refid="class_coordonnes2_d_1a32915a0b2cfc5dce3ed491fb3fa0abae" compoundref="coordonnes2d_8cpp" startline="17" endline="21">Coordonnes2D</referencedby>
+        <referencedby refid="class_graphe_1abd3e45f6d615a90d71106d29e6968c0f" compoundref="_graphe_8cpp" startline="9" endline="88">Graphe::Graphe</referencedby>
+        <referencedby refid="class_t_e_r_observer_1a9f04020109fb77d6e704546c7060fff3" compoundref="_t_e_r_observer_8cpp" startline="76" endline="204">TERObserver::setup</referencedby>
+        <referencedby refid="class_t_e_r_observer_1af7e1247020de2e3d4d42a13ff8c6b6c2" compoundref="_t_e_r_observer_8cpp" startline="559" endline="603">TERObserver::synchronizeMap</referencedby>
+        <referencedby refid="class_t_e_r_observer_1a51c832c301812eb0cda095e81051d9b0" compoundref="_t_e_r_observer_8cpp" startline="605" endline="635">TERObserver::map2Repast</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_coordonnes2_d_1a52192f87a21074e41b7d7b22f258a549" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Coordonnes2D::getY</definition>
+        <argsstring>() const </argsstring>
+        <name>getY</name>
+        <briefdescription>
+<para>Getter. </para>        </briefdescription>
+        <detaileddescription>
+<para>Getter de l&apos;attribut m_Y de la classe <ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref></para><para><simplesect kind="return"><para>l&apos;attribut m_Y de la classe <ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/coordonnes2d.h" line="78" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/coordonnes2d.h" bodystart="78" bodyend="78"/>
+        <references refid="class_coordonnes2_d_1aaae6b7822c9680973ad6e55255ffa45a" compoundref="coordonnes2d_8h" startline="20">m_Y</references>
+        <referencedby refid="class_coordonnes2_d_1a32915a0b2cfc5dce3ed491fb3fa0abae" compoundref="coordonnes2d_8cpp" startline="17" endline="21">Coordonnes2D</referencedby>
+        <referencedby refid="class_graphe_1abd3e45f6d615a90d71106d29e6968c0f" compoundref="_graphe_8cpp" startline="9" endline="88">Graphe::Graphe</referencedby>
+        <referencedby refid="class_t_e_r_observer_1a9f04020109fb77d6e704546c7060fff3" compoundref="_t_e_r_observer_8cpp" startline="76" endline="204">TERObserver::setup</referencedby>
+        <referencedby refid="class_t_e_r_observer_1af7e1247020de2e3d4d42a13ff8c6b6c2" compoundref="_t_e_r_observer_8cpp" startline="559" endline="603">TERObserver::synchronizeMap</referencedby>
+        <referencedby refid="class_t_e_r_observer_1a51c832c301812eb0cda095e81051d9b0" compoundref="_t_e_r_observer_8cpp" startline="605" endline="635">TERObserver::map2Repast</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_coordonnes2_d_1a923a832cec319899e4435240e1d1a2ce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Coordonnes2D::getCadran</definition>
+        <argsstring>() const </argsstring>
+        <name>getCadran</name>
+        <briefdescription>
+<para>Getter. </para>        </briefdescription>
+        <detaileddescription>
+<para>Getter de l&apos;attribut m_cadran de la classe <ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref></para><para><simplesect kind="return"><para>l&apos;attribut m_cadran de la classe <ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/coordonnes2d.h" line="87" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/coordonnes2d.h" bodystart="87" bodyend="87"/>
+        <references refid="class_coordonnes2_d_1ad09082ceb0a4e3ea127ff78192a58a68" compoundref="coordonnes2d_8h" startline="21">m_cadran</references>
+        <referencedby refid="class_coordonnes2_d_1a32915a0b2cfc5dce3ed491fb3fa0abae" compoundref="coordonnes2d_8cpp" startline="17" endline="21">Coordonnes2D</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_coordonnes2_d_1acd18a61d429f17132bd6af7c66c5f56d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coordonnes2D::setX</definition>
+        <argsstring>(int X)</argsstring>
+        <name>setX</name>
+        <param>
+          <type>int</type>
+          <declname>X</declname>
+        </param>
+        <briefdescription>
+<para>Setter. </para>        </briefdescription>
+        <detaileddescription>
+<para>Setter de l&apos;attribut m_X de la classe <ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/coordonnes2d.h" line="95" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/coordonnes2d.h" bodystart="95" bodyend="95"/>
+        <references refid="class_coordonnes2_d_1a27d023c95955192562e88d8dcb3550ea" compoundref="coordonnes2d_8h" startline="19">m_X</references>
+        <referencedby refid="class_t_e_r_observer_1a9f04020109fb77d6e704546c7060fff3" compoundref="_t_e_r_observer_8cpp" startline="76" endline="204">TERObserver::setup</referencedby>
+        <referencedby refid="class_t_e_r_observer_1af7e1247020de2e3d4d42a13ff8c6b6c2" compoundref="_t_e_r_observer_8cpp" startline="559" endline="603">TERObserver::synchronizeMap</referencedby>
+        <referencedby refid="class_t_e_r_observer_1a51c832c301812eb0cda095e81051d9b0" compoundref="_t_e_r_observer_8cpp" startline="605" endline="635">TERObserver::map2Repast</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_coordonnes2_d_1a1b611c902888fced2b0712ed6e84a3fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coordonnes2D::setY</definition>
+        <argsstring>(int Y)</argsstring>
+        <name>setY</name>
+        <param>
+          <type>int</type>
+          <declname>Y</declname>
+        </param>
+        <briefdescription>
+<para>Setter. </para>        </briefdescription>
+        <detaileddescription>
+<para>Setter de l&apos;attribut m_Y de la classe <ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/coordonnes2d.h" line="103" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/coordonnes2d.h" bodystart="103" bodyend="103"/>
+        <references refid="class_coordonnes2_d_1aaae6b7822c9680973ad6e55255ffa45a" compoundref="coordonnes2d_8h" startline="20">m_Y</references>
+        <referencedby refid="class_t_e_r_observer_1a9f04020109fb77d6e704546c7060fff3" compoundref="_t_e_r_observer_8cpp" startline="76" endline="204">TERObserver::setup</referencedby>
+        <referencedby refid="class_t_e_r_observer_1af7e1247020de2e3d4d42a13ff8c6b6c2" compoundref="_t_e_r_observer_8cpp" startline="559" endline="603">TERObserver::synchronizeMap</referencedby>
+        <referencedby refid="class_t_e_r_observer_1a51c832c301812eb0cda095e81051d9b0" compoundref="_t_e_r_observer_8cpp" startline="605" endline="635">TERObserver::map2Repast</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_coordonnes2_d_1a83505a182e95dee074796050f5fc960b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coordonnes2D::setCadran</definition>
+        <argsstring>(int val)</argsstring>
+        <name>setCadran</name>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Setter. </para>        </briefdescription>
+        <detaileddescription>
+<para>Setter de l&apos;attribut m_cadran de la classe <ref refid="class_coordonnes2_d" kindref="compound">Coordonnes2D</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/coordonnes2d.h" line="111" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/coordonnes2d.h" bodystart="111" bodyend="111"/>
+        <references refid="class_coordonnes2_d_1ad09082ceb0a4e3ea127ff78192a58a68" compoundref="coordonnes2d_8h" startline="21">m_cadran</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Classe representant une position(coordonnees) d&apos;un point. </para>    </briefdescription>
+    <detaileddescription>
+<para>La classe est composee des coordonnees x et y d&apos;un point ainsi que le cadran dans lequel il se trouve. </para>    </detaileddescription>
+    <location file="/home/emip/git/TER/TESTA/code/include/coordonnes2d.h" line="17" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/coordonnes2d.h" bodystart="16" bodyend="113"/>
+    <listofallmembers>
+      <member refid="class_coordonnes2_d_1aa5b01dbc1c5305dbf1dd51f20eeec05e" prot="public" virt="non-virtual"><scope>Coordonnes2D</scope><name>Coordonnes2D</name></member>
+      <member refid="class_coordonnes2_d_1a3a4031367715512fb9d3aad9bc9a5564" prot="public" virt="non-virtual"><scope>Coordonnes2D</scope><name>Coordonnes2D</name></member>
+      <member refid="class_coordonnes2_d_1a32915a0b2cfc5dce3ed491fb3fa0abae" prot="public" virt="non-virtual"><scope>Coordonnes2D</scope><name>Coordonnes2D</name></member>
+      <member refid="class_coordonnes2_d_1a923a832cec319899e4435240e1d1a2ce" prot="public" virt="non-virtual"><scope>Coordonnes2D</scope><name>getCadran</name></member>
+      <member refid="class_coordonnes2_d_1ac06b44e9c6584d4de6746f6b14472cdb" prot="public" virt="non-virtual"><scope>Coordonnes2D</scope><name>getX</name></member>
+      <member refid="class_coordonnes2_d_1a52192f87a21074e41b7d7b22f258a549" prot="public" virt="non-virtual"><scope>Coordonnes2D</scope><name>getY</name></member>
+      <member refid="class_coordonnes2_d_1ad09082ceb0a4e3ea127ff78192a58a68" prot="protected" virt="non-virtual"><scope>Coordonnes2D</scope><name>m_cadran</name></member>
+      <member refid="class_coordonnes2_d_1a27d023c95955192562e88d8dcb3550ea" prot="protected" virt="non-virtual"><scope>Coordonnes2D</scope><name>m_X</name></member>
+      <member refid="class_coordonnes2_d_1aaae6b7822c9680973ad6e55255ffa45a" prot="protected" virt="non-virtual"><scope>Coordonnes2D</scope><name>m_Y</name></member>
+      <member refid="class_coordonnes2_d_1a83505a182e95dee074796050f5fc960b" prot="public" virt="non-virtual"><scope>Coordonnes2D</scope><name>setCadran</name></member>
+      <member refid="class_coordonnes2_d_1acd18a61d429f17132bd6af7c66c5f56d" prot="public" virt="non-virtual"><scope>Coordonnes2D</scope><name>setX</name></member>
+      <member refid="class_coordonnes2_d_1a1b611c902888fced2b0712ed6e84a3fb" prot="public" virt="non-virtual"><scope>Coordonnes2D</scope><name>setY</name></member>
+      <member refid="class_coordonnes2_d_1a65b01695cc5bd68968db3ded7a1fcf74" prot="public" virt="virtual"><scope>Coordonnes2D</scope><name>~Coordonnes2D</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

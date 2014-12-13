@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Simulation d&#39;evacuation d&#39;immeuble avec systeme multi-agents:  Fichier source de code/include/TERObserver.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.jpeg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Simulation d&#39;evacuation d&#39;immeuble avec systeme multi-agents
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">TER - 2014</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_050edd66366d13764f98250ef6db77f6.html">code</a></li><li class="navelem"><a class="el" href="dir_f8a5fb882cc5ea0f84873b4bfbe1e42c.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">TERObserver.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_t_e_r_observer_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef TEROBSERVER_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TEROBSERVER_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;boost/mpi.hpp&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;relogo/Observer.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;repast_hpc/AgentRequest.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;repast_hpc/Properties.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="coordonnes2d_8h.html">coordonnes2d.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_graphe_8h.html">Graphe.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_agent_package_8h.html">AgentPackage.h</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="fenetre_8h.html">fenetre.h</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define NB_PROCESS 4</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define NB_CASES_HAUTEUR 20</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define NB_CASES_LARGEUR 20</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_t_e_r_observer.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_t_e_r_observer.html">TERObserver</a> : <span class="keyword">public</span> repast::relogo::Observer {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    repast::Properties* proprietes; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span> humainType, wallType; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_fenetre.html">Fenetre</a> *_fen; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">int</span> map[NB_PROCESS][NB_CASES_HAUTEUR][NB_CASES_LARGEUR]; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">int</span>** map_a_star; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::vector&lt;Coordonnes2D&gt; m_sorties; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> humancount,wallcount; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">int</span> m_survivants; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    repast::Timer timer; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_graphe.html">Graphe</a>* graphe; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">double</span> dernierTick; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">int</span> ageDiff; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">int</span> nbSorties; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_t_e_r_observer.html#aa9e1451ecf894d0b47978a251c33a5bb">   53</a></span>&#160;    <a class="code" href="class_t_e_r_observer.html#aa9e1451ecf894d0b47978a251c33a5bb">TERObserver</a>() { _fen = NULL;dernierTick = -1;nbSorties = 0;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_t_e_r_observer.html#a7aab378089e1835d915d675c1b1aee24">   61</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_t_e_r_observer.html#a7aab378089e1835d915d675c1b1aee24">~TERObserver</a>() {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">if</span>(_fen != NULL) <span class="keyword">delete</span> _fen;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="comment">//liberation memoire</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0;j&lt;NB_CASES_LARGEUR*2;j++)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keyword">delete</span> map_a_star[j];</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keyword">delete</span> map_a_star;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        std::vector&lt;double&gt; all_last_ticks;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordtype">int</span> nombre_humains = 0;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordtype">int</span> nombre_survivants = 0;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">double</span> tickEvacutaion = -1, max = 0;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordtype">bool</span> evacuation_reussi = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">if</span>(this-&gt;dernierTick == -1)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            evacuation_reussi = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        boost::mpi::communicator world;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">if</span> (world.rank() == 0) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            std::vector&lt;int&gt; all_survivants;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            std::vector&lt;int&gt; all_humains;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            std::vector&lt;int&gt; all_sorties;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            boost::mpi::gather(world,this-&gt;m_survivants,all_survivants,0);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            boost::mpi::gather(world,this-&gt;humancount,all_humains,0);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> proc=0;proc&lt;world.size();++proc){</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                nombre_humains = nombre_humains + all_humains[proc];</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                nombre_survivants = nombre_survivants + all_survivants[proc];</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            boost::mpi::gather(world, this-&gt;m_survivants, 0);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            boost::mpi::gather(world, this-&gt;humancount, 0);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">if</span>(repast::RepastProcess::instance()-&gt;rank() == 0){</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">if</span>(evacuation_reussi){</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                proprietes-&gt;putProperty(<span class="stringliteral">&quot;evacuation&quot;</span>,<span class="stringliteral">&quot;reussie&quot;</span>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                proprietes-&gt;putProperty(<span class="stringliteral">&quot;dernier.tick.evacuation&quot;</span>,this-&gt;dernierTick);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                proprietes-&gt;putProperty(<span class="stringliteral">&quot;evacuation&quot;</span>,<span class="stringliteral">&quot;echouee&quot;</span>);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                proprietes-&gt;putProperty(<span class="stringliteral">&quot;dernier.tick.evacuation&quot;</span>,<span class="stringliteral">&quot;evacuation echouee&quot;</span>);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            proprietes-&gt;putProperty(<span class="stringliteral">&quot;run.time&quot;</span>, timer.stop());</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            proprietes-&gt;putProperty(<span class="stringliteral">&quot;nombre.humains&quot;</span>,nombre_humains);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            proprietes-&gt;putProperty(<span class="stringliteral">&quot;nombre.survivants&quot;</span>,nombre_survivants);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            proprietes-&gt;putProperty(<span class="stringliteral">&quot;nombre.morts&quot;</span>, (nombre_humains - nombre_survivants));</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            proprietes-&gt;putProperty(<span class="stringliteral">&quot;nombre.sorties&quot;</span>,this-&gt;nbSorties);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="comment">//proprietes-&gt;putProperty(&quot;simulation.age_diff&quot;)</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            std::vector&lt;std::string&gt; keysToWrite;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            keysToWrite.push_back(<span class="stringliteral">&quot;date_time.run&quot;</span>);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            keysToWrite.push_back(<span class="stringliteral">&quot;process.count&quot;</span>);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            keysToWrite.push_back(<span class="stringliteral">&quot;random.seed&quot;</span>);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            keysToWrite.push_back(<span class="stringliteral">&quot;min.x&quot;</span>);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            keysToWrite.push_back(<span class="stringliteral">&quot;min.y&quot;</span>);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            keysToWrite.push_back(<span class="stringliteral">&quot;max.x&quot;</span>);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            keysToWrite.push_back(<span class="stringliteral">&quot;max.y&quot;</span>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            keysToWrite.push_back(<span class="stringliteral">&quot;proc.per.x&quot;</span>);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            keysToWrite.push_back(<span class="stringliteral">&quot;proc.per.y&quot;</span>);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            keysToWrite.push_back(<span class="stringliteral">&quot;grid.buffer&quot;</span>);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            keysToWrite.push_back(<span class="stringliteral">&quot;init.time&quot;</span>);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            keysToWrite.push_back(<span class="stringliteral">&quot;stop.at&quot;</span>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            keysToWrite.push_back(<span class="stringliteral">&quot;run.time&quot;</span>);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            keysToWrite.push_back(<span class="stringliteral">&quot;nombre.humains&quot;</span>);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            keysToWrite.push_back(<span class="stringliteral">&quot;nombre.survivants&quot;</span>);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            keysToWrite.push_back(<span class="stringliteral">&quot;nombre.morts&quot;</span>);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            keysToWrite.push_back(<span class="stringliteral">&quot;evacuation&quot;</span>);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            keysToWrite.push_back(<span class="stringliteral">&quot;dernier.tick.evacuation&quot;</span>);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            keysToWrite.push_back(<span class="stringliteral">&quot;simulation.diff_age&quot;</span>);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            keysToWrite.push_back(<span class="stringliteral">&quot;nombre.sorties&quot;</span>);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            proprietes-&gt;log(<span class="stringliteral">&quot;TER&quot;</span>);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            proprietes-&gt;writeToSVFile(<span class="stringliteral">&quot;./results/TER.csv&quot;</span>, keysToWrite);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_t_e_r_observer.html#a87524bb92d6be89b025e4312440f6948">go</a>();</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_t_e_r_observer.html#a9f04020109fb77d6e704546c7060fff3">setup</a>(repast::Properties&amp; props); <span class="comment">// NOTE: &#39;virtual&#39; needed by some compilers7</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_t_e_r_observer.html#ae8d98b39e6c1f41f2eb78326893106f0">loadMap_a_star</a>(repast::Properties&amp; props, std::vector&lt;Coordonnes2D&gt; &amp;sorties);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="comment">// create and provide for agents moving between processes</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    repast::relogo::RelogoAgent* <a class="code" href="class_t_e_r_observer.html#a2ebef6d41d08586bd3b54157ea372f99">createAgent</a>(<span class="keyword">const</span> <a class="code" href="struct_agent_package.html">AgentPackage</a>&amp; content);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_t_e_r_observer.html#ab036cbce36d1f1bd432785277becb041">provideContent</a>(<span class="keyword">const</span> repast::AgentRequest&amp; request, std::vector&lt;AgentPackage&gt;&amp; out);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_t_e_r_observer.html#a7ef10641e78a9fe2ba24e4fa6fc7e83a">enregisterResultats</a>();</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_t_e_r_observer.html#ac7815af47779d77ec0ed105af435b186">loadMap</a>(repast::Properties&amp; props, <span class="keywordtype">int</span> process_cadran);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="comment">// create and provide for buffer sync</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="class_t_e_r_observer.html#a33b585c06b752057e20af26a2220a23f">createAgents</a>(std::vector&lt;AgentPackage&gt;&amp; content, std::vector&lt;repast::relogo::RelogoAgent*&gt;&amp; out);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_t_e_r_observer.html#ab036cbce36d1f1bd432785277becb041">provideContent</a>(repast::relogo::RelogoAgent* agent, std::vector&lt;AgentPackage&gt;&amp; out);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_t_e_r_observer.html#ab1fe1d3f67f16d7bded15408348bc4b5">updateAgent</a>(<a class="code" href="struct_agent_package.html">AgentPackage</a> package);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_t_e_r_observer.html#a7b97c7e2c7251d65d946c9ced3c54bcf">dessinerDecor</a> (<span class="keywordtype">int</span> cadran);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <a class="code" href="class_coordonnes2_d.html">Coordonnes2D</a> <a class="code" href="class_t_e_r_observer.html#a6d43b1ce4f72ffe2dafaf6bf831cdec9">Rcor2GLCor</a>(<span class="keywordtype">int</span> X, <span class="keywordtype">int</span> Y, <span class="keywordtype">int</span> cadran);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <a class="code" href="class_coordonnes2_d.html">Coordonnes2D</a> <a class="code" href="class_t_e_r_observer.html#a11cef38b11ca544137fe36e11aba8d5c">Fcor2RCor</a>(<span class="keywordtype">int</span> posX, <span class="keywordtype">int</span> posY);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <a class="code" href="class_coordonnes2_d.html">Coordonnes2D</a> <a class="code" href="class_t_e_r_observer.html#a5287272e19f0556244cd96a008780d6c">Mcor2GLCor</a>(<span class="keywordtype">int</span> posX, <span class="keywordtype">int</span> posY);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_t_e_r_observer.html#af7e1247020de2e3d4d42a13ff8c6b6c2">synchronizeMap</a>();</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_t_e_r_observer.html#a3b78e3ab9fe3a01b465ccd31f1e88f45">razMap</a>();</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <a class="code" href="class_coordonnes2_d.html">Coordonnes2D</a> <a class="code" href="class_t_e_r_observer.html#a51c832c301812eb0cda095e81051d9b0">map2Repast</a>(<a class="code" href="class_coordonnes2_d.html">Coordonnes2D</a> c,<span class="keywordtype">int</span> cadran);</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_t_e_r_observer.html#acb9c7049485c5f1067bf7fd9a1300d28">printMap</a>();</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00273"></a><span class="lineno"><a class="line" href="class_t_e_r_observer.html#a5f19ccb810641760f3623a22cd19fd3c">  273</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_t_e_r_observer.html#a5f19ccb810641760f3623a22cd19fd3c">getSurvivants</a>(){<span class="keywordflow">return</span> this-&gt;m_survivants;}</div>
+<div class="line"><a name="l00278"></a><span class="lineno"><a class="line" href="class_t_e_r_observer.html#a243d9013eb73de81537e6416561864a4">  278</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_t_e_r_observer.html#a243d9013eb73de81537e6416561864a4">setSurvivant</a>(<span class="keywordtype">int</span> val){this-&gt;m_survivants = val;}</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="comment">//void setDiffAge(int val){this-&gt;ageDiff = val;}</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno"><a class="line" href="class_t_e_r_observer.html#a8c1de774ac3e1fa31c2233545cae4737">  284</a></span>&#160;<span class="comment"></span>    repast::Properties* <a class="code" href="class_t_e_r_observer.html#a8c1de774ac3e1fa31c2233545cae4737">getProps</a>(){<span class="keywordflow">return</span> this-&gt;proprietes;}</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;};</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* TEROBSERVER_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="class_t_e_r_observer_html_af7e1247020de2e3d4d42a13ff8c6b6c2"><div class="ttname"><a href="class_t_e_r_observer.html#af7e1247020de2e3d4d42a13ff8c6b6c2">TERObserver::synchronizeMap</a></div><div class="ttdeci">void synchronizeMap()</div><div class="ttdoc">Fonction qui synchronise la map et la met a jour en fonction de la map Repast. </div><div class="ttdef"><b>Definition:</b> TERObserver.cpp:559</div></div>
+<div class="ttc" id="class_fenetre_html"><div class="ttname"><a href="class_fenetre.html">Fenetre</a></div><div class="ttdoc">Classe representant une Fenetre SDL. </div><div class="ttdef"><b>Definition:</b> fenetre.h:20</div></div>
+<div class="ttc" id="class_t_e_r_observer_html_a51c832c301812eb0cda095e81051d9b0"><div class="ttname"><a href="class_t_e_r_observer.html#a51c832c301812eb0cda095e81051d9b0">TERObserver::map2Repast</a></div><div class="ttdeci">Coordonnes2D map2Repast(Coordonnes2D c, int cadran)</div><div class="ttdoc">Fonction qui convertit les coordonnes de la map vers des coordonnees Repast. </div><div class="ttdef"><b>Definition:</b> TERObserver.cpp:605</div></div>
+<div class="ttc" id="class_t_e_r_observer_html_a87524bb92d6be89b025e4312440f6948"><div class="ttname"><a href="class_t_e_r_observer.html#a87524bb92d6be89b025e4312440f6948">TERObserver::go</a></div><div class="ttdeci">void go()</div><div class="ttdoc">Fonction heritee qui est appelee a chaque tick de la simulation. </div><div class="ttdef"><b>Definition:</b> TERObserver.cpp:23</div></div>
+<div class="ttc" id="class_t_e_r_observer_html_ac7815af47779d77ec0ed105af435b186"><div class="ttname"><a href="class_t_e_r_observer.html#ac7815af47779d77ec0ed105af435b186">TERObserver::loadMap</a></div><div class="ttdeci">void loadMap(repast::Properties &amp;props, int process_cadran)</div><div class="ttdoc">Fonction charge la map a partir du fichier d&amp;#39;initialisation. </div><div class="ttdef"><b>Definition:</b> TERObserver.cpp:206</div></div>
+<div class="ttc" id="class_t_e_r_observer_html_a2ebef6d41d08586bd3b54157ea372f99"><div class="ttname"><a href="class_t_e_r_observer.html#a2ebef6d41d08586bd3b54157ea372f99">TERObserver::createAgent</a></div><div class="ttdeci">repast::relogo::RelogoAgent * createAgent(const AgentPackage &amp;content)</div><div class="ttdoc">Fonction qui cree un agent a partir d&amp;#39;une archive serialisee. </div><div class="ttdef"><b>Definition:</b> TERObserver.cpp:433</div></div>
+<div class="ttc" id="class_t_e_r_observer_html_a5287272e19f0556244cd96a008780d6c"><div class="ttname"><a href="class_t_e_r_observer.html#a5287272e19f0556244cd96a008780d6c">TERObserver::Mcor2GLCor</a></div><div class="ttdeci">Coordonnes2D Mcor2GLCor(int posX, int posY)</div><div class="ttdoc">Fonction qui convertie des cordonnees de la liste de matrices map vers des coordonnes en pixel de la ...</div><div class="ttdef"><b>Definition:</b> TERObserver.cpp:502</div></div>
+<div class="ttc" id="class_t_e_r_observer_html_a11cef38b11ca544137fe36e11aba8d5c"><div class="ttname"><a href="class_t_e_r_observer.html#a11cef38b11ca544137fe36e11aba8d5c">TERObserver::Fcor2RCor</a></div><div class="ttdeci">Coordonnes2D Fcor2RCor(int posX, int posY)</div><div class="ttdoc">Fonction qui convertie des cordonnees du Fichier vers des coordonnes du monde Repast. </div><div class="ttdef"><b>Definition:</b> TERObserver.cpp:494</div></div>
+<div class="ttc" id="class_t_e_r_observer_html_a9f04020109fb77d6e704546c7060fff3"><div class="ttname"><a href="class_t_e_r_observer.html#a9f04020109fb77d6e704546c7060fff3">TERObserver::setup</a></div><div class="ttdeci">virtual void setup(repast::Properties &amp;props)</div><div class="ttdoc">Fonction heritee qui est appelee a l&amp;#39;initialisation de l&amp;#39;objet Observer. </div><div class="ttdef"><b>Definition:</b> TERObserver.cpp:76</div></div>
+<div class="ttc" id="class_t_e_r_observer_html_a6d43b1ce4f72ffe2dafaf6bf831cdec9"><div class="ttname"><a href="class_t_e_r_observer.html#a6d43b1ce4f72ffe2dafaf6bf831cdec9">TERObserver::Rcor2GLCor</a></div><div class="ttdeci">Coordonnes2D Rcor2GLCor(int X, int Y, int cadran)</div><div class="ttdoc">Fonction qui convertie des cordonnees du monde Repast vers des coordonnes en pixel dans la Fenetre SD...</div><div class="ttdef"><b>Definition:</b> TERObserver.cpp:510</div></div>
+<div class="ttc" id="class_t_e_r_observer_html_a243d9013eb73de81537e6416561864a4"><div class="ttname"><a href="class_t_e_r_observer.html#a243d9013eb73de81537e6416561864a4">TERObserver::setSurvivant</a></div><div class="ttdeci">void setSurvivant(int val)</div><div class="ttdoc">Setter de l&amp;#39;attribut m_survivants de la Classe TERObserver. </div><div class="ttdef"><b>Definition:</b> TERObserver.h:278</div></div>
+<div class="ttc" id="class_t_e_r_observer_html_a7aab378089e1835d915d675c1b1aee24"><div class="ttname"><a href="class_t_e_r_observer.html#a7aab378089e1835d915d675c1b1aee24">TERObserver::~TERObserver</a></div><div class="ttdeci">virtual ~TERObserver()</div><div class="ttdoc">Destructeur. </div><div class="ttdef"><b>Definition:</b> TERObserver.h:61</div></div>
+<div class="ttc" id="_graphe_8h_html"><div class="ttname"><a href="_graphe_8h.html">Graphe.h</a></div><div class="ttdoc">Classe representant le monde Repast en memoire afin d&amp;#39;appliquer l&amp;#39;algorithme A*. </div></div>
+<div class="ttc" id="class_t_e_r_observer_html_acb9c7049485c5f1067bf7fd9a1300d28"><div class="ttname"><a href="class_t_e_r_observer.html#acb9c7049485c5f1067bf7fd9a1300d28">TERObserver::printMap</a></div><div class="ttdeci">void printMap()</div><div class="ttdoc">Fonction qui affiche dans la console le contenu de la map (utilise pour debugger) ...</div><div class="ttdef"><b>Definition:</b> TERObserver.cpp:637</div></div>
+<div class="ttc" id="class_t_e_r_observer_html_a33b585c06b752057e20af26a2220a23f"><div class="ttname"><a href="class_t_e_r_observer.html#a33b585c06b752057e20af26a2220a23f">TERObserver::createAgents</a></div><div class="ttdeci">void createAgents(std::vector&lt; AgentPackage &gt; &amp;content, std::vector&lt; repast::relogo::RelogoAgent * &gt; &amp;out)</div><div class="ttdoc">Fonction qui cree des agents, appelee lors d&amp;#39;une synchronisation du buffer de la grille Repast...</div><div class="ttdef"><b>Definition:</b> TERObserver.cpp:472</div></div>
+<div class="ttc" id="fenetre_8h_html"><div class="ttname"><a href="fenetre_8h.html">fenetre.h</a></div><div class="ttdoc">Classe representant une fenetre SDL. </div></div>
+<div class="ttc" id="class_graphe_html"><div class="ttname"><a href="class_graphe.html">Graphe</a></div><div class="ttdoc">Classe representant le monde Repast en memoire. </div><div class="ttdef"><b>Definition:</b> Graphe.h:22</div></div>
+<div class="ttc" id="class_t_e_r_observer_html_aa9e1451ecf894d0b47978a251c33a5bb"><div class="ttname"><a href="class_t_e_r_observer.html#aa9e1451ecf894d0b47978a251c33a5bb">TERObserver::TERObserver</a></div><div class="ttdeci">TERObserver()</div><div class="ttdoc">Constructeur. </div><div class="ttdef"><b>Definition:</b> TERObserver.h:53</div></div>
+<div class="ttc" id="class_t_e_r_observer_html_a3b78e3ab9fe3a01b465ccd31f1e88f45"><div class="ttname"><a href="class_t_e_r_observer.html#a3b78e3ab9fe3a01b465ccd31f1e88f45">TERObserver::razMap</a></div><div class="ttdeci">void razMap()</div><div class="ttdoc">Fonction qui remet a 0 la map (liste de matrices en memoire) </div><div class="ttdef"><b>Definition:</b> TERObserver.cpp:548</div></div>
+<div class="ttc" id="class_t_e_r_observer_html"><div class="ttname"><a href="class_t_e_r_observer.html">TERObserver</a></div><div class="ttdoc">Classe representant un observateur, qui s&amp;#39;occupe de la gestion des agents dans ce processus...</div><div class="ttdef"><b>Definition:</b> TERObserver.h:29</div></div>
+<div class="ttc" id="_agent_package_8h_html"><div class="ttname"><a href="_agent_package_8h.html">AgentPackage.h</a></div><div class="ttdoc">Classe representant une archive serialisee. </div></div>
+<div class="ttc" id="class_t_e_r_observer_html_a7b97c7e2c7251d65d946c9ced3c54bcf"><div class="ttname"><a href="class_t_e_r_observer.html#a7b97c7e2c7251d65d946c9ced3c54bcf">TERObserver::dessinerDecor</a></div><div class="ttdeci">void dessinerDecor(int cadran)</div><div class="ttdoc">Fonction qui dessine le decor dans la Fenetre SDL. </div><div class="ttdef"><b>Definition:</b> TERObserver.cpp:335</div></div>
+<div class="ttc" id="class_t_e_r_observer_html_a8c1de774ac3e1fa31c2233545cae4737"><div class="ttname"><a href="class_t_e_r_observer.html#a8c1de774ac3e1fa31c2233545cae4737">TERObserver::getProps</a></div><div class="ttdeci">repast::Properties * getProps()</div><div class="ttdoc">Getter de l&amp;#39;attribut proprietes de la Classe TERObserver. </div><div class="ttdef"><b>Definition:</b> TERObserver.h:284</div></div>
+<div class="ttc" id="class_coordonnes2_d_html"><div class="ttname"><a href="class_coordonnes2_d.html">Coordonnes2D</a></div><div class="ttdoc">Classe representant une position(coordonnees) d&amp;#39;un point. </div><div class="ttdef"><b>Definition:</b> coordonnes2d.h:16</div></div>
+<div class="ttc" id="struct_agent_package_html"><div class="ttname"><a href="struct_agent_package.html">AgentPackage</a></div><div class="ttdoc">Objet servant d&amp;#39;archive pour le transfert d&amp;#39;attribut des agents d&amp;#39;un processus à un autre...</div><div class="ttdef"><b>Definition:</b> AgentPackage.h:19</div></div>
+<div class="ttc" id="class_t_e_r_observer_html_a5f19ccb810641760f3623a22cd19fd3c"><div class="ttname"><a href="class_t_e_r_observer.html#a5f19ccb810641760f3623a22cd19fd3c">TERObserver::getSurvivants</a></div><div class="ttdeci">int getSurvivants()</div><div class="ttdoc">Getter de l&amp;#39;attribut m_survivants de la Classe TERObserver. </div><div class="ttdef"><b>Definition:</b> TERObserver.h:273</div></div>
+<div class="ttc" id="class_t_e_r_observer_html_a7ef10641e78a9fe2ba24e4fa6fc7e83a"><div class="ttname"><a href="class_t_e_r_observer.html#a7ef10641e78a9fe2ba24e4fa6fc7e83a">TERObserver::enregisterResultats</a></div><div class="ttdeci">void enregisterResultats()</div><div class="ttdoc">Fonction qui enregistre les resultats de la simulation dans un fichier tableur. </div><div class="ttdef"><b>Definition:</b> TERObserver.cpp:71</div></div>
+<div class="ttc" id="class_t_e_r_observer_html_ab036cbce36d1f1bd432785277becb041"><div class="ttname"><a href="class_t_e_r_observer.html#ab036cbce36d1f1bd432785277becb041">TERObserver::provideContent</a></div><div class="ttdeci">void provideContent(const repast::AgentRequest &amp;request, std::vector&lt; AgentPackage &gt; &amp;out)</div><div class="ttdoc">Fonction qui assigne les valeurs d&amp;#39;un tableau d&amp;#39;archives serialisees a un agent ou un ensemble d&amp;#39;agen...</div><div class="ttdef"><b>Definition:</b> TERObserver.cpp:442</div></div>
+<div class="ttc" id="coordonnes2d_8h_html"><div class="ttname"><a href="coordonnes2d_8h.html">coordonnes2d.h</a></div><div class="ttdoc">Classe representant une position(coordonnees) d&amp;#39;un point. </div></div>
+<div class="ttc" id="class_t_e_r_observer_html_ab1fe1d3f67f16d7bded15408348bc4b5"><div class="ttname"><a href="class_t_e_r_observer.html#ab1fe1d3f67f16d7bded15408348bc4b5">TERObserver::updateAgent</a></div><div class="ttdeci">void updateAgent(AgentPackage package)</div><div class="ttdoc">Fonction qui met à jour des agents deja existants. </div><div class="ttdef"><b>Definition:</b> TERObserver.cpp:484</div></div>
+<div class="ttc" id="class_t_e_r_observer_html_ae8d98b39e6c1f41f2eb78326893106f0"><div class="ttname"><a href="class_t_e_r_observer.html#ae8d98b39e6c1f41f2eb78326893106f0">TERObserver::loadMap_a_star</a></div><div class="ttdeci">void loadMap_a_star(repast::Properties &amp;props, std::vector&lt; Coordonnes2D &gt; &amp;sorties)</div><div class="ttdoc">Charge a partir du fichier d&amp;#39;initialisation, la matrice map a utiliser pour A*. </div><div class="ttdef"><b>Definition:</b> TERObserver.cpp:292</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche 25 Mai 2014 22:27:41 pour Simulation d&#39;evacuation d&#39;immeuble avec systeme multi-agents par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

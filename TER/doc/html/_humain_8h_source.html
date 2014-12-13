@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Simulation d&#39;evacuation d&#39;immeuble avec systeme multi-agents:  Fichier source de code/include/Humain.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.jpeg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Simulation d&#39;evacuation d&#39;immeuble avec systeme multi-agents
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">TER - 2014</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_050edd66366d13764f98250ef6db77f6.html">code</a></li><li class="navelem"><a class="el" href="dir_f8a5fb882cc5ea0f84873b4bfbe1e42c.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Humain.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_humain_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef HUMAIN_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HUMAIN_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define TAUX_PERSONNES_AGEES 5</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TAUX_PERSONNES_JEUNES 70</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TAUX_PERSONNES_ADULTES 20</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TAUX_PERSONNES_MALADES 5</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#define PERSONNE_ADULTE 0</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PERSONNE_JEUNE 1</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PERSONNE_AGEE 2</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PERSONNE_MALADE 3</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;relogo/Turtle.h&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;repast_hpc/RepastProcess.h&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_agent_package_8h.html">AgentPackage.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="fenetre_8h.html">fenetre.h</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;repast_hpc/Properties.h&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_humain.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_humain.html">Humain</a> : <span class="keyword">public</span> repast::relogo::Turtle {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">double</span> m_angle; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">int</span> posXFichier; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">int</span> posYFichier; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> posXGL; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">int</span> posYGL; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    std::vector&lt;int&gt; cheminX; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    std::vector&lt;int&gt; cheminY; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">int</span> etape; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">int</span> typePersonne; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">bool</span> sorti; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_humain.html#a2ef84f203affc118025f145745323ddd">   55</a></span>&#160;    <a class="code" href="class_humain.html#a2ef84f203affc118025f145745323ddd">Humain</a>(repast::AgentId <span class="keywordtype">id</span>, repast::relogo::Observer* obs): repast::relogo::Turtle(id, obs) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">int</span> rndType;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        etape=0;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        sorti=<span class="keyword">false</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">if</span>( (std::atoi((((<a class="code" href="class_t_e_r_observer.html">TERObserver</a>*)obs)-&gt;getProps()-&gt;getProperty(<span class="stringliteral">&quot;simulation.diff_age&quot;</span>)).c_str())) == 1){</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="comment">//((TERObserver*)obs)-&gt;setDiffAge(1);</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            rndType = <a class="code" href="class_humain.html#a0a9134ce08efbc5eb5714114de97fb63">randomType</a>( *(((<a class="code" href="class_t_e_r_observer.html">TERObserver</a>*)obs)-&gt;getProps()) );</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">if</span>(rndType &lt;= TAUX_PERSONNES_ADULTES)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                this-&gt;typePersonne = PERSONNE_ADULTE;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(rndType &lt;= (TAUX_PERSONNES_JEUNES + TAUX_PERSONNES_ADULTES) &amp;&amp; rndType &gt; TAUX_PERSONNES_ADULTES)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                this-&gt;typePersonne = PERSONNE_JEUNE;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(rndType &lt;= (TAUX_PERSONNES_JEUNES + TAUX_PERSONNES_ADULTES + TAUX_PERSONNES_AGEES) &amp;&amp; rndType &gt; (TAUX_PERSONNES_JEUNES + TAUX_PERSONNES_ADULTES))</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                this-&gt;typePersonne = PERSONNE_AGEE;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                this-&gt;typePersonne = PERSONNE_MALADE;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            this-&gt;typePersonne = -1;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="class_humain.html#a057f2b76521c2654a66dea6e9e2e33c5">   86</a></span>&#160;    <a class="code" href="class_humain.html#a057f2b76521c2654a66dea6e9e2e33c5">Humain</a>(repast::AgentId <span class="keywordtype">id</span>, repast::relogo::Observer* obs, <span class="keyword">const</span> <a class="code" href="struct_agent_package.html">AgentPackage</a>&amp; package): repast::relogo::Turtle(id, obs),cheminX(package.cheminX),</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            cheminY(package.cheminY),etape(package.etape),typePersonne(package.typePersonne){sorti=<span class="keyword">false</span>;}</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="class_humain.html#a08a0a8a77ce1877a76518e5d0acf03ca">   94</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_humain.html#a08a0a8a77ce1877a76518e5d0acf03ca">~Humain</a>() {}</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_humain.html#a6ef45c2a6398eee58bc985b0d3d04812">getPos</a>();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_humain.html#acfb526c278bfd003114e3f4270ab6342">step</a>();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_humain.html#a415aa529a0f744d0b81bc80b93864665">randomAngle</a>(repast::Properties&amp; props);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_humain.html#a0a9134ce08efbc5eb5714114de97fb63">randomType</a>(repast::Properties&amp; props);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">void</span> afficherPos(<a class="code" href="class_fenetre.html">Fenetre</a>* fen);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_humain.html#a73d39a9d1f241d620ccac2f599e2dd97">getAngle</a>();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_humain.html#a8987214bebd0063247cbfc1b4b5f1816">rad2deg</a>(<span class="keywordtype">double</span> theta);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_humain.html#ad7777f2198c8f306bfc8040afe7f0802">tournerVers</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="class_humain.html#a72f53748fcf1c862c46771208856a960">  152</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_humain.html#a72f53748fcf1c862c46771208856a960">getXFichier</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">return</span> this-&gt;posXFichier;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="class_humain.html#a950ffa2b5fbfe59cdc5556598bb3fc36">  160</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_humain.html#a950ffa2b5fbfe59cdc5556598bb3fc36">getYFichier</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordflow">return</span> this-&gt;posYFichier;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="class_humain.html#ad6179d5833fbc32eeb5cb440afdd58b0">  168</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_humain.html#ad6179d5833fbc32eeb5cb440afdd58b0">getXGL</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">return</span> this-&gt;posXGL;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    }</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="class_humain.html#a476b49698c658f53675d8e2666990699">  176</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_humain.html#a476b49698c658f53675d8e2666990699">getYGL</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keywordflow">return</span> this-&gt;posYGL;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    }</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="class_humain.html#a8cc241895df70b2f6023552908903fab">  184</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_humain.html#a8cc241895df70b2f6023552908903fab">setXFichier</a>(<span class="keywordtype">int</span> val){</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        this-&gt;posXFichier = val;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="class_humain.html#a574c1d191014b8ce815b593b68422e54">  192</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_humain.html#a574c1d191014b8ce815b593b68422e54">setYFichier</a>(<span class="keywordtype">int</span> val){</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        this-&gt;posYFichier = val;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    }</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="class_humain.html#aaa7d8c47d9f38e70454693ece8c78c81">  200</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_humain.html#aaa7d8c47d9f38e70454693ece8c78c81">setXGL</a>(<span class="keywordtype">int</span> val){</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        this-&gt;posXGL = val;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    }</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno"><a class="line" href="class_humain.html#ab1ca792b176d3fb394f6aa411ba1e5f5">  208</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_humain.html#ab1ca792b176d3fb394f6aa411ba1e5f5">setYGL</a>(<span class="keywordtype">int</span> val){</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        this-&gt;posYGL = val;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    }</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno"><a class="line" href="class_humain.html#a2e50827e8e6c47f6671aae2bea409840">  216</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_humain.html#a2e50827e8e6c47f6671aae2bea409840">setAngle</a>(<span class="keywordtype">double</span> val){</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        this-&gt;m_angle = val;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    }</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno"><a class="line" href="class_humain.html#ab8469bf829ed8100899bc57a62025cb9">  224</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_humain.html#ab8469bf829ed8100899bc57a62025cb9">getTypePersonne</a>(){<span class="keywordflow">return</span> this-&gt;typePersonne;}</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordtype">void</span> setTypePersonne(<span class="keywordtype">int</span> val){this-&gt;typePersonne = val;}</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="class_humain.html#a434d49c9e83f20f525106416f6c62a48">  231</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_humain.html#a434d49c9e83f20f525106416f6c62a48">getEtape</a>(){<span class="keywordflow">return</span> this-&gt;etape;}</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="class_humain.html#a1351d4c106fc2e175cf19da0ca3fce52">  237</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_humain.html#a1351d4c106fc2e175cf19da0ca3fce52">getSorti</a>(){<span class="keywordflow">return</span> this-&gt;sorti;}</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00243"></a><span class="lineno"><a class="line" href="class_humain.html#a68abc0ded73a07d369a74e5a4d3bd7e6">  243</a></span>&#160;    std::vector&lt;int&gt; <a class="code" href="class_humain.html#a68abc0ded73a07d369a74e5a4d3bd7e6">getCheminX</a>(){<span class="keywordflow">return</span> this-&gt;cheminX;}</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00249"></a><span class="lineno"><a class="line" href="class_humain.html#ad815b1e9aacefe7a41ded28772a41b9a">  249</a></span>&#160;    std::vector&lt;int&gt; <a class="code" href="class_humain.html#ad815b1e9aacefe7a41ded28772a41b9a">getCheminY</a>(){<span class="keywordflow">return</span> this-&gt;cheminY;}</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="class_humain.html#a0dfad40c440229a41fb980af89385fc8">  258</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_humain.html#a0dfad40c440229a41fb980af89385fc8">setCheminXY</a>(std::vector&lt;int&gt; cheminX, std::vector&lt;int&gt; cheminY,<span class="keywordtype">int</span> etape, <span class="keywordtype">bool</span> sorti){</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        this-&gt;cheminX = cheminX;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        this-&gt;cheminY = cheminY;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        this-&gt;etape = etape;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;};</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* HUMAIN_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="class_fenetre_html"><div class="ttname"><a href="class_fenetre.html">Fenetre</a></div><div class="ttdoc">Classe representant une Fenetre SDL. </div><div class="ttdef"><b>Definition:</b> fenetre.h:20</div></div>
+<div class="ttc" id="class_humain_html_a8cc241895df70b2f6023552908903fab"><div class="ttname"><a href="class_humain.html#a8cc241895df70b2f6023552908903fab">Humain::setXFichier</a></div><div class="ttdeci">void setXFichier(int val)</div><div class="ttdoc">Setter. </div><div class="ttdef"><b>Definition:</b> Humain.h:184</div></div>
+<div class="ttc" id="class_humain_html_ad6179d5833fbc32eeb5cb440afdd58b0"><div class="ttname"><a href="class_humain.html#ad6179d5833fbc32eeb5cb440afdd58b0">Humain::getXGL</a></div><div class="ttdeci">int getXGL(void) const </div><div class="ttdoc">Getter. </div><div class="ttdef"><b>Definition:</b> Humain.h:168</div></div>
+<div class="ttc" id="class_humain_html_a08a0a8a77ce1877a76518e5d0acf03ca"><div class="ttname"><a href="class_humain.html#a08a0a8a77ce1877a76518e5d0acf03ca">Humain::~Humain</a></div><div class="ttdeci">virtual ~Humain()</div><div class="ttdoc">Destructeur. </div><div class="ttdef"><b>Definition:</b> Humain.h:94</div></div>
+<div class="ttc" id="class_humain_html_a8987214bebd0063247cbfc1b4b5f1816"><div class="ttname"><a href="class_humain.html#a8987214bebd0063247cbfc1b4b5f1816">Humain::rad2deg</a></div><div class="ttdeci">double rad2deg(double theta)</div><div class="ttdoc">conversion d&amp;#39;un angle de radians en degre </div><div class="ttdef"><b>Definition:</b> Humain.cpp:129</div></div>
+<div class="ttc" id="class_humain_html_ad815b1e9aacefe7a41ded28772a41b9a"><div class="ttname"><a href="class_humain.html#ad815b1e9aacefe7a41ded28772a41b9a">Humain::getCheminY</a></div><div class="ttdeci">std::vector&lt; int &gt; getCheminY()</div><div class="ttdoc">Getter. </div><div class="ttdef"><b>Definition:</b> Humain.h:249</div></div>
+<div class="ttc" id="class_humain_html_a434d49c9e83f20f525106416f6c62a48"><div class="ttname"><a href="class_humain.html#a434d49c9e83f20f525106416f6c62a48">Humain::getEtape</a></div><div class="ttdeci">int getEtape()</div><div class="ttdoc">Getter. </div><div class="ttdef"><b>Definition:</b> Humain.h:231</div></div>
+<div class="ttc" id="class_humain_html_a1351d4c106fc2e175cf19da0ca3fce52"><div class="ttname"><a href="class_humain.html#a1351d4c106fc2e175cf19da0ca3fce52">Humain::getSorti</a></div><div class="ttdeci">bool getSorti()</div><div class="ttdoc">Getter. </div><div class="ttdef"><b>Definition:</b> Humain.h:237</div></div>
+<div class="ttc" id="class_humain_html_a0a9134ce08efbc5eb5714114de97fb63"><div class="ttname"><a href="class_humain.html#a0a9134ce08efbc5eb5714114de97fb63">Humain::randomType</a></div><div class="ttdeci">int randomType(repast::Properties &amp;props)</div><div class="ttdoc">genere un type de personne aleatoire </div><div class="ttdef"><b>Definition:</b> Humain.cpp:26</div></div>
+<div class="ttc" id="class_humain_html_a950ffa2b5fbfe59cdc5556598bb3fc36"><div class="ttname"><a href="class_humain.html#a950ffa2b5fbfe59cdc5556598bb3fc36">Humain::getYFichier</a></div><div class="ttdeci">int getYFichier(void) const </div><div class="ttdoc">Getter. </div><div class="ttdef"><b>Definition:</b> Humain.h:160</div></div>
+<div class="ttc" id="class_humain_html_a2e50827e8e6c47f6671aae2bea409840"><div class="ttname"><a href="class_humain.html#a2e50827e8e6c47f6671aae2bea409840">Humain::setAngle</a></div><div class="ttdeci">void setAngle(double val)</div><div class="ttdoc">Setter. </div><div class="ttdef"><b>Definition:</b> Humain.h:216</div></div>
+<div class="ttc" id="class_humain_html_a415aa529a0f744d0b81bc80b93864665"><div class="ttname"><a href="class_humain.html#a415aa529a0f744d0b81bc80b93864665">Humain::randomAngle</a></div><div class="ttdeci">void randomAngle(repast::Properties &amp;props)</div><div class="ttdoc">genere un angle aleatoire compris entre 0 et 359 (en degre) </div><div class="ttdef"><b>Definition:</b> Humain.cpp:32</div></div>
+<div class="ttc" id="class_humain_html_ab8469bf829ed8100899bc57a62025cb9"><div class="ttname"><a href="class_humain.html#ab8469bf829ed8100899bc57a62025cb9">Humain::getTypePersonne</a></div><div class="ttdeci">int getTypePersonne()</div><div class="ttdoc">Getter. </div><div class="ttdef"><b>Definition:</b> Humain.h:224</div></div>
+<div class="ttc" id="class_humain_html_ad7777f2198c8f306bfc8040afe7f0802"><div class="ttname"><a href="class_humain.html#ad7777f2198c8f306bfc8040afe7f0802">Humain::tournerVers</a></div><div class="ttdeci">double tournerVers(double x, double y)</div><div class="ttdoc">Calcule l&amp;#39;angle a prendre pour aller au point de coordonnees x/y. </div><div class="ttdef"><b>Definition:</b> Humain.cpp:133</div></div>
+<div class="ttc" id="class_humain_html_a2ef84f203affc118025f145745323ddd"><div class="ttname"><a href="class_humain.html#a2ef84f203affc118025f145745323ddd">Humain::Humain</a></div><div class="ttdeci">Humain(repast::AgentId id, repast::relogo::Observer *obs)</div><div class="ttdoc">Constructeur. </div><div class="ttdef"><b>Definition:</b> Humain.h:55</div></div>
+<div class="ttc" id="fenetre_8h_html"><div class="ttname"><a href="fenetre_8h.html">fenetre.h</a></div><div class="ttdoc">Classe representant une fenetre SDL. </div></div>
+<div class="ttc" id="class_humain_html_a73d39a9d1f241d620ccac2f599e2dd97"><div class="ttname"><a href="class_humain.html#a73d39a9d1f241d620ccac2f599e2dd97">Humain::getAngle</a></div><div class="ttdeci">double getAngle()</div><div class="ttdoc">recupere l&amp;#39;angle actuel d&amp;#39;un agent </div><div class="ttdef"><b>Definition:</b> Humain.cpp:127</div></div>
+<div class="ttc" id="class_humain_html_a574c1d191014b8ce815b593b68422e54"><div class="ttname"><a href="class_humain.html#a574c1d191014b8ce815b593b68422e54">Humain::setYFichier</a></div><div class="ttdeci">void setYFichier(int val)</div><div class="ttdoc">Setter. </div><div class="ttdef"><b>Definition:</b> Humain.h:192</div></div>
+<div class="ttc" id="class_t_e_r_observer_html"><div class="ttname"><a href="class_t_e_r_observer.html">TERObserver</a></div><div class="ttdoc">Classe representant un observateur, qui s&amp;#39;occupe de la gestion des agents dans ce processus...</div><div class="ttdef"><b>Definition:</b> TERObserver.h:29</div></div>
+<div class="ttc" id="class_humain_html_a72f53748fcf1c862c46771208856a960"><div class="ttname"><a href="class_humain.html#a72f53748fcf1c862c46771208856a960">Humain::getXFichier</a></div><div class="ttdeci">int getXFichier(void) const </div><div class="ttdoc">Getter. </div><div class="ttdef"><b>Definition:</b> Humain.h:152</div></div>
+<div class="ttc" id="_agent_package_8h_html"><div class="ttname"><a href="_agent_package_8h.html">AgentPackage.h</a></div><div class="ttdoc">Classe representant une archive serialisee. </div></div>
+<div class="ttc" id="class_humain_html"><div class="ttname"><a href="class_humain.html">Humain</a></div><div class="ttdoc">classe representant un agent humain </div><div class="ttdef"><b>Definition:</b> Humain.h:27</div></div>
+<div class="ttc" id="class_humain_html_a476b49698c658f53675d8e2666990699"><div class="ttname"><a href="class_humain.html#a476b49698c658f53675d8e2666990699">Humain::getYGL</a></div><div class="ttdeci">int getYGL(void) const </div><div class="ttdoc">Getter. </div><div class="ttdef"><b>Definition:</b> Humain.h:176</div></div>
+<div class="ttc" id="class_humain_html_a057f2b76521c2654a66dea6e9e2e33c5"><div class="ttname"><a href="class_humain.html#a057f2b76521c2654a66dea6e9e2e33c5">Humain::Humain</a></div><div class="ttdeci">Humain(repast::AgentId id, repast::relogo::Observer *obs, const AgentPackage &amp;package)</div><div class="ttdoc">Constructeur pour le transfert d&amp;#39;agents. </div><div class="ttdef"><b>Definition:</b> Humain.h:86</div></div>
+<div class="ttc" id="class_humain_html_ab1ca792b176d3fb394f6aa411ba1e5f5"><div class="ttname"><a href="class_humain.html#ab1ca792b176d3fb394f6aa411ba1e5f5">Humain::setYGL</a></div><div class="ttdeci">void setYGL(int val)</div><div class="ttdoc">Setter. </div><div class="ttdef"><b>Definition:</b> Humain.h:208</div></div>
+<div class="ttc" id="class_humain_html_acfb526c278bfd003114e3f4270ab6342"><div class="ttname"><a href="class_humain.html#acfb526c278bfd003114e3f4270ab6342">Humain::step</a></div><div class="ttdeci">void step()</div><div class="ttdoc">fonction principale decrivant le comportement de l&amp;#39;agent (execute a chaque tick) </div><div class="ttdef"><b>Definition:</b> Humain.cpp:38</div></div>
+<div class="ttc" id="class_humain_html_a0dfad40c440229a41fb980af89385fc8"><div class="ttname"><a href="class_humain.html#a0dfad40c440229a41fb980af89385fc8">Humain::setCheminXY</a></div><div class="ttdeci">void setCheminXY(std::vector&lt; int &gt; cheminX, std::vector&lt; int &gt; cheminY, int etape, bool sorti)</div><div class="ttdoc">Setter. </div><div class="ttdef"><b>Definition:</b> Humain.h:258</div></div>
+<div class="ttc" id="class_humain_html_aaa7d8c47d9f38e70454693ece8c78c81"><div class="ttname"><a href="class_humain.html#aaa7d8c47d9f38e70454693ece8c78c81">Humain::setXGL</a></div><div class="ttdeci">void setXGL(int val)</div><div class="ttdoc">Setter. </div><div class="ttdef"><b>Definition:</b> Humain.h:200</div></div>
+<div class="ttc" id="class_humain_html_a68abc0ded73a07d369a74e5a4d3bd7e6"><div class="ttname"><a href="class_humain.html#a68abc0ded73a07d369a74e5a4d3bd7e6">Humain::getCheminX</a></div><div class="ttdeci">std::vector&lt; int &gt; getCheminX()</div><div class="ttdoc">Getter. </div><div class="ttdef"><b>Definition:</b> Humain.h:243</div></div>
+<div class="ttc" id="struct_agent_package_html"><div class="ttname"><a href="struct_agent_package.html">AgentPackage</a></div><div class="ttdoc">Objet servant d&amp;#39;archive pour le transfert d&amp;#39;attribut des agents d&amp;#39;un processus à un autre...</div><div class="ttdef"><b>Definition:</b> AgentPackage.h:19</div></div>
+<div class="ttc" id="class_humain_html_a6ef45c2a6398eee58bc985b0d3d04812"><div class="ttname"><a href="class_humain.html#a6ef45c2a6398eee58bc985b0d3d04812">Humain::getPos</a></div><div class="ttdeci">void getPos()</div><div class="ttdoc">affiche la position d&amp;#39;un humain(coordonnees repast) </div><div class="ttdef"><b>Definition:</b> Humain.cpp:20</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche 25 Mai 2014 22:27:41 pour Simulation d&#39;evacuation d&#39;immeuble avec systeme multi-agents par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

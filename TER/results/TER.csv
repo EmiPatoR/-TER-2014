@@ -1,0 +1,7 @@
+date_time.run,process.count,random.seed,min.x,min.y,max.x,max.y,proc.per.x,proc.per.y,grid.buffer,init.time,stop.at,run.time,nombre.humains,nombre.survivants,nombre.morts,evacuation,dernier.tick.evacuation,simulation.diff_age,nombre.sorties
+30.05.2014 12:36:14,4,1401446174,-20,-20,19,19,2,2,2,0.064898,600,15.3254,28,28,0,reussie,244,0,4
+30.05.2014 12:39:09,4,1401446349,-20,-20,19,19,2,2,2,0.068306,250,6.50025,28,25,3,echouee,evacuation echouee,1,4
+08.12.2014 11:40:25,4,1418035225,-20,-20,19,19,2,2,2,0.05864,250,6.17895,28,28,0,reussie,220,1,4
+08.12.2014 11:43:55,4,1418035435,-20,-20,19,19,2,2,2,0.060215,250,6.29379,28,28,0,reussie,220,1,4
+08.12.2014 11:47:23,4,1418035643,-20,-20,19,19,2,2,2,0.058941,250,6.52962,28,28,0,reussie,220,1,4
+08.12.2014 11:48:25,4,1418035705,-20,-20,19,19,2,2,2,0.063746,250,6.45671,28,27,1,echouee,evacuation echouee,1,4

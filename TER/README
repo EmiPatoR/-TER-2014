@@ -1,0 +1,28 @@
+INSTRUCTIONS POUR LANCER L'APPLICATION :
+
+
+
+Installer toutes les lib necessaires pour compiler repast, Telecharger Repast HPC et suivre les instructions d'installation.
+une fois RHPC compilé , mettre toutes les lib et les headers dans le dossier Libs (voir le makefile pour les chemins exacts et les libs necessaires)
+
+Libs à installer : Boost , OPEN MPI, SDL 2, OPEN GL 2, REPAST HPC , NET CDF, LIB CURL
+
+rajouter dans $PATH l'emplacement ou se trouve les executables de OPEN MPI (mpicxx , mpirun , etc ...)
+
+ensuite, pour compiler se placer dans le dossier et lancer la commande : "./go.sh compile" , pour compiler et lancer "./go.sh exec" pour executer l'application
+
+-Les sources se trouvent dans le repertoire "code"
+-La documentation se trouve dans le repertoire "doc" , puis aller dans le sous-repertoire "html" et ouvrir le fichier "index.html" pour avoir acces a l'API
+-l'executable se trouve dans le repertoire "bin" cependant il doit etre executé avec "mpirun" et on doit specifier 4 processus, pour plus de simplicité utiliser uniquement le script go.sh en utilisant la commande "./go.sh exec" pour lancer l'application comme expliqué precedemment.
+-Les logs sont contenu dans le repertoire "logs"
+-Les resultats des simulations sont stockes dans le repertoire "results"
+-Les fichiers de proprietes de simulation se trouvent dans le repertoire "props" , en general ne rien modifier , sauf le fichier proprietes.props, si vous souhaiter utiliser
+la difference d'age dans la simulation il suffit de mettre le parametre simulation.diff_age à 1 pour l'activer et a 0 pour le desactiver.
+-Les conditions initiales de la simulations sont definies dans le fichier "data0.dat" contenu dans le repertoire "data"
+EN ce qui concerne le fichier data0.dat , les '0' representent le sol marchable par les agents , les '1' representent les murs, les '2' sont les humains , et enfin les '3'
+sont les sorties.
+
+Toutes les informations necessaires se trouvent neanmoins dans la documentation (dans le repertoire "doc")
+
+Je ne sais pas si l'application , compile sur Windows, en tout cas elle a été compilée correctement sur plusieur machines munies d'ubuntu.
+

@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Simulation d&#39;evacuation d&#39;immeuble avec systeme multi-agents:  Fichier source de code/include/fenetre.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.jpeg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Simulation d&#39;evacuation d&#39;immeuble avec systeme multi-agents
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">TER - 2014</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_050edd66366d13764f98250ef6db77f6.html">code</a></li><li class="navelem"><a class="el" href="dir_f8a5fb882cc5ea0f84873b4bfbe1e42c.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">fenetre.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="fenetre_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef FENETRE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FENETRE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;SDL2/SDL.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_fenetre.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_fenetre.html">Fenetre</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_fenetre.html#a541961b7302c76d76a2db26ba6d75ecd">Fenetre</a>(std::string titre,boost::mpi::communicator *<a class="code" href="class_fenetre.html#aaf5939d59b369131da7b5a1c9522f27c">world</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> cadran,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> longueur = 400, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> hauteur = 400);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_fenetre.html#a4738cb1dcb874908428b66b5ecd794c4">~Fenetre</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> main_loop();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_fenetre.html#a13e5aea291576c47d2ef088ce708df80">refresh</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_fenetre.html#a0b3faa02287224f074dcd181d8a7ab60">getLongueur</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_fenetre.html#ae3fe2005d680e693f08d776bd27ef92c">getHauteur</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_fenetre.html#a13c7ea9a022308e15be7bd3e74c7b30f">dessinerTriangle</a>(<span class="keywordtype">int</span> posX, <span class="keywordtype">int</span> posY, <span class="keywordtype">double</span> angle, <span class="keywordtype">int</span> type);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_fenetre.html#a7f2786a8441da33363c05fbcd0cdb4af">dessinerMur</a>(<span class="keywordtype">int</span> posX, <span class="keywordtype">int</span> posY);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    SDL_Window* <a class="code" href="class_fenetre.html#a25e91de01f1e88c883e2a5e4f77b72e3">getScreen</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    SDL_GLContext <a class="code" href="class_fenetre.html#aea9e7ae52ee5fd2c27b3328fb86f9ccc">getGLContext</a>();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_fenetre.html#ac9b0a5adee0900502417cee80a0d3fc2">getCadran</a>();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_fenetre.html#a1ca0cdad76751701230756f891e1c1be">clear</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_fenetre.html#a51514f010265cc7fda442f3d6e38e019">dormir</a>(<span class="keywordtype">int</span> val);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="class_fenetre.html#aaf5939d59b369131da7b5a1c9522f27c">  121</a></span>&#160;    boost::mpi::communicator *<a class="code" href="class_fenetre.html#aaf5939d59b369131da7b5a1c9522f27c">world</a>; </div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="class_fenetre.html#a23ee3848c7e626351b3f21f96da6bf62">  122</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_fenetre.html#a23ee3848c7e626351b3f21f96da6bf62">m_largeur</a>; </div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="class_fenetre.html#a6d76ce7b192ecabb41668d1c6a76dccd">  123</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_fenetre.html#a6d76ce7b192ecabb41668d1c6a76dccd">m_hauteur</a>; </div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="class_fenetre.html#a708d917f79791e58b236212be41f4a14">  124</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_fenetre.html#a708d917f79791e58b236212be41f4a14">m_cadran</a>; </div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="class_fenetre.html#a7b775013b790c82cee030d6956d4e1d2">  125</a></span>&#160;    std::string <a class="code" href="class_fenetre.html#a7b775013b790c82cee030d6956d4e1d2">m_titre</a>; </div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="class_fenetre.html#a7265b8325c0a09c8b7739c3b1dccee55">  126</a></span>&#160;    SDL_Window *<a class="code" href="class_fenetre.html#a7265b8325c0a09c8b7739c3b1dccee55">m_ecran</a>; </div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="class_fenetre.html#a2282055fd9d9a2c5d6ff8d8d211c73f8">  127</a></span>&#160;    SDL_GLContext <a class="code" href="class_fenetre.html#a2282055fd9d9a2c5d6ff8d8d211c73f8">m_context</a>; </div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="class_fenetre.html#a0577caa70cbbc72ea151ec1eba2b2a29">  128</a></span>&#160;    Uint32 <a class="code" href="class_fenetre.html#a0577caa70cbbc72ea151ec1eba2b2a29">m_bg_color</a>; </div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="class_fenetre.html#ae72eb6882b7aaf9f0696a70b2c0ed741">  129</a></span>&#160;    SDL_Event <a class="code" href="class_fenetre.html#ae72eb6882b7aaf9f0696a70b2c0ed741">m_e</a>; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;};</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif // FENETRE_H</span></div>
+<div class="ttc" id="class_fenetre_html_a25e91de01f1e88c883e2a5e4f77b72e3"><div class="ttname"><a href="class_fenetre.html#a25e91de01f1e88c883e2a5e4f77b72e3">Fenetre::getScreen</a></div><div class="ttdeci">SDL_Window * getScreen()</div><div class="ttdoc">Getter de l&amp;#39;attribut m_ecran de la classe Fenetre. </div><div class="ttdef"><b>Definition:</b> fenetre.cpp:199</div></div>
+<div class="ttc" id="class_fenetre_html"><div class="ttname"><a href="class_fenetre.html">Fenetre</a></div><div class="ttdoc">Classe representant une Fenetre SDL. </div><div class="ttdef"><b>Definition:</b> fenetre.h:20</div></div>
+<div class="ttc" id="class_fenetre_html_aaf5939d59b369131da7b5a1c9522f27c"><div class="ttname"><a href="class_fenetre.html#aaf5939d59b369131da7b5a1c9522f27c">Fenetre::world</a></div><div class="ttdeci">boost::mpi::communicator * world</div><div class="ttdef"><b>Definition:</b> fenetre.h:121</div></div>
+<div class="ttc" id="class_fenetre_html_a541961b7302c76d76a2db26ba6d75ecd"><div class="ttname"><a href="class_fenetre.html#a541961b7302c76d76a2db26ba6d75ecd">Fenetre::Fenetre</a></div><div class="ttdeci">Fenetre(std::string titre, boost::mpi::communicator *world, unsigned int cadran, unsigned int longueur=400, unsigned int hauteur=400)</div><div class="ttdoc">Constructeur. </div><div class="ttdef"><b>Definition:</b> fenetre.cpp:20</div></div>
+<div class="ttc" id="class_fenetre_html_ac9b0a5adee0900502417cee80a0d3fc2"><div class="ttname"><a href="class_fenetre.html#ac9b0a5adee0900502417cee80a0d3fc2">Fenetre::getCadran</a></div><div class="ttdeci">int getCadran()</div><div class="ttdoc">Getter de l&amp;#39;attribut m_cadran de la classe Fenetre. </div><div class="ttdef"><b>Definition:</b> fenetre.cpp:201</div></div>
+<div class="ttc" id="class_fenetre_html_a7b775013b790c82cee030d6956d4e1d2"><div class="ttname"><a href="class_fenetre.html#a7b775013b790c82cee030d6956d4e1d2">Fenetre::m_titre</a></div><div class="ttdeci">std::string m_titre</div><div class="ttdef"><b>Definition:</b> fenetre.h:125</div></div>
+<div class="ttc" id="class_fenetre_html_a7f2786a8441da33363c05fbcd0cdb4af"><div class="ttname"><a href="class_fenetre.html#a7f2786a8441da33363c05fbcd0cdb4af">Fenetre::dessinerMur</a></div><div class="ttdeci">void dessinerMur(int posX, int posY)</div><div class="ttdoc">fonction qui dessine un carré 20x20 pixels (Mur) sur la fenetre </div><div class="ttdef"><b>Definition:</b> fenetre.cpp:176</div></div>
+<div class="ttc" id="class_fenetre_html_ae3fe2005d680e693f08d776bd27ef92c"><div class="ttname"><a href="class_fenetre.html#ae3fe2005d680e693f08d776bd27ef92c">Fenetre::getHauteur</a></div><div class="ttdeci">unsigned int getHauteur()</div><div class="ttdoc">Getter de l&amp;#39;attribut m_hauteur de la classe Fenetre. </div><div class="ttdef"><b>Definition:</b> fenetre.cpp:198</div></div>
+<div class="ttc" id="class_fenetre_html_a13e5aea291576c47d2ef088ce708df80"><div class="ttname"><a href="class_fenetre.html#a13e5aea291576c47d2ef088ce708df80">Fenetre::refresh</a></div><div class="ttdeci">void refresh(void)</div><div class="ttdoc">rafraichissement de la fenetre </div><div class="ttdef"><b>Definition:</b> fenetre.cpp:166</div></div>
+<div class="ttc" id="class_fenetre_html_a0577caa70cbbc72ea151ec1eba2b2a29"><div class="ttname"><a href="class_fenetre.html#a0577caa70cbbc72ea151ec1eba2b2a29">Fenetre::m_bg_color</a></div><div class="ttdeci">Uint32 m_bg_color</div><div class="ttdef"><b>Definition:</b> fenetre.h:128</div></div>
+<div class="ttc" id="class_fenetre_html_a1ca0cdad76751701230756f891e1c1be"><div class="ttname"><a href="class_fenetre.html#a1ca0cdad76751701230756f891e1c1be">Fenetre::clear</a></div><div class="ttdeci">void clear(void)</div><div class="ttdoc">fonction qui redessine en blanc la fenetre (effacement) </div><div class="ttdef"><b>Definition:</b> fenetre.cpp:171</div></div>
+<div class="ttc" id="class_fenetre_html_a7265b8325c0a09c8b7739c3b1dccee55"><div class="ttname"><a href="class_fenetre.html#a7265b8325c0a09c8b7739c3b1dccee55">Fenetre::m_ecran</a></div><div class="ttdeci">SDL_Window * m_ecran</div><div class="ttdef"><b>Definition:</b> fenetre.h:126</div></div>
+<div class="ttc" id="class_fenetre_html_a708d917f79791e58b236212be41f4a14"><div class="ttname"><a href="class_fenetre.html#a708d917f79791e58b236212be41f4a14">Fenetre::m_cadran</a></div><div class="ttdeci">unsigned int m_cadran</div><div class="ttdef"><b>Definition:</b> fenetre.h:124</div></div>
+<div class="ttc" id="class_fenetre_html_aea9e7ae52ee5fd2c27b3328fb86f9ccc"><div class="ttname"><a href="class_fenetre.html#aea9e7ae52ee5fd2c27b3328fb86f9ccc">Fenetre::getGLContext</a></div><div class="ttdeci">SDL_GLContext getGLContext()</div><div class="ttdoc">Getter de l&amp;#39;attribut m_context de la classe Fenetre. </div><div class="ttdef"><b>Definition:</b> fenetre.cpp:200</div></div>
+<div class="ttc" id="class_fenetre_html_a23ee3848c7e626351b3f21f96da6bf62"><div class="ttname"><a href="class_fenetre.html#a23ee3848c7e626351b3f21f96da6bf62">Fenetre::m_largeur</a></div><div class="ttdeci">unsigned int m_largeur</div><div class="ttdef"><b>Definition:</b> fenetre.h:122</div></div>
+<div class="ttc" id="class_fenetre_html_a13c7ea9a022308e15be7bd3e74c7b30f"><div class="ttname"><a href="class_fenetre.html#a13c7ea9a022308e15be7bd3e74c7b30f">Fenetre::dessinerTriangle</a></div><div class="ttdeci">void dessinerTriangle(int posX, int posY, double angle, int type)</div><div class="ttdoc">fonction qui dessine un triangle sur la fenetre </div><div class="ttdef"><b>Definition:</b> fenetre.cpp:122</div></div>
+<div class="ttc" id="class_fenetre_html_a0b3faa02287224f074dcd181d8a7ab60"><div class="ttname"><a href="class_fenetre.html#a0b3faa02287224f074dcd181d8a7ab60">Fenetre::getLongueur</a></div><div class="ttdeci">unsigned int getLongueur()</div><div class="ttdoc">Getter de l&amp;#39;attribut m_largeur de la classe Fenetre. </div><div class="ttdef"><b>Definition:</b> fenetre.cpp:197</div></div>
+<div class="ttc" id="class_fenetre_html_a6d76ce7b192ecabb41668d1c6a76dccd"><div class="ttname"><a href="class_fenetre.html#a6d76ce7b192ecabb41668d1c6a76dccd">Fenetre::m_hauteur</a></div><div class="ttdeci">unsigned int m_hauteur</div><div class="ttdef"><b>Definition:</b> fenetre.h:123</div></div>
+<div class="ttc" id="class_fenetre_html_a51514f010265cc7fda442f3d6e38e019"><div class="ttname"><a href="class_fenetre.html#a51514f010265cc7fda442f3d6e38e019">Fenetre::dormir</a></div><div class="ttdeci">void dormir(int val)</div><div class="ttdoc">fonction qui endors le processus qui s&amp;#39;occupe de la fenetre </div><div class="ttdef"><b>Definition:</b> fenetre.cpp:115</div></div>
+<div class="ttc" id="class_fenetre_html_a2282055fd9d9a2c5d6ff8d8d211c73f8"><div class="ttname"><a href="class_fenetre.html#a2282055fd9d9a2c5d6ff8d8d211c73f8">Fenetre::m_context</a></div><div class="ttdeci">SDL_GLContext m_context</div><div class="ttdef"><b>Definition:</b> fenetre.h:127</div></div>
+<div class="ttc" id="class_fenetre_html_a4738cb1dcb874908428b66b5ecd794c4"><div class="ttname"><a href="class_fenetre.html#a4738cb1dcb874908428b66b5ecd794c4">Fenetre::~Fenetre</a></div><div class="ttdeci">virtual ~Fenetre()</div><div class="ttdef"><b>Definition:</b> fenetre.cpp:87</div></div>
+<div class="ttc" id="class_fenetre_html_ae72eb6882b7aaf9f0696a70b2c0ed741"><div class="ttname"><a href="class_fenetre.html#ae72eb6882b7aaf9f0696a70b2c0ed741">Fenetre::m_e</a></div><div class="ttdeci">SDL_Event m_e</div><div class="ttdef"><b>Definition:</b> fenetre.h:129</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche 25 Mai 2014 22:27:41 pour Simulation d&#39;evacuation d&#39;immeuble avec systeme multi-agents par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

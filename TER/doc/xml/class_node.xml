@@ -1,0 +1,472 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_node" kind="class" prot="public">
+    <compoundname>Node</compoundname>
+    <includes refid="_node_8h" local="no">Node.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_node_1a3499afaa714e2e2db00bc49bffc2ff71" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Node::m_g</definition>
+        <argsstring></argsstring>
+        <name>m_g</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Heuristique G representant la valeur totale du chemin parcourru </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Node.h" line="18" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Node.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_node_1a76c2518969e5ab3f6a807f9a1c171d5e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Node::m_h</definition>
+        <argsstring></argsstring>
+        <name>m_h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Heuristique H representant la distance a vol d&apos;oiseau de la position actuelle jusqu&apos;au <ref refid="class_node" kindref="compound">Node</ref> d&apos;arrivee </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Node.h" line="19" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Node.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_node_1aee85bb06f52186981bb1a53498f0fc60" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Node::m_f</definition>
+        <argsstring></argsstring>
+        <name>m_f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Somme de G et H, F = H + G </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Node.h" line="20" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Node.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_node_1a4693a6930df2901ed134d25f80d45471" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Node::m_X</definition>
+        <argsstring></argsstring>
+        <name>m_X</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Position X </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Node.h" line="21" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Node.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_node_1aefa6c4708d5c252d8130fecdeff7e78f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Node::m_Y</definition>
+        <argsstring></argsstring>
+        <name>m_Y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Position Y </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Node.h" line="22" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Node.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_node_1ae17f5a0583ef1b9cafae478be83c9e05" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Node::m_walkable</definition>
+        <argsstring></argsstring>
+        <name>m_walkable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Boolean representant si le <ref refid="class_node" kindref="compound">Node</ref> est un mur ou pas </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Node.h" line="23" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Node.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_node_1afb679f84ec475d10a2c6fafb7130dac5" prot="private" static="no" mutable="no">
+        <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+        <definition>Node* Node::m_parent</definition>
+        <argsstring></argsstring>
+        <name>m_parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>pointeur sur le <ref refid="class_node" kindref="compound">Node</ref> parent </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Node.h" line="24" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Node.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_node_1ad7a34779cad45d997bfd6d3d8043c75f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Node::Node</definition>
+        <argsstring>()</argsstring>
+        <name>Node</name>
+        <briefdescription>
+<para>Constructeur. </para>        </briefdescription>
+        <detaileddescription>
+<para>Constructeur de la classe <ref refid="class_node" kindref="compound">Node</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Node.h" line="33" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/Node.cpp" bodystart="3" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1aa0840c3cb5c7159be6d992adecd2097c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Node::~Node</definition>
+        <argsstring>()</argsstring>
+        <name>~Node</name>
+        <briefdescription>
+<para>Destructeur. </para>        </briefdescription>
+        <detaileddescription>
+<para>Destructeur de la classe <ref refid="class_node" kindref="compound">Node</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Node.h" line="41" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/Node.cpp" bodystart="9" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1aa342abc3125e21fab6c9085aefb9f90f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Node::estEgal</definition>
+        <argsstring>(Node const &amp;b) const </argsstring>
+        <name>estEgal</name>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref> const &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Compare deux objets de type <ref refid="class_node" kindref="compound">Node</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: node a comparer au <ref refid="class_node" kindref="compound">Node</ref> actuel </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>un boolean idiquant si les deux nodes sont egaux. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Node.h" line="49" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/Node.cpp" bodystart="13" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1a39cc5b0b6814a6a2f4f0771203f334a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::setParent</definition>
+        <argsstring>(Node *val)</argsstring>
+        <name>setParent</name>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Setter de l&apos;attribut Parent de la classe <ref refid="class_node" kindref="compound">Node</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: valeur de l&apos;attribut a modifier </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Node.h" line="56" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/Node.cpp" bodystart="20" bodyend="20"/>
+        <referencedby refid="class_pathfinder_1aee6e72cf2b4a9f86c6aa1139618e2167" compoundref="_path_finder_8cpp" startline="14" endline="95">Pathfinder::findPath</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1a220a8d64cb0df1cce083ed38c1260615" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+        <definition>Node * Node::getParent</definition>
+        <argsstring>()</argsstring>
+        <name>getParent</name>
+        <briefdescription>
+<para>Getter de l&apos;attribut m_parent de la classe <ref refid="class_node" kindref="compound">Node</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>valeur de l&apos;attribut m_parent de la classe <ref refid="class_node" kindref="compound">Node</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Node.h" line="63" column="1" bodyfile="/home/emip/git/TER/TESTA/code/src/Node.cpp" bodystart="21" bodyend="21"/>
+        <referencedby refid="class_pathfinder_1aee6e72cf2b4a9f86c6aa1139618e2167" compoundref="_path_finder_8cpp" startline="14" endline="95">Pathfinder::findPath</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1a281acda069a341e04b5e9dbd45c4658e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::setWalkable</definition>
+        <argsstring>(bool val)</argsstring>
+        <name>setWalkable</name>
+        <param>
+          <type>bool</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Setter de l&apos;attribut m_walkable de la classe <ref refid="class_node" kindref="compound">Node</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: valeur de l&apos;attribut a modifier </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Node.h" line="70" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Node.h" bodystart="70" bodyend="70"/>
+        <referencedby refid="class_graphe_1abd3e45f6d615a90d71106d29e6968c0f" compoundref="_graphe_8cpp" startline="9" endline="88">Graphe::Graphe</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1a47181f2860b050a0036097d534051cfc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::setG</definition>
+        <argsstring>(int val)</argsstring>
+        <name>setG</name>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Setter de l&apos;attribut m_G de la classe <ref refid="class_node" kindref="compound">Node</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: valeur de l&apos;attribut a modifier </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Node.h" line="77" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Node.h" bodystart="77" bodyend="77"/>
+        <referencedby refid="class_pathfinder_1aee6e72cf2b4a9f86c6aa1139618e2167" compoundref="_path_finder_8cpp" startline="14" endline="95">Pathfinder::findPath</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1a070cae6ce68d13a77b42686e6ecdef05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::setF</definition>
+        <argsstring>(int val)</argsstring>
+        <name>setF</name>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Setter de l&apos;attribut m_F de la classe <ref refid="class_node" kindref="compound">Node</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: valeur de l&apos;attribut a modifier </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Node.h" line="84" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Node.h" bodystart="84" bodyend="84"/>
+        <referencedby refid="class_pathfinder_1aee6e72cf2b4a9f86c6aa1139618e2167" compoundref="_path_finder_8cpp" startline="14" endline="95">Pathfinder::findPath</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1a5f9637d2e5bed720d9ee7a5af8a00c36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::setH</definition>
+        <argsstring>(int val)</argsstring>
+        <name>setH</name>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Setter de l&apos;attribut m_h de la classe <ref refid="class_node" kindref="compound">Node</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: valeur de l&apos;attribut a modifier </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Node.h" line="91" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Node.h" bodystart="91" bodyend="91"/>
+        <referencedby refid="class_pathfinder_1aee6e72cf2b4a9f86c6aa1139618e2167" compoundref="_path_finder_8cpp" startline="14" endline="95">Pathfinder::findPath</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1accabc02cdc5144636cab8d5079619d13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::setX</definition>
+        <argsstring>(int val)</argsstring>
+        <name>setX</name>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Setter de l&apos;attribut m_X de la classe <ref refid="class_node" kindref="compound">Node</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: valeur de l&apos;attribut a modifier </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Node.h" line="98" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Node.h" bodystart="98" bodyend="98"/>
+        <referencedby refid="class_graphe_1abd3e45f6d615a90d71106d29e6968c0f" compoundref="_graphe_8cpp" startline="9" endline="88">Graphe::Graphe</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1a475dd9a2117954dbfa44f8cd196d6008" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::setY</definition>
+        <argsstring>(int val)</argsstring>
+        <name>setY</name>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Setter de l&apos;attribut m_Y de la classe <ref refid="class_node" kindref="compound">Node</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: valeur de l&apos;attribut a modifier </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Node.h" line="105" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Node.h" bodystart="105" bodyend="105"/>
+        <referencedby refid="class_graphe_1abd3e45f6d615a90d71106d29e6968c0f" compoundref="_graphe_8cpp" startline="9" endline="88">Graphe::Graphe</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1af04dc1e91f0961108c3ffab1fc9e792a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Node::getWalkable</definition>
+        <argsstring>()</argsstring>
+        <name>getWalkable</name>
+        <briefdescription>
+<para>Getter de l&apos;attribut m_walkable de la classe <ref refid="class_node" kindref="compound">Node</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>valeur de l&apos;attribut m_walkable de la classe <ref refid="class_node" kindref="compound">Node</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Node.h" line="112" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Node.h" bodystart="112" bodyend="112"/>
+        <referencedby refid="class_pathfinder_1aee6e72cf2b4a9f86c6aa1139618e2167" compoundref="_path_finder_8cpp" startline="14" endline="95">Pathfinder::findPath</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1a9133c5c2e1c994b914535bbbefa33d7c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Node::getG</definition>
+        <argsstring>()</argsstring>
+        <name>getG</name>
+        <briefdescription>
+<para>Getter de l&apos;attribut m_G de la classe <ref refid="class_node" kindref="compound">Node</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>valeur de l&apos;attribut m_G de la classe <ref refid="class_node" kindref="compound">Node</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Node.h" line="119" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Node.h" bodystart="119" bodyend="119"/>
+        <referencedby refid="class_pathfinder_1aee6e72cf2b4a9f86c6aa1139618e2167" compoundref="_path_finder_8cpp" startline="14" endline="95">Pathfinder::findPath</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1a7b012d2404cc65fb58a9bb3a2dc6d724" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Node::getF</definition>
+        <argsstring>()</argsstring>
+        <name>getF</name>
+        <briefdescription>
+<para>Getter de l&apos;attribut m_F de la classe <ref refid="class_node" kindref="compound">Node</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>valeur de l&apos;attribut m_F de la classe <ref refid="class_node" kindref="compound">Node</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Node.h" line="126" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Node.h" bodystart="126" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1a1108111505a673b217d5e13d6ac36d14" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Node::getH</definition>
+        <argsstring>()</argsstring>
+        <name>getH</name>
+        <briefdescription>
+<para>Getter de l&apos;attribut m_H de la classe <ref refid="class_node" kindref="compound">Node</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>valeur de l&apos;attribut m_H de la classe <ref refid="class_node" kindref="compound">Node</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Node.h" line="133" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Node.h" bodystart="133" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1a6c026e5d8c28591c6e2bd08c68619fd1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Node::getX</definition>
+        <argsstring>()</argsstring>
+        <name>getX</name>
+        <briefdescription>
+<para>Getter de l&apos;attribut m_X de la classe <ref refid="class_node" kindref="compound">Node</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>valeur de l&apos;attribut m_X de la classe <ref refid="class_node" kindref="compound">Node</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Node.h" line="140" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Node.h" bodystart="140" bodyend="140"/>
+        <referencedby refid="class_graphe_1a7c51dfd09bcf7d8505ec47a96b5d9c61" compoundref="_graphe_8cpp" startline="90" endline="121">Graphe::calculSortie</referencedby>
+        <referencedby refid="class_pathfinder_1aee6e72cf2b4a9f86c6aa1139618e2167" compoundref="_path_finder_8cpp" startline="14" endline="95">Pathfinder::findPath</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1abab48a3f494994d4f456897f3372d3ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Node::getY</definition>
+        <argsstring>()</argsstring>
+        <name>getY</name>
+        <briefdescription>
+<para>Getter de l&apos;attribut m_Y de la classe <ref refid="class_node" kindref="compound">Node</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>valeur de l&apos;attribut m_Y de la classe <ref refid="class_node" kindref="compound">Node</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/emip/git/TER/TESTA/code/include/Node.h" line="147" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Node.h" bodystart="147" bodyend="147"/>
+        <referencedby refid="class_graphe_1a7c51dfd09bcf7d8505ec47a96b5d9c61" compoundref="_graphe_8cpp" startline="90" endline="121">Graphe::calculSortie</referencedby>
+        <referencedby refid="class_pathfinder_1aee6e72cf2b4a9f86c6aa1139618e2167" compoundref="_path_finder_8cpp" startline="14" endline="95">Pathfinder::findPath</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Classe representant un <ref refid="class_node" kindref="compound">Node</ref> Un <ref refid="class_node" kindref="compound">Node</ref> est une &quot;case&quot; de la matrice representant le monde Repast, chaque node contient les heuristiques,g,h et f, une position X et Y , un <ref refid="class_node" kindref="compound">Node</ref> Parent, et un boolean indiquant si le node est un mur ou pas. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/emip/git/TER/TESTA/code/include/Node.h" line="16" column="1" bodyfile="/home/emip/git/TER/TESTA/code/include/Node.h" bodystart="16" bodyend="148"/>
+    <listofallmembers>
+      <member refid="class_node_1aa342abc3125e21fab6c9085aefb9f90f" prot="public" virt="non-virtual"><scope>Node</scope><name>estEgal</name></member>
+      <member refid="class_node_1a7b012d2404cc65fb58a9bb3a2dc6d724" prot="public" virt="non-virtual"><scope>Node</scope><name>getF</name></member>
+      <member refid="class_node_1a9133c5c2e1c994b914535bbbefa33d7c" prot="public" virt="non-virtual"><scope>Node</scope><name>getG</name></member>
+      <member refid="class_node_1a1108111505a673b217d5e13d6ac36d14" prot="public" virt="non-virtual"><scope>Node</scope><name>getH</name></member>
+      <member refid="class_node_1a220a8d64cb0df1cce083ed38c1260615" prot="public" virt="non-virtual"><scope>Node</scope><name>getParent</name></member>
+      <member refid="class_node_1af04dc1e91f0961108c3ffab1fc9e792a" prot="public" virt="non-virtual"><scope>Node</scope><name>getWalkable</name></member>
+      <member refid="class_node_1a6c026e5d8c28591c6e2bd08c68619fd1" prot="public" virt="non-virtual"><scope>Node</scope><name>getX</name></member>
+      <member refid="class_node_1abab48a3f494994d4f456897f3372d3ae" prot="public" virt="non-virtual"><scope>Node</scope><name>getY</name></member>
+      <member refid="class_node_1aee85bb06f52186981bb1a53498f0fc60" prot="private" virt="non-virtual"><scope>Node</scope><name>m_f</name></member>
+      <member refid="class_node_1a3499afaa714e2e2db00bc49bffc2ff71" prot="private" virt="non-virtual"><scope>Node</scope><name>m_g</name></member>
+      <member refid="class_node_1a76c2518969e5ab3f6a807f9a1c171d5e" prot="private" virt="non-virtual"><scope>Node</scope><name>m_h</name></member>
+      <member refid="class_node_1afb679f84ec475d10a2c6fafb7130dac5" prot="private" virt="non-virtual"><scope>Node</scope><name>m_parent</name></member>
+      <member refid="class_node_1ae17f5a0583ef1b9cafae478be83c9e05" prot="private" virt="non-virtual"><scope>Node</scope><name>m_walkable</name></member>
+      <member refid="class_node_1a4693a6930df2901ed134d25f80d45471" prot="private" virt="non-virtual"><scope>Node</scope><name>m_X</name></member>
+      <member refid="class_node_1aefa6c4708d5c252d8130fecdeff7e78f" prot="private" virt="non-virtual"><scope>Node</scope><name>m_Y</name></member>
+      <member refid="class_node_1ad7a34779cad45d997bfd6d3d8043c75f" prot="public" virt="non-virtual"><scope>Node</scope><name>Node</name></member>
+      <member refid="class_node_1a070cae6ce68d13a77b42686e6ecdef05" prot="public" virt="non-virtual"><scope>Node</scope><name>setF</name></member>
+      <member refid="class_node_1a47181f2860b050a0036097d534051cfc" prot="public" virt="non-virtual"><scope>Node</scope><name>setG</name></member>
+      <member refid="class_node_1a5f9637d2e5bed720d9ee7a5af8a00c36" prot="public" virt="non-virtual"><scope>Node</scope><name>setH</name></member>
+      <member refid="class_node_1a39cc5b0b6814a6a2f4f0771203f334a1" prot="public" virt="non-virtual"><scope>Node</scope><name>setParent</name></member>
+      <member refid="class_node_1a281acda069a341e04b5e9dbd45c4658e" prot="public" virt="non-virtual"><scope>Node</scope><name>setWalkable</name></member>
+      <member refid="class_node_1accabc02cdc5144636cab8d5079619d13" prot="public" virt="non-virtual"><scope>Node</scope><name>setX</name></member>
+      <member refid="class_node_1a475dd9a2117954dbfa44f8cd196d6008" prot="public" virt="non-virtual"><scope>Node</scope><name>setY</name></member>
+      <member refid="class_node_1aa0840c3cb5c7159be6d992adecd2097c" prot="public" virt="virtual"><scope>Node</scope><name>~Node</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

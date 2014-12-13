@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="_node_8cpp" kind="file">
+    <compoundname>Node.cpp</compoundname>
+    <includes refid="_node_8h" local="yes">Node.h</includes>
+    <incdepgraph>
+      <node id="271">
+        <label>code/src/Node.cpp</label>
+        <link refid="Node.cpp"/>
+        <childnode refid="272" relation="include">
+        </childnode>
+      </node>
+      <node id="272">
+        <label>Node.h</label>
+        <link refid="_node_8h"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_node_8h" kindref="compound">Node.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_node_1ad7a34779cad45d997bfd6d3d8043c75f" refkind="member"><highlight class="normal"><ref refid="class_node_1ad7a34779cad45d997bfd6d3d8043c75f" kindref="member">Node::Node</ref>(){</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>m_walkable<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>m_g<sp/>=<sp/>m_h<sp/>=<sp/>m_f<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>m_parent<sp/>=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_node_1aa0840c3cb5c7159be6d992adecd2097c" refkind="member"><highlight class="normal"><ref refid="class_node_1aa0840c3cb5c7159be6d992adecd2097c" kindref="member">Node::~Node</ref>(){</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_node_1aa342abc3125e21fab6c9085aefb9f90f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_node_1aa342abc3125e21fab6c9085aefb9f90f" kindref="member">Node::estEgal</ref>(<ref refid="class_node" kindref="compound">Node</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>b)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="14"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(m_X<sp/>==<sp/>b.m_X<sp/>&amp;&amp;<sp/>m_Y<sp/>==<sp/>b.m_Y<sp/>&amp;&amp;<sp/>m_f<sp/>==<sp/>b.m_f<sp/>&amp;&amp;<sp/>m_g<sp/>==<sp/>b.m_g<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_h<sp/>==<sp/>b.m_h<sp/>&amp;&amp;<sp/>m_walkable<sp/>==<sp/>b.m_walkable<sp/>&amp;&amp;<sp/>m_parent<sp/>==<sp/>b.m_parent);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_node_1a39cc5b0b6814a6a2f4f0771203f334a1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_node_1a39cc5b0b6814a6a2f4f0771203f334a1" kindref="member">Node::setParent</ref>(<ref refid="class_node" kindref="compound">Node</ref>*<sp/>val){m_parent<sp/>=<sp/>val;}</highlight></codeline>
+<codeline lineno="21" refid="class_node_1a220a8d64cb0df1cce083ed38c1260615" refkind="member"><highlight class="normal"><ref refid="class_node" kindref="compound">Node</ref>*<sp/><ref refid="class_node_1a220a8d64cb0df1cce083ed38c1260615" kindref="member">Node::getParent</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_parent;}</highlight></codeline>
+    </programlisting>
+    <location file="/home/emip/git/TER/TESTA/code/src/Node.cpp"/>
+  </compounddef>
+</doxygen>

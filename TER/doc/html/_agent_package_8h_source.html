@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Simulation d&#39;evacuation d&#39;immeuble avec systeme multi-agents:  Fichier source de code/include/AgentPackage.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.jpeg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Simulation d&#39;evacuation d&#39;immeuble avec systeme multi-agents
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">TER - 2014</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_050edd66366d13764f98250ef6db77f6.html">code</a></li><li class="navelem"><a class="el" href="dir_f8a5fb882cc5ea0f84873b4bfbe1e42c.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">AgentPackage.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_agent_package_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef AGENTPACKAGE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AGENTPACKAGE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;repast_hpc/AgentId.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;boost/serialization/vector.hpp&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="struct_agent_package.html">   19</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_agent_package.html">AgentPackage</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> Archive&gt;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> serialize(Archive&amp; ar, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> version) {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        ar &amp; <a class="code" href="struct_agent_package.html#acb97295bf92e52e7791297ccfe00a9f0">id</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        ar &amp; <a class="code" href="struct_agent_package.html#a424b83e665a649a53251684d53b7f6ec">proc</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        ar &amp; <a class="code" href="struct_agent_package.html#a47cb43c3eb16f7ab9fed25c310ea1f7a">type</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        ar &amp; <a class="code" href="struct_agent_package.html#acce31a89aa42cc20ea8e346dabf789d9">currentProc</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        ar &amp; <a class="code" href="struct_agent_package.html#a7023c0492848b76c886feed44c97dbbe">cheminX</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        ar &amp; <a class="code" href="struct_agent_package.html#aa4d44851a12b4a5cbb965999c9f325cd">cheminY</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        ar &amp; <a class="code" href="struct_agent_package.html#abf854b3cfca5add73170fdc862b8b477">etape</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        ar &amp; <a class="code" href="struct_agent_package.html#ac2a45d712ab4e8befb526865a12d67f3">typePersonne</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="struct_agent_package.html#acb97295bf92e52e7791297ccfe00a9f0">   34</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_agent_package.html#acb97295bf92e52e7791297ccfe00a9f0">id</a>; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="struct_agent_package.html#a424b83e665a649a53251684d53b7f6ec">   35</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_agent_package.html#a424b83e665a649a53251684d53b7f6ec">proc</a>; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="struct_agent_package.html#a47cb43c3eb16f7ab9fed25c310ea1f7a">   36</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_agent_package.html#a47cb43c3eb16f7ab9fed25c310ea1f7a">type</a>; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="struct_agent_package.html#acce31a89aa42cc20ea8e346dabf789d9">   37</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_agent_package.html#acce31a89aa42cc20ea8e346dabf789d9">currentProc</a>; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="struct_agent_package.html#a7023c0492848b76c886feed44c97dbbe">   38</a></span>&#160;    std::vector&lt;int&gt; <a class="code" href="struct_agent_package.html#a7023c0492848b76c886feed44c97dbbe">cheminX</a>; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="struct_agent_package.html#aa4d44851a12b4a5cbb965999c9f325cd">   39</a></span>&#160;    std::vector&lt;int&gt; <a class="code" href="struct_agent_package.html#aa4d44851a12b4a5cbb965999c9f325cd">cheminY</a>; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="struct_agent_package.html#abf854b3cfca5add73170fdc862b8b477">   40</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_agent_package.html#abf854b3cfca5add73170fdc862b8b477">etape</a>; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="struct_agent_package.html#ac2a45d712ab4e8befb526865a12d67f3">   41</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_agent_package.html#ac2a45d712ab4e8befb526865a12d67f3">typePersonne</a>; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    repast::AgentId getId()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> repast::AgentId(<span class="keywordtype">id</span>, <a class="code" href="struct_agent_package.html#a424b83e665a649a53251684d53b7f6ec">proc</a>, <a class="code" href="struct_agent_package.html#a47cb43c3eb16f7ab9fed25c310ea1f7a">type</a>, <a class="code" href="struct_agent_package.html#acce31a89aa42cc20ea8e346dabf789d9">currentProc</a>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* AGENTCONTENT_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="struct_agent_package_html_abf854b3cfca5add73170fdc862b8b477"><div class="ttname"><a href="struct_agent_package.html#abf854b3cfca5add73170fdc862b8b477">AgentPackage::etape</a></div><div class="ttdeci">int etape</div><div class="ttdef"><b>Definition:</b> AgentPackage.h:40</div></div>
+<div class="ttc" id="struct_agent_package_html_a424b83e665a649a53251684d53b7f6ec"><div class="ttname"><a href="struct_agent_package.html#a424b83e665a649a53251684d53b7f6ec">AgentPackage::proc</a></div><div class="ttdeci">int proc</div><div class="ttdef"><b>Definition:</b> AgentPackage.h:35</div></div>
+<div class="ttc" id="struct_agent_package_html_a47cb43c3eb16f7ab9fed25c310ea1f7a"><div class="ttname"><a href="struct_agent_package.html#a47cb43c3eb16f7ab9fed25c310ea1f7a">AgentPackage::type</a></div><div class="ttdeci">int type</div><div class="ttdef"><b>Definition:</b> AgentPackage.h:36</div></div>
+<div class="ttc" id="struct_agent_package_html_acce31a89aa42cc20ea8e346dabf789d9"><div class="ttname"><a href="struct_agent_package.html#acce31a89aa42cc20ea8e346dabf789d9">AgentPackage::currentProc</a></div><div class="ttdeci">int currentProc</div><div class="ttdef"><b>Definition:</b> AgentPackage.h:37</div></div>
+<div class="ttc" id="struct_agent_package_html_aa4d44851a12b4a5cbb965999c9f325cd"><div class="ttname"><a href="struct_agent_package.html#aa4d44851a12b4a5cbb965999c9f325cd">AgentPackage::cheminY</a></div><div class="ttdeci">std::vector&lt; int &gt; cheminY</div><div class="ttdef"><b>Definition:</b> AgentPackage.h:39</div></div>
+<div class="ttc" id="struct_agent_package_html_ac2a45d712ab4e8befb526865a12d67f3"><div class="ttname"><a href="struct_agent_package.html#ac2a45d712ab4e8befb526865a12d67f3">AgentPackage::typePersonne</a></div><div class="ttdeci">int typePersonne</div><div class="ttdef"><b>Definition:</b> AgentPackage.h:41</div></div>
+<div class="ttc" id="struct_agent_package_html_acb97295bf92e52e7791297ccfe00a9f0"><div class="ttname"><a href="struct_agent_package.html#acb97295bf92e52e7791297ccfe00a9f0">AgentPackage::id</a></div><div class="ttdeci">int id</div><div class="ttdef"><b>Definition:</b> AgentPackage.h:34</div></div>
+<div class="ttc" id="struct_agent_package_html"><div class="ttname"><a href="struct_agent_package.html">AgentPackage</a></div><div class="ttdoc">Objet servant d&amp;#39;archive pour le transfert d&amp;#39;attribut des agents d&amp;#39;un processus à un autre...</div><div class="ttdef"><b>Definition:</b> AgentPackage.h:19</div></div>
+<div class="ttc" id="struct_agent_package_html_a7023c0492848b76c886feed44c97dbbe"><div class="ttname"><a href="struct_agent_package.html#a7023c0492848b76c886feed44c97dbbe">AgentPackage::cheminX</a></div><div class="ttdeci">std::vector&lt; int &gt; cheminX</div><div class="ttdef"><b>Definition:</b> AgentPackage.h:38</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche 25 Mai 2014 22:27:41 pour Simulation d&#39;evacuation d&#39;immeuble avec systeme multi-agents par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>
